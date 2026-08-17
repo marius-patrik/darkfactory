@@ -1,0 +1,19 @@
+{
+  "kind": "pull_request",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T07:54:09.202Z",
+  "repository": "marius-patrik/Andromeda",
+  "number": 295,
+  "version": "4739cf8f38191f0879952db04ef4c9a9e9d7ead9:c5a0da5afc65e4b85308e68b76e52e42dca43620",
+  "completion": "none",
+  "recoveryAction": "owner-required",
+  "gate": {
+    "state": "missing"
+  },
+  "workflowRun": null,
+  "recoveryReason": "trusted-current-gate-missing",
+  "status": "owner-required",
+  "workflow": "darkfactory-autoreview.yml",
+  "trigger": "7,22,37,52 * * * *",
+  "control_revision": "f1a14fa5151e3dc896167935cb377b4bba666182"
+}

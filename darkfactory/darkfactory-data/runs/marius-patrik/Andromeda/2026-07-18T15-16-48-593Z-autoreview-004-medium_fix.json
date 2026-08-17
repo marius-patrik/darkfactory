@@ -1,0 +1,179 @@
+{
+  "kind": "autoreview-004-medium_fix",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T15:16:48.593Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#217",
+  "round": {
+    "sequence": 4,
+    "phase": "medium_fix",
+    "targetVersion": "4bb87cbd32a250aec6013d4cf3e648a6f12f2cda590b6b724afa50232ce99276",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:af9ce7316fe0f9136aa23866b55b0ed0f3aa30e4bbadb19b3787d34b65ad9dfc",
+      "inputChecksum": "sha256:a08692f7eac8cecae47c6ef91874cd397a8d253b0ab0960c55500effd42b1bbe",
+      "profile": {
+        "id": "profile/issue-fixer",
+        "version": "0.2.0",
+        "runKind": "fix-issue",
+        "purpose": "review-fix"
+      },
+      "selection": {
+        "role": "role/issue-fixer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/minimal-diff",
+          "skill/owner-escalation",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-fixer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-fixer",
+          "version": "0.2.0",
+          "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/minimal-diff",
+          "version": "0.2.0",
+          "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-fixer",
+          "version": "0.3.0",
+          "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 47309,
+      "outputTokens": 5672,
+      "totalTokens": 52981
+    },
+    "verdict": null,
+    "findings": [
+      {
+        "id": "df-d7e979833db3951db394",
+        "title": "Required owner decisions remain unresolved",
+        "details": "Implementation and publication cannot begin until authenticated owner answers resolve O217-1 through O217-5: canonical implementation ownership, supported-platform matrix, unavailable-default-tier behavior, signing authority and redirect policy, and the exact retired launcher binding. The issue correctly identifies these decisions but therefore remains blocked rather than review-clean.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-ef8f83353a977efa8575",
+        "title": "Signed-manifest freshness contract is unverifiable",
+        "details": "The updater must reject expired metadata, but the required signed manifest fields contain no issuance time, expiry time, freshness interval, or comparable signed freshness value. The contract also lacks clock-skew and unavailable-clock behavior. Define signed freshness fields and deterministic validation policy, or remove the unsupported expiration requirement and its test.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-fc1a2a358f83a7b701f1",
+        "title": "Archive extraction trust boundary is incomplete",
+        "details": "The distribution contract permits self-contained archives, but neither the signed metadata nor extraction policy identifies the archive format, expected executable entry, extracted file inventory, or rejection rules for traversal paths, absolute paths, links, special files, case collisions, and writes outside staging. The current extraction-failure test does not prove containment. Define these rules and corresponding malicious-archive coverage, or restrict the initial matrix to single-file binaries.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [
+      "df-d7e979833db3951db394",
+      "df-ef8f83353a977efa8575",
+      "df-fc1a2a358f83a7b701f1"
+    ],
+    "changeRef": "issue-comment:5011777785:cf1fb2f1061b0d749e181caab3b022b743a953c05dc2371bb0dbd50d943718f9",
+    "afterVersion": "cf1fb2f1061b0d749e181caab3b022b743a953c05dc2371bb0dbd50d943718f9",
+    "blockCode": null,
+    "outcome": "fixed"
+  }
+}

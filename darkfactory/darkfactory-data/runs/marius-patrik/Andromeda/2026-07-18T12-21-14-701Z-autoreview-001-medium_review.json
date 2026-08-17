@@ -1,0 +1,242 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T12:21:14.701Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#211",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "a7fd6f13c2f79183a7ed00fccd5875a19c1212468c09c203eadbe79185d3f456",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+      },
+      "promptChecksum": "sha256:45381f2f768c21867f30f58f65f4bc59b37dfbad089adad3d7a4d8e2ee1955e2",
+      "inputChecksum": "sha256:6197b6eab06744917f457f740bd1c3aeeaa07211c7cdad76037ef0926165c67a",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 20606,
+      "outputTokens": 1717,
+      "totalTokens": 22323
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue marius-patrik/Andromeda#211 at verified version a7fd6f13c2f79183a7ed00fccd5875a19c1212468c09c203eadbe79185d3f456 is blocked: the architecture decision, ownership boundary, persistence semantics, dependency sequencing, rollout, and objective validation contract remain incomplete.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-7052e61cf7b6c358610e",
+          "title": "Canonical backend is an unresolved owner decision",
+          "details": "The issue delegates the semantic choice between Postgres and config projection to the worker without recording an authenticated owner decision or objective selection criteria. The chosen source of truth materially determines architecture, operations, migration, and failure behavior and must be resolved before implementation.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-7f1b676fc836122b0351",
+          "title": "Implementation ownership and repository scope are unspecified",
+          "details": "The issue does not identify the owning child repository or gitlink, affected paths, branch/revision boundary, or non-goals. For the Andromeda submodule root, this leaves unclear whether the lane changes child source, umbrella pointers, configuration, or multiple repositories, so single-lane ownership and the required pointer contract cannot be verified.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-40b0a38a1c7093ec8db5",
+          "title": "Persistence and fallback semantics are not defined",
+          "details": "“Registry content,” active-role state, and switcher state lack a defined data model, atomicity and concurrency requirements, durability guarantees, source-of-truth rules, and behavior for unavailable, corrupt, stale, or partially migrated backends. “Deterministic local fallback” does not specify when fallback activates, whether writes are allowed, how divergence is prevented or reconciled, or how DSN credentials and stored data cross trust boundaries.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-de65473a05c8f96b83b8",
+          "title": "Dependencies and adjacent lane boundaries are unverifiable",
+          "details": "The dependency is described only as “gateway naming convergence” rather than an exact work item and verified completion condition; the matching open issue #210 remains unresolved in the supplied state. Ownership of active-role and switcher state also potentially intersects open issue #212, but the issue does not define the boundary or sequencing between those lanes.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-d2441edbb8562a639063",
+          "title": "Migration and rollout contract is incomplete",
+          "details": "Requiring operator documentation does not define migration mechanics. The issue lacks backup and integrity checks, idempotency, compatibility with existing YAML state, cutover and rollback behavior, handling of mixed-version deployments, and evidence proving that no registry or active-role state is lost.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-298450d444f40f4d8bfb",
+          "title": "Acceptance and validation are not objective enough",
+          "details": "Restart survival alone does not cover fallback, concurrency, failure recovery, migration, or active-role/switcher correctness. The issue does not identify authoritative tests, required CI versus optional live coverage, fixtures and failure cases, or the revision and evidence needed to prove delivery. Live validation being alternatively gated by an environment variable or container fixture also leaves the required gate undecided.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Owner question: Which backend is the canonical source of truth—Postgres or config projection—and what exact local-fallback, reconciliation, and operational availability contract is authorized?",
+        "Owner question: Which child repository and lane own registry persistence, and where is the boundary with issues #210 and #212?"
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-7052e61cf7b6c358610e",
+        "title": "Canonical backend is an unresolved owner decision",
+        "details": "The issue delegates the semantic choice between Postgres and config projection to the worker without recording an authenticated owner decision or objective selection criteria. The chosen source of truth materially determines architecture, operations, migration, and failure behavior and must be resolved before implementation.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-7f1b676fc836122b0351",
+        "title": "Implementation ownership and repository scope are unspecified",
+        "details": "The issue does not identify the owning child repository or gitlink, affected paths, branch/revision boundary, or non-goals. For the Andromeda submodule root, this leaves unclear whether the lane changes child source, umbrella pointers, configuration, or multiple repositories, so single-lane ownership and the required pointer contract cannot be verified.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-40b0a38a1c7093ec8db5",
+        "title": "Persistence and fallback semantics are not defined",
+        "details": "“Registry content,” active-role state, and switcher state lack a defined data model, atomicity and concurrency requirements, durability guarantees, source-of-truth rules, and behavior for unavailable, corrupt, stale, or partially migrated backends. “Deterministic local fallback” does not specify when fallback activates, whether writes are allowed, how divergence is prevented or reconciled, or how DSN credentials and stored data cross trust boundaries.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-de65473a05c8f96b83b8",
+        "title": "Dependencies and adjacent lane boundaries are unverifiable",
+        "details": "The dependency is described only as “gateway naming convergence” rather than an exact work item and verified completion condition; the matching open issue #210 remains unresolved in the supplied state. Ownership of active-role and switcher state also potentially intersects open issue #212, but the issue does not define the boundary or sequencing between those lanes.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-d2441edbb8562a639063",
+        "title": "Migration and rollout contract is incomplete",
+        "details": "Requiring operator documentation does not define migration mechanics. The issue lacks backup and integrity checks, idempotency, compatibility with existing YAML state, cutover and rollback behavior, handling of mixed-version deployments, and evidence proving that no registry or active-role state is lost.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-298450d444f40f4d8bfb",
+        "title": "Acceptance and validation are not objective enough",
+        "details": "Restart survival alone does not cover fallback, concurrency, failure recovery, migration, or active-role/switcher correctness. The issue does not identify authoritative tests, required CI versus optional live coverage, fixtures and failure cases, or the revision and evidence needed to prove delivery. Live validation being alternatively gated by an environment variable or container fixture also leaves the required gate undecided.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

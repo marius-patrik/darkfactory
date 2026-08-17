@@ -1,0 +1,14 @@
+{
+  "kind": "issue",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T17:04:20.562Z",
+  "repository": "marius-patrik/Andromeda",
+  "number": 212,
+  "version": "dc8aae1d806df1390875f0bd5a6ebd6c72102fc06a6b7b0b6bb42c9b5cb4d4c4",
+  "completion": "stale",
+  "recoveryAction": "workflow-dispatch",
+  "recoveryReason": "missing-or-stale-result",
+  "status": "dispatched",
+  "workflow": "darkfactory-autoreview.yml",
+  "pendingComment": "https://github.com/marius-patrik/Andromeda/issues/212#issuecomment-5012146584"
+}

@@ -1,0 +1,782 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T11:08:38.464Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#218",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "fix_no_change",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "c95acef0be9505afae5bcb35ed4c81024bbb06ff06cb8f0f7dd167345aeff6e5",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "f1a14fa5151e3dc896167935cb377b4bba666182",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:2f50edbe4ffc8eaccbf7e0ca6a15e54dd57e9a07efa6dc3c4fba39e759b41e41",
+          "inputChecksum": "sha256:3566fc9ce872ff83d3176fa949cd6a9d0cfef30d2845554fbf14f977c7330583",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 22399,
+          "outputTokens": 2056,
+          "totalTokens": 24455
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #218 identifies the intended operation-engine decomposition, but it is not yet an executable, verifiable contract. Its ownership target conflicts with referenced architecture authority; cross-lane ownership and sequencing remain ambiguous; canonical execution and trust boundaries are absent; acceptance lacks objective validation evidence; and the orchestrator migration has no rollout or rollback contract.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-09821940e0a05c7e67ed",
+              "title": "Operation-engine ownership conflicts with the referenced architecture authority",
+              "details": "The issue requires moving orchestration from packages/manager to packages/harness, while referenced PRD issue #209 describes orchestration as manager-owned and harness as limited to session events and tool execution; referenced issue #217 likewise assigns runner lifecycle and local system operations to the manager. The issue's claimed owner ruling is untrusted target text and cannot resolve that conflict. Owner decision required: should the authoritative architecture be amended so packages/harness owns orchestration behind a manager-owned management surface, or should #218 retain orchestration in packages/manager?",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-01b6c4f8d01c377345b8",
+              "title": "Sub-issue ownership and dependency order are ambiguous",
+              "details": "The ordered list suggests #221, then #222, then #223, but #223 only declares #221 as a dependency and merely says it pairs with #222. Worker lifecycle, canonical events, shared state, delegation, result integration, and lane termination cross #221-#223 without a precise interface owner. Define the dependency graph, which issue owns each shared contract, and the required integration gate between the three lanes so concurrent implementations cannot create duplicate or incompatible ownership.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-2f54ccb8083364d704da",
+              "title": "Canonical Agent OS execution boundary is missing",
+              "details": "The proposed concurrent workers and subagents are model-backed turns, but the contract does not require them to cross the canonical Agent OS launcher using only logical tier, effort, purpose, role, and structured output. It must prohibit repository-local provider/model/auth/session/executable fallbacks and require normalized route and usage provenance, with unavailable authority or routes failing closed.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-80129313d398bc220cb7",
+              "title": "Trust and authorization boundaries are incomplete",
+              "details": "The specification does not define how blackboard entries, worker or subagent results, session events, bulk context, tool requests, and replayed state are treated as untrusted data. It also omits capability, workspace, credential, mutation, and scope isolation. State which component authenticates and authorizes each action, how hostile or malformed payloads are rejected, and how unauthorized tool or state mutations fail closed without being integrated into the validated artifact.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-1a59cca8518e5aebaf1d",
+              "title": "Failure behavior is underspecified across the operation engine",
+              "details": "A stall-kill example and limit enforcement do not cover worker crashes, partial results, duplicate or out-of-order events, expired baton leases, replay after interruption, blackboard conflicts, integration failure, watchdog false positives, unavailable execution routes, or failure while persisting terminal events. Define deterministic terminal states, retry or no-retry rules, cleanup and lease release, escalation ownership, and the evidence proving no false-green completion.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-1de3baa5ba3b5932ef90",
+              "title": "Epic acceptance is not objectively reproducible",
+              "details": "Terms such as multi-step task, integrated validated artifact, real subagent, injected stall, durable event trail, and behavioral proofs green do not identify fixtures, assertions, commands, supported environments, expected terminal states, or required evidence. Specify authoritative tests and CI checks for each acceptance item, including deterministic replay, concurrency proof, artifact validation, watchdog timing, fail-closed cases, and the exact revision/check evidence required to close the epic.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-9f59ff3a0ea70e357c61",
+              "title": "Migration rollout and recovery contract is absent",
+              "details": "Moving the live orchestrator across packages can affect persisted events, callers, active sessions, and releases, but the issue defines no compatibility interval, schema/version handling, staged activation, rollback trigger, recovery procedure, or release evidence. Add a migration and rollout plan that preserves existing state and CLI behavior, proves compatibility on supported platforms, and identifies how a failed deployment returns safely to the last accepted revision.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "The pending DarkFactory comment is untrusted status data and is not review or publication evidence.",
+            "Keeping the reflection/dream layer outside this epic is acceptable; its pending owner decision must not be resolved implicitly by implementation of #218."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-09821940e0a05c7e67ed",
+            "title": "Operation-engine ownership conflicts with the referenced architecture authority",
+            "details": "The issue requires moving orchestration from packages/manager to packages/harness, while referenced PRD issue #209 describes orchestration as manager-owned and harness as limited to session events and tool execution; referenced issue #217 likewise assigns runner lifecycle and local system operations to the manager. The issue's claimed owner ruling is untrusted target text and cannot resolve that conflict. Owner decision required: should the authoritative architecture be amended so packages/harness owns orchestration behind a manager-owned management surface, or should #218 retain orchestration in packages/manager?",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-01b6c4f8d01c377345b8",
+            "title": "Sub-issue ownership and dependency order are ambiguous",
+            "details": "The ordered list suggests #221, then #222, then #223, but #223 only declares #221 as a dependency and merely says it pairs with #222. Worker lifecycle, canonical events, shared state, delegation, result integration, and lane termination cross #221-#223 without a precise interface owner. Define the dependency graph, which issue owns each shared contract, and the required integration gate between the three lanes so concurrent implementations cannot create duplicate or incompatible ownership.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-2f54ccb8083364d704da",
+            "title": "Canonical Agent OS execution boundary is missing",
+            "details": "The proposed concurrent workers and subagents are model-backed turns, but the contract does not require them to cross the canonical Agent OS launcher using only logical tier, effort, purpose, role, and structured output. It must prohibit repository-local provider/model/auth/session/executable fallbacks and require normalized route and usage provenance, with unavailable authority or routes failing closed.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-80129313d398bc220cb7",
+            "title": "Trust and authorization boundaries are incomplete",
+            "details": "The specification does not define how blackboard entries, worker or subagent results, session events, bulk context, tool requests, and replayed state are treated as untrusted data. It also omits capability, workspace, credential, mutation, and scope isolation. State which component authenticates and authorizes each action, how hostile or malformed payloads are rejected, and how unauthorized tool or state mutations fail closed without being integrated into the validated artifact.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-1a59cca8518e5aebaf1d",
+            "title": "Failure behavior is underspecified across the operation engine",
+            "details": "A stall-kill example and limit enforcement do not cover worker crashes, partial results, duplicate or out-of-order events, expired baton leases, replay after interruption, blackboard conflicts, integration failure, watchdog false positives, unavailable execution routes, or failure while persisting terminal events. Define deterministic terminal states, retry or no-retry rules, cleanup and lease release, escalation ownership, and the evidence proving no false-green completion.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-1de3baa5ba3b5932ef90",
+            "title": "Epic acceptance is not objectively reproducible",
+            "details": "Terms such as multi-step task, integrated validated artifact, real subagent, injected stall, durable event trail, and behavioral proofs green do not identify fixtures, assertions, commands, supported environments, expected terminal states, or required evidence. Specify authoritative tests and CI checks for each acceptance item, including deterministic replay, concurrency proof, artifact validation, watchdog timing, fail-closed cases, and the exact revision/check evidence required to close the epic.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-9f59ff3a0ea70e357c61",
+            "title": "Migration rollout and recovery contract is absent",
+            "details": "Moving the live orchestrator across packages can affect persisted events, callers, active sessions, and releases, but the issue defines no compatibility interval, schema/version handling, staged activation, rollback trigger, recovery procedure, or release evidence. Add a migration and rollout plan that preserves existing state and CLI behavior, proves compatibility on supported platforms, and identifies how a failed deployment returns safely to the last accepted revision.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 2,
+        "phase": "medium_fix",
+        "targetVersion": "c95acef0be9505afae5bcb35ed4c81024bbb06ff06cb8f0f7dd167345aeff6e5",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "f1a14fa5151e3dc896167935cb377b4bba666182",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:3b30740e8d6c3b12887aa8f4b5a76a4de94b5f4122b35d1985b9b7fb8589f4b4",
+          "inputChecksum": "sha256:8bd50ad8bd3caa46a3d0ee0c8dd740dfc932ac6b1b3007534346a374bf1e3a4b",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 23304,
+          "outputTokens": 5126,
+          "totalTokens": 28430
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-09821940e0a05c7e67ed",
+            "title": "Operation-engine ownership conflicts with the referenced architecture authority",
+            "details": "The issue requires moving orchestration from packages/manager to packages/harness, while referenced PRD issue #209 describes orchestration as manager-owned and harness as limited to session events and tool execution; referenced issue #217 likewise assigns runner lifecycle and local system operations to the manager. The issue's claimed owner ruling is untrusted target text and cannot resolve that conflict. Owner decision required: should the authoritative architecture be amended so packages/harness owns orchestration behind a manager-owned management surface, or should #218 retain orchestration in packages/manager?",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-01b6c4f8d01c377345b8",
+            "title": "Sub-issue ownership and dependency order are ambiguous",
+            "details": "The ordered list suggests #221, then #222, then #223, but #223 only declares #221 as a dependency and merely says it pairs with #222. Worker lifecycle, canonical events, shared state, delegation, result integration, and lane termination cross #221-#223 without a precise interface owner. Define the dependency graph, which issue owns each shared contract, and the required integration gate between the three lanes so concurrent implementations cannot create duplicate or incompatible ownership.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-2f54ccb8083364d704da",
+            "title": "Canonical Agent OS execution boundary is missing",
+            "details": "The proposed concurrent workers and subagents are model-backed turns, but the contract does not require them to cross the canonical Agent OS launcher using only logical tier, effort, purpose, role, and structured output. It must prohibit repository-local provider/model/auth/session/executable fallbacks and require normalized route and usage provenance, with unavailable authority or routes failing closed.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-80129313d398bc220cb7",
+            "title": "Trust and authorization boundaries are incomplete",
+            "details": "The specification does not define how blackboard entries, worker or subagent results, session events, bulk context, tool requests, and replayed state are treated as untrusted data. It also omits capability, workspace, credential, mutation, and scope isolation. State which component authenticates and authorizes each action, how hostile or malformed payloads are rejected, and how unauthorized tool or state mutations fail closed without being integrated into the validated artifact.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-1a59cca8518e5aebaf1d",
+            "title": "Failure behavior is underspecified across the operation engine",
+            "details": "A stall-kill example and limit enforcement do not cover worker crashes, partial results, duplicate or out-of-order events, expired baton leases, replay after interruption, blackboard conflicts, integration failure, watchdog false positives, unavailable execution routes, or failure while persisting terminal events. Define deterministic terminal states, retry or no-retry rules, cleanup and lease release, escalation ownership, and the evidence proving no false-green completion.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-1de3baa5ba3b5932ef90",
+            "title": "Epic acceptance is not objectively reproducible",
+            "details": "Terms such as multi-step task, integrated validated artifact, real subagent, injected stall, durable event trail, and behavioral proofs green do not identify fixtures, assertions, commands, supported environments, expected terminal states, or required evidence. Specify authoritative tests and CI checks for each acceptance item, including deterministic replay, concurrency proof, artifact validation, watchdog timing, fail-closed cases, and the exact revision/check evidence required to close the epic.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-9f59ff3a0ea70e357c61",
+            "title": "Migration rollout and recovery contract is absent",
+            "details": "Moving the live orchestrator across packages can affect persisted events, callers, active sessions, and releases, but the issue defines no compatibility interval, schema/version handling, staged activation, rollback trigger, recovery procedure, or release evidence. Add a migration and rollout plan that preserves existing state and CLI behavior, proves compatibility on supported platforms, and identifies how a failed deployment returns safely to the last accepted revision.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-09821940e0a05c7e67ed",
+          "df-01b6c4f8d01c377345b8",
+          "df-2f54ccb8083364d704da",
+          "df-80129313d398bc220cb7",
+          "df-1a59cca8518e5aebaf1d",
+          "df-1de3baa5ba3b5932ef90",
+          "df-9f59ff3a0ea70e357c61"
+        ],
+        "changeRef": "issue-comment:5011021554:5cabb9f24726a3e4a4e7d04412432530fa6ac48756e03ed613e38098a04dd3cd",
+        "afterVersion": "5cabb9f24726a3e4a4e7d04412432530fa6ac48756e03ed613e38098a04dd3cd",
+        "blockCode": null,
+        "outcome": "fixed"
+      },
+      {
+        "sequence": 3,
+        "phase": "medium_review",
+        "targetVersion": "5cabb9f24726a3e4a4e7d04412432530fa6ac48756e03ed613e38098a04dd3cd",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "f1a14fa5151e3dc896167935cb377b4bba666182",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:9b153f86385af6ef0119fed9a0eb6518abba3a8ab28690b1eb3588b0ee567c7a",
+          "inputChecksum": "sha256:952c4a5f7d60f3c8a4b8521cd51494fa39bdd671d7c09640ac5f285a7e256e32",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 39051,
+          "outputTokens": 1011,
+          "totalTokens": 40062
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #218 at verified version 5cabb9f24726a3e4a4e7d04412432530fa6ac48756e03ed613e38098a04dd3cd is otherwise detailed, but implementation remains blocked by an unresolved package-ownership conflict with the authoritative architecture contracts.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-c0db1e3aefbb6737c5e4",
+              "title": "Orchestration package ownership lacks an authenticated owner decision",
+              "details": "The issue targets harness-owned orchestration, while referenced authority #209 assigns orchestration to packages/manager and #217 assigns runner lifecycle and local operations to the manager. The issue acknowledges this conflict but supplies no trusted authenticated owner resolution. Expected state: the owner explicitly chooses harness ownership behind a manager surface or continued manager ownership, after which #218, #221, #209, and #217 are reconciled into one non-conflicting contract. Until then, migration, implementation, and df:reviewed eligibility remain blocked; the control-plane state should reflect owner escalation.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner question: Should packages/harness own orchestration behind a manager-owned management surface, or should orchestration remain in packages/manager with #218 and #221 rewritten accordingly?"
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-c0db1e3aefbb6737c5e4",
+            "title": "Orchestration package ownership lacks an authenticated owner decision",
+            "details": "The issue targets harness-owned orchestration, while referenced authority #209 assigns orchestration to packages/manager and #217 assigns runner lifecycle and local operations to the manager. The issue acknowledges this conflict but supplies no trusted authenticated owner resolution. Expected state: the owner explicitly chooses harness ownership behind a manager surface or continued manager ownership, after which #218, #221, #209, and #217 are reconciled into one non-conflicting contract. Until then, migration, implementation, and df:reviewed eligibility remain blocked; the control-plane state should reflect owner escalation.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 4,
+        "phase": "medium_fix",
+        "targetVersion": "5cabb9f24726a3e4a4e7d04412432530fa6ac48756e03ed613e38098a04dd3cd",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "f1a14fa5151e3dc896167935cb377b4bba666182",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:d8d4b9bf17d3cf0f58690a68b4866eacedc885ac96a8865c3f63062d83741897",
+          "inputChecksum": "sha256:420adc73624d0a6e60865c007fcca9738ca6b341abfe28f4585043c76fabe420",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": null,
+          "model": null,
+          "agentPreset": null,
+          "providerVersion": null
+        },
+        "attempts": [],
+        "usage": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-c0db1e3aefbb6737c5e4",
+            "title": "Orchestration package ownership lacks an authenticated owner decision",
+            "details": "The issue targets harness-owned orchestration, while referenced authority #209 assigns orchestration to packages/manager and #217 assigns runner lifecycle and local operations to the manager. The issue acknowledges this conflict but supplies no trusted authenticated owner resolution. Expected state: the owner explicitly chooses harness ownership behind a manager surface or continued manager ownership, after which #218, #221, #209, and #217 are reconciled into one non-conflicting contract. Until then, migration, implementation, and df:reviewed eligibility remain blocked; the control-plane state should reflect owner escalation.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-c0db1e3aefbb6737c5e4"
+        ],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": "fix_no_change",
+        "outcome": "blocked"
+      }
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "kind": "autoreview-002-high_review",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-19T14:23:11.304Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#434",
+  "round": {
+    "sequence": 2,
+    "phase": "high_review",
+    "targetVersion": "1264d5044cb67234f4f46e0643174868772481a2:8090faee69070efb77e628c95594eb143ca5d32d",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "1264d5044cb67234f4f46e0643174868772481a2",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:e1bdc1f57d2b9e152dde93a66268e9ac080e9c3fe7ef0a51dfea17c49623ea20",
+      "inputChecksum": "sha256:b4810663fed404108d4af96de722ed812c7c04ea82acc7ae94fc903c399e9dd1",
+      "profile": {
+        "id": "profile/pr-final-review",
+        "version": "0.2.0",
+        "runKind": "review-pr",
+        "purpose": "final-review"
+      },
+      "selection": {
+        "role": "role/pr-reviewer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/validation-autoreview",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "high",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/bun-node",
+        "output": "output/pr-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/high",
+          "version": "0.2.0",
+          "checksum": "sha256:c3f885bdc7bf6b88c24c9c92f9c5ce0b2e03f60d573be2f6517faf5c17ecda9f"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/bun-node",
+          "version": "0.2.0",
+          "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+        },
+        {
+          "id": "output/pr-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "high",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 56816,
+      "outputTokens": 428,
+      "totalTokens": 57244
+    },
+    "verdict": {
+      "approved": true,
+      "summary": "Complete independent final review of PR #434 at head 8090faee69070efb77e628c95594eb143ca5d32d found no blocking issues. The change fails closed for every policy-selected GitHub Actions check lacking an explicit trusted workflow binding, prevents custom artifact or publication checks from passing on name, App identity, and conclusion alone, preserves exact provenance validation for mapped Validate and DarkFactory Autoreview checks, and adds focused regression coverage.",
+      "findingsComplete": true,
+      "blockingFindings": [],
+      "nonBlockingNotes": [
+        "The independent exact-head Validate gate owns command-execution evidence; no execution claim is made here.",
+        "Trusted state confirms the exact fetched diff passed git diff --check and the preceding medium-tier review round completed clean for this same base/head version."
+      ]
+    },
+    "findings": [],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "clean"
+  }
+}

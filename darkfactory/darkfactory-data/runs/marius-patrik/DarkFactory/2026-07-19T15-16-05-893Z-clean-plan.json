@@ -1,0 +1,1961 @@
+{
+  "kind": "clean-plan",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-19T15:16:05.893Z",
+  "control_revision": "26bc106440a4c056115ba050c4a017e82b9ada76",
+  "plan_id": "clean-6de919b6e5b54cbdda234779",
+  "evidence_hash": "6de919b6e5b54cbdda2347797cb1843b3d49cb3e3b39516863fa2b495d2d5e94",
+  "entries": [
+    {
+      "kind": "remote-branch",
+      "target": "dev",
+      "head": "975775f41839709f63bfa3944694403866473bf5",
+      "classification": "protected-policy",
+      "action": "preserve",
+      "reasons": [
+        "Protected or policy branch is immutable."
+      ]
+    },
+    {
+      "kind": "remote-branch",
+      "target": "main",
+      "head": "26bc106440a4c056115ba050c4a017e82b9ada76",
+      "classification": "protected-policy",
+      "action": "preserve",
+      "reasons": [
+        "Protected or policy branch is immutable."
+      ]
+    },
+    {
+      "kind": "worktree",
+      "target": "wt-628509f426465dd4",
+      "head": "26bc106440a4c056115ba050c4a017e82b9ada76",
+      "classification": "active-worktree",
+      "action": "preserve",
+      "reasons": [
+        "Worktree is active, dirty, untracked, submodule-dirty, or does not exactly match the observed branch head."
+      ]
+    },
+    {
+      "kind": "remote-branch",
+      "target": "reconcile/26bc1064-975775f4",
+      "head": "929fcf5bab99dd7291429989de465f41b8663c91",
+      "classification": "open-pr",
+      "action": "preserve",
+      "reasons": [
+        "Exact head belongs to open PR #442."
+      ]
+    },
+    {
+      "kind": "remote-branch",
+      "target": "wip/receipt-v3-tool-policy",
+      "head": "5e4b7e53b9ef9cbdb13fe91e0c32cfc421b60c82",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "No exact ancestry, tree-equivalence, or merged-PR preservation proof."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "dev",
+      "head": "975775f41839709f63bfa3944694403866473bf5",
+      "classification": "protected-policy",
+      "action": "preserve",
+      "reasons": [
+        "Protected or policy branch is immutable."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "feat/263-clean-lane-completion",
+      "head": "6e02372d338b1b0277d584b132e90dcb2dfab703",
+      "classification": "unpublished",
+      "action": "preserve",
+      "reasons": [
+        "Local branch has unpublished commits or is ahead of its observed remote."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "feat/276-tagged-release-producer",
+      "head": "28cab0e9eed01514c9d0939d9aa579db37045db5",
+      "classification": "proven-merged",
+      "action": "delete",
+      "reasons": [
+        "Head is contained by dev, main."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "fix/autoreview-automation-provenance",
+      "head": "d40049be1fa73247232699344a64f4d1ff1d8f20",
+      "classification": "proven-merged",
+      "action": "delete",
+      "reasons": [
+        "Head is contained by dev, main."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "main",
+      "head": "26bc106440a4c056115ba050c4a017e82b9ada76",
+      "classification": "protected-policy",
+      "action": "preserve",
+      "reasons": [
+        "Protected or policy branch is immutable."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "wip/43-superseded-prototype",
+      "head": "8597cf832738de152108a3ab7e2d298037cc9204",
+      "classification": "unpublished",
+      "action": "preserve",
+      "reasons": [
+        "Local branch has unpublished commits or is ahead of its observed remote."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "wip/receipt-v3-tool-policy",
+      "head": "5e4b7e53b9ef9cbdb13fe91e0c32cfc421b60c82",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "No exact ancestry, tree-equivalence, or merged-PR preservation proof."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/dev",
+      "head": "975775f41839709f63bfa3944694403866473bf5",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/HEAD",
+      "head": "26bc106440a4c056115ba050c4a017e82b9ada76",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/main",
+      "head": "26bc106440a4c056115ba050c4a017e82b9ada76",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/reconcile/26bc1064-975775f4",
+      "head": "929fcf5bab99dd7291429989de465f41b8663c91",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/wip/receipt-v3-tool-policy",
+      "head": "5e4b7e53b9ef9cbdb13fe91e0c32cfc421b60c82",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/tags/v0.2.0",
+      "head": "6a89264ee5e5d82332cbe5a1163c1475cbaaf941",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/tags/v0.3.0",
+      "head": "f1a14fa5151e3dc896167935cb377b4bba666182",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "pull-request",
+      "target": "#442",
+      "head": "929fcf5bab99dd7291429989de465f41b8663c91",
+      "classification": "red",
+      "action": "autoreview",
+      "version": "975775f41839709f63bfa3944694403866473bf5:929fcf5bab99dd7291429989de465f41b8663c91",
+      "base": "dev",
+      "baseSha": "975775f41839709f63bfa3944694403866473bf5",
+      "headRef": "reconcile/26bc1064-975775f4",
+      "reasons": [
+        "Exact 975775f41839709f63bfa3944694403866473bf5:929fcf5bab99dd7291429989de465f41b8663c91 is a live PR version requiring the shared Autoreview/fix protocol.",
+        "pr-442-not-mergeable",
+        "pr-442-red"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#6",
+      "head": "222afdebc7c50a638a41b67769e39fdfb78d9ad2bd46b8815a20723ed04a13f8",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "222afdebc7c50a638a41b67769e39fdfb78d9ad2bd46b8815a20723ed04a13f8",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-6-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#8",
+      "head": "3c0f06d861d6ea77fe5e43608c5d6c77bc97685d8db4e764d1a0950f9581952f",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "3c0f06d861d6ea77fe5e43608c5d6c77bc97685d8db4e764d1a0950f9581952f",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-8-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#11",
+      "head": "21f022f5f30b49cb03e1dbf560309768b1dfcbbe5380cd5ff8233824dda17412",
+      "classification": "current",
+      "action": "preserve",
+      "version": "21f022f5f30b49cb03e1dbf560309768b1dfcbbe5380cd5ff8233824dda17412",
+      "reasons": [
+        "Issue contract is current under deterministic lane review."
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#12",
+      "head": "a88e4d657f9beb08d7d8408cad1384e898aaaac947db657285bc7b24a5e6151b",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "a88e4d657f9beb08d7d8408cad1384e898aaaac947db657285bc7b24a5e6151b",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-12-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#13",
+      "head": "3470e39943a0cf92274a92d1824f8e5c4b72c9f6309bb6d10374828e94ec9a28",
+      "classification": "current",
+      "action": "preserve",
+      "version": "3470e39943a0cf92274a92d1824f8e5c4b72c9f6309bb6d10374828e94ec9a28",
+      "reasons": [
+        "Issue contract is current under deterministic lane review."
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#17",
+      "head": "9a7b15dcf7e76d14aa47c554dd9a57a2374cc3e0476bd75ec4def25b10b6d789",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "9a7b15dcf7e76d14aa47c554dd9a57a2374cc3e0476bd75ec4def25b10b6d789",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-17-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#19",
+      "head": "9e2f5b25e658f28bec2363ab2b45546671306c20baad5a12d7f9c7f2055c63bf",
+      "classification": "current",
+      "action": "preserve",
+      "version": "9e2f5b25e658f28bec2363ab2b45546671306c20baad5a12d7f9c7f2055c63bf",
+      "reasons": [
+        "Issue contract is current under deterministic lane review."
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#24",
+      "head": "48d9c87dd8df9d9d3076e7a7a2622c56830259e474e01eef924278d7b2aa762d",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "48d9c87dd8df9d9d3076e7a7a2622c56830259e474e01eef924278d7b2aa762d",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-24-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#26",
+      "head": "64abf30b8aa0f0ed61a029a59061eea5797cdff0426147b20a118b47cad59f40",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "64abf30b8aa0f0ed61a029a59061eea5797cdff0426147b20a118b47cad59f40",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-26-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#29",
+      "head": "576bb12b026eab9ec1fcba9f10a98983ab70b838fcaead71b64b9efd515c9b8a",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "576bb12b026eab9ec1fcba9f10a98983ab70b838fcaead71b64b9efd515c9b8a",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-29-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#32",
+      "head": "92693f34bff45f4a40d2145263c5bbc6876158770b706d6bcd2ef3b04d51d5d9",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "92693f34bff45f4a40d2145263c5bbc6876158770b706d6bcd2ef3b04d51d5d9",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-32-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#35",
+      "head": "ab18572dc593df276f85cedc826a600b86adccfc4ad2f6d481dfd545264e2254",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "ab18572dc593df276f85cedc826a600b86adccfc4ad2f6d481dfd545264e2254",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-35-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#36",
+      "head": "65c92df0f78be046df1711b393a395c9e00cc235a8c79a18b09135167d01ad2c",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "65c92df0f78be046df1711b393a395c9e00cc235a8c79a18b09135167d01ad2c",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-36-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#37",
+      "head": "f2d9443dc251700dd3c2971e30338120a6b6585c55ff245e0f5e94a315a32726",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "f2d9443dc251700dd3c2971e30338120a6b6585c55ff245e0f5e94a315a32726",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-37-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#38",
+      "head": "76fa1e5687361b8a12aa95a701a1de60bb5e39931fe9998567bb045b59359be1",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "76fa1e5687361b8a12aa95a701a1de60bb5e39931fe9998567bb045b59359be1",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-38-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#39",
+      "head": "4afb20419a713bb6ecb1a2a1641b30bd20730c65bc46e51ad216d875180838f3",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "4afb20419a713bb6ecb1a2a1641b30bd20730c65bc46e51ad216d875180838f3",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-39-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#41",
+      "head": "6e9c98787b0d24ac083d5c5f40faef38fec228b616cf3430d6d592663effa062",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "6e9c98787b0d24ac083d5c5f40faef38fec228b616cf3430d6d592663effa062",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-41-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#43",
+      "head": "de6bdb3398c0fdefa7ad661878fdf6b8552fedbefbf775da983d5b25bcd963bf",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "de6bdb3398c0fdefa7ad661878fdf6b8552fedbefbf775da983d5b25bcd963bf",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-43-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#46",
+      "head": "247be8d5dc2046915638e25ee057845331a71b070e1e66d42cc69ff245e2a754",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "247be8d5dc2046915638e25ee057845331a71b070e1e66d42cc69ff245e2a754",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-46-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#48",
+      "head": "4c462a849b825ba71a51dbcedb8c18824fe0c5eca14a1a5eb94003063a99e028",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "4c462a849b825ba71a51dbcedb8c18824fe0c5eca14a1a5eb94003063a99e028",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-48-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#49",
+      "head": "8eb42da5ba8a6ad7850cf4625f8c7c2507dd1c877b4560ad9b91c529f5663674",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "8eb42da5ba8a6ad7850cf4625f8c7c2507dd1c877b4560ad9b91c529f5663674",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-49-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#50",
+      "head": "db8fd8e6182c50297f4c55238f1ad3d128c0f9930f4ea0de16e6d17442ce881e",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "db8fd8e6182c50297f4c55238f1ad3d128c0f9930f4ea0de16e6d17442ce881e",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-50-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#51",
+      "head": "3aa8616438efa453e97db9bd2c9936eb599bd67a9a936b6256b51b7fdc4cf212",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "3aa8616438efa453e97db9bd2c9936eb599bd67a9a936b6256b51b7fdc4cf212",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-51-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#53",
+      "head": "ab905bfdf8256bdc20f086906175a91ea0cd8f01ba16d642a7da2d7c4d04fbd2",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "ab905bfdf8256bdc20f086906175a91ea0cd8f01ba16d642a7da2d7c4d04fbd2",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-53-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#54",
+      "head": "a40858b531abe24bcff7034c9f971f4e146e72352c3a2a443f466ed903ac9eae",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "a40858b531abe24bcff7034c9f971f4e146e72352c3a2a443f466ed903ac9eae",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-54-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#55",
+      "head": "e51ecf3baa1a0a1d55ef53af3de47fe514bc5f5ed7b0b8c2a54de19075aee0a6",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "e51ecf3baa1a0a1d55ef53af3de47fe514bc5f5ed7b0b8c2a54de19075aee0a6",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-55-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#166",
+      "head": "77bb71fd38b1ff0eef879d732db013438abc3d352a251717817549fd2ba4346e",
+      "classification": "current",
+      "action": "preserve",
+      "version": "77bb71fd38b1ff0eef879d732db013438abc3d352a251717817549fd2ba4346e",
+      "reasons": [
+        "Issue contract is current under deterministic lane review."
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#255",
+      "head": "5cda33111be6f74e8adcc900e2d32c3447319c0e33f756a0d01a0b545d00941c",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "5cda33111be6f74e8adcc900e2d32c3447319c0e33f756a0d01a0b545d00941c",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-255-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#256",
+      "head": "6e2893d0791af9ca5bfea9737e610374045664fc773bbc0277007111b4ae465f",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "6e2893d0791af9ca5bfea9737e610374045664fc773bbc0277007111b4ae465f",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-256-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#257",
+      "head": "00de76d1f282893e40f0efd6644d9086f7269b44eda48d88fa208689142f5718",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "00de76d1f282893e40f0efd6644d9086f7269b44eda48d88fa208689142f5718",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-257-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#260",
+      "head": "a56288247c5701299bc7912be7a68a5ec4540b113d5132431906c67e9643f09e",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "a56288247c5701299bc7912be7a68a5ec4540b113d5132431906c67e9643f09e",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-260-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#261",
+      "head": "a3e203251cadda5838538d30caec104a6a3fd172eccf51064a8555adf48cd366",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "a3e203251cadda5838538d30caec104a6a3fd172eccf51064a8555adf48cd366",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-261-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#263",
+      "head": "c90f647c8ce981c10d62b982e74552291b6d06cc610fdc67708437e732ef1971",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "c90f647c8ce981c10d62b982e74552291b6d06cc610fdc67708437e732ef1971",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-263-contentless-contract"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#274",
+      "head": "210cff8478b1bb45fee567cb3d11acfdaf8ef08383db5f57d34e4c0e6a183981",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "210cff8478b1bb45fee567cb3d11acfdaf8ef08383db5f57d34e4c0e6a183981",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-274-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#276",
+      "head": "913e3fa071d858c86130b0d9900217bf4eb43f2337902ee0758e4e61e956c10a",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "913e3fa071d858c86130b0d9900217bf4eb43f2337902ee0758e4e61e956c10a",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-276-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#278",
+      "head": "1163366878282d838d75f545a191664655f632b7510a589818b5d478d96ae405",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "1163366878282d838d75f545a191664655f632b7510a589818b5d478d96ae405",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-278-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#280",
+      "head": "5579ae0f8a6920ada1783be78fcc675827da8d8c72169646783d3a2418e20b05",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "5579ae0f8a6920ada1783be78fcc675827da8d8c72169646783d3a2418e20b05",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-280-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#284",
+      "head": "f6dd9f58217d51d22b8ac811ee62d2a614b5c671f4142b2437584d53f5d5dbf6",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "f6dd9f58217d51d22b8ac811ee62d2a614b5c671f4142b2437584d53f5d5dbf6",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-284-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#360",
+      "head": "c14ca5e40e0d4975fa252269bbe9882048443c2d3c1bdc0f30b65cc28ac55f13",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "c14ca5e40e0d4975fa252269bbe9882048443c2d3c1bdc0f30b65cc28ac55f13",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-360-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#362",
+      "head": "f04942917f0cc888be3c5b1533437de732d5fda39904a38ab127997f8fd416e0",
+      "classification": "finding",
+      "action": "preserve",
+      "version": "f04942917f0cc888be3c5b1533437de732d5fda39904a38ab127997f8fd416e0",
+      "reasons": [
+        "The finding is blocked or owner-owned; issue text and scope remain immutable.",
+        "duplicate-issue-title-resolve-semantic-release-reconciliation-conflict",
+        "issue-362-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#364",
+      "head": "08d5490437cfd5e4f1ddd00402c6d033d764272db3fcc06132cfbab0f6339f71",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "08d5490437cfd5e4f1ddd00402c6d033d764272db3fcc06132cfbab0f6339f71",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-364-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#366",
+      "head": "9d24876f9e83b3fdffaed1ac991f041ae969fa4993f10505cb773e0e7494cda3",
+      "classification": "finding",
+      "action": "preserve",
+      "version": "9d24876f9e83b3fdffaed1ac991f041ae969fa4993f10505cb773e0e7494cda3",
+      "reasons": [
+        "The finding is blocked or owner-owned; issue text and scope remain immutable.",
+        "duplicate-issue-title-resolve-semantic-release-reconciliation-conflict",
+        "issue-366-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#380",
+      "head": "8229e082a9df273bc9b6b1ab4b220db0b8e6f4752ac26ae290294b7f6c91d166",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "8229e082a9df273bc9b6b1ab4b220db0b8e6f4752ac26ae290294b7f6c91d166",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-380-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#382",
+      "head": "fd26a7ea92d4b9cf5408820b8053a440ef4786ef3aa411c0ad0f4f0e61945cd8",
+      "classification": "finding",
+      "action": "preserve",
+      "version": "fd26a7ea92d4b9cf5408820b8053a440ef4786ef3aa411c0ad0f4f0e61945cd8",
+      "reasons": [
+        "The finding is blocked or owner-owned; issue text and scope remain immutable.",
+        "duplicate-issue-title-resolve-semantic-release-reconciliation-conflict",
+        "issue-382-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#396",
+      "head": "15f7ce8b353b8b8dbd54f088e9348ec3d75b53627b15b3f0837b7822c5a9f03a",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "15f7ce8b353b8b8dbd54f088e9348ec3d75b53627b15b3f0837b7822c5a9f03a",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-396-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#399",
+      "head": "fe6baf21518acb6882a23fcb7eb790c22bf79b3c93a953ab6ebb05d0ab3fcfdd",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "fe6baf21518acb6882a23fcb7eb790c22bf79b3c93a953ab6ebb05d0ab3fcfdd",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-399-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#443",
+      "head": "e51f420c41ed4a7bbb2857eaaec4c4e51b6cdf30948aae4288fde0e8c5e8ff4d",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "e51f420c41ed4a7bbb2857eaaec4c4e51b6cdf30948aae4288fde0e8c5e8ff4d",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-443-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "managed-label",
+      "target": "df:fix-round:1",
+      "head": "e19fe90d364937b660fc93c09ffdd1851e6856ad3775d6cf9812681bdb10418b",
+      "classification": "review-finding",
+      "action": "delete-label",
+      "managedLabel": {
+        "findingId": "label-df-fix-round-1-orphan",
+        "findingFingerprint": "e19fe90d364937b660fc93c09ffdd1851e6856ad3775d6cf9812681bdb10418b",
+        "name": "df:fix-round:1",
+        "color": "c2e0c6",
+        "description": "DarkFactory autonomous fix cycle round 1",
+        "policyPath": ".darkfactory/labels.json",
+        "policyBlob": "005b55151ffd17c778f0f20222a74c3ee7dd531f",
+        "policyRef": "dev",
+        "policyRevision": "975775f41839709f63bfa3944694403866473bf5"
+      },
+      "reasons": [
+        "Exact policy-owned label is absent from the current managed taxonomy and may be deleted only while its color and description remain unchanged."
+      ]
+    },
+    {
+      "kind": "managed-label",
+      "target": "df:fix-round:2",
+      "head": "29d8796a6b47cf87f5ab6bba29265aa6753951b76bc6eb821802732c3dd8b85b",
+      "classification": "review-finding",
+      "action": "delete-label",
+      "managedLabel": {
+        "findingId": "label-df-fix-round-2-orphan",
+        "findingFingerprint": "29d8796a6b47cf87f5ab6bba29265aa6753951b76bc6eb821802732c3dd8b85b",
+        "name": "df:fix-round:2",
+        "color": "c2e0c6",
+        "description": "DarkFactory autonomous fix cycle round 2",
+        "policyPath": ".darkfactory/labels.json",
+        "policyBlob": "005b55151ffd17c778f0f20222a74c3ee7dd531f",
+        "policyRef": "dev",
+        "policyRevision": "975775f41839709f63bfa3944694403866473bf5"
+      },
+      "reasons": [
+        "Exact policy-owned label is absent from the current managed taxonomy and may be deleted only while its color and description remain unchanged."
+      ]
+    },
+    {
+      "kind": "managed-label",
+      "target": "df:fix-round:3",
+      "head": "5dc47c3d9b1aac9357d94b7c1f154d1d92ce8d567931b74f858203fe93b09a83",
+      "classification": "review-finding",
+      "action": "delete-label",
+      "managedLabel": {
+        "findingId": "label-df-fix-round-3-orphan",
+        "findingFingerprint": "5dc47c3d9b1aac9357d94b7c1f154d1d92ce8d567931b74f858203fe93b09a83",
+        "name": "df:fix-round:3",
+        "color": "c2e0c6",
+        "description": "DarkFactory autonomous fix cycle round 3",
+        "policyPath": ".darkfactory/labels.json",
+        "policyBlob": "005b55151ffd17c778f0f20222a74c3ee7dd531f",
+        "policyRef": "dev",
+        "policyRevision": "975775f41839709f63bfa3944694403866473bf5"
+      },
+      "reasons": [
+        "Exact policy-owned label is absent from the current managed taxonomy and may be deleted only while its color and description remain unchanged."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#285",
+      "head": "8d5fea2b2e56e898e63e2cfe826d445830980bf792bbd4c3f9eda8cd9b166ddd",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "8d5fea2b2e56e898e63e2cfe826d445830980bf792bbd4c3f9eda8cd9b166ddd",
+      "markerIssue": {
+        "number": 285,
+        "version": "8d5fea2b2e56e898e63e2cfe826d445830980bf792bbd4c3f9eda8cd9b166ddd",
+        "marker": "df-doctor:marius-patrik-darkfactory:darkfactory-command-unrunnable",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#286",
+      "head": "6375b5f994970daac90d545c99dadb0e50e192759be2360ed493e8e0ca330b78",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "6375b5f994970daac90d545c99dadb0e50e192759be2360ed493e8e0ca330b78",
+      "markerIssue": {
+        "number": 286,
+        "version": "6375b5f994970daac90d545c99dadb0e50e192759be2360ed493e8e0ca330b78",
+        "marker": "df-doctor:marius-patrik-darkfactory:darkfactory-package-unregistered",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#322",
+      "head": "335c0dce6fe59ad3bd03e6edecf420f9b65871ecaad3efe4753043b4e1e959f2",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "335c0dce6fe59ad3bd03e6edecf420f9b65871ecaad3efe4753043b4e1e959f2",
+      "markerIssue": {
+        "number": 322,
+        "version": "335c0dce6fe59ad3bd03e6edecf420f9b65871ecaad3efe4753043b4e1e959f2",
+        "marker": "df-doctor:marius-patrik-darkfactory:label-df-class-hard-drift",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#323",
+      "head": "9ebda7bc3eac7c5a8120c4a7100257decc352ae8d3bc3cee2044d85e17db6d9c",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "9ebda7bc3eac7c5a8120c4a7100257decc352ae8d3bc3cee2044d85e17db6d9c",
+      "markerIssue": {
+        "number": 323,
+        "version": "9ebda7bc3eac7c5a8120c4a7100257decc352ae8d3bc3cee2044d85e17db6d9c",
+        "marker": "df-doctor:marius-patrik-darkfactory:label-df-class-mechanical-drift",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#324",
+      "head": "8c3ba9cdc248fed08ce5ea713b806f1272cd741dacea4f479e433a3c586758d9",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "8c3ba9cdc248fed08ce5ea713b806f1272cd741dacea4f479e433a3c586758d9",
+      "markerIssue": {
+        "number": 324,
+        "version": "8c3ba9cdc248fed08ce5ea713b806f1272cd741dacea4f479e433a3c586758d9",
+        "marker": "df-doctor:marius-patrik-darkfactory:label-df-class-standard-drift",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#328",
+      "head": "8b219fa43c35de0e729df5ac679c1b84ce46bb7c99f10a809f7c49cf6a5ca14e",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "8b219fa43c35de0e729df5ac679c1b84ce46bb7c99f10a809f7c49cf6a5ca14e",
+      "markerIssue": {
+        "number": 328,
+        "version": "8b219fa43c35de0e729df5ac679c1b84ce46bb7c99f10a809f7c49cf6a5ca14e",
+        "marker": "df-doctor:marius-patrik-darkfactory:managed-file-drift-agents-md",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#329",
+      "head": "f5d578979dd42112e1dd0cdbb7e9deef96358cc645ed2a62178258131532e238",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "f5d578979dd42112e1dd0cdbb7e9deef96358cc645ed2a62178258131532e238",
+      "markerIssue": {
+        "number": 329,
+        "version": "f5d578979dd42112e1dd0cdbb7e9deef96358cc645ed2a62178258131532e238",
+        "marker": "df-doctor:marius-patrik-darkfactory:managed-file-drift-darkfactory-branching-policy-md",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#330",
+      "head": "9cde76aab82642a95fe0297bb13bd96a603ad26d9548f98e83b251ccc573df15",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "9cde76aab82642a95fe0297bb13bd96a603ad26d9548f98e83b251ccc573df15",
+      "markerIssue": {
+        "number": 330,
+        "version": "9cde76aab82642a95fe0297bb13bd96a603ad26d9548f98e83b251ccc573df15",
+        "marker": "df-doctor:marius-patrik-darkfactory:managed-file-drift-darkfactory-installer-policy-json",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#331",
+      "head": "f5f066f5fdb8defc9d5a72bc68b274f8e97e4715db6b709b696e597745ae69e9",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "f5f066f5fdb8defc9d5a72bc68b274f8e97e4715db6b709b696e597745ae69e9",
+      "markerIssue": {
+        "number": 331,
+        "version": "f5f066f5fdb8defc9d5a72bc68b274f8e97e4715db6b709b696e597745ae69e9",
+        "marker": "df-doctor:marius-patrik-darkfactory:managed-file-drift-darkfactory-labels-json",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#332",
+      "head": "65d947540a04e95a516adbdb5d8d63d6985d1d08e15731e8db1a992dab1274e9",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "65d947540a04e95a516adbdb5d8d63d6985d1d08e15731e8db1a992dab1274e9",
+      "markerIssue": {
+        "number": 332,
+        "version": "65d947540a04e95a516adbdb5d8d63d6985d1d08e15731e8db1a992dab1274e9",
+        "marker": "df-doctor:marius-patrik-darkfactory:managed-file-drift-darkfactory-managed-repos-json",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#333",
+      "head": "bf930d9f96f1e339ee5b269106873d2d54118ed5c21c09e3f7e57f0a274f5a9f",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "bf930d9f96f1e339ee5b269106873d2d54118ed5c21c09e3f7e57f0a274f5a9f",
+      "markerIssue": {
+        "number": 333,
+        "version": "bf930d9f96f1e339ee5b269106873d2d54118ed5c21c09e3f7e57f0a274f5a9f",
+        "marker": "df-doctor:marius-patrik-darkfactory:managed-file-drift-darkfactory-managed-repository-json",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#334",
+      "head": "9dd599d637c93661c213e7e5be62a8b867bd9ea04143d1410fe53aaaeac2ce08",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "9dd599d637c93661c213e7e5be62a8b867bd9ea04143d1410fe53aaaeac2ce08",
+      "markerIssue": {
+        "number": 334,
+        "version": "9dd599d637c93661c213e7e5be62a8b867bd9ea04143d1410fe53aaaeac2ce08",
+        "marker": "df-doctor:marius-patrik-darkfactory:managed-file-drift-github-scripts-dark-factory-managed-check-mjs",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#335",
+      "head": "ddc5b924f1d91de45fe64b1a1326b5e1980420452f303b271545ec7c91857a2a",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "ddc5b924f1d91de45fe64b1a1326b5e1980420452f303b271545ec7c91857a2a",
+      "markerIssue": {
+        "number": 335,
+        "version": "ddc5b924f1d91de45fe64b1a1326b5e1980420452f303b271545ec7c91857a2a",
+        "marker": "df-doctor:marius-patrik-darkfactory:managed-file-drift-github-workflows-ci-yml",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#338",
+      "head": "a1347aefa60363a5ea2c3fe9e6bb7125c89faed9bbd709e8037fc3bf8387b419",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "a1347aefa60363a5ea2c3fe9e6bb7125c89faed9bbd709e8037fc3bf8387b419",
+      "markerIssue": {
+        "number": 338,
+        "version": "a1347aefa60363a5ea2c3fe9e6bb7125c89faed9bbd709e8037fc3bf8387b419",
+        "marker": "df-doctor:marius-patrik-darkfactory:workflow-main-darkfactory-repository-doctor-pending",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#339",
+      "head": "4bbaa92383556f7f3f62a60447f740ce281b853575dfbf6f7b7be4f41bece6b1",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "4bbaa92383556f7f3f62a60447f740ce281b853575dfbf6f7b7be4f41bece6b1",
+      "markerIssue": {
+        "number": 339,
+        "version": "4bbaa92383556f7f3f62a60447f740ce281b853575dfbf6f7b7be4f41bece6b1",
+        "marker": "df-doctor:marius-patrik-darkfactory:workflow-main-head-checks-pending",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#346",
+      "head": "cb89143388cfd76cebf4c67e0a65fab91edf58475cc6f7046aaf63b79cf394ac",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "cb89143388cfd76cebf4c67e0a65fab91edf58475cc6f7046aaf63b79cf394ac",
+      "markerIssue": {
+        "number": 346,
+        "version": "cb89143388cfd76cebf4c67e0a65fab91edf58475cc6f7046aaf63b79cf394ac",
+        "marker": "df-doctor:marius-patrik-darkfactory:darkfactory-ledger-unreachable",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#347",
+      "head": "b8053018c3a8f1664783f1bcf4a2dc04dbbe218f23bc993ff9564804591fb9dd",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "b8053018c3a8f1664783f1bcf4a2dc04dbbe218f23bc993ff9564804591fb9dd",
+      "markerIssue": {
+        "number": 347,
+        "version": "b8053018c3a8f1664783f1bcf4a2dc04dbbe218f23bc993ff9564804591fb9dd",
+        "marker": "df-doctor:marius-patrik-darkfactory:darkfactory-ledger-write-unproven",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#371",
+      "head": "f54009fc1a4d220e6b9fc67cbb2751ccb8daf11871d9ccd1eaf4644d1f0b3569",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "f54009fc1a4d220e6b9fc67cbb2751ccb8daf11871d9ccd1eaf4644d1f0b3569",
+      "markerIssue": {
+        "number": 371,
+        "version": "f54009fc1a4d220e6b9fc67cbb2751ccb8daf11871d9ccd1eaf4644d1f0b3569",
+        "marker": "df-doctor:marius-patrik-darkfactory:extra-branch-reconcile-6cf08fc8-d9edfebf",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#376",
+      "head": "ab275a51ea7f609d574f55042b5a3ad81fbeee6075042c55cc83411f8c72d1f1",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "ab275a51ea7f609d574f55042b5a3ad81fbeee6075042c55cc83411f8c72d1f1",
+      "markerIssue": {
+        "number": 376,
+        "version": "ab275a51ea7f609d574f55042b5a3ad81fbeee6075042c55cc83411f8c72d1f1",
+        "marker": "df-doctor:marius-patrik-darkfactory:main-dev-diverged",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#387",
+      "head": "75d7e1533ca5144b347319decf29f63b718022163633eddf96250c1622e51ed6",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "75d7e1533ca5144b347319decf29f63b718022163633eddf96250c1622e51ed6",
+      "markerIssue": {
+        "number": 387,
+        "version": "75d7e1533ca5144b347319decf29f63b718022163633eddf96250c1622e51ed6",
+        "marker": "df-doctor:marius-patrik-darkfactory:extra-branch-reconcile-42b4fb00-c512258f",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#388",
+      "head": "b6caec8bfee7b0966743dc649449cc505f131f584c27cd7a3b17719bc1df128d",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "b6caec8bfee7b0966743dc649449cc505f131f584c27cd7a3b17719bc1df128d",
+      "markerIssue": {
+        "number": 388,
+        "version": "b6caec8bfee7b0966743dc649449cc505f131f584c27cd7a3b17719bc1df128d",
+        "marker": "df-doctor:marius-patrik-darkfactory:extra-branch-reconcile-6cf08fc8-13c4b96d",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#404",
+      "head": "0305444d4d75cdaafb11c968cb616ff6746173ff3195f96b3d9d9284caa8dd4c",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "0305444d4d75cdaafb11c968cb616ff6746173ff3195f96b3d9d9284caa8dd4c",
+      "markerIssue": {
+        "number": 404,
+        "version": "0305444d4d75cdaafb11c968cb616ff6746173ff3195f96b3d9d9284caa8dd4c",
+        "marker": "df-doctor:marius-patrik-darkfactory:extra-branch-fix-382-semantic-reconciliation",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#405",
+      "head": "4d4f6a3fbb746ff70161bf52d22b7a176f5df20c09ece7d31719d8e6ec232029",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "4d4f6a3fbb746ff70161bf52d22b7a176f5df20c09ece7d31719d8e6ec232029",
+      "markerIssue": {
+        "number": 405,
+        "version": "4d4f6a3fbb746ff70161bf52d22b7a176f5df20c09ece7d31719d8e6ec232029",
+        "marker": "df-doctor:marius-patrik-darkfactory:extra-branch-release-5757c30fcda1",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#415",
+      "head": "54d842b91a0e1db8093f2717a1565736f4e4762e569fcc7ea4c1a72da8c57903",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "54d842b91a0e1db8093f2717a1565736f4e4762e569fcc7ea4c1a72da8c57903",
+      "markerIssue": {
+        "number": 415,
+        "version": "54d842b91a0e1db8093f2717a1565736f4e4762e569fcc7ea4c1a72da8c57903",
+        "marker": "df-doctor:marius-patrik-darkfactory:extra-branch-release-beeb372ba579",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#419",
+      "head": "04a1255e1908215567906f37f0316951486dd3d449e71a54cec427104a21e503",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "04a1255e1908215567906f37f0316951486dd3d449e71a54cec427104a21e503",
+      "markerIssue": {
+        "number": 419,
+        "version": "04a1255e1908215567906f37f0316951486dd3d449e71a54cec427104a21e503",
+        "marker": "df-doctor:marius-patrik-darkfactory:extra-branch-reconcile-35ba014a-975775f4",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#430",
+      "head": "ed70c35be1b8618c78795d873a02588a4e80066ba0651c1b4e97cc8e01b35bc9",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "ed70c35be1b8618c78795d873a02588a4e80066ba0651c1b4e97cc8e01b35bc9",
+      "markerIssue": {
+        "number": 430,
+        "version": "ed70c35be1b8618c78795d873a02588a4e80066ba0651c1b4e97cc8e01b35bc9",
+        "marker": "df-doctor:marius-patrik-darkfactory:extra-branch-reconcile-280345b8-975775f4",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#431",
+      "head": "f19ee21a70c18c2b2e99e2f02727625fbdf0cccbbba0e5ff81d72a90a8db5342",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "f19ee21a70c18c2b2e99e2f02727625fbdf0cccbbba0e5ff81d72a90a8db5342",
+      "markerIssue": {
+        "number": 431,
+        "version": "f19ee21a70c18c2b2e99e2f02727625fbdf0cccbbba0e5ff81d72a90a8db5342",
+        "marker": "df-doctor:marius-patrik-darkfactory:extra-branch-reconcile-828c1efd-975775f4",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#437",
+      "head": "d9b00bef36abad7c26728f517a771e4b3886470aa726b87993cd9851a6e59b9c",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "d9b00bef36abad7c26728f517a771e4b3886470aa726b87993cd9851a6e59b9c",
+      "markerIssue": {
+        "number": 437,
+        "version": "d9b00bef36abad7c26728f517a771e4b3886470aa726b87993cd9851a6e59b9c",
+        "marker": "df-doctor:marius-patrik-darkfactory:extra-branch-reconcile-38359556-975775f4",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#438",
+      "head": "23e2eea8eef8f1da90749c50902a6d37bb4b8bd519a9d27385e13bbbd5e82f1b",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "23e2eea8eef8f1da90749c50902a6d37bb4b8bd519a9d27385e13bbbd5e82f1b",
+      "markerIssue": {
+        "number": 438,
+        "version": "23e2eea8eef8f1da90749c50902a6d37bb4b8bd519a9d27385e13bbbd5e82f1b",
+        "marker": "df-doctor:marius-patrik-darkfactory:issue-436-prd-backing-missing",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#439",
+      "head": "5356fdf6a294d9a64939e1fe8d25dfcd9b69549823e7c8365fdb4b5ab0b48b5f",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "5356fdf6a294d9a64939e1fe8d25dfcd9b69549823e7c8365fdb4b5ab0b48b5f",
+      "markerIssue": {
+        "number": 439,
+        "version": "5356fdf6a294d9a64939e1fe8d25dfcd9b69549823e7c8365fdb4b5ab0b48b5f",
+        "marker": "df-doctor:marius-patrik-darkfactory:pr-429-not-mergeable",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#440",
+      "head": "4b3d076ce3fc7212223c9e7c6acae8c7b3fa9851325ebb0b67a233ef0ba6f8e7",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "4b3d076ce3fc7212223c9e7c6acae8c7b3fa9851325ebb0b67a233ef0ba6f8e7",
+      "markerIssue": {
+        "number": 440,
+        "version": "4b3d076ce3fc7212223c9e7c6acae8c7b3fa9851325ebb0b67a233ef0ba6f8e7",
+        "marker": "df-doctor:marius-patrik-darkfactory:pr-429-red",
+        "reason": "resolved-doctor",
+        "findingSetFingerprint": "117ba146cbec36f51f250bfff1cf74765af244e91cb7d45d0283c6099a9a6e09"
+      },
+      "reasons": [
+        "Exact trusted resolved-doctor marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "duplicate-issue-title-resolve-semantic-release-reconciliation-conflict",
+      "head": "23aa281a7ec7e753c89901713761f3ffa83704acb176ccfcb3f120d92017d70d",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/pr: Open issues share the same normalized title: #382, #366, #362.",
+        "Issue #362: https://github.com/marius-patrik/DarkFactory/issues/362",
+        "Issue #366: https://github.com/marius-patrik/DarkFactory/issues/366",
+        "Issue #382: https://github.com/marius-patrik/DarkFactory/issues/382"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "extra-branch-wip-receipt-v3-tool-policy",
+      "head": "0c1bfada9c13cd23e1860794201fce16d09bd83a8182d98fb9a1ba25cb1822d8",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/owner: Extra branch `wip/receipt-v3-tool-policy` is not the head of an open same-repository PR.",
+        "wip/receipt-v3-tool-policy: https://github.com/marius-patrik/DarkFactory/tree/wip%2Freceipt-v3-tool-policy"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-12-prd-backing-missing",
+      "head": "d8ed594137ecd4036d628ba8712bb09138a4fe0a50c8f89bb6e7d38a643ee310",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #12 has no stable PRD backing marker.",
+        "Issue #12: https://github.com/marius-patrik/DarkFactory/issues/12"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-17-prd-backing-missing",
+      "head": "47bda47a2c2bc28a28dd1b6490e1fefa650aca706a88127d8c4cf085755a8068",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #17 has no stable PRD backing marker.",
+        "Issue #17: https://github.com/marius-patrik/DarkFactory/issues/17"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-24-prd-backing-missing",
+      "head": "a92e1ab44d5b8caef823af72aa58a684f2d9ecf271a87f39f397d96e43789fc0",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #24 has no stable PRD backing marker.",
+        "Issue #24: https://github.com/marius-patrik/DarkFactory/issues/24"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-255-prd-backing-missing",
+      "head": "8ec3a672d44d5679b0e9d4c0381a6ecede540c104ea8e6eff910ae0566bda28d",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #255 has no stable PRD backing marker.",
+        "Issue #255: https://github.com/marius-patrik/DarkFactory/issues/255"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-256-prd-backing-missing",
+      "head": "c4a6621681f0bf797efd5a7cdce3e6e8a6a6ab7754f8ad6e43827a1d74287e81",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #256 has no stable PRD backing marker.",
+        "Issue #256: https://github.com/marius-patrik/DarkFactory/issues/256"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-257-prd-backing-missing",
+      "head": "faccd09347f0057c7cceae2a649c74fbef04c3422200f0791c9e69093b8bacd6",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #257 has no stable PRD backing marker.",
+        "Issue #257: https://github.com/marius-patrik/DarkFactory/issues/257"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-26-prd-backing-missing",
+      "head": "380b0e9ceb8fb033b35ac874f485a9ebaa6e510d7ff8622bc1b7454f7894ee78",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #26 has no stable PRD backing marker.",
+        "Issue #26: https://github.com/marius-patrik/DarkFactory/issues/26"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-260-prd-backing-missing",
+      "head": "fdbecde795c8eaac561e1028ee1344984b174f644e9148417ab2ebe14b9c57dc",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #260 has no stable PRD backing marker.",
+        "Issue #260: https://github.com/marius-patrik/DarkFactory/issues/260"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-261-prd-backing-missing",
+      "head": "67d1efe5d2a0f765298be5d5c2bde2ae92bc1a4028f1cc8227b44f658ff6d968",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #261 has no stable PRD backing marker.",
+        "Issue #261: https://github.com/marius-patrik/DarkFactory/issues/261"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-263-contentless-contract",
+      "head": "8a5ed3de98bf58cf308948143f8a27b2a523a3fc5c3a31f749ba68320537a10c",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/pr: Issue #263 contains contentless implementation boilerplate instead of an executable contract.",
+        "Issue #263: https://github.com/marius-patrik/DarkFactory/issues/263"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-274-prd-backing-missing",
+      "head": "94a11883f1e12db527b6cbdc1638e887159f381446635989ba3c4bd3f3ba5430",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #274 has no stable PRD backing marker.",
+        "Issue #274: https://github.com/marius-patrik/DarkFactory/issues/274"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-276-prd-backing-missing",
+      "head": "bffb789b95dcef8beee72ba5da68e8e07f211aa4d8f1ee7ea0a78a776fa2235b",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #276 has no stable PRD backing marker.",
+        "Issue #276: https://github.com/marius-patrik/DarkFactory/issues/276"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-278-prd-backing-missing",
+      "head": "0987bab0010744a4457d1086e2144292d2f0b906c64749af26f803577266c79f",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #278 has no stable PRD backing marker.",
+        "Issue #278: https://github.com/marius-patrik/DarkFactory/issues/278"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-280-prd-backing-missing",
+      "head": "48b021f6fa1737c18d5dc2f8631d5b28a4ed65908e0a2f8c88f24401208865de",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #280 has no stable PRD backing marker.",
+        "Issue #280: https://github.com/marius-patrik/DarkFactory/issues/280"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-284-prd-backing-missing",
+      "head": "d60a7a8b2bde244a1b6eb4a6f8af2e2ee5c030fafe13c0e6607f65fbccc2e345",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #284 has no stable PRD backing marker.",
+        "Issue #284: https://github.com/marius-patrik/DarkFactory/issues/284"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-29-prd-backing-missing",
+      "head": "62fa524d0de352011155125132b22d5e8131ff9592c2d2c5486dac9c0bb4cb08",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #29 has no stable PRD backing marker.",
+        "Issue #29: https://github.com/marius-patrik/DarkFactory/issues/29"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-32-prd-backing-missing",
+      "head": "a217bcd78e99decaa655a0fe9ac7a1b7f5be0dea4364df4a1c8c72347084da8b",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #32 has no stable PRD backing marker.",
+        "Issue #32: https://github.com/marius-patrik/DarkFactory/issues/32"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-35-prd-backing-missing",
+      "head": "699e85551772fe6398a780f8446671770b3c2fba6d30d69c86aa002eb33ea1d3",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #35 has no stable PRD backing marker.",
+        "Issue #35: https://github.com/marius-patrik/DarkFactory/issues/35"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-36-prd-backing-missing",
+      "head": "687f73e6bf7d52f9aed343d0ea72b53f87462083ac2acd14cb1b8f77942db9de",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #36 has no stable PRD backing marker.",
+        "Issue #36: https://github.com/marius-patrik/DarkFactory/issues/36"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-360-prd-backing-missing",
+      "head": "6771ce8214e0408c30f584f00decb4b33ece41d3119e5c6245e940eb63090cd7",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #360 has no stable PRD backing marker.",
+        "Issue #360: https://github.com/marius-patrik/DarkFactory/issues/360"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-362-prd-backing-missing",
+      "head": "0487dc4e7247ecbfff8d31275984c5fb69340327e6d5128057dad7569820cf05",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #362 has no stable PRD backing marker.",
+        "Issue #362: https://github.com/marius-patrik/DarkFactory/issues/362"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-364-prd-backing-missing",
+      "head": "eb076ded32361d9477c76dc20a47cd72a9d538b014d5e1ec9d694428f63360f6",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #364 has no stable PRD backing marker.",
+        "Issue #364: https://github.com/marius-patrik/DarkFactory/issues/364"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-366-prd-backing-missing",
+      "head": "4040ec3beba367fc42b6193e32fccb47f212e9eb54a3fd78c79eafa8bd81e99a",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #366 has no stable PRD backing marker.",
+        "Issue #366: https://github.com/marius-patrik/DarkFactory/issues/366"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-37-prd-backing-missing",
+      "head": "a7652c95fec29a3649bc1fd1c97ff867088b00e65e3b754f250493b927f640ab",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #37 has no stable PRD backing marker.",
+        "Issue #37: https://github.com/marius-patrik/DarkFactory/issues/37"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-38-prd-backing-missing",
+      "head": "fe84b5f338379768c2e74e3b9033f5771b7982aee776a7844621e1c605ce7c06",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #38 has no stable PRD backing marker.",
+        "Issue #38: https://github.com/marius-patrik/DarkFactory/issues/38"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-380-prd-backing-missing",
+      "head": "6c1ac2e4120bca38f2b1575b1ed56e051763acaba08fdee401e97986f20e0522",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #380 has no stable PRD backing marker.",
+        "Issue #380: https://github.com/marius-patrik/DarkFactory/issues/380"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-382-prd-backing-missing",
+      "head": "5cec25c07ea18f336c8426d397129ddac665369fe0c198d83bc6304cd1e20fd9",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #382 has no stable PRD backing marker.",
+        "Issue #382: https://github.com/marius-patrik/DarkFactory/issues/382"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-39-prd-backing-missing",
+      "head": "aae9d11b392a6437781fcce3f07e39cd13a9fe485f784695ac673a8a89890b34",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #39 has no stable PRD backing marker.",
+        "Issue #39: https://github.com/marius-patrik/DarkFactory/issues/39"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-396-prd-backing-missing",
+      "head": "82b2b57642e9b428d0918dcedb34e55062f4ab8fb0471ee2800723162d7d58c7",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #396 has no stable PRD backing marker.",
+        "Issue #396: https://github.com/marius-patrik/DarkFactory/issues/396"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-399-prd-backing-missing",
+      "head": "9b908b003bd2979edb25cccbb42c88580ac5cee44aa7015ac81c4ed21431b970",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #399 has no stable PRD backing marker.",
+        "Issue #399: https://github.com/marius-patrik/DarkFactory/issues/399"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-41-prd-backing-missing",
+      "head": "1754161ce5d2aeae1e04380d01e2fa073541dff463eb2a107f4b255911345f9c",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #41 has no stable PRD backing marker.",
+        "Issue #41: https://github.com/marius-patrik/DarkFactory/issues/41"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-43-prd-backing-missing",
+      "head": "f4d14d82f8027ca8e65060495ac9caf45246e05f5427693d66d89e8b01ed0b51",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #43 has no stable PRD backing marker.",
+        "Issue #43: https://github.com/marius-patrik/DarkFactory/issues/43"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-443-prd-backing-missing",
+      "head": "120a60182977b8ba216d2a2281c17ba89e8956e9ba89cb31b89d671d7fc5d0dd",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #443 has no stable PRD backing marker.",
+        "Issue #443: https://github.com/marius-patrik/DarkFactory/issues/443"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-46-prd-backing-missing",
+      "head": "6996eac8dd3d17a94a7354d1ba43a5c814adf369a3ab43815c2d860d86982085",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #46 has no stable PRD backing marker.",
+        "Issue #46: https://github.com/marius-patrik/DarkFactory/issues/46"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-48-prd-backing-missing",
+      "head": "b95872142ebc0f1853d02a4a7c2193e3542dbb40561d44a3ab721d02f400f9b0",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #48 has no stable PRD backing marker.",
+        "Issue #48: https://github.com/marius-patrik/DarkFactory/issues/48"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-49-prd-backing-missing",
+      "head": "05a1eb42513e8a7b9ff249e5a6fb937c64f0f165dba15df11d72490489274093",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #49 has no stable PRD backing marker.",
+        "Issue #49: https://github.com/marius-patrik/DarkFactory/issues/49"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-50-prd-backing-missing",
+      "head": "4370b587e40ca3fa370eb3320f5d2252390fe70d4eec45e29d982f4c619baa3d",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #50 has no stable PRD backing marker.",
+        "Issue #50: https://github.com/marius-patrik/DarkFactory/issues/50"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-51-prd-backing-missing",
+      "head": "9a816c62714c4af61ebfca3428e8809d277d0fc1ab4d398044be9454c69409e9",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #51 has no stable PRD backing marker.",
+        "Issue #51: https://github.com/marius-patrik/DarkFactory/issues/51"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-53-prd-backing-missing",
+      "head": "0740497b8740b112b7edc66b6e8f9c0f55298ce682c6f4f9e35088d6301b2a64",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #53 has no stable PRD backing marker.",
+        "Issue #53: https://github.com/marius-patrik/DarkFactory/issues/53"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-54-prd-backing-missing",
+      "head": "7a1844d6f77bbc046246a735085fb1bd07a0cd346222cf90a8f48659ae921c8a",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #54 has no stable PRD backing marker.",
+        "Issue #54: https://github.com/marius-patrik/DarkFactory/issues/54"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-55-prd-backing-missing",
+      "head": "0ca78782290376360f5e6467d9161c010312458afabd742983804329d06f24c0",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #55 has no stable PRD backing marker.",
+        "Issue #55: https://github.com/marius-patrik/DarkFactory/issues/55"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-6-prd-backing-missing",
+      "head": "841ac6a60a395cc546cab29e4bbae73112d637f8d34237b830fac286d5306411",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #6 has no stable PRD backing marker.",
+        "Issue #6: https://github.com/marius-patrik/DarkFactory/issues/6"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-8-prd-backing-missing",
+      "head": "29f4c3b8647bb920e88daacc6075ee7937b35ef6d4740bda77180ebbc1442d58",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #8 has no stable PRD backing marker.",
+        "Issue #8: https://github.com/marius-patrik/DarkFactory/issues/8"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-branch-feat-263-clean-lane-completion-59a05e52fd01151d-unpublished",
+      "head": "770c22e7ac5908feeb5eb5f267c4e5b373629dfb8c6dbc944e1e2769497902d2",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Local branch `feat/263-clean-lane-completion` contains 1 commit(s) not reachable from any live remote branch."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-branch-wip-43-superseded-prototype-73bd7fac7ad2eb95-unpublished",
+      "head": "97bc4824409a50c94c7fc9d878ea7a77ec162fd2c4ae5f504c78ef72a7d81c16",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Local branch `wip/43-superseded-prototype` contains 1 commit(s) not reachable from any live remote branch."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-explicit-worktree-unobservable",
+      "head": "682d52f2e7e331e1183f3150e2d917493c9275ef0085c51be4c654158336ac48",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "critical/blocked: The explicitly supplied checkout is absent from its common Git worktree inventory."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-628509f426465dd4-submodule-inventory-unobservable",
+      "head": "5864fe42f8a7ac17198064678360f85ee461af371265b465658eada78259e6c0",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "critical/blocked: Recursive submodule state for linked worktree `wt-628509f426465dd4` is unobservable."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "pr-442-not-mergeable",
+      "head": "c50232820821fbc09b52ee78b8a6d3826b7d0ef526a05585f21b2dc1047571b3",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: PR #442 is not mergeable (blocked).",
+        "PR #442: https://github.com/marius-patrik/DarkFactory/pull/442"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "pr-442-red",
+      "head": "9537edd976cc45353b814dd800609325a065cd682c277d246c7d83e61b9aa1b9",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: PR #442 has failing checks: DarkFactory Autoreview:failure.",
+        "DarkFactory Autoreview: https://github.com/marius-patrik/DarkFactory/actions/runs/29691254843/job/88205590064",
+        "PR #442: https://github.com/marius-patrik/DarkFactory/pull/442"
+      ]
+    }
+  ],
+  "local_plan_path_id": "local-bf522ead6d3eb959"
+}

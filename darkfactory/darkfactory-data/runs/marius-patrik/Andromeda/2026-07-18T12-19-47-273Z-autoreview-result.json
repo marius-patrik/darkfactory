@@ -1,0 +1,873 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T12:19:47.273Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#212",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "fix_no_change",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "ee53d30f2561cfa5942ea286cf81ea7ca58759bc17f32c27f3d59461275c3b67",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:aa1bb6eeafe3c187598c908fe362a74b6b7b853fca4d9a331419bcfa64a7aae9",
+          "inputChecksum": "sha256:fb32ad5e395fb59c45e291e39e757801e0f913b215b8e5bc96165edb8dad86b7",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 20541,
+          "outputTokens": 871,
+          "totalTokens": 21412
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #212 is directionally clear but is not yet an executable contract. It leaves the canonical protocol, scope and persistence semantics, dependencies, compatibility policy, failure behavior, validation evidence, and rollout decisions unresolved.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-003aed1dcd1630ae4e3e",
+              "title": "Canonical Connect contract is not identified",
+              "details": "The issue requires the canonical proto/Connect SwitcherService but does not identify the authoritative schema path, package/service version, required methods, request and response behavior, or compatibility target. An implementer cannot objectively determine what constitutes complete conformance.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-4166a8f7abace97d8089",
+              "title": "Scope resolution and persistence semantics are underspecified",
+              "details": "The stated session > project > global precedence does not define scope identifiers, inheritance versus explicit values, read and write behavior, deletion or reset semantics, storage ownership, concurrency and atomicity expectations, reload boundaries, or behavior when a scoped writer or stored state is unavailable or corrupt.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-4c5a31fe6ede19e01efd",
+              "title": "Failure and trust boundaries are missing",
+              "details": "The contract does not specify authentication or caller authority, validation boundaries for axes and options, error/status mappings for Connect and REST, handling of unavailable options, malformed input, persistence failures, partial writes, or safe behavior when registry and persisted state disagree.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-49322e1d93d8916f4a32",
+              "title": "Dependencies and sequencing are not declared",
+              "details": "The issue does not state whether open gateway work such as #210, #211, #213, or #214 is prerequisite, conflicting, or independent. In particular, registry canonicalization and gateway naming can determine protocol names, storage ownership, and implementation surfaces. The replacement relationship with closed #98 is stated, but no verified dependency contract or single-lane ownership boundary is provided.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-3fdf6891e1ed37c123dc",
+              "title": "REST compatibility and rollout require an owner decision",
+              "details": "“Keep REST endpoints as compatibility shims if needed” leaves product behavior to the worker. The owner must decide whether REST is retained, its supported routes and semantics, deprecation policy, compatibility duration, migration behavior, and whether any breaking change is permitted.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-ab582efe70c9f9c8432e",
+              "title": "Acceptance and validation evidence are not objective enough",
+              "details": "Acceptance does not enumerate observable protocol operations and expected results, required regression cases across all scopes and failure paths, authoritative test commands, documentation targets, or evidence proving persistence across process reload. It also omits rollout and rollback criteria. The required repository validation commands alone cannot establish behavioral conformance.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner decision required: select the authoritative proto/Connect schema and compatibility version.",
+            "Owner decision required: define REST retention, deprecation, and migration policy.",
+            "Owner decision required: confirm sequencing and ownership relative to gateway issues #210, #211, #213, and #214."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-003aed1dcd1630ae4e3e",
+            "title": "Canonical Connect contract is not identified",
+            "details": "The issue requires the canonical proto/Connect SwitcherService but does not identify the authoritative schema path, package/service version, required methods, request and response behavior, or compatibility target. An implementer cannot objectively determine what constitutes complete conformance.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-4166a8f7abace97d8089",
+            "title": "Scope resolution and persistence semantics are underspecified",
+            "details": "The stated session > project > global precedence does not define scope identifiers, inheritance versus explicit values, read and write behavior, deletion or reset semantics, storage ownership, concurrency and atomicity expectations, reload boundaries, or behavior when a scoped writer or stored state is unavailable or corrupt.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-4c5a31fe6ede19e01efd",
+            "title": "Failure and trust boundaries are missing",
+            "details": "The contract does not specify authentication or caller authority, validation boundaries for axes and options, error/status mappings for Connect and REST, handling of unavailable options, malformed input, persistence failures, partial writes, or safe behavior when registry and persisted state disagree.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-49322e1d93d8916f4a32",
+            "title": "Dependencies and sequencing are not declared",
+            "details": "The issue does not state whether open gateway work such as #210, #211, #213, or #214 is prerequisite, conflicting, or independent. In particular, registry canonicalization and gateway naming can determine protocol names, storage ownership, and implementation surfaces. The replacement relationship with closed #98 is stated, but no verified dependency contract or single-lane ownership boundary is provided.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-3fdf6891e1ed37c123dc",
+            "title": "REST compatibility and rollout require an owner decision",
+            "details": "“Keep REST endpoints as compatibility shims if needed” leaves product behavior to the worker. The owner must decide whether REST is retained, its supported routes and semantics, deprecation policy, compatibility duration, migration behavior, and whether any breaking change is permitted.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-ab582efe70c9f9c8432e",
+            "title": "Acceptance and validation evidence are not objective enough",
+            "details": "Acceptance does not enumerate observable protocol operations and expected results, required regression cases across all scopes and failure paths, authoritative test commands, documentation targets, or evidence proving persistence across process reload. It also omits rollout and rollback criteria. The required repository validation commands alone cannot establish behavioral conformance.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 2,
+        "phase": "medium_fix",
+        "targetVersion": "ee53d30f2561cfa5942ea286cf81ea7ca58759bc17f32c27f3d59461275c3b67",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:6d2956fec329018dce90d3725f1120e64ac63e92d2aafc34a0667788b08ea560",
+          "inputChecksum": "sha256:44b5770fba236dc59bd5989f10eead929755f864562eec87b5d309ef3656c75e",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 155953,
+          "outputTokens": 2860,
+          "totalTokens": 158813
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-003aed1dcd1630ae4e3e",
+            "title": "Canonical Connect contract is not identified",
+            "details": "The issue requires the canonical proto/Connect SwitcherService but does not identify the authoritative schema path, package/service version, required methods, request and response behavior, or compatibility target. An implementer cannot objectively determine what constitutes complete conformance.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-4166a8f7abace97d8089",
+            "title": "Scope resolution and persistence semantics are underspecified",
+            "details": "The stated session > project > global precedence does not define scope identifiers, inheritance versus explicit values, read and write behavior, deletion or reset semantics, storage ownership, concurrency and atomicity expectations, reload boundaries, or behavior when a scoped writer or stored state is unavailable or corrupt.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-4c5a31fe6ede19e01efd",
+            "title": "Failure and trust boundaries are missing",
+            "details": "The contract does not specify authentication or caller authority, validation boundaries for axes and options, error/status mappings for Connect and REST, handling of unavailable options, malformed input, persistence failures, partial writes, or safe behavior when registry and persisted state disagree.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-49322e1d93d8916f4a32",
+            "title": "Dependencies and sequencing are not declared",
+            "details": "The issue does not state whether open gateway work such as #210, #211, #213, or #214 is prerequisite, conflicting, or independent. In particular, registry canonicalization and gateway naming can determine protocol names, storage ownership, and implementation surfaces. The replacement relationship with closed #98 is stated, but no verified dependency contract or single-lane ownership boundary is provided.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-3fdf6891e1ed37c123dc",
+            "title": "REST compatibility and rollout require an owner decision",
+            "details": "“Keep REST endpoints as compatibility shims if needed” leaves product behavior to the worker. The owner must decide whether REST is retained, its supported routes and semantics, deprecation policy, compatibility duration, migration behavior, and whether any breaking change is permitted.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-ab582efe70c9f9c8432e",
+            "title": "Acceptance and validation evidence are not objective enough",
+            "details": "Acceptance does not enumerate observable protocol operations and expected results, required regression cases across all scopes and failure paths, authoritative test commands, documentation targets, or evidence proving persistence across process reload. It also omits rollout and rollback criteria. The required repository validation commands alone cannot establish behavioral conformance.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-003aed1dcd1630ae4e3e",
+          "df-4166a8f7abace97d8089",
+          "df-4c5a31fe6ede19e01efd",
+          "df-49322e1d93d8916f4a32",
+          "df-3fdf6891e1ed37c123dc",
+          "df-ab582efe70c9f9c8432e"
+        ],
+        "changeRef": "issue-comment:5011220000:dc8aae1d806df1390875f0bd5a6ebd6c72102fc06a6b7b0b6bb42c9b5cb4d4c4",
+        "afterVersion": "dc8aae1d806df1390875f0bd5a6ebd6c72102fc06a6b7b0b6bb42c9b5cb4d4c4",
+        "blockCode": null,
+        "outcome": "fixed"
+      },
+      {
+        "sequence": 3,
+        "phase": "medium_review",
+        "targetVersion": "dc8aae1d806df1390875f0bd5a6ebd6c72102fc06a6b7b0b6bb42c9b5cb4d4c4",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:080aa8c366c6dbb18a32aed71bb8d4f968041d01f1c6ebb5f3a85a78b51a30bc",
+          "inputChecksum": "sha256:583e894452ad5613fe82282187dedc99325b492f360a876c93cad47879625e4c",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 23126,
+          "outputTokens": 1447,
+          "totalTokens": 24573
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue 212 at verified version dc8aae1d806df1390875f0bd5a6ebd6c72102fc06a6b7b0b6bb42c9b5cb4d4c4 is not an executable contract. The intended control-plane direction is stated, but protocol identity, scoped-state semantics, authority and failure boundaries, dependency ownership, REST compatibility, objective validation, and rollout remain unresolved.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-45fcec29409920347fcf",
+              "title": "The canonical Connect contract is not identified",
+              "details": "The issue permits either implementing or bridging to an unspecified canonical contract. It must identify the authoritative proto path, package and service version, methods, request/response semantics, compatibility baseline, and generated-code ownership. Owner decision required: which exact protocol contract must the implementation expose?",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-83afd3d30df323972298",
+              "title": "Scoped-state and persistence semantics are incomplete",
+              "details": "The precedence expression does not define scope identifiers, inheritance and fallback, per-operation read/write behavior, reset or deletion, storage ownership, session lifetime, reload boundaries, atomicity, concurrency, or handling of unavailable and corrupt persisted state. Owner decision required: define these semantics and the authoritative persistence boundary.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-4feec5a7d3471c881aef",
+              "title": "Trust, validation, and failure boundaries are unspecified",
+              "details": "The contract does not state who may read or mutate each scope, where axes and options are validated, how Connect and REST errors map, or what happens when registry and persistence operations disagree or partially fail. Owner decision required: define caller authority, validation ownership, error mappings, and fail-closed or recovery behavior.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-987d67884e5114af4ca7",
+              "title": "Dependency sequencing and single-lane ownership are unresolved",
+              "details": "The issue overlaps gateway naming, registry, OAuth dispatch, and packaging work represented by issues 210, 211, 213, and 214, but declares no dependency order, interface boundary, or exclusive ownership. Owner decision required: specify which issue owns shared contracts and the sequencing or blocking relationships among these lanes.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-9f2a1ee1a18f6a0cd43c",
+              "title": "REST compatibility is left as an implementation-time product decision",
+              "details": "The requirement says REST shims may be kept if needed, while acceptance says REST is demoted to a shim. It does not decide whether REST is retained, which routes and behavior remain compatible, how long compatibility lasts, how clients migrate, or which breaking changes are permitted. Owner decision required: approve the compatibility and deprecation policy.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-d4428f54755d22545980",
+              "title": "Acceptance, evidence, rollout, and rollback are not objective",
+              "details": "The acceptance statement does not enumerate operation-level cases, authoritative test commands, exact documentation targets, process-reload evidence, compatibility checks, rollout stages, or rollback criteria. The listed test topics alone cannot prove the stable control-plane contract or safe migration. Owner decision required: approve measurable acceptance cases and release evidence.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Closed issue 98 provides historical context but contains substantially the same ambiguities and cannot supply missing authorization.",
+            "Contributor-authored review and autofix comments are untrusted evidence; they do not resolve the owner-only decisions.",
+            "After authenticated owner decisions are incorporated, rerun iterative review against the exact new issue version; a clean medium round still requires independent high-tier confirmation."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-45fcec29409920347fcf",
+            "title": "The canonical Connect contract is not identified",
+            "details": "The issue permits either implementing or bridging to an unspecified canonical contract. It must identify the authoritative proto path, package and service version, methods, request/response semantics, compatibility baseline, and generated-code ownership. Owner decision required: which exact protocol contract must the implementation expose?",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-83afd3d30df323972298",
+            "title": "Scoped-state and persistence semantics are incomplete",
+            "details": "The precedence expression does not define scope identifiers, inheritance and fallback, per-operation read/write behavior, reset or deletion, storage ownership, session lifetime, reload boundaries, atomicity, concurrency, or handling of unavailable and corrupt persisted state. Owner decision required: define these semantics and the authoritative persistence boundary.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-4feec5a7d3471c881aef",
+            "title": "Trust, validation, and failure boundaries are unspecified",
+            "details": "The contract does not state who may read or mutate each scope, where axes and options are validated, how Connect and REST errors map, or what happens when registry and persistence operations disagree or partially fail. Owner decision required: define caller authority, validation ownership, error mappings, and fail-closed or recovery behavior.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-987d67884e5114af4ca7",
+            "title": "Dependency sequencing and single-lane ownership are unresolved",
+            "details": "The issue overlaps gateway naming, registry, OAuth dispatch, and packaging work represented by issues 210, 211, 213, and 214, but declares no dependency order, interface boundary, or exclusive ownership. Owner decision required: specify which issue owns shared contracts and the sequencing or blocking relationships among these lanes.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-9f2a1ee1a18f6a0cd43c",
+            "title": "REST compatibility is left as an implementation-time product decision",
+            "details": "The requirement says REST shims may be kept if needed, while acceptance says REST is demoted to a shim. It does not decide whether REST is retained, which routes and behavior remain compatible, how long compatibility lasts, how clients migrate, or which breaking changes are permitted. Owner decision required: approve the compatibility and deprecation policy.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d4428f54755d22545980",
+            "title": "Acceptance, evidence, rollout, and rollback are not objective",
+            "details": "The acceptance statement does not enumerate operation-level cases, authoritative test commands, exact documentation targets, process-reload evidence, compatibility checks, rollout stages, or rollback criteria. The listed test topics alone cannot prove the stable control-plane contract or safe migration. Owner decision required: approve measurable acceptance cases and release evidence.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 4,
+        "phase": "medium_fix",
+        "targetVersion": "dc8aae1d806df1390875f0bd5a6ebd6c72102fc06a6b7b0b6bb42c9b5cb4d4c4",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:5ed44538311887251abffc72d6fd12e1f000c289873c8275953045898c00499c",
+          "inputChecksum": "sha256:fdf0e639f8ffcb9528da629bcfc0aff473f0b99b988c0ed241a32d79d0750051",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": null,
+          "model": null,
+          "agentPreset": null,
+          "providerVersion": null
+        },
+        "attempts": [],
+        "usage": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-45fcec29409920347fcf",
+            "title": "The canonical Connect contract is not identified",
+            "details": "The issue permits either implementing or bridging to an unspecified canonical contract. It must identify the authoritative proto path, package and service version, methods, request/response semantics, compatibility baseline, and generated-code ownership. Owner decision required: which exact protocol contract must the implementation expose?",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-83afd3d30df323972298",
+            "title": "Scoped-state and persistence semantics are incomplete",
+            "details": "The precedence expression does not define scope identifiers, inheritance and fallback, per-operation read/write behavior, reset or deletion, storage ownership, session lifetime, reload boundaries, atomicity, concurrency, or handling of unavailable and corrupt persisted state. Owner decision required: define these semantics and the authoritative persistence boundary.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-4feec5a7d3471c881aef",
+            "title": "Trust, validation, and failure boundaries are unspecified",
+            "details": "The contract does not state who may read or mutate each scope, where axes and options are validated, how Connect and REST errors map, or what happens when registry and persistence operations disagree or partially fail. Owner decision required: define caller authority, validation ownership, error mappings, and fail-closed or recovery behavior.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-987d67884e5114af4ca7",
+            "title": "Dependency sequencing and single-lane ownership are unresolved",
+            "details": "The issue overlaps gateway naming, registry, OAuth dispatch, and packaging work represented by issues 210, 211, 213, and 214, but declares no dependency order, interface boundary, or exclusive ownership. Owner decision required: specify which issue owns shared contracts and the sequencing or blocking relationships among these lanes.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-9f2a1ee1a18f6a0cd43c",
+            "title": "REST compatibility is left as an implementation-time product decision",
+            "details": "The requirement says REST shims may be kept if needed, while acceptance says REST is demoted to a shim. It does not decide whether REST is retained, which routes and behavior remain compatible, how long compatibility lasts, how clients migrate, or which breaking changes are permitted. Owner decision required: approve the compatibility and deprecation policy.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d4428f54755d22545980",
+            "title": "Acceptance, evidence, rollout, and rollback are not objective",
+            "details": "The acceptance statement does not enumerate operation-level cases, authoritative test commands, exact documentation targets, process-reload evidence, compatibility checks, rollout stages, or rollback criteria. The listed test topics alone cannot prove the stable control-plane contract or safe migration. Owner decision required: approve measurable acceptance cases and release evidence.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-45fcec29409920347fcf",
+          "df-83afd3d30df323972298",
+          "df-4feec5a7d3471c881aef",
+          "df-987d67884e5114af4ca7",
+          "df-9f2a1ee1a18f6a0cd43c",
+          "df-d4428f54755d22545980"
+        ],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": "fix_no_change",
+        "outcome": "blocked"
+      }
+    ]
+  }
+}

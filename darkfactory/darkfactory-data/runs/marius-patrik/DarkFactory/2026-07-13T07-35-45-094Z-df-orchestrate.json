@@ -1,0 +1,28 @@
+{
+  "kind": "df-orchestrate",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-13T07:35:45.102Z",
+  "trigger": "schedule",
+  "control_repo": "marius-patrik/DarkFactory",
+  "wave_order": [
+    "hygiene",
+    "enforcement",
+    "features"
+  ],
+  "concurrency": {
+    "global": 6,
+    "perRepository": 2,
+    "perStream": 3
+  },
+  "repositories": [],
+  "dispatched": [],
+  "recovery": [],
+  "auto_readied": [],
+  "escalated": [],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Orchestrator dispatch is deterministic and uses no model calls"
+  }
+}

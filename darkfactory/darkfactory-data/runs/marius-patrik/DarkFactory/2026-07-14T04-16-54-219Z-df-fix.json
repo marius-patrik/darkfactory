@@ -1,0 +1,28 @@
+{
+  "kind": "df-fix",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-14T04:16:54.264Z",
+  "trigger": "schedule",
+  "control_repo": "marius-patrik/DarkFactory",
+  "max_rounds": 3,
+  "actions": [
+    {
+      "repo": "marius-patrik/Andromeda",
+      "pr": "marius-patrik/Andromeda#249",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "pr": "marius-patrik/Andromeda#241",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Fix-forward is deterministic and uses no model calls"
+  }
+}

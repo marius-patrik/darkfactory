@@ -1,0 +1,64 @@
+{
+  "kind": "issue",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-19T13:18:55.188Z",
+  "schemaVersion": 1,
+  "status": "complete",
+  "controlRevision": "3835955691a9beec49474ca985f27b7cafe0911d",
+  "repositories": [
+    "marius-patrik/Andromeda",
+    "marius-patrik/DarkFactory"
+  ],
+  "candidates": 147,
+  "dispatched": [
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 210,
+      "version": "dd544b06f81272edfe5af6bde65029aecdee7dcfa24c9f8750191107605007b7",
+      "completion": "stale",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result",
+      "status": "dispatched",
+      "workflow": "darkfactory-autoreview.yml",
+      "pendingComment": "https://github.com/marius-patrik/Andromeda/issues/210#issuecomment-5015866970"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 211,
+      "version": "db7547c8b51839093b00bcdf7eadda7cb905f76eb2d2d6b74383e34d44a9c8c7",
+      "completion": "stale",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result",
+      "status": "dispatched",
+      "workflow": "darkfactory-autoreview.yml",
+      "pendingComment": "https://github.com/marius-patrik/Andromeda/issues/211#issuecomment-5015867305"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 212,
+      "version": "dc8aae1d806df1390875f0bd5a6ebd6c72102fc06a6b7b0b6bb42c9b5cb4d4c4",
+      "completion": "stale",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result",
+      "status": "dispatched",
+      "workflow": "darkfactory-autoreview.yml",
+      "pendingComment": "https://github.com/marius-patrik/Andromeda/issues/212#issuecomment-5015867596"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 213,
+      "version": "483f3184ca7b184e70a865b43331c08c4651b690c3dce29be9cffe8fedc0fdbc",
+      "completion": "stale",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result",
+      "status": "dispatched",
+      "workflow": "darkfactory-autoreview.yml",
+      "pendingComment": "https://github.com/marius-patrik/Andromeda/issues/213#issuecomment-5015867873"
+    }
+  ],
+  "deferred": 143
+}

@@ -1,0 +1,79 @@
+{
+  "kind": "df-fix",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-09T01:22:49.991Z",
+  "trigger": "schedule",
+  "control_repo": "marius-patrik/agent-darkfactory",
+  "max_rounds": 3,
+  "actions": [
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#77",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-manager",
+      "pr": "marius-patrik/agents-manager#125",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-manager",
+      "pr": "marius-patrik/agents-manager#32",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#26",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#18",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#24",
+      "url": "https://github.com/marius-patrik/agents-plugin/pull/24",
+      "action": "escalate",
+      "reason": "max-rounds",
+      "issue": "#2",
+      "max_rounds": 3
+    },
+    {
+      "repo": "marius-patrik/dream",
+      "pr": "marius-patrik/dream#18",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/dream",
+      "pr": "marius-patrik/dream#14",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/workspace-agents",
+      "pr": "marius-patrik/workspace-agents#5",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/workspace-agents",
+      "pr": "marius-patrik/workspace-agents#2",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Fix-forward is deterministic and uses no model calls"
+  }
+}

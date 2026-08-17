@@ -1,0 +1,40 @@
+{
+  "kind": "pull_request",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-20T06:17:21.866Z",
+  "status": "admitted",
+  "repository": "marius-patrik/Andromeda",
+  "number": 391,
+  "version": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56:f91cab887b1a923f2ecb34527a3797ce284f1cea",
+  "completion": "stale",
+  "recoveryAction": "rerun-pull-request-target",
+  "gate": {
+    "id": 88239897358,
+    "headSha": "f91cab887b1a923f2ecb34527a3797ce284f1cea",
+    "expectedHeadSha": "f91cab887b1a923f2ecb34527a3797ce284f1cea",
+    "status": "completed",
+    "conclusion": "failure",
+    "checkSuiteId": 80434707882,
+    "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29704813550/job/88239897358",
+    "workflowRunId": 29704813550,
+    "state": "red"
+  },
+  "workflowRun": {
+    "id": 29704813550,
+    "checkSuiteId": 80434707882,
+    "runAttempt": 1,
+    "status": "completed",
+    "conclusion": "failure",
+    "event": "pull_request_target",
+    "headSha": "f91cab887b1a923f2ecb34527a3797ce284f1cea",
+    "headBranch": "reconcile/cd511544-2b78936e",
+    "path": ".github/workflows/darkfactory-autoreview.yml",
+    "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29704813550",
+    "rerunUrl": "https://api.github.com/repos/marius-patrik/Andromeda/actions/runs/29704813550/rerun",
+    "createdAt": "2026-07-19T21:41:25Z"
+  },
+  "recoveryReason": "missing-or-stale-result",
+  "trigger": "7,22,37,52 * * * *",
+  "control_revision": "26bc106440a4c056115ba050c4a017e82b9ada76",
+  "workflow": "darkfactory-autoreview.yml"
+}

@@ -1,0 +1,144 @@
+{
+  "kind": "release-completion",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-17T10:13:57.770Z",
+  "status": "verified",
+  "mode": "run",
+  "repository": "marius-patrik/Andromeda",
+  "plan": {
+    "schemaVersion": 1,
+    "planId": "release-6a4cc598b60fc9fc88ea",
+    "evidence": {
+      "repository": "marius-patrik/Andromeda",
+      "main": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+      "dev": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+      "mainTree": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+      "devTree": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+      "classification": "identical",
+      "policy": "branch-only"
+    },
+    "action": "verify",
+    "reason": "main-dev-identical"
+  },
+  "action": {
+    "action": "verify",
+    "status": "verified",
+    "verified": true,
+    "repository": "marius-patrik/Andromeda",
+    "main_sha": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+    "dev_sha": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+    "main_tree_sha": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+    "dev_tree_sha": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+    "policy_mode": "branch-only",
+    "checks": {
+      "checks": [
+        {
+          "name": "Validate",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 87855732142,
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29529844709/job/87855732142",
+          "state": "green"
+        }
+      ],
+      "green": true,
+      "missing": [],
+      "pending": [],
+      "red": []
+    },
+    "release": {
+      "green": true,
+      "reason": "explicit-exact-ref-bootstrap-with-no-trusted-release-history",
+      "pull_request": null,
+      "issues": []
+    },
+    "publication": {
+      "green": true,
+      "mode": "branch-only"
+    },
+    "verified_absent_automation_branches": []
+  },
+  "after": {
+    "repository": "marius-patrik/Andromeda",
+    "classification": "dev-ahead",
+    "main_sha": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+    "dev_sha": "feb9342b22be880fa718da53939abf30f6751467",
+    "main_tree_sha": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+    "dev_tree_sha": "2ea3f44c96991f7a1d18155b524a939ce034e638",
+    "convergence_invariant": "reviewed-ancestry-and-exact-tree-identity",
+    "policy": {
+      "schemaVersion": 1,
+      "enabled": true,
+      "mode": "branch-only",
+      "releaseBranchPrefix": "release/",
+      "reconcileBranchPrefix": "reconcile/",
+      "requiredChecks": [
+        "Validate",
+        "DarkFactory Autoreview"
+      ],
+      "mainChecks": [
+        "Validate"
+      ],
+      "tagPattern": null,
+      "artifactWorkflows": [],
+      "publicationChecks": [],
+      "producer": null
+    },
+    "protections": {
+      "main": {
+        "configured": true,
+        "safe": true,
+        "requiredChecks": [
+          {
+            "context": "Validate",
+            "appId": 15368
+          },
+          {
+            "context": "DarkFactory Autoreview",
+            "appId": 15368
+          }
+        ]
+      },
+      "dev": {
+        "configured": true,
+        "safe": true,
+        "requiredChecks": [
+          {
+            "context": "Validate",
+            "appId": 15368
+          },
+          {
+            "context": "DarkFactory Autoreview",
+            "appId": 15368
+          }
+        ]
+      }
+    },
+    "main_checks": {
+      "checks": [
+        {
+          "name": "Validate",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 87855732142,
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29529844709/job/87855732142",
+          "state": "green"
+        },
+        {
+          "name": "DarkFactory Autoreview",
+          "expectedAppId": 15368,
+          "actualAppId": null,
+          "id": null,
+          "url": null,
+          "state": "missing"
+        }
+      ],
+      "green": false,
+      "missing": [
+        "DarkFactory Autoreview"
+      ],
+      "pending": [],
+      "red": []
+    }
+  }
+}

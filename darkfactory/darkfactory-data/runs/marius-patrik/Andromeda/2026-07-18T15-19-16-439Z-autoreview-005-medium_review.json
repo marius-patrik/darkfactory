@@ -1,0 +1,233 @@
+{
+  "kind": "autoreview-005-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T15:19:16.439Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#217",
+  "round": {
+    "sequence": 5,
+    "phase": "medium_review",
+    "targetVersion": "cf1fb2f1061b0d749e181caab3b022b743a953c05dc2371bb0dbd50d943718f9",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:6f198e2c9def754b40174c232f4cfc3d93a9813be4553473466621198855b14c",
+      "inputChecksum": "sha256:e14e669ee15aaab41a64338c7f147a5ef3728725160c23c2a0e75530a80d154b",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 69255,
+      "outputTokens": 4001,
+      "totalTokens": 73256
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Review of marius-patrik/Andromeda issue #217 at exact version cf1fb2f1061b0d749e181caab3b022b743a953c05dc2371bb0dbd50d943718f9 found unresolved owner authority, open blocking dependencies, a routing-policy conflict, incomplete signing semantics, and missing required blocked-state labeling. The specification is not implementation-ready.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-65c631882ea0ca33b660",
+          "title": "Required owner decisions remain unresolved",
+          "details": "Issue #217 explicitly blocks implementation and release work on authenticated decisions O217-1 through O217-7. No supplied owner comment resolves them; the sole owner comment is truncated and cannot establish a complete authorization. Expected: each decision is answered by an authenticated owner signal for this exact issue version, incorporated without rewriting protected owner history, and the resulting contract is reviewed again. Result: blocked and not review-clean.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-06d66527cb1efca4d94c",
+          "title": "Declared blocking dependencies are not complete",
+          "details": "The execution sequence requires #253 and #275 before CLI/TUI integration, while the supplied current issue records both as open; #275 also declares prerequisite work including #253 and #260. Expected: dependency state and required revisions are verified complete before implementation or release integration is admitted, with exact merged-revision evidence. Result: issue #217 is not implementation-ready.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-28cad920fba5479f9419",
+          "title": "Route failure and fallback requirements conflict with canonical runtime ownership and verified state",
+          "details": "The contract correctly assigns route resolution to the canonical Agent OS runtime, but later requires unavailable logical routes to remain unavailable without fallback and says provider substitution needs O217-3. Trusted current state records canonical routing that skips unavailable providers and can resolve medium/max through Claude, while Kimi is decommissioned and Codex is temporarily blocked. O217-3 addresses only the default Kimi behavior and does not resolve this broader conflict. Expected: #217 only requests logical tier and effort and renders the runtime-returned resolution, or an authenticated owner decision changes fallback policy in the runtime-owned #253/#275 contract. Result: acceptance behavior is presently contradictory and stale.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-f2fe2958c05f83ad12dc",
+          "title": "Signed-manifest verification remains underspecified",
+          "details": "O217-4 asks for signing authority, trust root, custody, rotation, and redirect policy, but neither the contract nor that owner question requires the signature algorithm, signature/envelope encoding, canonical signed-byte representation, key-identifier binding, or verifier behavior during key rotation. Those choices are necessary for deterministic cross-platform verification and negative fixtures. Expected: trusted release policy or an expanded owner decision defines these exact semantics before artifacts or updater behavior are implemented. Result: the supply-chain acceptance contract remains unverifiable even if O217-4 is answered as currently written.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-d090de266c13a5c4fdf3",
+          "title": "Required blocked-state label is absent",
+          "details": "The supplied current target lists only label P1, while trusted policy permits df:reviewed and df:ask-owner and the issue itself requires df:ask-owner while owner decisions remain open. Expected: the exact issue version carries df:ask-owner and must not carry a reviewed/ready outcome until all findings are cleared. Result: durable GitHub control-plane state does not reflect the contract's blocked status.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "O217-1: owner must identify the canonical manager repository, exact package or gitlink path, and authorized child repositories.",
+        "O217-2: owner must approve the complete initial OS, architecture, shell, artifact, installation-directory, PATH, and CI-runner matrix.",
+        "O217-3: owner must decide default-tier behavior while Kimi is decommissioned and reconcile it with runtime-owned fallback semantics.",
+        "O217-4: owner must approve signing authority, trust root, custody, rotation, redirect allowlist, and the missing deterministic signature-format semantics.",
+        "O217-5: owner must identify and authorize migration of the exact stale launcher binding and replacement target.",
+        "O217-6: owner must decide whether manifest freshness is enforced and, if so, approve its signed fields, clock policy, and failure classification.",
+        "O217-7: owner must select single-file artifacts or approve exact archive formats, inventory schema, extraction limits, permissions, and filesystem behavior."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-65c631882ea0ca33b660",
+        "title": "Required owner decisions remain unresolved",
+        "details": "Issue #217 explicitly blocks implementation and release work on authenticated decisions O217-1 through O217-7. No supplied owner comment resolves them; the sole owner comment is truncated and cannot establish a complete authorization. Expected: each decision is answered by an authenticated owner signal for this exact issue version, incorporated without rewriting protected owner history, and the resulting contract is reviewed again. Result: blocked and not review-clean.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-06d66527cb1efca4d94c",
+        "title": "Declared blocking dependencies are not complete",
+        "details": "The execution sequence requires #253 and #275 before CLI/TUI integration, while the supplied current issue records both as open; #275 also declares prerequisite work including #253 and #260. Expected: dependency state and required revisions are verified complete before implementation or release integration is admitted, with exact merged-revision evidence. Result: issue #217 is not implementation-ready.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-28cad920fba5479f9419",
+        "title": "Route failure and fallback requirements conflict with canonical runtime ownership and verified state",
+        "details": "The contract correctly assigns route resolution to the canonical Agent OS runtime, but later requires unavailable logical routes to remain unavailable without fallback and says provider substitution needs O217-3. Trusted current state records canonical routing that skips unavailable providers and can resolve medium/max through Claude, while Kimi is decommissioned and Codex is temporarily blocked. O217-3 addresses only the default Kimi behavior and does not resolve this broader conflict. Expected: #217 only requests logical tier and effort and renders the runtime-returned resolution, or an authenticated owner decision changes fallback policy in the runtime-owned #253/#275 contract. Result: acceptance behavior is presently contradictory and stale.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-f2fe2958c05f83ad12dc",
+        "title": "Signed-manifest verification remains underspecified",
+        "details": "O217-4 asks for signing authority, trust root, custody, rotation, and redirect policy, but neither the contract nor that owner question requires the signature algorithm, signature/envelope encoding, canonical signed-byte representation, key-identifier binding, or verifier behavior during key rotation. Those choices are necessary for deterministic cross-platform verification and negative fixtures. Expected: trusted release policy or an expanded owner decision defines these exact semantics before artifacts or updater behavior are implemented. Result: the supply-chain acceptance contract remains unverifiable even if O217-4 is answered as currently written.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-d090de266c13a5c4fdf3",
+        "title": "Required blocked-state label is absent",
+        "details": "The supplied current target lists only label P1, while trusted policy permits df:reviewed and df:ask-owner and the issue itself requires df:ask-owner while owner decisions remain open. Expected: the exact issue version carries df:ask-owner and must not carry a reviewed/ready outcome until all findings are cleared. Result: durable GitHub control-plane state does not reflect the contract's blocked status.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

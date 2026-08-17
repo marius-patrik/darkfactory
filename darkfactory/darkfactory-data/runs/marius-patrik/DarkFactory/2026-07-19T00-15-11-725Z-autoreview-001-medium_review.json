@@ -1,0 +1,214 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-19T00:15:11.725Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#427",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "3835955691a9beec49474ca985f27b7cafe0911d:e867b9b34b0b8acb73ac0eec8ee0877c35241d43",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "3835955691a9beec49474ca985f27b7cafe0911d",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:5e19dfdc973ef265e38d55f42ede8199eb78212717ac692500ff03e9ebbe6e21",
+      "inputChecksum": "sha256:1c490f85d6fc1a4b2dcc800b5b90bbd515808adc99c9da2dafc96cd9e099edf7",
+      "profile": {
+        "id": "profile/pr-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-pr",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/pr-reviewer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/validation-autoreview",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/bun-node",
+        "output": "output/pr-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/bun-node",
+          "version": "0.2.0",
+          "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+        },
+        {
+          "id": "output/pr-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 642545,
+      "outputTokens": 11665,
+      "totalTokens": 654210
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "PR #427 at e867b9b34b0b8acb73ac0eec8ee0877c35241d43 is blocked: the complete two-file diff was reviewed and four correctness/provenance gaps remain against issue #426.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-1498c131e15c2d525a91",
+          "title": "Documented workflow paths never match the trusted constants",
+          "details": "GitHub returns ref-qualified workflow-run paths such as `.github/workflows/ci.yml@main`, while the binding compares them directly with `.github/workflows/ci.yml`. Consequently, valid Validate and DarkFactory Autoreview runs are marked untrusted in production even though the tests use an undocumented unqualified fixture. Parse and validate both the workflow file and its trusted ref rather than comparing the raw field. See [GitHub's workflow-runs REST contract](https://docs.github.com/en/rest/actions/workflow-runs?apiVersion=2022-11-28).",
+          "path": ".github/scripts/df-release.mjs",
+          "line": 676
+        },
+        {
+          "id": "df-7f6a3af716d7dc674d6a",
+          "title": "The check-run endpoint cannot guarantee the claimed complete inventory",
+          "details": "`listCompleteCheckRuns` relies solely on the commit check-runs endpoint, but GitHub limits that endpoint to runs from the 1,000 most recent check suites and directs callers to enumerate check suites when all possible runs are required. The local 2,000-run bound therefore cannot prove completeness and can miss or unnecessarily block later evidence. Enumerate the bounded suite inventory and each suite's runs before evaluating collisions. See [GitHub's check-runs REST contract](https://docs.github.com/en/rest/checks/runs).",
+          "path": ".github/scripts/df-release.mjs",
+          "line": 227
+        },
+        {
+          "id": "df-b27791c4b475e39fe1f3",
+          "title": "Pagination accepts an inventory that changes without changing total_count",
+          "details": "The pagination logic only compares `total_count` and accumulated IDs. If a run is replaced or changes state between page reads while the count remains constant and no duplicate crosses the page boundary, the function returns a mixed, stale inventory as complete. The commit-status implementation mirrors this defect. Issue #426 requires stable page evidence; add a bounded consistency pass or equivalent snapshot validation and regression coverage for same-count mutation.",
+          "path": ".github/scripts/df-release.mjs",
+          "line": 234
+        },
+        {
+          "id": "df-a079c8592e47e0af2a45",
+          "title": "Conflicting workflow-run records are ignored instead of making provenance ambiguous",
+          "details": "The code filters the workflow-run inventory and trusts it whenever exactly one record matches. A response containing that record plus another same-suite record with a conflicting path, head, event, or state is therefore accepted, although the evidence is malformed or ambiguous. Require the complete check-suite-filtered inventory to contain exactly one fully valid workflow run, and test the valid-plus-conflicting case.",
+          "path": ".github/scripts/df-release.mjs",
+          "line": 680
+        }
+      ],
+      "nonBlockingNotes": [
+        "The changes are confined to the release gate implementation and focused tests; no unrelated scope was observed.",
+        "The independent exact-head Validate result is intentionally outside this review context and was not treated as missing evidence."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-1498c131e15c2d525a91",
+        "title": "Documented workflow paths never match the trusted constants",
+        "details": "GitHub returns ref-qualified workflow-run paths such as `.github/workflows/ci.yml@main`, while the binding compares them directly with `.github/workflows/ci.yml`. Consequently, valid Validate and DarkFactory Autoreview runs are marked untrusted in production even though the tests use an undocumented unqualified fixture. Parse and validate both the workflow file and its trusted ref rather than comparing the raw field. See [GitHub's workflow-runs REST contract](https://docs.github.com/en/rest/actions/workflow-runs?apiVersion=2022-11-28).",
+        "path": ".github/scripts/df-release.mjs",
+        "line": 676
+      },
+      {
+        "id": "df-7f6a3af716d7dc674d6a",
+        "title": "The check-run endpoint cannot guarantee the claimed complete inventory",
+        "details": "`listCompleteCheckRuns` relies solely on the commit check-runs endpoint, but GitHub limits that endpoint to runs from the 1,000 most recent check suites and directs callers to enumerate check suites when all possible runs are required. The local 2,000-run bound therefore cannot prove completeness and can miss or unnecessarily block later evidence. Enumerate the bounded suite inventory and each suite's runs before evaluating collisions. See [GitHub's check-runs REST contract](https://docs.github.com/en/rest/checks/runs).",
+        "path": ".github/scripts/df-release.mjs",
+        "line": 227
+      },
+      {
+        "id": "df-b27791c4b475e39fe1f3",
+        "title": "Pagination accepts an inventory that changes without changing total_count",
+        "details": "The pagination logic only compares `total_count` and accumulated IDs. If a run is replaced or changes state between page reads while the count remains constant and no duplicate crosses the page boundary, the function returns a mixed, stale inventory as complete. The commit-status implementation mirrors this defect. Issue #426 requires stable page evidence; add a bounded consistency pass or equivalent snapshot validation and regression coverage for same-count mutation.",
+        "path": ".github/scripts/df-release.mjs",
+        "line": 234
+      },
+      {
+        "id": "df-a079c8592e47e0af2a45",
+        "title": "Conflicting workflow-run records are ignored instead of making provenance ambiguous",
+        "details": "The code filters the workflow-run inventory and trusts it whenever exactly one record matches. A response containing that record plus another same-suite record with a conflicting path, head, event, or state is therefore accepted, although the evidence is malformed or ambiguous. Require the complete check-suite-filtered inventory to contain exactly one fully valid workflow run, and test the valid-plus-conflicting case.",
+        "path": ".github/scripts/df-release.mjs",
+        "line": 680
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

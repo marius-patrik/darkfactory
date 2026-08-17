@@ -1,0 +1,19 @@
+{
+  "kind": "df-orchestrate",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-04T15:18:41.974Z",
+  "trigger": "schedule",
+  "control_repo": "marius-patrik/agent-darkfactory",
+  "dispatched": [
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "issue": 59
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Orchestrator dispatch is deterministic and uses no model calls"
+  }
+}

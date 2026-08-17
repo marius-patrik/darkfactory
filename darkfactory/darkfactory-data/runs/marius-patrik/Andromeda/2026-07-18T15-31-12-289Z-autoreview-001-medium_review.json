@@ -1,0 +1,172 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T15:31:12.289Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#306",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56:3a2d05c4d8f981ed880f8ef55ea5eb1d95e02b0b",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:451d3b847ba34c5037bd227c1d8dde9e69bfdd6f230d0d4c1d3b21dc6e952ebd",
+      "inputChecksum": "sha256:1a98e1bff20f0b46cafd7ef24516194808cac8ee0a7c726abc477ff5616f89f0",
+      "profile": {
+        "id": "profile/pr-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-pr",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/pr-reviewer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/validation-autoreview",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/pr-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/pr-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 23237,
+      "outputTokens": 1077,
+      "totalTokens": 24314
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Blocked: the exact head lacks trusted evidence that it actually reconciles the reviewed main and dev revisions. The added head-controlled JSON is only a verification request and explicitly disclaims self-attestation.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-69b2c3b02828b0f6b8e1",
+          "title": "Required reconciliation ancestry and tree proof is missing",
+          "details": "For marius-patrik/Andromeda PR #306 at exact version 2b78936e4b7099cc30998f08fcdf4d9a806a5e56:3a2d05c4d8f981ed880f8ef55ea5eb1d95e02b0b, verified evidence establishes only the fetched PR diff and unchanged gitlink manifests. It does not verify that 63e9883eea3625e8eb9fbf78749eab7aee137b9f directly descends from merge commit 0f866bca5710a8b67f2d15f6bfbe6531e6479b67, that the merge commit's direct parents are the stated dev and main revisions, or that its tree equals the reviewed dev tree with no changed paths. The new file is head-controlled and says its own claims are not evidence. A base-trusted exact-revision verifier must prove all four requested checks for the current head before approval; absent that provenance, reconciliation is unverified and blocked.",
+          "path": "docs/reconciliation/release-da1e87b5dce0281c15c1.json",
+          "line": 19
+        }
+      ],
+      "nonBlockingNotes": [
+        "The complete supplied base-to-head diff contains only the reconciliation JSON artifact and passed git diff --check.",
+        "The verified base and head gitlink manifests are identical."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-69b2c3b02828b0f6b8e1",
+        "title": "Required reconciliation ancestry and tree proof is missing",
+        "details": "For marius-patrik/Andromeda PR #306 at exact version 2b78936e4b7099cc30998f08fcdf4d9a806a5e56:3a2d05c4d8f981ed880f8ef55ea5eb1d95e02b0b, verified evidence establishes only the fetched PR diff and unchanged gitlink manifests. It does not verify that 63e9883eea3625e8eb9fbf78749eab7aee137b9f directly descends from merge commit 0f866bca5710a8b67f2d15f6bfbe6531e6479b67, that the merge commit's direct parents are the stated dev and main revisions, or that its tree equals the reviewed dev tree with no changed paths. The new file is head-controlled and says its own claims are not evidence. A base-trusted exact-revision verifier must prove all four requested checks for the current head before approval; absent that provenance, reconciliation is unverified and blocked.",
+        "path": "docs/reconciliation/release-da1e87b5dce0281c15c1.json",
+        "line": 19
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

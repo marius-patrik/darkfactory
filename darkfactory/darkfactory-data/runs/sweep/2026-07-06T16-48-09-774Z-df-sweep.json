@@ -1,0 +1,87 @@
+{
+  "kind": "df-sweep",
+  "target_repo": "sweep",
+  "created_at": "2026-07-06T16:48:09.834Z",
+  "trigger": "workflow_run",
+  "mode": "sweep",
+  "excluded_repos": [],
+  "actions": [
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#152",
+      "action": "skip",
+      "reason": "checks-not-green",
+      "issue_update": {
+        "status": "blocked",
+        "issue": "#60",
+        "reason": "checks-not-green"
+      },
+      "required_checks": [],
+      "checks": "Validate:IN_PROGRESS/none, Codex Review:IN_PROGRESS/none, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#150",
+      "action": "skip",
+      "reason": "checks-not-green",
+      "issue_update": {
+        "status": "blocked",
+        "issue": "#68",
+        "reason": "checks-not-green"
+      },
+      "required_checks": [],
+      "checks": "Codex Review:COMPLETED/FAILURE, Validate:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#24",
+      "action": "skip",
+      "reason": "checks-not-green",
+      "issue_update": {
+        "status": "blocked",
+        "issue": "#2",
+        "reason": "checks-not-green"
+      },
+      "required_checks": [],
+      "checks": "Validate:COMPLETED/FAILURE, Codex Review:COMPLETED/FAILURE, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#33",
+      "action": "skip",
+      "reason": "checks-not-green",
+      "issue_update": {
+        "status": "blocked",
+        "issue": "#13",
+        "reason": "checks-not-green"
+      },
+      "required_checks": [],
+      "checks": "Codex Review:COMPLETED/FAILURE, Validate:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#32",
+      "action": "skip",
+      "reason": "checks-not-green",
+      "issue_update": {
+        "status": "blocked",
+        "issue": "#10",
+        "reason": "checks-not-green"
+      },
+      "required_checks": [],
+      "checks": "Validate:COMPLETED/FAILURE, Codex Review:COMPLETED/FAILURE, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#23",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Green-PR sweep is deterministic and uses no model calls"
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-18T11:35:21.482Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#353",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "malformed_fix",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "7a1001deeece71b9648b7f151c5c88f48f78d074:cb565b2e60cddd3fa22cffbb18d604eb195194da",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:e6408c4f22441b4e35619cc616566bfefcad61715516b720a3e076ad6e3574ee",
+          "inputChecksum": "sha256:109173cadf2bb23588da83f164f6fccf496763a001842394605b28570593be07",
+          "profile": {
+            "id": "profile/pr-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-pr",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/pr-reviewer",
+            "skills": [
+              "skill/acceptance-driven-delivery",
+              "skill/untrusted-input-handling",
+              "skill/validation-autoreview",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/pr-review-fix"
+            ],
+            "repositoryOverlay": "overlay/bun-node",
+            "output": "output/pr-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/pr-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+            },
+            {
+              "id": "skill/acceptance-driven-delivery",
+              "version": "0.2.0",
+              "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/pr-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+            },
+            {
+              "id": "overlay/bun-node",
+              "version": "0.2.0",
+              "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+            },
+            {
+              "id": "output/pr-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 163768,
+          "outputTokens": 3862,
+          "totalTokens": 167630
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Complete review of head cb565b2e60cddd3fa22cffbb18d604eb195194da found four blocking correctness, trust-boundary, and coverage gaps.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-f48d051068391a264710",
+              "title": "Validation wording incorrectly applies to non-review roles",
+              "details": "renderValidation is shared by every composed profile, so the new Autoreview-specific instruction appears in implementer, fixer, mechanic, verifier, planner, and release prompts. It contradicts roles that explicitly require running and reporting validation and expands issue #341 beyond PR review. Scope the independent-gate wording to Autoreview review profiles while preserving execution requirements for roles responsible for validation.",
+              "path": "src/prompts.ts",
+              "line": 2163
+            },
+            {
+              "id": "df-842589e50bba9b840db4",
+              "title": "Head-controlled gitlink paths are promoted into trusted prompt prose",
+              "details": "gitlinkManifestFact concatenates repository paths directly into verifiedFacts. A pull-request author controls gitlink names, and valid names may contain arbitrary instruction-like text, semicolons, or equals signs. Rendering those values as unescaped trusted prose crosses the target-content trust boundary and makes the manifest representation ambiguous. Preserve the verified observation while encoding paths in an unambiguous structured data representation that cannot be interpreted as trusted instructions.",
+              "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+              "line": 513
+            },
+            {
+              "id": "df-d3223989d3a2308267ad",
+              "title": "Exact-tree parser accepts malformed evidence",
+              "details": "parseGitTreeEntries decodes arbitrary bytes with replacement characters and accepts every hexadecimal OID length from 40 through 64. Consequently non-UTF-8 paths and 41–63-character object IDs are admitted even though the acceptance contract requires malformed tree evidence to block closed. Use fatal UTF-8 decoding and admit only exact supported object-ID lengths, with consistent mode/type validation.",
+              "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+              "line": 482
+            },
+            {
+              "id": "df-21c0c7cac70dccacd653",
+              "title": "Gitlink controller branches lack focused regression coverage",
+              "details": "The added test exercises only the exported record parser. It does not prove changed gitlinks are serialized as kind gitlink with mode 160000 and OID, excluded from autofix files, included in exact base/head manifests, or that diff-check failure, unsafe paths, ambiguous entries, and manifest bounds block closed. These are newly changed runtime and policy branches required by issue #343 and the trusted repository rule requiring tests for every changed branch.",
+              "path": "tests/df-autoreview.test.ts",
+              "line": 140
+            }
+          ],
+          "nonBlockingNotes": []
+        },
+        "findings": [
+          {
+            "id": "df-f48d051068391a264710",
+            "title": "Validation wording incorrectly applies to non-review roles",
+            "details": "renderValidation is shared by every composed profile, so the new Autoreview-specific instruction appears in implementer, fixer, mechanic, verifier, planner, and release prompts. It contradicts roles that explicitly require running and reporting validation and expands issue #341 beyond PR review. Scope the independent-gate wording to Autoreview review profiles while preserving execution requirements for roles responsible for validation.",
+            "path": "src/prompts.ts",
+            "line": 2163
+          },
+          {
+            "id": "df-842589e50bba9b840db4",
+            "title": "Head-controlled gitlink paths are promoted into trusted prompt prose",
+            "details": "gitlinkManifestFact concatenates repository paths directly into verifiedFacts. A pull-request author controls gitlink names, and valid names may contain arbitrary instruction-like text, semicolons, or equals signs. Rendering those values as unescaped trusted prose crosses the target-content trust boundary and makes the manifest representation ambiguous. Preserve the verified observation while encoding paths in an unambiguous structured data representation that cannot be interpreted as trusted instructions.",
+            "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+            "line": 513
+          },
+          {
+            "id": "df-d3223989d3a2308267ad",
+            "title": "Exact-tree parser accepts malformed evidence",
+            "details": "parseGitTreeEntries decodes arbitrary bytes with replacement characters and accepts every hexadecimal OID length from 40 through 64. Consequently non-UTF-8 paths and 41–63-character object IDs are admitted even though the acceptance contract requires malformed tree evidence to block closed. Use fatal UTF-8 decoding and admit only exact supported object-ID lengths, with consistent mode/type validation.",
+            "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+            "line": 482
+          },
+          {
+            "id": "df-21c0c7cac70dccacd653",
+            "title": "Gitlink controller branches lack focused regression coverage",
+            "details": "The added test exercises only the exported record parser. It does not prove changed gitlinks are serialized as kind gitlink with mode 160000 and OID, excluded from autofix files, included in exact base/head manifests, or that diff-check failure, unsafe paths, ambiguous entries, and manifest bounds block closed. These are newly changed runtime and policy branches required by issue #343 and the trusted repository rule requiring tests for every changed branch.",
+            "path": "tests/df-autoreview.test.ts",
+            "line": 140
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 2,
+        "phase": "medium_fix",
+        "targetVersion": "7a1001deeece71b9648b7f151c5c88f48f78d074:cb565b2e60cddd3fa22cffbb18d604eb195194da",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:e2630c020f326184c85b257b3e907192bf1eb90283dd98e20b513ddf75ffefa9",
+          "inputChecksum": "sha256:bd19a8f95e450720618d6990763efbefe804fd10a53496c275ca3e87bd3ba7c7",
+          "profile": {
+            "id": "profile/pr-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-pr",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/pr-fixer",
+            "skills": [
+              "skill/acceptance-driven-delivery",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/branch-release-policy",
+              "skill/no-bypass",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/pr-review-fix"
+            ],
+            "repositoryOverlay": "overlay/bun-node",
+            "output": "output/pr-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/pr-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:85f333fddc6155527e1c7c3a6b696d8310cb393af7b429ca81ee6faa09bcf120"
+            },
+            {
+              "id": "skill/acceptance-driven-delivery",
+              "version": "0.2.0",
+              "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/branch-release-policy",
+              "version": "0.2.0",
+              "checksum": "sha256:b70e9fd57a74ec2f556906206dd6aefd0fd842372a47d3bc1455e933a7a017b7"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/pr-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+            },
+            {
+              "id": "overlay/bun-node",
+              "version": "0.2.0",
+              "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+            },
+            {
+              "id": "output/pr-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:af6162ebe3b4ecd50c0fd57c7d05e0862f8395efa535c5413aa56abcc38055a2"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 1847218,
+          "outputTokens": 4027,
+          "totalTokens": 1851245
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-f48d051068391a264710",
+            "title": "Validation wording incorrectly applies to non-review roles",
+            "details": "renderValidation is shared by every composed profile, so the new Autoreview-specific instruction appears in implementer, fixer, mechanic, verifier, planner, and release prompts. It contradicts roles that explicitly require running and reporting validation and expands issue #341 beyond PR review. Scope the independent-gate wording to Autoreview review profiles while preserving execution requirements for roles responsible for validation.",
+            "path": "src/prompts.ts",
+            "line": 2163
+          },
+          {
+            "id": "df-842589e50bba9b840db4",
+            "title": "Head-controlled gitlink paths are promoted into trusted prompt prose",
+            "details": "gitlinkManifestFact concatenates repository paths directly into verifiedFacts. A pull-request author controls gitlink names, and valid names may contain arbitrary instruction-like text, semicolons, or equals signs. Rendering those values as unescaped trusted prose crosses the target-content trust boundary and makes the manifest representation ambiguous. Preserve the verified observation while encoding paths in an unambiguous structured data representation that cannot be interpreted as trusted instructions.",
+            "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+            "line": 513
+          },
+          {
+            "id": "df-d3223989d3a2308267ad",
+            "title": "Exact-tree parser accepts malformed evidence",
+            "details": "parseGitTreeEntries decodes arbitrary bytes with replacement characters and accepts every hexadecimal OID length from 40 through 64. Consequently non-UTF-8 paths and 41–63-character object IDs are admitted even though the acceptance contract requires malformed tree evidence to block closed. Use fatal UTF-8 decoding and admit only exact supported object-ID lengths, with consistent mode/type validation.",
+            "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+            "line": 482
+          },
+          {
+            "id": "df-21c0c7cac70dccacd653",
+            "title": "Gitlink controller branches lack focused regression coverage",
+            "details": "The added test exercises only the exported record parser. It does not prove changed gitlinks are serialized as kind gitlink with mode 160000 and OID, excluded from autofix files, included in exact base/head manifests, or that diff-check failure, unsafe paths, ambiguous entries, and manifest bounds block closed. These are newly changed runtime and policy branches required by issue #343 and the trusted repository rule requiring tests for every changed branch.",
+            "path": "tests/df-autoreview.test.ts",
+            "line": 140
+          }
+        ],
+        "findingIds": [
+          "df-f48d051068391a264710",
+          "df-842589e50bba9b840db4",
+          "df-d3223989d3a2308267ad",
+          "df-21c0c7cac70dccacd653"
+        ],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": "malformed_fix",
+        "outcome": "blocked"
+      }
+    ]
+  }
+}

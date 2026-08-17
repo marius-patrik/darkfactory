@@ -1,0 +1,21 @@
+{
+  "kind": "df-sweep",
+  "target_repo": "sweep",
+  "created_at": "2026-07-19T04:05:56.091Z",
+  "trigger": "schedule",
+  "mode": "sweep",
+  "excluded_repos": [],
+  "actions": [
+    {
+      "repo": "marius-patrik/Andromeda-data",
+      "action": "error",
+      "error": "[{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",0,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":26,\"column\":13}],\"message\":\"Resource not accessible by integration\"}]"
+    }
+  ],
+  "token_usage": {
+    "model_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Green-PR sweep is deterministic and uses no model calls"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "release-admission",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-16T19:56:01.250Z",
+  "status": "admitted",
+  "mode": "run",
+  "plan_id": "release-6a4cc598b60fc9fc88ea",
+  "evidence": {
+    "repository": "marius-patrik/Andromeda",
+    "main": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+    "dev": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+    "mainTree": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+    "devTree": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+    "classification": "identical",
+    "policy": "branch-only"
+  },
+  "planned_action": "verify"
+}

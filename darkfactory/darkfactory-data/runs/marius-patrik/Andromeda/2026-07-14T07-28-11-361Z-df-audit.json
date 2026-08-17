@@ -1,0 +1,98 @@
+{
+  "kind": "df-audit",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-14T07:28:11.361Z",
+  "trigger": "schedule",
+  "default_branch": "main",
+  "findings": [
+    {
+      "category": "git state",
+      "message": "Default branch `main` does not have readable branch protection."
+    },
+    {
+      "category": "health",
+      "message": "Workflow `CI` concluded `failure` on `main`."
+    },
+    {
+      "category": "enforcement conformance",
+      "message": "Required managed file `.github/workflows/df-work.yml` is missing on `main`."
+    },
+    {
+      "category": "enforcement conformance",
+      "message": "Required managed file `.github/workflows/df-plan.yml` is missing on `main`."
+    },
+    {
+      "category": "PRD drift",
+      "message": "PRD contains planned sections, but no open PRD-tracked backlog issues were found."
+    },
+    {
+      "category": "git state",
+      "message": "Submodule `plugins/DarkFactory` is dirty: parent records `49ddfc220dd2`, but marius-patrik/DarkFactory HEAD is `730b1c71d15e`."
+    },
+    {
+      "category": "git state",
+      "message": "Submodule `plugins/SkyAgent` is dirty: parent records `2cb1e4d62059`, but marius-patrik/SkyAgent HEAD is `e103357655d1`."
+    },
+    {
+      "category": "git state",
+      "message": "Submodule `data/andromeda` is dirty: parent records `4cc056832349`, but marius-patrik/Andromeda-data HEAD is `c7765f5b0c9a`."
+    },
+    {
+      "category": "git state",
+      "message": "Submodule `data/darkfactory` is dirty: parent records `9f118b1bd615`, but marius-patrik/darkfactory-data HEAD is `dd0ff79a7caa`."
+    }
+  ],
+  "actions": [
+    {
+      "action": "audit-findings-issue",
+      "issue": {
+        "number": 251,
+        "url": "https://github.com/marius-patrik/Andromeda/issues/251"
+      },
+      "findings": [
+        {
+          "category": "git state",
+          "message": "Default branch `main` does not have readable branch protection."
+        },
+        {
+          "category": "health",
+          "message": "Workflow `CI` concluded `failure` on `main`."
+        },
+        {
+          "category": "enforcement conformance",
+          "message": "Required managed file `.github/workflows/df-work.yml` is missing on `main`."
+        },
+        {
+          "category": "enforcement conformance",
+          "message": "Required managed file `.github/workflows/df-plan.yml` is missing on `main`."
+        },
+        {
+          "category": "PRD drift",
+          "message": "PRD contains planned sections, but no open PRD-tracked backlog issues were found."
+        },
+        {
+          "category": "git state",
+          "message": "Submodule `plugins/DarkFactory` is dirty: parent records `49ddfc220dd2`, but marius-patrik/DarkFactory HEAD is `730b1c71d15e`."
+        },
+        {
+          "category": "git state",
+          "message": "Submodule `plugins/SkyAgent` is dirty: parent records `2cb1e4d62059`, but marius-patrik/SkyAgent HEAD is `e103357655d1`."
+        },
+        {
+          "category": "git state",
+          "message": "Submodule `data/andromeda` is dirty: parent records `4cc056832349`, but marius-patrik/Andromeda-data HEAD is `c7765f5b0c9a`."
+        },
+        {
+          "category": "git state",
+          "message": "Submodule `data/darkfactory` is dirty: parent records `9f118b1bd615`, but marius-patrik/darkfactory-data HEAD is `dd0ff79a7caa`."
+        }
+      ]
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "L5 audit used deterministic GitHub and repository metadata checks only"
+  }
+}

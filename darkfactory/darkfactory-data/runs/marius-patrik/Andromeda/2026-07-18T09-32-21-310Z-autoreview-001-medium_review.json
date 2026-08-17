@@ -1,0 +1,183 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T09:32:21.310Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#300",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "4739cf8f38191f0879952db04ef4c9a9e9d7ead9:9d24af45e2c9d8b9a700b153aa46ab8f5f890524",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "f1a14fa5151e3dc896167935cb377b4bba666182",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+      },
+      "promptChecksum": "sha256:aa5d2c42630734e71655ecea07eff6811d5e298a75ea2c40fe075a0727439fc8",
+      "inputChecksum": "sha256:57d9daa855dd6b613bcb9fe14e1ce1e122bf062136835f9b4faa7977ec4d637c",
+      "profile": {
+        "id": "profile/pr-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-pr",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/pr-reviewer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/validation-autoreview",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/pr-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/pr-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 107137,
+      "outputTokens": 4707,
+      "totalTokens": 111844
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "PR #300 at 9d24af45e2c9d8b9a700b153aa46ab8f5f890524 is blocked by a capability-source contract regression and missing trusted acceptance evidence for the exact head.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-e3c1625625008a1de6e3",
+          "title": "The capability-floor contract is incorrectly moved from plugins to packages",
+          "details": "The issue relocates six managed repository gitlinks, but the diff also declares all of packages—including implementation components such as core and manager—to be the authored capability-plugin source. No corresponding installer or capability-source migration is included, and verify-single-product also stops requiring the plugins root. Preserve plugins as the authored capability root while documenting managed product repositories under packages, or implement and validate an explicitly authorized full capability-source migration.",
+          "path": "docs/capabilities.md",
+          "line": 3
+        },
+        {
+          "id": "df-f91a560c9a476c6fcc1e",
+          "title": "Required validation and acceptance evidence is missing for the reviewed head",
+          "details": "For marius-patrik/Andromeda PR #300 at head 9d24af45e2c9d8b9a700b153aa46ab8f5f890524, the trusted evidence verifies only that the PR is open. It supplies no verified results for git diff --check, git submodule status --recursive, bun run ci, or fresh-clone submodule initialization. Claims in the untrusted PR body cannot satisfy these gates, so exact-head validation remains unproven.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": []
+    },
+    "findings": [
+      {
+        "id": "df-e3c1625625008a1de6e3",
+        "title": "The capability-floor contract is incorrectly moved from plugins to packages",
+        "details": "The issue relocates six managed repository gitlinks, but the diff also declares all of packages—including implementation components such as core and manager—to be the authored capability-plugin source. No corresponding installer or capability-source migration is included, and verify-single-product also stops requiring the plugins root. Preserve plugins as the authored capability root while documenting managed product repositories under packages, or implement and validate an explicitly authorized full capability-source migration.",
+        "path": "docs/capabilities.md",
+        "line": 3
+      },
+      {
+        "id": "df-f91a560c9a476c6fcc1e",
+        "title": "Required validation and acceptance evidence is missing for the reviewed head",
+        "details": "For marius-patrik/Andromeda PR #300 at head 9d24af45e2c9d8b9a700b153aa46ab8f5f890524, the trusted evidence verifies only that the PR is open. It supplies no verified results for git diff --check, git submodule status --recursive, bun run ci, or fresh-clone submodule initialization. Claims in the untrusted PR body cannot satisfy these gates, so exact-head validation remains unproven.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

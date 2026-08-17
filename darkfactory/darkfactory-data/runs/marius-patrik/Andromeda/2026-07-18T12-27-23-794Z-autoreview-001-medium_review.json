@@ -1,0 +1,255 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T12:27:23.794Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#213",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "aada29af45e1bb5a6c3a3e61f95af32d86d0c7ba428dfc4c9bd3291524f6c69e",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+      },
+      "promptChecksum": "sha256:d999fdf59a64ff21ac21b989d7e0b7ad248fcf5c7e3efd6d7f9ff2e1565fb7a3",
+      "inputChecksum": "sha256:e25dc4013dd4bc9b255c3fc3b1f391ad6d2ab9530fe5ee0670692495153a88f0",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 21726,
+      "outputTokens": 3128,
+      "totalTokens": 24854
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue #213 at verified version aada29af45e1bb5a6c3a3e61f95af32d86d0c7ba428dfc4c9bd3291524f6c69e is blocked. Its architecture and provider assumptions are stale, acceptance can succeed vacuously, ownership overlaps active runtime issues, and failure, evidence, and rollout contracts are incomplete.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-e6901023515cb52cec44",
+          "title": "Dispatch design conflicts with the canonical Agent OS authority boundary",
+          "details": "The issue assigns provider-specific OAuth adapters, credential-home use, route enabling, and local fallback to an unspecified gateway or library. Trusted policy requires every model-backed turn, credential interaction, concrete execution decision, and route provenance to remain exclusively behind the canonical Agent OS launcher, with no repository-local fallback. Rewrite the scope to identify the runtime-owned integration boundary and prohibit direct provider execution or credential handling outside it.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-afed79923487b3cb773f",
+          "title": "The provider baseline is stale and presently unverifiable",
+          "details": "The issue claims that all four registry entries are disabled, that Kimi is an unproven LiteLLM path, and that Claude, Codex, and Agy require new custom adapters. Verified state instead records canonical routes for all four providers, Kimi as decommissioned, Codex as quota-blocked until 2026-07-23, and Agy's receipts lane as credential_missing under issue #293. The contract must be refreshed against current route configuration and state before implementation can be selected or live proofs required.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-ebf7f9adaa2d001c7e82",
+          "title": "Requirements and acceptance permit a vacuous or deferred result",
+          "details": "“Implement or explicitly scope” permits documentation without delivery, while “each enabled provider has a live proof” can pass with no providers enabled. The issue does not state the required terminal state for Claude, Codex, Agy, or Kimi. Define an objective per-provider outcome—enabled with named proof criteria, or intentionally disabled for a named blocking condition—and make completion require every listed outcome.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-8f110e255a67d37ed9b6",
+          "title": "Single-lane ownership and dependency ordering are unresolved",
+          "details": "The issue spans four provider integrations, shared credential and routing behavior, live operations, and local degradation without identifying one implementation lane or sequencing dependencies. Its scope potentially overlaps gateway issues #210, #211, and #214 and active runtime work in #253, #275, #291, and #293. Establish explicit dependency links, define which issue owns route resolution, credential repair, provider recovery, and gateway integration, and remove duplicated acceptance.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-7e1f57d237f64df6ae8a",
+          "title": "Failure and never-meter behavior are not defined precisely",
+          "details": "The issue names quota exhaustion and generic fail-closed behavior but does not define outcomes for missing, expired, or revoked credentials; refresh failure; timeout; malformed responses; route unavailability; or ambiguous quota classification. “Safe never-meter behavior” is undefined, and the requested local fallback conflicts with the prohibition on repository-local execution fallback. Specify runtime-owned error classes, allowed transitions, metered-route exclusion rules, and fail-closed behavior for every failure class.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-065bbd04156c24635d4c",
+          "title": "Validation and live-proof evidence are not reproducible",
+          "details": "“Live proof on record” does not identify the receipt schema, immutable revision, provider and adapter version, route provenance, credential gate, expected observations, freshness, storage location, or redaction checks. Mock coverage is also described only by topic. Define authoritative test commands and cases, the exact credential-gated proof procedure, required normalized evidence fields, secret-leak assertions, and the checks that distinguish unavailable, quota-blocked, disabled, and healthy routes.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-19bc50143ac5c235077c",
+          "title": "Enablement rollout and rollback are unspecified",
+          "details": "The issue allows providers to be enabled after proof but defines no configuration owner, staged rollout, proof-expiry policy, health observation window, kill switch, rollback trigger, or behavior when a previously proven provider loses credentials or quota. Add per-provider admission and rollback procedures governed by canonical route status, including how evidence is published without exposing secrets.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Owner decision required: should #213 be rewritten as an Agent OS runtime-mediated cloud-dispatch contract, explicitly reconciling Kimi's decommissioned state and Agy's #293 credential gate, or retired in favor of the active route and receipt issues #253, #275, #291, and #293?"
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-e6901023515cb52cec44",
+        "title": "Dispatch design conflicts with the canonical Agent OS authority boundary",
+        "details": "The issue assigns provider-specific OAuth adapters, credential-home use, route enabling, and local fallback to an unspecified gateway or library. Trusted policy requires every model-backed turn, credential interaction, concrete execution decision, and route provenance to remain exclusively behind the canonical Agent OS launcher, with no repository-local fallback. Rewrite the scope to identify the runtime-owned integration boundary and prohibit direct provider execution or credential handling outside it.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-afed79923487b3cb773f",
+        "title": "The provider baseline is stale and presently unverifiable",
+        "details": "The issue claims that all four registry entries are disabled, that Kimi is an unproven LiteLLM path, and that Claude, Codex, and Agy require new custom adapters. Verified state instead records canonical routes for all four providers, Kimi as decommissioned, Codex as quota-blocked until 2026-07-23, and Agy's receipts lane as credential_missing under issue #293. The contract must be refreshed against current route configuration and state before implementation can be selected or live proofs required.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-ebf7f9adaa2d001c7e82",
+        "title": "Requirements and acceptance permit a vacuous or deferred result",
+        "details": "“Implement or explicitly scope” permits documentation without delivery, while “each enabled provider has a live proof” can pass with no providers enabled. The issue does not state the required terminal state for Claude, Codex, Agy, or Kimi. Define an objective per-provider outcome—enabled with named proof criteria, or intentionally disabled for a named blocking condition—and make completion require every listed outcome.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-8f110e255a67d37ed9b6",
+        "title": "Single-lane ownership and dependency ordering are unresolved",
+        "details": "The issue spans four provider integrations, shared credential and routing behavior, live operations, and local degradation without identifying one implementation lane or sequencing dependencies. Its scope potentially overlaps gateway issues #210, #211, and #214 and active runtime work in #253, #275, #291, and #293. Establish explicit dependency links, define which issue owns route resolution, credential repair, provider recovery, and gateway integration, and remove duplicated acceptance.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-7e1f57d237f64df6ae8a",
+        "title": "Failure and never-meter behavior are not defined precisely",
+        "details": "The issue names quota exhaustion and generic fail-closed behavior but does not define outcomes for missing, expired, or revoked credentials; refresh failure; timeout; malformed responses; route unavailability; or ambiguous quota classification. “Safe never-meter behavior” is undefined, and the requested local fallback conflicts with the prohibition on repository-local execution fallback. Specify runtime-owned error classes, allowed transitions, metered-route exclusion rules, and fail-closed behavior for every failure class.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-065bbd04156c24635d4c",
+        "title": "Validation and live-proof evidence are not reproducible",
+        "details": "“Live proof on record” does not identify the receipt schema, immutable revision, provider and adapter version, route provenance, credential gate, expected observations, freshness, storage location, or redaction checks. Mock coverage is also described only by topic. Define authoritative test commands and cases, the exact credential-gated proof procedure, required normalized evidence fields, secret-leak assertions, and the checks that distinguish unavailable, quota-blocked, disabled, and healthy routes.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-19bc50143ac5c235077c",
+        "title": "Enablement rollout and rollback are unspecified",
+        "details": "The issue allows providers to be enabled after proof but defines no configuration owner, staged rollout, proof-expiry policy, health observation window, kill switch, rollback trigger, or behavior when a previously proven provider loses credentials or quota. Add per-provider admission and rollback procedures governed by canonical route status, including how evidence is published without exposing secrets.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

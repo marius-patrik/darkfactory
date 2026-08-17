@@ -1,0 +1,575 @@
+{
+  "kind": "issue",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-17T10:26:10.654Z",
+  "status": "admitted",
+  "trigger": "12,27,42,57 * * * *",
+  "control_revision": "87502d30a15b883378dc8642a2d1fe95d49b89dc",
+  "repositories": [
+    "marius-patrik/Andromeda",
+    "marius-patrik/DarkFactory"
+  ],
+  "candidates": [
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 210,
+      "version": "f0f6bf996c735549d26a7ab9b53da4c6b4bb18339fb38a97c78fafeedeec1ee1",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 211,
+      "version": "a7fd6f13c2f79183a7ed00fccd5875a19c1212468c09c203eadbe79185d3f456",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 212,
+      "version": "ee53d30f2561cfa5942ea286cf81ea7ca58759bc17f32c27f3d59461275c3b67",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 213,
+      "version": "aada29af45e1bb5a6c3a3e61f95af32d86d0c7ba428dfc4c9bd3291524f6c69e",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 214,
+      "version": "401e128250d15ed63e0ea966c84a33c2c67239594d6625ac2d85258b17e8a54d",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 215,
+      "version": "5b5b6a8cdd4638abc6ace3043b340ec4ac70d068be1ec867be2bf5ed4de2ea4b",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 216,
+      "version": "049bb3aa35443a7e2eb4b4a99999d17567e4fa45c2705e5911a0d0a72646e5ec",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 217,
+      "version": "1a728713a3319cf421caa35c6d395d1ab5a8bd6c91a0197a76cd6ba3d3f3c1e1",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 218,
+      "version": "c95acef0be9505afae5bcb35ed4c81024bbb06ff06cb8f0f7dd167345aeff6e5",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 219,
+      "version": "0b7dfc4854ceec687e02fe93451be3f47f1806376bd2597801be113c4326ad41",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 221,
+      "version": "2672a5da4656799143bf2919a082b084e9ce5276756c83aef674c3307e9d87ff",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 222,
+      "version": "f42024652f8c83322c4b16fd4652cd3239e25e992d68f60b3a26a30a937dff87",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 223,
+      "version": "e76bf547863da3437b46f204b7310f10ba34ccbdb39fe601067f7bc32c5a25e4",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 224,
+      "version": "a26b9f240013dc9d4f740333717b847c0f24ca3b365a1275daefb8a7c405f49d",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 225,
+      "version": "e206b4cd6ed3fe639bcd5ef53132ad09304a7a1190f260ff54055e2844aa402c",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 227,
+      "version": "c93e4a0b009fe23e3de4fc123d767e0e05411fb0f884efde20e5d76b31a45499",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 243,
+      "version": "9a8be10ff8d8fbd761d50d4e850afa851d396ea165b99864163fe98560d73140",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 246,
+      "version": "f694bac66eb4c803e32e6a3ac3ceb0c72bb96f93f0e11dc050354a0faddb4e0d",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 251,
+      "version": "3f8911672ee9dab487f47fabffcb18a69e9bf053aa6d4d7d7034d47694cccb58",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 253,
+      "version": "7955a19655e2d57d037b67c2a04c7726415d2f03994f76429e7e8ffdde118290",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 255,
+      "version": "4964533eef850493ad9be36fd26e23a3e79f086c2ffeec7f2ea12dc9cf794da1",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 256,
+      "version": "eb35c05be2eac96b02ca27167d24fe2b8312407f889c6da08cf7a1658f038188",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 257,
+      "version": "b3bad92d5c61dd6110d98e497e9cfc9f3423992385f1d8de9d615dbf79ed5aee",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 258,
+      "version": "36792556815b7907e4620e9f31c819e0795d974f3695524b6950129ff5f3a44e",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 275,
+      "version": "ed25afae66b85f8cb90b732c50a2af0f539eb80c558922ac99d20e0e236f4b01",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 286,
+      "version": "c28a802f7c9f2bea58ca0e3309a5a16df39956bcdd53aadb77b82b9a8417f869",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 6,
+      "version": "222afdebc7c50a638a41b67769e39fdfb78d9ad2bd46b8815a20723ed04a13f8",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 8,
+      "version": "3c0f06d861d6ea77fe5e43608c5d6c77bc97685d8db4e764d1a0950f9581952f",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 12,
+      "version": "a88e4d657f9beb08d7d8408cad1384e898aaaac947db657285bc7b24a5e6151b",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 17,
+      "version": "9a7b15dcf7e76d14aa47c554dd9a57a2374cc3e0476bd75ec4def25b10b6d789",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 24,
+      "version": "48d9c87dd8df9d9d3076e7a7a2622c56830259e474e01eef924278d7b2aa762d",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 26,
+      "version": "64abf30b8aa0f0ed61a029a59061eea5797cdff0426147b20a118b47cad59f40",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 29,
+      "version": "576bb12b026eab9ec1fcba9f10a98983ab70b838fcaead71b64b9efd515c9b8a",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 32,
+      "version": "92693f34bff45f4a40d2145263c5bbc6876158770b706d6bcd2ef3b04d51d5d9",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 35,
+      "version": "ab18572dc593df276f85cedc826a600b86adccfc4ad2f6d481dfd545264e2254",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 36,
+      "version": "65c92df0f78be046df1711b393a395c9e00cc235a8c79a18b09135167d01ad2c",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 37,
+      "version": "f2d9443dc251700dd3c2971e30338120a6b6585c55ff245e0f5e94a315a32726",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 38,
+      "version": "76fa1e5687361b8a12aa95a701a1de60bb5e39931fe9998567bb045b59359be1",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 39,
+      "version": "4afb20419a713bb6ecb1a2a1641b30bd20730c65bc46e51ad216d875180838f3",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 41,
+      "version": "6e9c98787b0d24ac083d5c5f40faef38fec228b616cf3430d6d592663effa062",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 43,
+      "version": "de6bdb3398c0fdefa7ad661878fdf6b8552fedbefbf775da983d5b25bcd963bf",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 46,
+      "version": "247be8d5dc2046915638e25ee057845331a71b070e1e66d42cc69ff245e2a754",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 48,
+      "version": "4c462a849b825ba71a51dbcedb8c18824fe0c5eca14a1a5eb94003063a99e028",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 49,
+      "version": "8eb42da5ba8a6ad7850cf4625f8c7c2507dd1c877b4560ad9b91c529f5663674",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 50,
+      "version": "db8fd8e6182c50297f4c55238f1ad3d128c0f9930f4ea0de16e6d17442ce881e",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 51,
+      "version": "3aa8616438efa453e97db9bd2c9936eb599bd67a9a936b6256b51b7fdc4cf212",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 53,
+      "version": "ab905bfdf8256bdc20f086906175a91ea0cd8f01ba16d642a7da2d7c4d04fbd2",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 54,
+      "version": "a40858b531abe24bcff7034c9f971f4e146e72352c3a2a443f466ed903ac9eae",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 55,
+      "version": "e51ecf3baa1a0a1d55ef53af3de47fe514bc5f5ed7b0b8c2a54de19075aee0a6",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 255,
+      "version": "5cda33111be6f74e8adcc900e2d32c3447319c0e33f756a0d01a0b545d00941c",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 256,
+      "version": "6e2893d0791af9ca5bfea9737e610374045664fc773bbc0277007111b4ae465f",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 257,
+      "version": "00de76d1f282893e40f0efd6644d9086f7269b44eda48d88fa208689142f5718",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 260,
+      "version": "a56288247c5701299bc7912be7a68a5ec4540b113d5132431906c67e9643f09e",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 261,
+      "version": "a3e203251cadda5838538d30caec104a6a3fd172eccf51064a8555adf48cd366",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 274,
+      "version": "210cff8478b1bb45fee567cb3d11acfdaf8ef08383db5f57d34e4c0e6a183981",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 276,
+      "version": "913e3fa071d858c86130b0d9900217bf4eb43f2337902ee0758e4e61e956c10a",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 278,
+      "version": "1163366878282d838d75f545a191664655f632b7510a589818b5d478d96ae405",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/DarkFactory",
+      "number": 280,
+      "version": "5579ae0f8a6920ada1783be78fcc675827da8d8c72169646783d3a2418e20b05",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    }
+  ],
+  "selected": [
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 210,
+      "version": "f0f6bf996c735549d26a7ab9b53da4c6b4bb18339fb38a97c78fafeedeec1ee1",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 211,
+      "version": "a7fd6f13c2f79183a7ed00fccd5875a19c1212468c09c203eadbe79185d3f456",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 212,
+      "version": "ee53d30f2561cfa5942ea286cf81ea7ca58759bc17f32c27f3d59461275c3b67",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    },
+    {
+      "kind": "issue",
+      "repository": "marius-patrik/Andromeda",
+      "number": 213,
+      "version": "aada29af45e1bb5a6c3a3e61f95af32d86d0c7ba428dfc4c9bd3291524f6c69e",
+      "completion": "none",
+      "recoveryAction": "workflow-dispatch",
+      "recoveryReason": "missing-or-stale-result"
+    }
+  ],
+  "deferred": 54
+}

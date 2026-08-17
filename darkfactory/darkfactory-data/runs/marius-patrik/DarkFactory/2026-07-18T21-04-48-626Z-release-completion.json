@@ -1,0 +1,143 @@
+{
+  "kind": "release-completion",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-18T21:04:48.626Z",
+  "status": "waiting-for-green",
+  "mode": "run",
+  "repository": "marius-patrik/DarkFactory",
+  "plan": {
+    "schemaVersion": 1,
+    "planId": "release-ee0cb0911ddf0a0c9678",
+    "evidence": {
+      "repository": "marius-patrik/DarkFactory",
+      "main": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+      "dev": "beeb372ba579f86bfbd839038d6f626ce328e9e0",
+      "mainTree": "e526f214587fb2ffcdc38705d9898a20c4b0c66f",
+      "devTree": "d1c423c03efdc36525c7b05b78adc12c94925dde",
+      "classification": "dev-ahead",
+      "policy": "tagged"
+    },
+    "action": "release",
+    "reason": "verified-dev-ahead"
+  },
+  "action": {
+    "action": "release-pr",
+    "status": "waiting-for-green",
+    "pull_request": "https://github.com/marius-patrik/DarkFactory/pull/401",
+    "branch": "release/beeb372ba579",
+    "checks": {
+      "checks": [
+        {
+          "name": "Validate",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 88119960916,
+          "url": "https://github.com/marius-patrik/DarkFactory/actions/runs/29659647951/job/88119960916",
+          "state": "green"
+        },
+        {
+          "name": "DarkFactory Autoreview",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 88119961218,
+          "url": "https://github.com/marius-patrik/DarkFactory/actions/runs/29659648022/job/88119961218",
+          "state": "red"
+        }
+      ],
+      "green": false,
+      "missing": [],
+      "pending": [],
+      "red": [
+        "DarkFactory Autoreview"
+      ]
+    }
+  },
+  "after": {
+    "repository": "marius-patrik/DarkFactory",
+    "classification": "dev-ahead",
+    "main_sha": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+    "dev_sha": "beeb372ba579f86bfbd839038d6f626ce328e9e0",
+    "main_tree_sha": "e526f214587fb2ffcdc38705d9898a20c4b0c66f",
+    "dev_tree_sha": "d1c423c03efdc36525c7b05b78adc12c94925dde",
+    "convergence_invariant": "reviewed-ancestry-and-exact-tree-identity",
+    "policy": {
+      "schemaVersion": 1,
+      "enabled": true,
+      "mode": "tagged",
+      "releaseBranchPrefix": "release/",
+      "reconcileBranchPrefix": "reconcile/",
+      "requiredChecks": [
+        "Validate",
+        "DarkFactory Autoreview"
+      ],
+      "mainChecks": [
+        "Validate"
+      ],
+      "tagPattern": "^refs/tags/v\\d+\\.\\d+\\.\\d+$",
+      "artifactWorkflows": [],
+      "publicationChecks": [],
+      "producer": {
+        "workflow": "df-release-producer.yml",
+        "ref": "main",
+        "maxAttempts": 3,
+        "inputs": {}
+      }
+    },
+    "protections": {
+      "main": {
+        "configured": true,
+        "safe": true,
+        "requiredChecks": [
+          {
+            "context": "Validate",
+            "appId": 15368
+          },
+          {
+            "context": "DarkFactory Autoreview",
+            "appId": 15368
+          }
+        ]
+      },
+      "dev": {
+        "configured": true,
+        "safe": true,
+        "requiredChecks": [
+          {
+            "context": "Validate",
+            "appId": 15368
+          },
+          {
+            "context": "DarkFactory Autoreview",
+            "appId": 15368
+          }
+        ]
+      }
+    },
+    "main_checks": {
+      "checks": [
+        {
+          "name": "Validate",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 88118682391,
+          "url": "https://github.com/marius-patrik/DarkFactory/actions/runs/29659167184/job/88118682391",
+          "state": "green"
+        },
+        {
+          "name": "DarkFactory Autoreview",
+          "expectedAppId": 15368,
+          "actualAppId": null,
+          "id": null,
+          "url": null,
+          "state": "missing"
+        }
+      ],
+      "green": false,
+      "missing": [
+        "DarkFactory Autoreview"
+      ],
+      "pending": [],
+      "red": []
+    }
+  }
+}

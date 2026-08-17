@@ -1,0 +1,1501 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T22:28:36.646Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#223",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "exhausted_medium_rounds",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "e76bf547863da3437b46f204b7310f10ba34ccbdb39fe601067f7bc32c5a25e4",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:83c36250e3e7f88c0c7f7ea98ac798e6352350a8575f601c5f5167558002a686",
+          "inputChecksum": "sha256:382e5186bb4daed8495fb35ffaff0129696eba9e3705e7973b66d06163851488",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 20711,
+          "outputTokens": 2841,
+          "totalTokens": 23552
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #223 at version e76bf547863da3437b46f204b7310f10ba34ccbdb39fe601067f7bc32c5a25e4 has a clear high-level goal, but it is not yet an executable contract. Seven blocking gaps remain around ownership, dependencies, runtime authority, resource limits, watchdog semantics, validation, and rollout.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-21671491a9c1065ce8d5",
+              "title": "Component ownership and adjacent-lane boundaries are unspecified",
+              "details": "For marius-patrik/Andromeda issue #223 at the reviewed version, the scope combines subagent delegation with watchdog control over thought, worker, and subagent lanes without naming the owning package, APIs, persisted state, or explicit non-goals. It also does not distinguish its watchdog responsibility from the worker lifecycle owned by #222 or the runtime lifecycle supplied by #221. Define one implementation owner and precise interfaces and exclusions so multiple lanes cannot independently own, cancel, or finalize the same work.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-b92c121ec1f039dc31e1",
+              "title": "Dependencies and delivery sequencing are not actionable",
+              "details": "The issue states that it depends on operation engine 1/3, pairs with 2/3, and will feed the lane 4 ask-owner path once that dispatch exists, but it does not identify the required issue states or accepted contracts, whether #222 is blocking, or what escalation behavior is valid before lane 4 exists. Record explicit dependencies, readiness conditions, and the pre-lane-4 behavior; unavailable authority or dispatch must fail closed.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-9f1f0c132993dd1f62c2",
+              "title": "Canonical runtime and untrusted-result boundaries are missing",
+              "details": "The specification does not require every model-backed subagent turn to cross the canonical Agent OS launcher or preserve the runtime's exclusive ownership of identity, memory, sessions, route selection, credentials, execution, and normalized provenance. It also does not state that delegated instructions and returned artifacts are untrusted data that cannot expand scope or authorization. Add capability boundaries, authenticated parent-to-child authorization, result validation, canonical provenance requirements, and an explicit prohibition on repository-local provider, credential, executable, or session fallbacks.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-3dc88f92933f6497558c",
+              "title": "Budget, scope, and concurrency enforcement lacks a measurable contract",
+              "details": "The requirement to enforce declared scope, budget, and caps fail-closed does not define accounting units, nesting rules, reservation and release behavior, machine versus operation limits, or handling of races, retries, cancellation, and engine restart. Define the resource model and observable terminal outcomes, including proof that exceeding each limit prevents further work, releases capacity exactly once, emits a durable canonical event, and leaves no orphaned lane.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-fd382bba40e0454c9a50",
+              "title": "Non-progress detection and termination semantics are ambiguous",
+              "details": "The phrase 'no event progress against declared intent' is not an operational stall predicate. The issue lacks progress-proof rules, monotonic timing and thresholds, grace periods, false-progress resistance, cancel-versus-kill ordering, acknowledgement deadlines, cleanup and child propagation, race handling when completion coincides with timeout, restart recovery, and deterministic escalation selection. Specify the watchdog state machine and durable event ordering so identical observed state produces the same terminal result without killing legitimately quiet work.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-54570b70fe69746b26bd",
+              "title": "Behavioral acceptance does not cover the safety requirements",
+              "details": "The two stated scenarios—one real sub-task and one injected stall—do not objectively define fixtures, expected artifacts, event sequence, terminal states, or absence of orphaned work. They also omit acceptance for scope violation, budget exhaustion, concurrency overflow, duplicate ownership, cancellation races, restart durability, unavailable canonical runtime, and rejection of unauthorized or malformed child results. Add deterministic tests and durable evidence assertions for normal completion and each fail-closed boundary. The separately owned exact-head Validate command results need not be duplicated here.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-6b60e903c515ca9009dc",
+              "title": "Rollout, compatibility, and recovery policy are absent",
+              "details": "Issue #223 introduces orchestration state and durable event types but provides no event-schema compatibility, replay or recovery behavior, activation order after #221/#222, handling of in-flight legacy work, rollback or disable path, or observability criteria for rollout. Define how the feature is introduced without split ownership, how old and new durable state are interpreted, and how operators prove safe disablement or recovery after partial failure.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner decision required: may subagent ownership and watchdog control operate only within one machine, or must the contract reserve a future cross-machine ownership model?",
+            "Owner decision required: which lane types may be terminated automatically, what cancel-before-kill policy is authorized, and which conditions must escalate without destructive termination?",
+            "Owner decision required: before lane 4 dispatch exists, should escalation terminate as a durable blocked receipt, remain pending, or prevent this feature from being enabled?"
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-21671491a9c1065ce8d5",
+            "title": "Component ownership and adjacent-lane boundaries are unspecified",
+            "details": "For marius-patrik/Andromeda issue #223 at the reviewed version, the scope combines subagent delegation with watchdog control over thought, worker, and subagent lanes without naming the owning package, APIs, persisted state, or explicit non-goals. It also does not distinguish its watchdog responsibility from the worker lifecycle owned by #222 or the runtime lifecycle supplied by #221. Define one implementation owner and precise interfaces and exclusions so multiple lanes cannot independently own, cancel, or finalize the same work.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-b92c121ec1f039dc31e1",
+            "title": "Dependencies and delivery sequencing are not actionable",
+            "details": "The issue states that it depends on operation engine 1/3, pairs with 2/3, and will feed the lane 4 ask-owner path once that dispatch exists, but it does not identify the required issue states or accepted contracts, whether #222 is blocking, or what escalation behavior is valid before lane 4 exists. Record explicit dependencies, readiness conditions, and the pre-lane-4 behavior; unavailable authority or dispatch must fail closed.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-9f1f0c132993dd1f62c2",
+            "title": "Canonical runtime and untrusted-result boundaries are missing",
+            "details": "The specification does not require every model-backed subagent turn to cross the canonical Agent OS launcher or preserve the runtime's exclusive ownership of identity, memory, sessions, route selection, credentials, execution, and normalized provenance. It also does not state that delegated instructions and returned artifacts are untrusted data that cannot expand scope or authorization. Add capability boundaries, authenticated parent-to-child authorization, result validation, canonical provenance requirements, and an explicit prohibition on repository-local provider, credential, executable, or session fallbacks.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-3dc88f92933f6497558c",
+            "title": "Budget, scope, and concurrency enforcement lacks a measurable contract",
+            "details": "The requirement to enforce declared scope, budget, and caps fail-closed does not define accounting units, nesting rules, reservation and release behavior, machine versus operation limits, or handling of races, retries, cancellation, and engine restart. Define the resource model and observable terminal outcomes, including proof that exceeding each limit prevents further work, releases capacity exactly once, emits a durable canonical event, and leaves no orphaned lane.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-fd382bba40e0454c9a50",
+            "title": "Non-progress detection and termination semantics are ambiguous",
+            "details": "The phrase 'no event progress against declared intent' is not an operational stall predicate. The issue lacks progress-proof rules, monotonic timing and thresholds, grace periods, false-progress resistance, cancel-versus-kill ordering, acknowledgement deadlines, cleanup and child propagation, race handling when completion coincides with timeout, restart recovery, and deterministic escalation selection. Specify the watchdog state machine and durable event ordering so identical observed state produces the same terminal result without killing legitimately quiet work.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-54570b70fe69746b26bd",
+            "title": "Behavioral acceptance does not cover the safety requirements",
+            "details": "The two stated scenarios—one real sub-task and one injected stall—do not objectively define fixtures, expected artifacts, event sequence, terminal states, or absence of orphaned work. They also omit acceptance for scope violation, budget exhaustion, concurrency overflow, duplicate ownership, cancellation races, restart durability, unavailable canonical runtime, and rejection of unauthorized or malformed child results. Add deterministic tests and durable evidence assertions for normal completion and each fail-closed boundary. The separately owned exact-head Validate command results need not be duplicated here.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-6b60e903c515ca9009dc",
+            "title": "Rollout, compatibility, and recovery policy are absent",
+            "details": "Issue #223 introduces orchestration state and durable event types but provides no event-schema compatibility, replay or recovery behavior, activation order after #221/#222, handling of in-flight legacy work, rollback or disable path, or observability criteria for rollout. Define how the feature is introduced without split ownership, how old and new durable state are interpreted, and how operators prove safe disablement or recovery after partial failure.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 2,
+        "phase": "medium_fix",
+        "targetVersion": "e76bf547863da3437b46f204b7310f10ba34ccbdb39fe601067f7bc32c5a25e4",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:45ab995f475140e4633d5f055199698f871ebcfcb100fc7b37ef9a4ba6d25ce5",
+          "inputChecksum": "sha256:4ef8d8e573b7c44dbe4c0a6307c232d51056caf17efc2b74c95a64c0febbd373",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 89624,
+          "outputTokens": 3809,
+          "totalTokens": 93433
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-21671491a9c1065ce8d5",
+            "title": "Component ownership and adjacent-lane boundaries are unspecified",
+            "details": "For marius-patrik/Andromeda issue #223 at the reviewed version, the scope combines subagent delegation with watchdog control over thought, worker, and subagent lanes without naming the owning package, APIs, persisted state, or explicit non-goals. It also does not distinguish its watchdog responsibility from the worker lifecycle owned by #222 or the runtime lifecycle supplied by #221. Define one implementation owner and precise interfaces and exclusions so multiple lanes cannot independently own, cancel, or finalize the same work.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-b92c121ec1f039dc31e1",
+            "title": "Dependencies and delivery sequencing are not actionable",
+            "details": "The issue states that it depends on operation engine 1/3, pairs with 2/3, and will feed the lane 4 ask-owner path once that dispatch exists, but it does not identify the required issue states or accepted contracts, whether #222 is blocking, or what escalation behavior is valid before lane 4 exists. Record explicit dependencies, readiness conditions, and the pre-lane-4 behavior; unavailable authority or dispatch must fail closed.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-9f1f0c132993dd1f62c2",
+            "title": "Canonical runtime and untrusted-result boundaries are missing",
+            "details": "The specification does not require every model-backed subagent turn to cross the canonical Agent OS launcher or preserve the runtime's exclusive ownership of identity, memory, sessions, route selection, credentials, execution, and normalized provenance. It also does not state that delegated instructions and returned artifacts are untrusted data that cannot expand scope or authorization. Add capability boundaries, authenticated parent-to-child authorization, result validation, canonical provenance requirements, and an explicit prohibition on repository-local provider, credential, executable, or session fallbacks.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-3dc88f92933f6497558c",
+            "title": "Budget, scope, and concurrency enforcement lacks a measurable contract",
+            "details": "The requirement to enforce declared scope, budget, and caps fail-closed does not define accounting units, nesting rules, reservation and release behavior, machine versus operation limits, or handling of races, retries, cancellation, and engine restart. Define the resource model and observable terminal outcomes, including proof that exceeding each limit prevents further work, releases capacity exactly once, emits a durable canonical event, and leaves no orphaned lane.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-fd382bba40e0454c9a50",
+            "title": "Non-progress detection and termination semantics are ambiguous",
+            "details": "The phrase 'no event progress against declared intent' is not an operational stall predicate. The issue lacks progress-proof rules, monotonic timing and thresholds, grace periods, false-progress resistance, cancel-versus-kill ordering, acknowledgement deadlines, cleanup and child propagation, race handling when completion coincides with timeout, restart recovery, and deterministic escalation selection. Specify the watchdog state machine and durable event ordering so identical observed state produces the same terminal result without killing legitimately quiet work.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-54570b70fe69746b26bd",
+            "title": "Behavioral acceptance does not cover the safety requirements",
+            "details": "The two stated scenarios—one real sub-task and one injected stall—do not objectively define fixtures, expected artifacts, event sequence, terminal states, or absence of orphaned work. They also omit acceptance for scope violation, budget exhaustion, concurrency overflow, duplicate ownership, cancellation races, restart durability, unavailable canonical runtime, and rejection of unauthorized or malformed child results. Add deterministic tests and durable evidence assertions for normal completion and each fail-closed boundary. The separately owned exact-head Validate command results need not be duplicated here.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-6b60e903c515ca9009dc",
+            "title": "Rollout, compatibility, and recovery policy are absent",
+            "details": "Issue #223 introduces orchestration state and durable event types but provides no event-schema compatibility, replay or recovery behavior, activation order after #221/#222, handling of in-flight legacy work, rollback or disable path, or observability criteria for rollout. Define how the feature is introduced without split ownership, how old and new durable state are interpreted, and how operators prove safe disablement or recovery after partial failure.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-21671491a9c1065ce8d5",
+          "df-b92c121ec1f039dc31e1",
+          "df-9f1f0c132993dd1f62c2",
+          "df-3dc88f92933f6497558c",
+          "df-fd382bba40e0454c9a50",
+          "df-54570b70fe69746b26bd",
+          "df-6b60e903c515ca9009dc"
+        ],
+        "changeRef": "issue-comment:5013124766:197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3",
+        "afterVersion": "197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3",
+        "blockCode": null,
+        "outcome": "fixed"
+      },
+      {
+        "sequence": 3,
+        "phase": "medium_review",
+        "targetVersion": "197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:bd16c3b4de237a29243018219d78e03ed2da8593eda23362e2e68ebabd00cb6b",
+          "inputChecksum": "sha256:c8826d9cec44bf0b7da2d441ef380bd4be9c0e796a09193ec37836a6126dd6dd",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 37560,
+          "outputTokens": 5082,
+          "totalTokens": 42642
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #223 is substantially developed but remains blocked by prerequisite-contract gaps, ambiguous terminal and resource ownership, undefined restart-safe timing, unresolved related-issue ownership, and an unauthenticated rollout decision.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-3f59a234411dc0d86a74",
+              "title": "Prerequisite issues do not contract the interfaces #223 requires",
+              "details": "At verified version 197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3, marius-patrik/Andromeda#223 assumes #221 will expose cancellation, termination, normalized attempt-level provenance, and atomic durable ownership/capacity operations, while #222 will expose ordered lane intents and qualifying checkpoint evidence. The supplied #221 and #222 contracts do not require all of those interfaces. Closing them under their current acceptance could therefore leave #223 permanently blocked or force it to create authority outside its declared lane. Amend the prerequisite contracts or narrow #223 to interfaces they actually guarantee.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-98e3336af67e9822fe7c",
+              "title": "Coordinator terminal events conflict with the declared lifecycle authority",
+              "details": "Issue #223 says #221 remains the sole cancellation, termination, and terminal-state authority, but its watchdog directs the coordinator to commit `cancelled` and `force_terminated` and later requires exactly one terminal outcome. It does not distinguish a non-authoritative #223 observation from the canonical #221 terminal event or define which event releases reservations. Specify the sole terminal transition, the coordinator's derived record if any, and replay behavior so two authorities or duplicate terminal events cannot arise.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-ee89fa6cba8d52d84060",
+              "title": "Restart-safe monotonic deadline semantics are undefined",
+              "details": "The contract persists monotonic deadlines and requires deterministic replay after process restart, but it does not define the clock epoch, boot identity, suspend/reboot behavior, or conversion used when the replacement process cannot compare its monotonic clock directly with a recorded value. The controllable-clock acceptance cases also omit epoch discontinuity. Define a canonical restart-safe time representation and add crash, process-restart, reboot or epoch-change, and suspend behavior to acceptance.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-d4b152b2cea2b14f14ef",
+              "title": "Descendant budget and reservation release semantics are contradictory",
+              "details": "The resource contract says a descendant reservation consumes a unit only for its lifetime and terminalization releases reservations, while acceptance calls `maxDescendants` a budget that can be exhausted such that no subsequent work starts. It is therefore unclear whether descendant units are cumulative spawn budget, concurrent subtree capacity, or both; `maxActiveChildren` already supplies a separate concurrency limit. Define the counters independently, state which debits remain after terminalization, and assert those exact values during retry, replacement, cancellation, and replay.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-bfcc43f20df1d8da16d0",
+              "title": "Overlapping open watchdog and lifecycle work has no ownership reconciliation",
+              "details": "The verified open-issue index includes #255 for stalled provider turns and #258 for dead-owner turns lacking terminal completion, both overlapping #223's stall detection, cancellation, terminalization, and recovery surface. Issue #223 neither declares them dependencies nor assigns their behavior to a separate authority. Inspect their complete contracts and record whether #223 consumes, supersedes, or remains disjoint from each one before implementation, preserving a single owner for every lifecycle transition.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-023a7cc6e3852917904c",
+              "title": "Feature enablement and disablement require an unresolved owner decision",
+              "details": "Issue #223 defaults the feature disabled but only says enablement is explicit; it does not identify the authenticated authority allowed to enable model-backed delegation and watchdog termination. Safe disablement likewise permits either draining or cancelling without a selection rule or deadline. This conflicts with the assertion that no owner decision remains. Record who may enable the feature and the deterministic drain-versus-cancel policy, including the evidence that authorizes each transition.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner question: Who is authorized to enable #223, and on disablement should active lanes drain until a defined deadline or be cancelled immediately?"
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-3f59a234411dc0d86a74",
+            "title": "Prerequisite issues do not contract the interfaces #223 requires",
+            "details": "At verified version 197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3, marius-patrik/Andromeda#223 assumes #221 will expose cancellation, termination, normalized attempt-level provenance, and atomic durable ownership/capacity operations, while #222 will expose ordered lane intents and qualifying checkpoint evidence. The supplied #221 and #222 contracts do not require all of those interfaces. Closing them under their current acceptance could therefore leave #223 permanently blocked or force it to create authority outside its declared lane. Amend the prerequisite contracts or narrow #223 to interfaces they actually guarantee.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-98e3336af67e9822fe7c",
+            "title": "Coordinator terminal events conflict with the declared lifecycle authority",
+            "details": "Issue #223 says #221 remains the sole cancellation, termination, and terminal-state authority, but its watchdog directs the coordinator to commit `cancelled` and `force_terminated` and later requires exactly one terminal outcome. It does not distinguish a non-authoritative #223 observation from the canonical #221 terminal event or define which event releases reservations. Specify the sole terminal transition, the coordinator's derived record if any, and replay behavior so two authorities or duplicate terminal events cannot arise.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-ee89fa6cba8d52d84060",
+            "title": "Restart-safe monotonic deadline semantics are undefined",
+            "details": "The contract persists monotonic deadlines and requires deterministic replay after process restart, but it does not define the clock epoch, boot identity, suspend/reboot behavior, or conversion used when the replacement process cannot compare its monotonic clock directly with a recorded value. The controllable-clock acceptance cases also omit epoch discontinuity. Define a canonical restart-safe time representation and add crash, process-restart, reboot or epoch-change, and suspend behavior to acceptance.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d4b152b2cea2b14f14ef",
+            "title": "Descendant budget and reservation release semantics are contradictory",
+            "details": "The resource contract says a descendant reservation consumes a unit only for its lifetime and terminalization releases reservations, while acceptance calls `maxDescendants` a budget that can be exhausted such that no subsequent work starts. It is therefore unclear whether descendant units are cumulative spawn budget, concurrent subtree capacity, or both; `maxActiveChildren` already supplies a separate concurrency limit. Define the counters independently, state which debits remain after terminalization, and assert those exact values during retry, replacement, cancellation, and replay.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-bfcc43f20df1d8da16d0",
+            "title": "Overlapping open watchdog and lifecycle work has no ownership reconciliation",
+            "details": "The verified open-issue index includes #255 for stalled provider turns and #258 for dead-owner turns lacking terminal completion, both overlapping #223's stall detection, cancellation, terminalization, and recovery surface. Issue #223 neither declares them dependencies nor assigns their behavior to a separate authority. Inspect their complete contracts and record whether #223 consumes, supersedes, or remains disjoint from each one before implementation, preserving a single owner for every lifecycle transition.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-023a7cc6e3852917904c",
+            "title": "Feature enablement and disablement require an unresolved owner decision",
+            "details": "Issue #223 defaults the feature disabled but only says enablement is explicit; it does not identify the authenticated authority allowed to enable model-backed delegation and watchdog termination. Safe disablement likewise permits either draining or cancelling without a selection rule or deadline. This conflicts with the assertion that no owner decision remains. Record who may enable the feature and the deterministic drain-versus-cancel policy, including the evidence that authorizes each transition.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 4,
+        "phase": "medium_fix",
+        "targetVersion": "197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:8320b1e7f2fa692e2b80fc1b5c65cd29f76e148b1751e60837be3ca45730a449",
+          "inputChecksum": "sha256:cf85950e0893d4054736bdda38c5c7302dbfc4acc626a286416257242f9f6610",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 155627,
+          "outputTokens": 7342,
+          "totalTokens": 162969
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-3f59a234411dc0d86a74",
+            "title": "Prerequisite issues do not contract the interfaces #223 requires",
+            "details": "At verified version 197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3, marius-patrik/Andromeda#223 assumes #221 will expose cancellation, termination, normalized attempt-level provenance, and atomic durable ownership/capacity operations, while #222 will expose ordered lane intents and qualifying checkpoint evidence. The supplied #221 and #222 contracts do not require all of those interfaces. Closing them under their current acceptance could therefore leave #223 permanently blocked or force it to create authority outside its declared lane. Amend the prerequisite contracts or narrow #223 to interfaces they actually guarantee.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-98e3336af67e9822fe7c",
+            "title": "Coordinator terminal events conflict with the declared lifecycle authority",
+            "details": "Issue #223 says #221 remains the sole cancellation, termination, and terminal-state authority, but its watchdog directs the coordinator to commit `cancelled` and `force_terminated` and later requires exactly one terminal outcome. It does not distinguish a non-authoritative #223 observation from the canonical #221 terminal event or define which event releases reservations. Specify the sole terminal transition, the coordinator's derived record if any, and replay behavior so two authorities or duplicate terminal events cannot arise.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-ee89fa6cba8d52d84060",
+            "title": "Restart-safe monotonic deadline semantics are undefined",
+            "details": "The contract persists monotonic deadlines and requires deterministic replay after process restart, but it does not define the clock epoch, boot identity, suspend/reboot behavior, or conversion used when the replacement process cannot compare its monotonic clock directly with a recorded value. The controllable-clock acceptance cases also omit epoch discontinuity. Define a canonical restart-safe time representation and add crash, process-restart, reboot or epoch-change, and suspend behavior to acceptance.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d4b152b2cea2b14f14ef",
+            "title": "Descendant budget and reservation release semantics are contradictory",
+            "details": "The resource contract says a descendant reservation consumes a unit only for its lifetime and terminalization releases reservations, while acceptance calls `maxDescendants` a budget that can be exhausted such that no subsequent work starts. It is therefore unclear whether descendant units are cumulative spawn budget, concurrent subtree capacity, or both; `maxActiveChildren` already supplies a separate concurrency limit. Define the counters independently, state which debits remain after terminalization, and assert those exact values during retry, replacement, cancellation, and replay.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-bfcc43f20df1d8da16d0",
+            "title": "Overlapping open watchdog and lifecycle work has no ownership reconciliation",
+            "details": "The verified open-issue index includes #255 for stalled provider turns and #258 for dead-owner turns lacking terminal completion, both overlapping #223's stall detection, cancellation, terminalization, and recovery surface. Issue #223 neither declares them dependencies nor assigns their behavior to a separate authority. Inspect their complete contracts and record whether #223 consumes, supersedes, or remains disjoint from each one before implementation, preserving a single owner for every lifecycle transition.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-023a7cc6e3852917904c",
+            "title": "Feature enablement and disablement require an unresolved owner decision",
+            "details": "Issue #223 defaults the feature disabled but only says enablement is explicit; it does not identify the authenticated authority allowed to enable model-backed delegation and watchdog termination. Safe disablement likewise permits either draining or cancelling without a selection rule or deadline. This conflicts with the assertion that no owner decision remains. Record who may enable the feature and the deterministic drain-versus-cancel policy, including the evidence that authorizes each transition.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-3f59a234411dc0d86a74",
+          "df-98e3336af67e9822fe7c",
+          "df-ee89fa6cba8d52d84060",
+          "df-d4b152b2cea2b14f14ef",
+          "df-bfcc43f20df1d8da16d0",
+          "df-023a7cc6e3852917904c"
+        ],
+        "changeRef": "issue-comment:5013145200:e3c74148aef1a77a120ffadc246780a0786e814316381958567efecf32dde156",
+        "afterVersion": "e3c74148aef1a77a120ffadc246780a0786e814316381958567efecf32dde156",
+        "blockCode": null,
+        "outcome": "fixed"
+      },
+      {
+        "sequence": 5,
+        "phase": "medium_review",
+        "targetVersion": "e3c74148aef1a77a120ffadc246780a0786e814316381958567efecf32dde156",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:9d888904a291926f9ba2d3f38e686217a6dd85cd04d0cb51cfdeb897eed9dba4",
+          "inputChecksum": "sha256:bd4618bf2ba13bee624f2004ae36b53a9a5654f40b22ef23f562bf53027eef4c",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 59102,
+          "outputTokens": 5323,
+          "totalTokens": 64425
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #223 at verified version e3c74148aef1a77a120ffadc246780a0786e814316381958567efecf32dde156 remains blocked. The contract has an unresolved owner-level meaning of \"kill\" and incomplete crash-safe launch, accounting, and watchdog timing semantics.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-31847d258966244ecf7b",
+              "title": "The required meaning of killing a stalled lane is contradictory",
+              "details": "In marius-patrik/Andromeda issue #223, the preserved owner goal and epic #218 acceptance require the watchdog to kill stalled work. The current Lifecycle authority and Watchdog sections instead stop only the logical #223 delegation, explicitly synthesize no #221 terminal event, and permit the underlying provider process to remain alive under #255 ownership. Consequently, the detailed acceptance can pass without proving the owner-authored kill outcome. The contract must define whether kill means irrevocable logical revocation or physical runtime cancellation. If physical cancellation is required, #255 or another accepted cancellation interface must become a dependency; if logical revocation is sufficient, that semantic narrowing requires authenticated owner confirmation and objective acceptance must state it explicitly.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-0549579532bba59c3f4f",
+              "title": "Crash-safe child launch relies on an unguaranteed idempotency interface",
+              "details": "The issue promises that a crash after admission replays to one idempotent spawn attempt and that restart tests after spawn cannot duplicate work, while explicitly declining to require attempt-level execution provenance. Referenced issues #221 and #222 guarantee scheduling, event handling, and recorded spawn semantics, but do not guarantee an idempotency key, atomic event-to-launch handoff, or reconciliation of a process started immediately before a crash. The contract must either require such a prerequisite interface or define a fail-closed ambiguous-launch outcome that never relaunches until canonical evidence resolves the attempt. Acceptance must cover the crash window between external launch and durable launch evidence.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-c7a92336ccec252e21a3",
+              "title": "Subsequent model-turn debits lack a durable pre-launch transition",
+              "details": "The Resource and accounting contract requires every launcher invocation, including an in-place retry, to increment modelTurnsUsed before launch. Only delegation_admitted is defined as the durable append-before-spawn debit record, and that event occurs once per admitted child. No event, compare-and-set rule, or scheduler-lease transition is defined for later turns and retries. This leaves crash replay and concurrent retry paths unable to prove that each invocation was charged exactly once before execution. Specify the durable per-invocation debit/admission transition, its idempotency identity, its serialization rule, and recovery behavior, then cover crashes before and after that transition.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-d2e6af236d7e3ffd68a5",
+              "title": "Nested accounting does not define enforcement for intermediate ancestors",
+              "details": "Nested delegation may have arbitrary depth, but the contract debits only the immediate parent and root operation. For a root → child → grandchild → great-grandchild tree, the great-grandchild can therefore bypass the cumulative descendant or active-child limit of the intermediate child unless those limits are intended to cover direct children only. The names maxDescendants and descendantsAdmitted imply subtree limits, while acceptance checks only parent/root accounting. Define whether each limit is direct-child or subtree-wide; if subtree-wide, admission must atomically check and debit every ancestor, with acceptance covering depth greater than two.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-130f33e7da30e313fae0",
+              "title": "Watchdog expiry initialization and progress advancement are undefined",
+              "details": "The time contract defines clock comparison and the watchdog defines qualifying progress, but it never specifies how the initial recorded expiry is derived or how an advancing checkpoint updates it. The relationship among admission time, launchGraceMs, stallTimeoutMs, the last qualifying event, parent-authorized extensions, and the overall deadline is therefore ambiguous. Deterministic implementations could disagree on whether progress resets the stall window or whether launch grace overlaps it. Define the exact durable expiry formula and transition for admission, spawn, each qualifying progress event, and extension—bounded by the overall deadline—and add acceptance for progress immediately before expiry and crash/replay around an expiry update.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner question: For #223, does \"kill what stalls\" authorize and require only irreversible logical delegation revocation, or must acceptance also prove cancellation or termination of the underlying runtime/provider work?"
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-31847d258966244ecf7b",
+            "title": "The required meaning of killing a stalled lane is contradictory",
+            "details": "In marius-patrik/Andromeda issue #223, the preserved owner goal and epic #218 acceptance require the watchdog to kill stalled work. The current Lifecycle authority and Watchdog sections instead stop only the logical #223 delegation, explicitly synthesize no #221 terminal event, and permit the underlying provider process to remain alive under #255 ownership. Consequently, the detailed acceptance can pass without proving the owner-authored kill outcome. The contract must define whether kill means irrevocable logical revocation or physical runtime cancellation. If physical cancellation is required, #255 or another accepted cancellation interface must become a dependency; if logical revocation is sufficient, that semantic narrowing requires authenticated owner confirmation and objective acceptance must state it explicitly.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-0549579532bba59c3f4f",
+            "title": "Crash-safe child launch relies on an unguaranteed idempotency interface",
+            "details": "The issue promises that a crash after admission replays to one idempotent spawn attempt and that restart tests after spawn cannot duplicate work, while explicitly declining to require attempt-level execution provenance. Referenced issues #221 and #222 guarantee scheduling, event handling, and recorded spawn semantics, but do not guarantee an idempotency key, atomic event-to-launch handoff, or reconciliation of a process started immediately before a crash. The contract must either require such a prerequisite interface or define a fail-closed ambiguous-launch outcome that never relaunches until canonical evidence resolves the attempt. Acceptance must cover the crash window between external launch and durable launch evidence.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-c7a92336ccec252e21a3",
+            "title": "Subsequent model-turn debits lack a durable pre-launch transition",
+            "details": "The Resource and accounting contract requires every launcher invocation, including an in-place retry, to increment modelTurnsUsed before launch. Only delegation_admitted is defined as the durable append-before-spawn debit record, and that event occurs once per admitted child. No event, compare-and-set rule, or scheduler-lease transition is defined for later turns and retries. This leaves crash replay and concurrent retry paths unable to prove that each invocation was charged exactly once before execution. Specify the durable per-invocation debit/admission transition, its idempotency identity, its serialization rule, and recovery behavior, then cover crashes before and after that transition.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d2e6af236d7e3ffd68a5",
+            "title": "Nested accounting does not define enforcement for intermediate ancestors",
+            "details": "Nested delegation may have arbitrary depth, but the contract debits only the immediate parent and root operation. For a root → child → grandchild → great-grandchild tree, the great-grandchild can therefore bypass the cumulative descendant or active-child limit of the intermediate child unless those limits are intended to cover direct children only. The names maxDescendants and descendantsAdmitted imply subtree limits, while acceptance checks only parent/root accounting. Define whether each limit is direct-child or subtree-wide; if subtree-wide, admission must atomically check and debit every ancestor, with acceptance covering depth greater than two.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-130f33e7da30e313fae0",
+            "title": "Watchdog expiry initialization and progress advancement are undefined",
+            "details": "The time contract defines clock comparison and the watchdog defines qualifying progress, but it never specifies how the initial recorded expiry is derived or how an advancing checkpoint updates it. The relationship among admission time, launchGraceMs, stallTimeoutMs, the last qualifying event, parent-authorized extensions, and the overall deadline is therefore ambiguous. Deterministic implementations could disagree on whether progress resets the stall window or whether launch grace overlaps it. Define the exact durable expiry formula and transition for admission, spawn, each qualifying progress event, and extension—bounded by the overall deadline—and add acceptance for progress immediately before expiry and crash/replay around an expiry update.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 6,
+        "phase": "medium_fix",
+        "targetVersion": "e3c74148aef1a77a120ffadc246780a0786e814316381958567efecf32dde156",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:88223a188a5c554589c63b2e20d497b0f9521a909a43c7dab4a694abac3f7f48",
+          "inputChecksum": "sha256:81a097e899c59339b04654de8aca3fd6dc4c1bfc06cc0b555e5da604ea9eace7",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 242118,
+          "outputTokens": 10060,
+          "totalTokens": 252178
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-31847d258966244ecf7b",
+            "title": "The required meaning of killing a stalled lane is contradictory",
+            "details": "In marius-patrik/Andromeda issue #223, the preserved owner goal and epic #218 acceptance require the watchdog to kill stalled work. The current Lifecycle authority and Watchdog sections instead stop only the logical #223 delegation, explicitly synthesize no #221 terminal event, and permit the underlying provider process to remain alive under #255 ownership. Consequently, the detailed acceptance can pass without proving the owner-authored kill outcome. The contract must define whether kill means irrevocable logical revocation or physical runtime cancellation. If physical cancellation is required, #255 or another accepted cancellation interface must become a dependency; if logical revocation is sufficient, that semantic narrowing requires authenticated owner confirmation and objective acceptance must state it explicitly.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-0549579532bba59c3f4f",
+            "title": "Crash-safe child launch relies on an unguaranteed idempotency interface",
+            "details": "The issue promises that a crash after admission replays to one idempotent spawn attempt and that restart tests after spawn cannot duplicate work, while explicitly declining to require attempt-level execution provenance. Referenced issues #221 and #222 guarantee scheduling, event handling, and recorded spawn semantics, but do not guarantee an idempotency key, atomic event-to-launch handoff, or reconciliation of a process started immediately before a crash. The contract must either require such a prerequisite interface or define a fail-closed ambiguous-launch outcome that never relaunches until canonical evidence resolves the attempt. Acceptance must cover the crash window between external launch and durable launch evidence.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-c7a92336ccec252e21a3",
+            "title": "Subsequent model-turn debits lack a durable pre-launch transition",
+            "details": "The Resource and accounting contract requires every launcher invocation, including an in-place retry, to increment modelTurnsUsed before launch. Only delegation_admitted is defined as the durable append-before-spawn debit record, and that event occurs once per admitted child. No event, compare-and-set rule, or scheduler-lease transition is defined for later turns and retries. This leaves crash replay and concurrent retry paths unable to prove that each invocation was charged exactly once before execution. Specify the durable per-invocation debit/admission transition, its idempotency identity, its serialization rule, and recovery behavior, then cover crashes before and after that transition.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d2e6af236d7e3ffd68a5",
+            "title": "Nested accounting does not define enforcement for intermediate ancestors",
+            "details": "Nested delegation may have arbitrary depth, but the contract debits only the immediate parent and root operation. For a root → child → grandchild → great-grandchild tree, the great-grandchild can therefore bypass the cumulative descendant or active-child limit of the intermediate child unless those limits are intended to cover direct children only. The names maxDescendants and descendantsAdmitted imply subtree limits, while acceptance checks only parent/root accounting. Define whether each limit is direct-child or subtree-wide; if subtree-wide, admission must atomically check and debit every ancestor, with acceptance covering depth greater than two.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-130f33e7da30e313fae0",
+            "title": "Watchdog expiry initialization and progress advancement are undefined",
+            "details": "The time contract defines clock comparison and the watchdog defines qualifying progress, but it never specifies how the initial recorded expiry is derived or how an advancing checkpoint updates it. The relationship among admission time, launchGraceMs, stallTimeoutMs, the last qualifying event, parent-authorized extensions, and the overall deadline is therefore ambiguous. Deterministic implementations could disagree on whether progress resets the stall window or whether launch grace overlaps it. Define the exact durable expiry formula and transition for admission, spawn, each qualifying progress event, and extension—bounded by the overall deadline—and add acceptance for progress immediately before expiry and crash/replay around an expiry update.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-31847d258966244ecf7b",
+          "df-0549579532bba59c3f4f",
+          "df-c7a92336ccec252e21a3",
+          "df-d2e6af236d7e3ffd68a5",
+          "df-130f33e7da30e313fae0"
+        ],
+        "changeRef": "issue-comment:5013165773:dde0736e513e240da96934161e3c55d00eea40056095011b0c5e4ba30e2cdbd4",
+        "afterVersion": "dde0736e513e240da96934161e3c55d00eea40056095011b0c5e4ba30e2cdbd4",
+        "blockCode": null,
+        "outcome": "fixed"
+      },
+      {
+        "sequence": 7,
+        "phase": "medium_review",
+        "targetVersion": "dde0736e513e240da96934161e3c55d00eea40056095011b0c5e4ba30e2cdbd4",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:4cd670e0d633d12354e0f39e3fa448076385949aa1bda21285e60064f32dcc85",
+          "inputChecksum": "sha256:a353b77b0688cb9254d35a507e91c6fab48f7cc9725458df99de40858ed7e1e9",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 87726,
+          "outputTokens": 2104,
+          "totalTokens": 89830
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #223 is blocked by an unresolved owner-only semantic decision, missing required control-plane labeling, and contradictory/undefined launch-timeout behavior. Ownership, trust boundaries, accounting, validation coverage, dependencies, rollout, and recovery are otherwise substantially specified.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-64aa2b646d53da305bdc",
+              "title": "Kill semantics remain an unresolved owner-only decision",
+              "details": "The preserved owner goal requires stalled work to be killed, but the specification leaves physical runtime cancellation versus irrevocable logical revocation undecided and explicitly makes that choice a prerequisite for implementation acceptance and activation. No authenticated owner selection is present in the complete issue version. Required action: obtain an authenticated repository-owner answer for issue #223 choosing A (physical cancellation, with an accepted canonical cancellation dependency) or B (logical revocation, explicitly narrowing the meaning of kill).",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-f9524759fabfeb20d1a1",
+              "title": "Current labels do not reflect the specification's blocked owner-decision state",
+              "details": "The issue contract requires issue #223 to remain labeled df:ask-owner until the kill-semantics decision is authenticated, but verified current state lists only P1. This makes the durable GitHub control plane disagree with the issue's own required status and can allow sequencing or automation to miss the owner gate. Required action: apply df:ask-owner through the trusted runtime while the decision remains unresolved; df:reviewed must not indicate readiness while blocking findings remain.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-15571873cf8164beda13",
+              "title": "Launch-expiry transitions have conflicting outcomes and omit later-invocation deadline initialization",
+              "details": "For an admitted invocation lacking canonical binding at expiry, the ambiguous-launch recovery contract requires launch_state_ambiguous followed by outcome launch_ambiguous. The watchdog contract separately defines any expired launch phase as a stall and requires stall_detected followed by outcome stalled, so identical initial-launch state permits two terminal paths. In addition, launch expiry is initialized only at delegation admission and changed to progress after the first binding, while subsequent model turns and retries also use launcher_invocation_admitted and ambiguous-launch recovery without defining an invocation-specific launch phase, expiry, or transition back from progress. Required action: define one authoritative per-invocation launch-deadline transition and deterministic precedence, including later turns and retries, and state whether expiry without binding produces launch_ambiguous or stalled.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Exact owner question: For issue #223 and epic #218, does “kill stalled work” require A — physical runtime cancellation with authoritative terminal evidence, or B — irrevocable logical revocation with no claim of provider-process termination?",
+            "Issues #221 and #222 remain open; the specification correctly treats their accepted and merged interfaces as activation prerequisites and blocks closed if those interfaces are absent.",
+            "Issue #255 becomes a blocking dependency only if the owner selects physical cancellation; issue #258 remains a disjoint lifecycle owner."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-64aa2b646d53da305bdc",
+            "title": "Kill semantics remain an unresolved owner-only decision",
+            "details": "The preserved owner goal requires stalled work to be killed, but the specification leaves physical runtime cancellation versus irrevocable logical revocation undecided and explicitly makes that choice a prerequisite for implementation acceptance and activation. No authenticated owner selection is present in the complete issue version. Required action: obtain an authenticated repository-owner answer for issue #223 choosing A (physical cancellation, with an accepted canonical cancellation dependency) or B (logical revocation, explicitly narrowing the meaning of kill).",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-f9524759fabfeb20d1a1",
+            "title": "Current labels do not reflect the specification's blocked owner-decision state",
+            "details": "The issue contract requires issue #223 to remain labeled df:ask-owner until the kill-semantics decision is authenticated, but verified current state lists only P1. This makes the durable GitHub control plane disagree with the issue's own required status and can allow sequencing or automation to miss the owner gate. Required action: apply df:ask-owner through the trusted runtime while the decision remains unresolved; df:reviewed must not indicate readiness while blocking findings remain.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-15571873cf8164beda13",
+            "title": "Launch-expiry transitions have conflicting outcomes and omit later-invocation deadline initialization",
+            "details": "For an admitted invocation lacking canonical binding at expiry, the ambiguous-launch recovery contract requires launch_state_ambiguous followed by outcome launch_ambiguous. The watchdog contract separately defines any expired launch phase as a stall and requires stall_detected followed by outcome stalled, so identical initial-launch state permits two terminal paths. In addition, launch expiry is initialized only at delegation admission and changed to progress after the first binding, while subsequent model turns and retries also use launcher_invocation_admitted and ambiguous-launch recovery without defining an invocation-specific launch phase, expiry, or transition back from progress. Required action: define one authoritative per-invocation launch-deadline transition and deterministic precedence, including later turns and retries, and state whether expiry without binding produces launch_ambiguous or stalled.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      }
+    ]
+  }
+}

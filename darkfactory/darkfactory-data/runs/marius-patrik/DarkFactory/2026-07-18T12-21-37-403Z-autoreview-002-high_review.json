@@ -1,0 +1,183 @@
+{
+  "kind": "autoreview-002-high_review",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-18T12:21:37.403Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#353",
+  "round": {
+    "sequence": 2,
+    "phase": "high_review",
+    "targetVersion": "7a1001deeece71b9648b7f151c5c88f48f78d074:b2bab2457291995c15d348ca506fefa135aa2852",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+      },
+      "promptChecksum": "sha256:5c2cefa8b36ef4ff2f78ebc6e2a124339c41932af8ce0e867fb8ff7bb43007ec",
+      "inputChecksum": "sha256:438b1c978723e450d0d78336473b3dc22b8fb3ad77422487485568d60934c45e",
+      "profile": {
+        "id": "profile/pr-final-review",
+        "version": "0.2.0",
+        "runKind": "review-pr",
+        "purpose": "final-review"
+      },
+      "selection": {
+        "role": "role/pr-reviewer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/validation-autoreview",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "high",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/bun-node",
+        "output": "output/pr-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/high",
+          "version": "0.2.0",
+          "checksum": "sha256:c3f885bdc7bf6b88c24c9c92f9c5ce0b2e03f60d573be2f6517faf5c17ecda9f"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/bun-node",
+          "version": "0.2.0",
+          "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+        },
+        {
+          "id": "output/pr-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "high",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 150066,
+      "outputTokens": 6309,
+      "totalTokens": 156375
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Final review is blocked by incomplete trusted gate provenance and a deleted-gitlink autofix gap.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-f6a6be8e4b46c11f1154",
+          "title": "Deleted gitlinks remain eligible for autofix replacement",
+          "details": "changedPullFiles indexes only the head tree. When a gitlink is deleted or is the source of a rename, the absent head entry is serialized as a generic deletion with null mode and OID. Because the path is also omitted from snapshot.files, an autofix proposal can treat it as a new zero-hash text path; after checking out the head, the deleted path is absent and the fixer can recreate it as a regular file. This violates issue #343's requirements that every changed gitlink retain mode 160000 and its object ID and never be admitted to autofix. Classify deletions against the base tree and explicitly exclude every base-or-head gitlink path from autofix admission, with regressions for deleted and renamed gitlinks.",
+          "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+          "line": null
+        },
+        {
+          "id": "df-393bba029b9d901670d3",
+          "title": "Required exact-head review and validation provenance is missing",
+          "details": "Trusted state for marius-patrik/DarkFactory PR #353 at head b2bab2457291995c15d348ca506fefa135aa2852 verifies only that the target is open and names the default branch. It supplies neither a clean medium-tier round nor a trusted exact-head Validate result for npm run check. The PR-body validation claims are untrusted and cannot satisfy these gates, so the high-tier final review cannot approve this revision.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": []
+    },
+    "findings": [
+      {
+        "id": "df-f6a6be8e4b46c11f1154",
+        "title": "Deleted gitlinks remain eligible for autofix replacement",
+        "details": "changedPullFiles indexes only the head tree. When a gitlink is deleted or is the source of a rename, the absent head entry is serialized as a generic deletion with null mode and OID. Because the path is also omitted from snapshot.files, an autofix proposal can treat it as a new zero-hash text path; after checking out the head, the deleted path is absent and the fixer can recreate it as a regular file. This violates issue #343's requirements that every changed gitlink retain mode 160000 and its object ID and never be admitted to autofix. Classify deletions against the base tree and explicitly exclude every base-or-head gitlink path from autofix admission, with regressions for deleted and renamed gitlinks.",
+        "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+        "line": null
+      },
+      {
+        "id": "df-393bba029b9d901670d3",
+        "title": "Required exact-head review and validation provenance is missing",
+        "details": "Trusted state for marius-patrik/DarkFactory PR #353 at head b2bab2457291995c15d348ca506fefa135aa2852 verifies only that the target is open and names the default branch. It supplies neither a clean medium-tier round nor a trusted exact-head Validate result for npm run check. The PR-body validation claims are untrusted and cannot satisfy these gates, so the high-tier final review cannot approve this revision.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

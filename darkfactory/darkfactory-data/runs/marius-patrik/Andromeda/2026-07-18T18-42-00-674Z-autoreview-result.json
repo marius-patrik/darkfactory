@@ -1,0 +1,1148 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T18:42:00.675Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#221",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "fix_no_change",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "2672a5da4656799143bf2919a082b084e9ce5276756c83aef674c3307e9d87ff",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:3fb3c531ab5b8d84b60977f42880efd9c16605f76d60ea15c47b63c0b0015ec3",
+          "inputChecksum": "sha256:8649908b36c909bbdc3c882c065d17fadc61e3cabd2cdb42cbd0b50f3f4f3990",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 21860,
+          "outputTokens": 1507,
+          "totalTokens": 23367
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue 221 at verified version 2672a5da4656799143bf2919a082b084e9ce5276756c83aef674c3307e9d87ff has a clear migration goal and high-level ownership split, but it is not yet an executable contract. Runtime boundaries, failure and trust semantics, dependency sequencing, objective validation, and the authorized rollout posture remain incomplete.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-da76ed0884859bf6927e",
+              "title": "The runtime contract lacks concrete boundaries and acceptance criteria",
+              "details": "The specification lists waves, leases, scheduling, session events, and the tool loop, but does not identify the contract artifact, exported operations, package ownership, callers, event schemas, compatibility guarantees, or enforceable dependency direction between manager, harness, CLI, and shared state/memory contracts. Define these boundaries and objective checks that prove manager remains management-only and orchestration is harness-owned.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-d0a977ff67717a98c686",
+              "title": "Failure and trust behavior is unspecified",
+              "details": "The contract does not define required behavior for lease expiry or contention, process death, cancellation, duplicate or out-of-order events, corrupt or incomplete replay, scheduler-cap violations, tool failures, untrusted tool or session payloads, or unavailable canonical Agent OS authority. Specify durable events, recovery or fail-closed outcomes, authorization boundaries, and the prohibition on repository-local execution fallbacks.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-9bb3bcbb2849aca2dadf",
+              "title": "Validation requirements are not objectively reproducible",
+              "details": "Phrases such as \"runs harness-owned,\" \"proofs green,\" and \"harness suite runs in CI\" do not name the behavioral cases or evidence needed for acceptance. Require focused tests for contract conformance, deterministic replay, crash and lease recovery, duplicate-event handling, concurrency-cap enforcement, CLI-to-contract invocation, manager-to-harness dependency direction, and CI fail-closed detection when the harness suite is absent or skipped.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-388a181e209f46e20537",
+              "title": "Dependencies and sequencing are incomplete",
+              "details": "The issue references epic 218 and closed issue 206 but does not declare the prerequisite state/memory v2 contracts or existing replay surface by issue or revision, nor explicitly sequence downstream issues 222 and 223. It also does not reconcile potentially overlapping active session and orchestration work visible in issues 258 and 275. Record authoritative dependencies, required completion states, downstream blockers, and any overlap disposition before implementation.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-974d3e7d565c37000904",
+              "title": "Migration rollout and compatibility posture requires an owner decision",
+              "details": "The issue does not specify whether migration is an atomic cutover or a staged compatibility bridge, how persisted in-flight sessions and events cross the boundary, when manager-owned orchestration code may be removed, or what rollback behavior is authorized. This semantic and operational choice cannot be inferred by a worker.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner question: Should issue 221 require an atomic manager-to-harness cutover, or authorize a temporary compatibility bridge; and in either case, what compatibility and rollback guarantees are required for persisted and in-flight sessions?",
+            "The two contributor comments are pending workflow markers only and provide no specification authority or completion evidence."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-da76ed0884859bf6927e",
+            "title": "The runtime contract lacks concrete boundaries and acceptance criteria",
+            "details": "The specification lists waves, leases, scheduling, session events, and the tool loop, but does not identify the contract artifact, exported operations, package ownership, callers, event schemas, compatibility guarantees, or enforceable dependency direction between manager, harness, CLI, and shared state/memory contracts. Define these boundaries and objective checks that prove manager remains management-only and orchestration is harness-owned.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d0a977ff67717a98c686",
+            "title": "Failure and trust behavior is unspecified",
+            "details": "The contract does not define required behavior for lease expiry or contention, process death, cancellation, duplicate or out-of-order events, corrupt or incomplete replay, scheduler-cap violations, tool failures, untrusted tool or session payloads, or unavailable canonical Agent OS authority. Specify durable events, recovery or fail-closed outcomes, authorization boundaries, and the prohibition on repository-local execution fallbacks.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-9bb3bcbb2849aca2dadf",
+            "title": "Validation requirements are not objectively reproducible",
+            "details": "Phrases such as \"runs harness-owned,\" \"proofs green,\" and \"harness suite runs in CI\" do not name the behavioral cases or evidence needed for acceptance. Require focused tests for contract conformance, deterministic replay, crash and lease recovery, duplicate-event handling, concurrency-cap enforcement, CLI-to-contract invocation, manager-to-harness dependency direction, and CI fail-closed detection when the harness suite is absent or skipped.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-388a181e209f46e20537",
+            "title": "Dependencies and sequencing are incomplete",
+            "details": "The issue references epic 218 and closed issue 206 but does not declare the prerequisite state/memory v2 contracts or existing replay surface by issue or revision, nor explicitly sequence downstream issues 222 and 223. It also does not reconcile potentially overlapping active session and orchestration work visible in issues 258 and 275. Record authoritative dependencies, required completion states, downstream blockers, and any overlap disposition before implementation.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-974d3e7d565c37000904",
+            "title": "Migration rollout and compatibility posture requires an owner decision",
+            "details": "The issue does not specify whether migration is an atomic cutover or a staged compatibility bridge, how persisted in-flight sessions and events cross the boundary, when manager-owned orchestration code may be removed, or what rollback behavior is authorized. This semantic and operational choice cannot be inferred by a worker.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 2,
+        "phase": "medium_fix",
+        "targetVersion": "2672a5da4656799143bf2919a082b084e9ce5276756c83aef674c3307e9d87ff",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:156466bda03e65097643dcb3e1e0402eda998c4e91a2d7a3c7dbf01e89c6d88d",
+          "inputChecksum": "sha256:4b86ea7cb37d75a9d46e975487b1f22764538fde7073b37f027b3d713f6787cf",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 140424,
+          "outputTokens": 3831,
+          "totalTokens": 144255
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-da76ed0884859bf6927e",
+            "title": "The runtime contract lacks concrete boundaries and acceptance criteria",
+            "details": "The specification lists waves, leases, scheduling, session events, and the tool loop, but does not identify the contract artifact, exported operations, package ownership, callers, event schemas, compatibility guarantees, or enforceable dependency direction between manager, harness, CLI, and shared state/memory contracts. Define these boundaries and objective checks that prove manager remains management-only and orchestration is harness-owned.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d0a977ff67717a98c686",
+            "title": "Failure and trust behavior is unspecified",
+            "details": "The contract does not define required behavior for lease expiry or contention, process death, cancellation, duplicate or out-of-order events, corrupt or incomplete replay, scheduler-cap violations, tool failures, untrusted tool or session payloads, or unavailable canonical Agent OS authority. Specify durable events, recovery or fail-closed outcomes, authorization boundaries, and the prohibition on repository-local execution fallbacks.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-9bb3bcbb2849aca2dadf",
+            "title": "Validation requirements are not objectively reproducible",
+            "details": "Phrases such as \"runs harness-owned,\" \"proofs green,\" and \"harness suite runs in CI\" do not name the behavioral cases or evidence needed for acceptance. Require focused tests for contract conformance, deterministic replay, crash and lease recovery, duplicate-event handling, concurrency-cap enforcement, CLI-to-contract invocation, manager-to-harness dependency direction, and CI fail-closed detection when the harness suite is absent or skipped.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-388a181e209f46e20537",
+            "title": "Dependencies and sequencing are incomplete",
+            "details": "The issue references epic 218 and closed issue 206 but does not declare the prerequisite state/memory v2 contracts or existing replay surface by issue or revision, nor explicitly sequence downstream issues 222 and 223. It also does not reconcile potentially overlapping active session and orchestration work visible in issues 258 and 275. Record authoritative dependencies, required completion states, downstream blockers, and any overlap disposition before implementation.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-974d3e7d565c37000904",
+            "title": "Migration rollout and compatibility posture requires an owner decision",
+            "details": "The issue does not specify whether migration is an atomic cutover or a staged compatibility bridge, how persisted in-flight sessions and events cross the boundary, when manager-owned orchestration code may be removed, or what rollback behavior is authorized. This semantic and operational choice cannot be inferred by a worker.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-da76ed0884859bf6927e",
+          "df-d0a977ff67717a98c686",
+          "df-9bb3bcbb2849aca2dadf",
+          "df-388a181e209f46e20537",
+          "df-974d3e7d565c37000904"
+        ],
+        "changeRef": "issue-comment:5012444087:83be7ee54ccec64fa87fc8d20aba5bc836299a125b1ea0fdf45a54da71ef91ca",
+        "afterVersion": "83be7ee54ccec64fa87fc8d20aba5bc836299a125b1ea0fdf45a54da71ef91ca",
+        "blockCode": null,
+        "outcome": "fixed"
+      },
+      {
+        "sequence": 3,
+        "phase": "medium_review",
+        "targetVersion": "83be7ee54ccec64fa87fc8d20aba5bc836299a125b1ea0fdf45a54da71ef91ca",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:6050f239994f7e7f9c26ab29b88a8de1a55d86c425a3fe44d5f1c56c217ef3b1",
+          "inputChecksum": "sha256:18167b47b76e771e2935d1efb7123b3d15f7990c8d6b0b43ecc4208d0d65bfd1",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 38793,
+          "outputTokens": 2145,
+          "totalTokens": 40938
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #221 is not implementation-ready. Its ownership, boundaries, failure cases, and validation are substantially specified, but required dependency revisions and rollout authorization remain absent, and the crash-safety requirement promises exactly-once external effects without defining the necessary effect protocol.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-8ad75d743e831d81e7d3",
+              "title": "Required dependency contracts are not pinned to merged revisions",
+              "details": "For marius-patrik/Andromeda issue #221 at version 83be7ee54ccec64fa87fc8d20aba5bc836299a125b1ea0fdf45a54da71ef91ca, the observed specification contains no exact merged revision and contract path for the authoritative state/memory v2 schemas or replay surface. It also depends on canonical interfaces from open issues #258 and #275 without merged revision pins. The expected state is an immutable dependency ledger identifying each merged commit, contract path, and compatibility assumption before implementation, with acceptance blocked until #258 and #275 provide their required merged interfaces. Record those pins and revalidate the exact issue version; until then implementation and acceptance are blocked.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-6902e09f96d50ba1ccb9",
+              "title": "Migration posture lacks authenticated owner authorization",
+              "details": "The issue correctly identifies atomic cutover versus a staged compatibility bridge as an owner-only decision, but the supplied complete issue version contains no authenticated owner ruling selecting either posture or defining in-flight session/event handling, the single-writer rule, manager-code removal, rollback cutoff, and behavior after the first harness-owned event. The expected state is one explicit owner authorization covering those rules and the corresponding df:ask-owner control-plane state while unresolved. No worker may choose the posture, introduce a bridge or dual writers, delete manager orchestration, or claim acceptance before that ruling is recorded.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-6bbacb9d0dfb4566350c",
+              "title": "Crash-safety requirement lacks an implementable external-effect protocol",
+              "details": "The specification requires that a crash between recording intent and completing an effect neither duplicate the effect nor lose its durable outcome, but it does not constrain effects to idempotent operations or define stable effect keys, an outbox/inbox protocol, remote-result reconciliation, or fail-closed behavior when an external tool cannot prove whether an effect occurred. Event replay alone cannot guarantee exactly-once execution across that uncertainty window. Define the supported effect classes and their idempotency/reconciliation contract, and add deterministic validation for crashes before dispatch, after dispatch but before result persistence, and during reconciliation.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner decision pending: choose atomic cutover or staged compatibility bridge and authorize the exact in-flight-state, writer, manager-removal, and rollback rules.",
+            "The issue otherwise provides a clear harness-owned lane, manager/harness dependency direction, trust boundaries, durable event requirements, downstream sequencing, and focused validation coverage."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-8ad75d743e831d81e7d3",
+            "title": "Required dependency contracts are not pinned to merged revisions",
+            "details": "For marius-patrik/Andromeda issue #221 at version 83be7ee54ccec64fa87fc8d20aba5bc836299a125b1ea0fdf45a54da71ef91ca, the observed specification contains no exact merged revision and contract path for the authoritative state/memory v2 schemas or replay surface. It also depends on canonical interfaces from open issues #258 and #275 without merged revision pins. The expected state is an immutable dependency ledger identifying each merged commit, contract path, and compatibility assumption before implementation, with acceptance blocked until #258 and #275 provide their required merged interfaces. Record those pins and revalidate the exact issue version; until then implementation and acceptance are blocked.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-6902e09f96d50ba1ccb9",
+            "title": "Migration posture lacks authenticated owner authorization",
+            "details": "The issue correctly identifies atomic cutover versus a staged compatibility bridge as an owner-only decision, but the supplied complete issue version contains no authenticated owner ruling selecting either posture or defining in-flight session/event handling, the single-writer rule, manager-code removal, rollback cutoff, and behavior after the first harness-owned event. The expected state is one explicit owner authorization covering those rules and the corresponding df:ask-owner control-plane state while unresolved. No worker may choose the posture, introduce a bridge or dual writers, delete manager orchestration, or claim acceptance before that ruling is recorded.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-6bbacb9d0dfb4566350c",
+            "title": "Crash-safety requirement lacks an implementable external-effect protocol",
+            "details": "The specification requires that a crash between recording intent and completing an effect neither duplicate the effect nor lose its durable outcome, but it does not constrain effects to idempotent operations or define stable effect keys, an outbox/inbox protocol, remote-result reconciliation, or fail-closed behavior when an external tool cannot prove whether an effect occurred. Event replay alone cannot guarantee exactly-once execution across that uncertainty window. Define the supported effect classes and their idempotency/reconciliation contract, and add deterministic validation for crashes before dispatch, after dispatch but before result persistence, and during reconciliation.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 4,
+        "phase": "medium_fix",
+        "targetVersion": "83be7ee54ccec64fa87fc8d20aba5bc836299a125b1ea0fdf45a54da71ef91ca",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:e78e4b5f0b67defdfe2745681faba7369ab64960c9ccdfbe0043a26d6708d93e",
+          "inputChecksum": "sha256:6adb6b6a57544d0d690890e3b2a8a535dbed50e112ab78b7f22393641dfdd6e7",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 159453,
+          "outputTokens": 5605,
+          "totalTokens": 165058
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-8ad75d743e831d81e7d3",
+            "title": "Required dependency contracts are not pinned to merged revisions",
+            "details": "For marius-patrik/Andromeda issue #221 at version 83be7ee54ccec64fa87fc8d20aba5bc836299a125b1ea0fdf45a54da71ef91ca, the observed specification contains no exact merged revision and contract path for the authoritative state/memory v2 schemas or replay surface. It also depends on canonical interfaces from open issues #258 and #275 without merged revision pins. The expected state is an immutable dependency ledger identifying each merged commit, contract path, and compatibility assumption before implementation, with acceptance blocked until #258 and #275 provide their required merged interfaces. Record those pins and revalidate the exact issue version; until then implementation and acceptance are blocked.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-6902e09f96d50ba1ccb9",
+            "title": "Migration posture lacks authenticated owner authorization",
+            "details": "The issue correctly identifies atomic cutover versus a staged compatibility bridge as an owner-only decision, but the supplied complete issue version contains no authenticated owner ruling selecting either posture or defining in-flight session/event handling, the single-writer rule, manager-code removal, rollback cutoff, and behavior after the first harness-owned event. The expected state is one explicit owner authorization covering those rules and the corresponding df:ask-owner control-plane state while unresolved. No worker may choose the posture, introduce a bridge or dual writers, delete manager orchestration, or claim acceptance before that ruling is recorded.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-6bbacb9d0dfb4566350c",
+            "title": "Crash-safety requirement lacks an implementable external-effect protocol",
+            "details": "The specification requires that a crash between recording intent and completing an effect neither duplicate the effect nor lose its durable outcome, but it does not constrain effects to idempotent operations or define stable effect keys, an outbox/inbox protocol, remote-result reconciliation, or fail-closed behavior when an external tool cannot prove whether an effect occurred. Event replay alone cannot guarantee exactly-once execution across that uncertainty window. Define the supported effect classes and their idempotency/reconciliation contract, and add deterministic validation for crashes before dispatch, after dispatch but before result persistence, and during reconciliation.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-8ad75d743e831d81e7d3",
+          "df-6902e09f96d50ba1ccb9",
+          "df-6bbacb9d0dfb4566350c"
+        ],
+        "changeRef": "issue-comment:5012456456:dc81d12d51cf1e41e29e13ae15751207bb3650a3d4bc8b3f833a794da3c582ea",
+        "afterVersion": "dc81d12d51cf1e41e29e13ae15751207bb3650a3d4bc8b3f833a794da3c582ea",
+        "blockCode": null,
+        "outcome": "fixed"
+      },
+      {
+        "sequence": 5,
+        "phase": "medium_review",
+        "targetVersion": "dc81d12d51cf1e41e29e13ae15751207bb3650a3d4bc8b3f833a794da3c582ea",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:4a8bde02679170615bf0fb62e07be4b5066f4c2ebbc43cfd10ed423dbed80f1a",
+          "inputChecksum": "sha256:1f577989c10cad975ad295ccbe9617130eaa4406b3cd328ca90a2cb2e2c2e20f",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 58122,
+          "outputTokens": 1981,
+          "totalTokens": 60103
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #221 at version dc81d12d51cf1e41e29e13ae15751207bb3650a3d4bc8b3f833a794da3c582ea has a clear runtime boundary, failure model, validation plan, and ownership lane, but implementation remains blocked by three unpinned dependencies, an unresolved owner-only rollout decision, and missing required control-plane state.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-485eb0508b67883e7334",
+              "title": "Required dependency ledger remains unresolved",
+              "details": "For marius-patrik/Andromeda issue #221, the state/memory v2 contract has no verified merged 40-character commit or contract paths, while prerequisite issues #258 and #275 remain open and likewise have no merged revision or exported contract path. The specification correctly declares these as implementation blockers, but they make the current target unverifiable and not ready. Record trusted merged revisions, exact contract paths, compatibility assumptions, and verification results for all three rows before implementation begins.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-20562eaf3f4292877a99",
+              "title": "Migration posture lacks authenticated owner authorization",
+              "details": "The current issue version leaves atomic cutover versus staged compatibility bridge undecided. Consequently, rules for in-flight sessions and events, the single canonical writer, manager-orchestrator removal, rollback cutoff, and behavior after the first harness-owned event are unauthorized. Obtain an authenticated ruling from the owner on issue #221 before implementation, deletion, dual-version compatibility work, or acceptance.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-adb06c0ece2441bf59b4",
+              "title": "Required ask-owner label is absent",
+              "details": "Verified issue state lists only the P1 label, although the unresolved rollout decision requires df:ask-owner under the issue contract and trusted control-plane policy. Apply df:ask-owner and keep df:reviewed absent until the owner decision and dependency blockers are resolved.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner question: Should #221 use atomic cutover or a staged compatibility bridge, and what are the authorized rules for in-flight sessions/events, the single canonical writer, manager-code removal, rollback cutoff, and behavior after the first harness-owned event is committed?",
+            "Apart from the enumerated blockers, the current specification provides clear package ownership, trust and failure boundaries, external-effect recovery semantics, objective validation coverage, downstream sequencing, and preserved owner history."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-485eb0508b67883e7334",
+            "title": "Required dependency ledger remains unresolved",
+            "details": "For marius-patrik/Andromeda issue #221, the state/memory v2 contract has no verified merged 40-character commit or contract paths, while prerequisite issues #258 and #275 remain open and likewise have no merged revision or exported contract path. The specification correctly declares these as implementation blockers, but they make the current target unverifiable and not ready. Record trusted merged revisions, exact contract paths, compatibility assumptions, and verification results for all three rows before implementation begins.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-20562eaf3f4292877a99",
+            "title": "Migration posture lacks authenticated owner authorization",
+            "details": "The current issue version leaves atomic cutover versus staged compatibility bridge undecided. Consequently, rules for in-flight sessions and events, the single canonical writer, manager-orchestrator removal, rollback cutoff, and behavior after the first harness-owned event are unauthorized. Obtain an authenticated ruling from the owner on issue #221 before implementation, deletion, dual-version compatibility work, or acceptance.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-adb06c0ece2441bf59b4",
+            "title": "Required ask-owner label is absent",
+            "details": "Verified issue state lists only the P1 label, although the unresolved rollout decision requires df:ask-owner under the issue contract and trusted control-plane policy. Apply df:ask-owner and keep df:reviewed absent until the owner decision and dependency blockers are resolved.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 6,
+        "phase": "medium_fix",
+        "targetVersion": "dc81d12d51cf1e41e29e13ae15751207bb3650a3d4bc8b3f833a794da3c582ea",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:97ccb86c3314b410363e31d8f008d286e7ab1ae1917e0b1f6c72984e70f47c51",
+          "inputChecksum": "sha256:045e2e43d107b18e9b5ee83afa74b492c86197498dd521b5193f6ee13b4f4493",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": null,
+          "model": null,
+          "agentPreset": null,
+          "providerVersion": null
+        },
+        "attempts": [],
+        "usage": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-485eb0508b67883e7334",
+            "title": "Required dependency ledger remains unresolved",
+            "details": "For marius-patrik/Andromeda issue #221, the state/memory v2 contract has no verified merged 40-character commit or contract paths, while prerequisite issues #258 and #275 remain open and likewise have no merged revision or exported contract path. The specification correctly declares these as implementation blockers, but they make the current target unverifiable and not ready. Record trusted merged revisions, exact contract paths, compatibility assumptions, and verification results for all three rows before implementation begins.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-20562eaf3f4292877a99",
+            "title": "Migration posture lacks authenticated owner authorization",
+            "details": "The current issue version leaves atomic cutover versus staged compatibility bridge undecided. Consequently, rules for in-flight sessions and events, the single canonical writer, manager-orchestrator removal, rollback cutoff, and behavior after the first harness-owned event are unauthorized. Obtain an authenticated ruling from the owner on issue #221 before implementation, deletion, dual-version compatibility work, or acceptance.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-adb06c0ece2441bf59b4",
+            "title": "Required ask-owner label is absent",
+            "details": "Verified issue state lists only the P1 label, although the unresolved rollout decision requires df:ask-owner under the issue contract and trusted control-plane policy. Apply df:ask-owner and keep df:reviewed absent until the owner decision and dependency blockers are resolved.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-485eb0508b67883e7334",
+          "df-20562eaf3f4292877a99",
+          "df-adb06c0ece2441bf59b4"
+        ],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": "fix_no_change",
+        "outcome": "blocked"
+      }
+    ]
+  }
+}

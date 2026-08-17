@@ -1,0 +1,177 @@
+{
+  "kind": "autoreview-002-medium_fix",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-18T13:23:10.765Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#342",
+  "round": {
+    "sequence": 2,
+    "phase": "medium_fix",
+    "targetVersion": "3528c21e632606305ba4296ebdf7c7a70afcb5e1:586a43afbd996c49b55a038fbf83a6066936926d",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:088c130924065eaded11b7647530744b4cb302c27c0e8dfe06f082ebc5b296d4",
+      "inputChecksum": "sha256:a66a7833199d7d25442ce6687d50a3a08227b3be1f5dcaecada70fdaae056a9b",
+      "profile": {
+        "id": "profile/pr-fixer",
+        "version": "0.2.0",
+        "runKind": "fix-pr",
+        "purpose": "review-fix"
+      },
+      "selection": {
+        "role": "role/pr-fixer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/minimal-diff",
+          "skill/branch-release-policy",
+          "skill/no-bypass",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/bun-node",
+        "output": "output/pr-fixer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-fixer",
+          "version": "0.2.0",
+          "checksum": "sha256:85f333fddc6155527e1c7c3a6b696d8310cb393af7b429ca81ee6faa09bcf120"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/minimal-diff",
+          "version": "0.2.0",
+          "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+        },
+        {
+          "id": "skill/branch-release-policy",
+          "version": "0.2.0",
+          "checksum": "sha256:b70e9fd57a74ec2f556906206dd6aefd0fd842372a47d3bc1455e933a7a017b7"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/bun-node",
+          "version": "0.2.0",
+          "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+        },
+        {
+          "id": "output/pr-fixer",
+          "version": "0.3.0",
+          "checksum": "sha256:af6162ebe3b4ecd50c0fd57c7d05e0862f8395efa535c5413aa56abcc38055a2"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 1598140,
+      "outputTokens": 10638,
+      "totalTokens": 1608778
+    },
+    "verdict": null,
+    "findings": [
+      {
+        "id": "df-4c123cc70feaaf4369f0",
+        "title": "Independent-gate language leaks into non-review profiles",
+        "details": "The shared validation-autoreview skill tells every consuming profile that the separate Validate gate owns execution evidence and that omitted results are acceptable. Implementer, PR-fixer, pointer-updater, releaser, and issue-drafter profiles also consume this skill, contradicting the acceptance criterion that non-review profiles retain normal validation duties. Scoping only renderValidation() does not remove the conflicting shared instructions visible in their composed prompts.",
+        "path": "prompts/skills/validation-autoreview.md",
+        "line": 7
+      },
+      {
+        "id": "df-48055238ea3611de528d",
+        "title": "Required gitlink transition regressions are incomplete",
+        "details": "The focused tests cover addition, deletion, and gitlink-to-blob replacement, but do not exercise a base/head gitlink pointer change or rename through the changed-path indexing and autofix-file construction path. Those are explicitly required trust-boundary cases, so the current tests do not prove that exact OIDs and paths survive those transitions or that renamed/pointer-changed gitlinks remain excluded from autofix.",
+        "path": "tests/df-autoreview.test.ts",
+        "line": 143
+      }
+    ],
+    "findingIds": [
+      "df-4c123cc70feaaf4369f0",
+      "df-48055238ea3611de528d"
+    ],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": "stale_target",
+    "outcome": "blocked"
+  }
+}

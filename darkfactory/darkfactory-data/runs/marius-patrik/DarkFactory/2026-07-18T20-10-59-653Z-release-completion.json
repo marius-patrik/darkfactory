@@ -1,0 +1,144 @@
+{
+  "kind": "release-completion",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-18T20:10:59.653Z",
+  "status": "waiting-for-green",
+  "mode": "run",
+  "repository": "marius-patrik/DarkFactory",
+  "plan": {
+    "schemaVersion": 1,
+    "planId": "release-305a18a89d28eb486a79",
+    "evidence": {
+      "repository": "marius-patrik/DarkFactory",
+      "main": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+      "dev": "c512258f6bb6f429f2c8779087c28f196570a1be",
+      "mainTree": "e526f214587fb2ffcdc38705d9898a20c4b0c66f",
+      "devTree": "83a4bcd3e5189bdcb19b72a11d6798c9393433c7",
+      "classification": "diverged",
+      "policy": "tagged"
+    },
+    "action": "reconcile-merge",
+    "reason": "main-dev-diverged"
+  },
+  "action": {
+    "action": "reconcile",
+    "status": "waiting-for-green",
+    "pull_request": "https://github.com/marius-patrik/DarkFactory/pull/386",
+    "branch": "reconcile/24d89ebc-c512258f",
+    "checks": {
+      "checks": [
+        {
+          "name": "Validate",
+          "expectedAppId": 15368,
+          "actualAppId": null,
+          "id": null,
+          "url": null,
+          "state": "missing"
+        },
+        {
+          "name": "DarkFactory Autoreview",
+          "expectedAppId": 15368,
+          "actualAppId": null,
+          "id": null,
+          "url": null,
+          "state": "missing"
+        }
+      ],
+      "green": false,
+      "missing": [
+        "Validate",
+        "DarkFactory Autoreview"
+      ],
+      "pending": [],
+      "red": []
+    }
+  },
+  "after": {
+    "repository": "marius-patrik/DarkFactory",
+    "classification": "diverged",
+    "main_sha": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+    "dev_sha": "c512258f6bb6f429f2c8779087c28f196570a1be",
+    "main_tree_sha": "e526f214587fb2ffcdc38705d9898a20c4b0c66f",
+    "dev_tree_sha": "83a4bcd3e5189bdcb19b72a11d6798c9393433c7",
+    "convergence_invariant": "reviewed-ancestry-and-exact-tree-identity",
+    "policy": {
+      "schemaVersion": 1,
+      "enabled": true,
+      "mode": "tagged",
+      "releaseBranchPrefix": "release/",
+      "reconcileBranchPrefix": "reconcile/",
+      "requiredChecks": [
+        "Validate",
+        "DarkFactory Autoreview"
+      ],
+      "mainChecks": [
+        "Validate"
+      ],
+      "tagPattern": "^refs/tags/v\\d+\\.\\d+\\.\\d+$",
+      "artifactWorkflows": [],
+      "publicationChecks": [],
+      "producer": {
+        "workflow": "df-release-producer.yml",
+        "ref": "main",
+        "maxAttempts": 3,
+        "inputs": {}
+      }
+    },
+    "protections": {
+      "main": {
+        "configured": true,
+        "safe": true,
+        "requiredChecks": [
+          {
+            "context": "Validate",
+            "appId": 15368
+          },
+          {
+            "context": "DarkFactory Autoreview",
+            "appId": 15368
+          }
+        ]
+      },
+      "dev": {
+        "configured": true,
+        "safe": true,
+        "requiredChecks": [
+          {
+            "context": "Validate",
+            "appId": 15368
+          },
+          {
+            "context": "DarkFactory Autoreview",
+            "appId": 15368
+          }
+        ]
+      }
+    },
+    "main_checks": {
+      "checks": [
+        {
+          "name": "Validate",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 88118682391,
+          "url": "https://github.com/marius-patrik/DarkFactory/actions/runs/29659167184/job/88118682391",
+          "state": "green"
+        },
+        {
+          "name": "DarkFactory Autoreview",
+          "expectedAppId": 15368,
+          "actualAppId": null,
+          "id": null,
+          "url": null,
+          "state": "missing"
+        }
+      ],
+      "green": false,
+      "missing": [
+        "DarkFactory Autoreview"
+      ],
+      "pending": [],
+      "red": []
+    }
+  }
+}

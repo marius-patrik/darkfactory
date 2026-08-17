@@ -1,0 +1,214 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T14:53:45.211Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#215",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "5b5b6a8cdd4638abc6ace3043b340ec4ac70d068be1ec867be2bf5ed4de2ea4b",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:cdc85ab3046d545403c3642ca0b2dd7ce1c4d36c06e9b768f4cbe34347378e7f",
+      "inputChecksum": "sha256:632d039c9c202a959a541db149bc1c6312607456b815a0d34a9f9825c2d388d0",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 22090,
+      "outputTokens": 2067,
+      "totalTokens": 24157
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue #215 is blocked: its claimed inherited scope is not fully preserved, the active delivery lane is unverifiable, boundaries with related work are undefined, and acceptance and rollout are not objectively specified.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-fc9df2e68d5a00f0cad1",
+          "title": "Claimed unchanged scope omits required publication invariants",
+          "details": "In marius-patrik/Andromeda issue #215 at version 5b5b6a8cdd4638abc6ace3043b340ec4ac70d068be1ec867be2bf5ed4de2ea4b, the body says closed issue #149 is carried unchanged, but it omits #149's explicit Windows-only transient-error allowlist, EEXIST exclusive-publication loser behavior, abandoned-temp cleanup, complete-content visibility, immutable manifest identity, and repeated contention coverage. The contract must incorporate those invariants explicitly or identify owner-approved scope changes; an implementation cannot safely infer them through an untrusted reference.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-32d390c63a8afd1bb585",
+          "title": "No single verified execution and integration lane is established",
+          "details": "The recorded DarkFactory worker lane is blocked, while an owner-associated comment only claims that PR #240 and commit 6a8388af48486d2d48041ae7f94adda2b4ea1a5e are ready. The supplied trusted state does not verify that PR's current head, target branch, checks, merge state, ancestry, or correspondence to the current issue version. Issue #215 remains open with df:blocked. The contract must select one lane and record its verified dependency and handoff state before execution or closure.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-faa7c01c6e2539bc7742",
+          "title": "Scope boundaries and related-work ownership are ambiguous",
+          "details": "The phrase \"all state publication paths\" does not enumerate the projections, backups, and manifest publishers in scope or define non-goals. It also does not distinguish publication retry behavior from open issue #243's Windows state-lock lifecycle work. The issue must name the owned paths and explicitly assign or exclude overlapping lock, scheduler, handle-delay, and recovery behavior so two lanes cannot modify the same invariant independently.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-16ba32b1cee965c4bf5b",
+          "title": "Acceptance, validation coverage, and rollout are not objectively bounded",
+          "details": "Acceptance says operations eventually publish or fail loudly, but specifies no retry ceiling, backoff bounds, retryable error set, terminal-error assertions, cleanup assertions, contention cases, or observable definition of prior-state preservation. It references closed issue #206 R3 without stating the required Windows and POSIX test matrix for this change, and provides no merge, release, monitoring, rollback, or issue-closure evidence requirements. These criteria must be made measurable while leaving command execution evidence to the independent exact-head Validate gate.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Owner question: Should issue #215 be fulfilled by verifying and integrating PR #240 at the claimed commit, or by starting a fresh implementation lane against current main?",
+        "Owner question: Is issue #149's full acceptance contract still authoritative unchanged, including EEXIST loser semantics, temp-file cleanup, immutable manifest identity, and repeated contention testing?"
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-fc9df2e68d5a00f0cad1",
+        "title": "Claimed unchanged scope omits required publication invariants",
+        "details": "In marius-patrik/Andromeda issue #215 at version 5b5b6a8cdd4638abc6ace3043b340ec4ac70d068be1ec867be2bf5ed4de2ea4b, the body says closed issue #149 is carried unchanged, but it omits #149's explicit Windows-only transient-error allowlist, EEXIST exclusive-publication loser behavior, abandoned-temp cleanup, complete-content visibility, immutable manifest identity, and repeated contention coverage. The contract must incorporate those invariants explicitly or identify owner-approved scope changes; an implementation cannot safely infer them through an untrusted reference.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-32d390c63a8afd1bb585",
+        "title": "No single verified execution and integration lane is established",
+        "details": "The recorded DarkFactory worker lane is blocked, while an owner-associated comment only claims that PR #240 and commit 6a8388af48486d2d48041ae7f94adda2b4ea1a5e are ready. The supplied trusted state does not verify that PR's current head, target branch, checks, merge state, ancestry, or correspondence to the current issue version. Issue #215 remains open with df:blocked. The contract must select one lane and record its verified dependency and handoff state before execution or closure.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-faa7c01c6e2539bc7742",
+        "title": "Scope boundaries and related-work ownership are ambiguous",
+        "details": "The phrase \"all state publication paths\" does not enumerate the projections, backups, and manifest publishers in scope or define non-goals. It also does not distinguish publication retry behavior from open issue #243's Windows state-lock lifecycle work. The issue must name the owned paths and explicitly assign or exclude overlapping lock, scheduler, handle-delay, and recovery behavior so two lanes cannot modify the same invariant independently.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-16ba32b1cee965c4bf5b",
+        "title": "Acceptance, validation coverage, and rollout are not objectively bounded",
+        "details": "Acceptance says operations eventually publish or fail loudly, but specifies no retry ceiling, backoff bounds, retryable error set, terminal-error assertions, cleanup assertions, contention cases, or observable definition of prior-state preservation. It references closed issue #206 R3 without stating the required Windows and POSIX test matrix for this change, and provides no merge, release, monitoring, rollback, or issue-closure evidence requirements. These criteria must be made measurable while leaving command execution evidence to the independent exact-head Validate gate.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

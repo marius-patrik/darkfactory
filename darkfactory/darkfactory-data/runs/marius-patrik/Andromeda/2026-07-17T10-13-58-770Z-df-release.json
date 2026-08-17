@@ -1,0 +1,23 @@
+{
+  "kind": "df-release",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-17T10:13:58.770Z",
+  "status": "verified",
+  "plan_id": "release-6a4cc598b60fc9fc88ea",
+  "repository": "marius-patrik/Andromeda",
+  "main_sha": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+  "dev_sha": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+  "main_tree_sha": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+  "dev_tree_sha": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+  "policy_mode": "branch-only",
+  "release": {
+    "green": true,
+    "reason": "explicit-exact-ref-bootstrap-with-no-trusted-release-history",
+    "pull_request": null,
+    "issues": []
+  },
+  "publication": {
+    "green": true,
+    "mode": "branch-only"
+  }
+}

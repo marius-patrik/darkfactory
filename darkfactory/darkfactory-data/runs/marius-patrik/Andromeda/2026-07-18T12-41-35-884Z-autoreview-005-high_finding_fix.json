@@ -1,0 +1,187 @@
+{
+  "kind": "autoreview-005-high_finding_fix",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T12:41:35.884Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#213",
+  "round": {
+    "sequence": 5,
+    "phase": "high_finding_fix",
+    "targetVersion": "5b624a729d68571cfd6b808401a5870ffdd3898aa2a26adc1156b7c98246d62f",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+      },
+      "promptChecksum": "sha256:bbfe2476e69a45fecfc699f91819024b9ed10e408de7fc00831a704ea6988713",
+      "inputChecksum": "sha256:435c02055e62577a49a019e170d2bc73f2e8cb1c5fce8a2dfceb448c9799aa6b",
+      "profile": {
+        "id": "profile/issue-fixer",
+        "version": "0.2.0",
+        "runKind": "fix-issue",
+        "purpose": "review-fix"
+      },
+      "selection": {
+        "role": "role/issue-fixer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/minimal-diff",
+          "skill/owner-escalation",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-fixer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-fixer",
+          "version": "0.2.0",
+          "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/minimal-diff",
+          "version": "0.2.0",
+          "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-fixer",
+          "version": "0.3.0",
+          "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 375117,
+      "outputTokens": 9071,
+      "totalTokens": 384188
+    },
+    "verdict": null,
+    "findings": [
+      {
+        "id": "df-aae9578e03b645352252",
+        "title": "Admission receipt requirements conflict with dependency ownership",
+        "details": "Issue #213 says #275 exclusively owns the required verified receipt contract, but the supplied #275 contract defines an exact schema that lacks #213's credential-gate, billing-class, adapter, route-transition, observation, validation, and secret-scan fields. The specification does not state whether #275 must be changed or whether #213 owns a separate versioned admission record referencing the immutable #275 receipt. Implementation would therefore either duplicate another lane or be unable to satisfy #213 acceptance.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-b065d4cb61324f1dc4cc",
+        "title": "Promotion and rollback criteria are not deterministically observable",
+        "details": "Promotion requires a 24-hour observation window with no listed failures, but the contract does not define the observation source, required traffic or probes, window boundaries, evaluator, or whether an idle window can pass. Rollback on a repeated malformed response or timeout likewise has no count, time window, or reset rule. These omissions prevent objective testing and consistent route-state transitions.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-d117125d6914e8a00d6a",
+        "title": "Canonical evidence destination and schema are unverifiable",
+        "details": "The issue requires a schema-valid receipt in a Git-backed canonical evidence store and a marker-owned public comment, but identifies neither the repository and path nor an authoritative schema or marker format. A field list alone does not establish serialization, required-value constraints, canonical digest calculation, update identity, or validation ownership, so the publication and freshness acceptance criteria cannot be reproduced against an exact evidence reference.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-2d5e1701f3fb1a376b6b",
+        "title": "Submodule pointer validation does not satisfy the repository overlay",
+        "details": "The implementation lane targets canonical Agent OS runtime surfaces in a submodule-root repository, yet the contract neither forbids gitlink changes nor defines their admissible paths. The required recursive submodule-status command detects only part of the pointer state and does not prove child identity, configured URL, released default-branch ancestry, accessibility, or green required evidence. The issue must either exclude gitlink updates explicitly or require the complete trusted pointer contract for every changed gitlink.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [
+      "df-aae9578e03b645352252",
+      "df-b065d4cb61324f1dc4cc",
+      "df-d117125d6914e8a00d6a",
+      "df-2d5e1701f3fb1a376b6b"
+    ],
+    "changeRef": "issue-comment:5011290329:1a948677449c889b4cd9851c721d31a17f63e988aaf8b068e313de071230fefc",
+    "afterVersion": "1a948677449c889b4cd9851c721d31a17f63e988aaf8b068e313de071230fefc",
+    "blockCode": null,
+    "outcome": "fixed"
+  }
+}

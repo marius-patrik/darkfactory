@@ -1,0 +1,133 @@
+{
+  "kind": "release-completion",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-16T21:15:48.967Z",
+  "status": "blocked",
+  "mode": "run",
+  "repository": "marius-patrik/Andromeda",
+  "plan": {
+    "schemaVersion": 1,
+    "planId": "release-6a4cc598b60fc9fc88ea",
+    "evidence": {
+      "repository": "marius-patrik/Andromeda",
+      "main": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+      "dev": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+      "mainTree": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+      "devTree": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+      "classification": "identical",
+      "policy": "branch-only"
+    },
+    "action": "verify",
+    "reason": "main-dev-identical"
+  },
+  "action": {
+    "action": "verify",
+    "status": "blocked",
+    "verified": false,
+    "reason": "main-checks-not-green",
+    "issue": "https://github.com/marius-patrik/Andromeda/issues/286",
+    "checks": {
+      "checks": [
+        {
+          "name": "Validate",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 87731823804,
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29529844709/job/87731823804",
+          "state": "red"
+        }
+      ],
+      "green": false,
+      "missing": [],
+      "pending": [],
+      "red": [
+        "Validate"
+      ]
+    }
+  },
+  "after": {
+    "repository": "marius-patrik/Andromeda",
+    "classification": "identical",
+    "main_sha": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+    "dev_sha": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+    "main_tree_sha": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+    "dev_tree_sha": "d19050c41cff467c0acb25a0e21e78294b02e6ec",
+    "convergence_invariant": "reviewed-ancestry-and-exact-tree-identity",
+    "policy": {
+      "schemaVersion": 1,
+      "enabled": true,
+      "mode": "branch-only",
+      "releaseBranchPrefix": "release/",
+      "reconcileBranchPrefix": "reconcile/",
+      "requiredChecks": [
+        "Validate",
+        "DarkFactory Autoreview"
+      ],
+      "mainChecks": [
+        "Validate"
+      ],
+      "tagPattern": null,
+      "artifactWorkflows": [],
+      "publicationChecks": [],
+      "producer": null
+    },
+    "protections": {
+      "main": {
+        "configured": true,
+        "safe": true,
+        "requiredChecks": [
+          {
+            "context": "Validate",
+            "appId": 15368
+          },
+          {
+            "context": "DarkFactory Autoreview",
+            "appId": 15368
+          }
+        ]
+      },
+      "dev": {
+        "configured": true,
+        "safe": true,
+        "requiredChecks": [
+          {
+            "context": "Validate",
+            "appId": 15368
+          },
+          {
+            "context": "DarkFactory Autoreview",
+            "appId": 15368
+          }
+        ]
+      }
+    },
+    "main_checks": {
+      "checks": [
+        {
+          "name": "Validate",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 87731823804,
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29529844709/job/87731823804",
+          "state": "red"
+        },
+        {
+          "name": "DarkFactory Autoreview",
+          "expectedAppId": 15368,
+          "actualAppId": null,
+          "id": null,
+          "url": null,
+          "state": "missing"
+        }
+      ],
+      "green": false,
+      "missing": [
+        "DarkFactory Autoreview"
+      ],
+      "pending": [],
+      "red": [
+        "Validate"
+      ]
+    }
+  }
+}

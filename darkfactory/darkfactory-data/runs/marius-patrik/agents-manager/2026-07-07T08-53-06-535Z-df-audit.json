@@ -1,0 +1,74 @@
+{
+  "kind": "df-audit",
+  "target_repo": "marius-patrik/agents-manager",
+  "created_at": "2026-07-07T08:53:06.535Z",
+  "trigger": "schedule",
+  "default_branch": "main",
+  "findings": [
+    {
+      "category": "git state",
+      "message": "Default branch `main` does not have readable branch protection."
+    },
+    {
+      "category": "health",
+      "message": "Workflow `CI` concluded `failure` on `main`."
+    },
+    {
+      "category": "health",
+      "message": "Workflow `CI` concluded `failure` on `main`."
+    },
+    {
+      "category": "enforcement conformance",
+      "message": "Required managed file `.github/workflows/df-work.yml` is missing on `main`."
+    },
+    {
+      "category": "enforcement conformance",
+      "message": "Required managed file `.github/workflows/df-plan.yml` is missing on `main`."
+    },
+    {
+      "category": "PRD drift",
+      "message": "PRD contains planned sections, but no open PRD-tracked backlog issues were found."
+    }
+  ],
+  "actions": [
+    {
+      "action": "audit-findings-issue",
+      "issue": {
+        "number": 107,
+        "url": "https://github.com/marius-patrik/agents-manager/issues/107"
+      },
+      "findings": [
+        {
+          "category": "git state",
+          "message": "Default branch `main` does not have readable branch protection."
+        },
+        {
+          "category": "health",
+          "message": "Workflow `CI` concluded `failure` on `main`."
+        },
+        {
+          "category": "health",
+          "message": "Workflow `CI` concluded `failure` on `main`."
+        },
+        {
+          "category": "enforcement conformance",
+          "message": "Required managed file `.github/workflows/df-work.yml` is missing on `main`."
+        },
+        {
+          "category": "enforcement conformance",
+          "message": "Required managed file `.github/workflows/df-plan.yml` is missing on `main`."
+        },
+        {
+          "category": "PRD drift",
+          "message": "PRD contains planned sections, but no open PRD-tracked backlog issues were found."
+        }
+      ]
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "L5 audit used deterministic GitHub and repository metadata checks only"
+  }
+}

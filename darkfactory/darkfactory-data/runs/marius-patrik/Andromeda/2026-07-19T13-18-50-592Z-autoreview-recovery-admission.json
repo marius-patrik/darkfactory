@@ -1,0 +1,15 @@
+{
+  "kind": "issue",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-19T13:18:50.592Z",
+  "status": "admitted",
+  "repository": "marius-patrik/Andromeda",
+  "number": 213,
+  "version": "483f3184ca7b184e70a865b43331c08c4651b690c3dce29be9cffe8fedc0fdbc",
+  "completion": "stale",
+  "recoveryAction": "workflow-dispatch",
+  "recoveryReason": "missing-or-stale-result",
+  "trigger": "12,27,42,57 * * * *",
+  "control_revision": "3835955691a9beec49474ca985f27b7cafe0911d",
+  "workflow": "darkfactory-autoreview.yml"
+}

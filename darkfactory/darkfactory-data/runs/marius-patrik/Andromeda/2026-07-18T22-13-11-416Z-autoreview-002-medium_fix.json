@@ -1,0 +1,211 @@
+{
+  "kind": "autoreview-002-medium_fix",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T22:13:11.416Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#223",
+  "round": {
+    "sequence": 2,
+    "phase": "medium_fix",
+    "targetVersion": "e76bf547863da3437b46f204b7310f10ba34ccbdb39fe601067f7bc32c5a25e4",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:45ab995f475140e4633d5f055199698f871ebcfcb100fc7b37ef9a4ba6d25ce5",
+      "inputChecksum": "sha256:4ef8d8e573b7c44dbe4c0a6307c232d51056caf17efc2b74c95a64c0febbd373",
+      "profile": {
+        "id": "profile/issue-fixer",
+        "version": "0.2.0",
+        "runKind": "fix-issue",
+        "purpose": "review-fix"
+      },
+      "selection": {
+        "role": "role/issue-fixer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/minimal-diff",
+          "skill/owner-escalation",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-fixer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-fixer",
+          "version": "0.2.0",
+          "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/minimal-diff",
+          "version": "0.2.0",
+          "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-fixer",
+          "version": "0.3.0",
+          "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 89624,
+      "outputTokens": 3809,
+      "totalTokens": 93433
+    },
+    "verdict": null,
+    "findings": [
+      {
+        "id": "df-21671491a9c1065ce8d5",
+        "title": "Component ownership and adjacent-lane boundaries are unspecified",
+        "details": "For marius-patrik/Andromeda issue #223 at the reviewed version, the scope combines subagent delegation with watchdog control over thought, worker, and subagent lanes without naming the owning package, APIs, persisted state, or explicit non-goals. It also does not distinguish its watchdog responsibility from the worker lifecycle owned by #222 or the runtime lifecycle supplied by #221. Define one implementation owner and precise interfaces and exclusions so multiple lanes cannot independently own, cancel, or finalize the same work.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-b92c121ec1f039dc31e1",
+        "title": "Dependencies and delivery sequencing are not actionable",
+        "details": "The issue states that it depends on operation engine 1/3, pairs with 2/3, and will feed the lane 4 ask-owner path once that dispatch exists, but it does not identify the required issue states or accepted contracts, whether #222 is blocking, or what escalation behavior is valid before lane 4 exists. Record explicit dependencies, readiness conditions, and the pre-lane-4 behavior; unavailable authority or dispatch must fail closed.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-9f1f0c132993dd1f62c2",
+        "title": "Canonical runtime and untrusted-result boundaries are missing",
+        "details": "The specification does not require every model-backed subagent turn to cross the canonical Agent OS launcher or preserve the runtime's exclusive ownership of identity, memory, sessions, route selection, credentials, execution, and normalized provenance. It also does not state that delegated instructions and returned artifacts are untrusted data that cannot expand scope or authorization. Add capability boundaries, authenticated parent-to-child authorization, result validation, canonical provenance requirements, and an explicit prohibition on repository-local provider, credential, executable, or session fallbacks.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-3dc88f92933f6497558c",
+        "title": "Budget, scope, and concurrency enforcement lacks a measurable contract",
+        "details": "The requirement to enforce declared scope, budget, and caps fail-closed does not define accounting units, nesting rules, reservation and release behavior, machine versus operation limits, or handling of races, retries, cancellation, and engine restart. Define the resource model and observable terminal outcomes, including proof that exceeding each limit prevents further work, releases capacity exactly once, emits a durable canonical event, and leaves no orphaned lane.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-fd382bba40e0454c9a50",
+        "title": "Non-progress detection and termination semantics are ambiguous",
+        "details": "The phrase 'no event progress against declared intent' is not an operational stall predicate. The issue lacks progress-proof rules, monotonic timing and thresholds, grace periods, false-progress resistance, cancel-versus-kill ordering, acknowledgement deadlines, cleanup and child propagation, race handling when completion coincides with timeout, restart recovery, and deterministic escalation selection. Specify the watchdog state machine and durable event ordering so identical observed state produces the same terminal result without killing legitimately quiet work.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-54570b70fe69746b26bd",
+        "title": "Behavioral acceptance does not cover the safety requirements",
+        "details": "The two stated scenarios—one real sub-task and one injected stall—do not objectively define fixtures, expected artifacts, event sequence, terminal states, or absence of orphaned work. They also omit acceptance for scope violation, budget exhaustion, concurrency overflow, duplicate ownership, cancellation races, restart durability, unavailable canonical runtime, and rejection of unauthorized or malformed child results. Add deterministic tests and durable evidence assertions for normal completion and each fail-closed boundary. The separately owned exact-head Validate command results need not be duplicated here.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-6b60e903c515ca9009dc",
+        "title": "Rollout, compatibility, and recovery policy are absent",
+        "details": "Issue #223 introduces orchestration state and durable event types but provides no event-schema compatibility, replay or recovery behavior, activation order after #221/#222, handling of in-flight legacy work, rollback or disable path, or observability criteria for rollout. Define how the feature is introduced without split ownership, how old and new durable state are interpreted, and how operators prove safe disablement or recovery after partial failure.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [
+      "df-21671491a9c1065ce8d5",
+      "df-b92c121ec1f039dc31e1",
+      "df-9f1f0c132993dd1f62c2",
+      "df-3dc88f92933f6497558c",
+      "df-fd382bba40e0454c9a50",
+      "df-54570b70fe69746b26bd",
+      "df-6b60e903c515ca9009dc"
+    ],
+    "changeRef": "issue-comment:5013124766:197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3",
+    "afterVersion": "197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3",
+    "blockCode": null,
+    "outcome": "fixed"
+  }
+}

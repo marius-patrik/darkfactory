@@ -1,0 +1,183 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-18T23:37:09.272Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#425",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "975775f41839709f63bfa3944694403866473bf5:16f4cd060660f772b0cb7b8e07bc3abd46ca5afc",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "3835955691a9beec49474ca985f27b7cafe0911d",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:9eb2080431c497f4fe110c1b52c12950bcb5e3d3efe9ee475b81d5284374b9fe",
+      "inputChecksum": "sha256:e8cb5f4b98ab9e924209b1cc1a554d413758fb21abbc9b497fc16badc67134ce",
+      "profile": {
+        "id": "profile/pr-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-pr",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/pr-reviewer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/validation-autoreview",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/bun-node",
+        "output": "output/pr-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/bun-node",
+          "version": "0.2.0",
+          "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+        },
+        {
+          "id": "output/pr-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 47158,
+      "outputTokens": 3680,
+      "totalTokens": 50838
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "PR #425 at 16f4cd060660f772b0cb7b8e07bc3abd46ca5afc remains blocked by two required-check trust-boundary gaps.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-beab337154586d88d9a8",
+          "title": "Policy checks are authenticated only as generic GitHub Actions runs",
+          "details": "For marius-patrik/DarkFactory PR #425 at head 16f4cd060660f772b0cb7b8e07bc3abd46ca5afc, every policy-selected check is bound only to ACTIONS_APP_ID. A head-controlled workflow can therefore emit successful jobs named Validate or DarkFactory Autoreview under the same app ID, and a single such run is accepted as trusted evidence. The expected state is provenance tied to the base-trusted workflow or another immutable check identity, not merely its mutable name and shared Actions app.",
+          "path": ".github/scripts/df-release.mjs",
+          "line": 149
+        },
+        {
+          "id": "df-d6baf4b05f4e57863f4a",
+          "title": "Collision detection examines only the first 100 check runs",
+          "details": "The check-runs request fetches one page with per_page=100 and neither paginates nor rejects truncation. An untrusted head can produce more than 100 Actions check runs so that a forged successful required-name run is visible while the authentic same-name candidate is on a later page; evaluateRequiredChecks then sees one matching candidate and reports green instead of ambiguity. Fetch complete evidence or fail closed on pagination, with a regression test crossing the 100-run boundary.",
+          "path": ".github/scripts/df-release.mjs",
+          "line": 569
+        }
+      ],
+      "nonBlockingNotes": []
+    },
+    "findings": [
+      {
+        "id": "df-beab337154586d88d9a8",
+        "title": "Policy checks are authenticated only as generic GitHub Actions runs",
+        "details": "For marius-patrik/DarkFactory PR #425 at head 16f4cd060660f772b0cb7b8e07bc3abd46ca5afc, every policy-selected check is bound only to ACTIONS_APP_ID. A head-controlled workflow can therefore emit successful jobs named Validate or DarkFactory Autoreview under the same app ID, and a single such run is accepted as trusted evidence. The expected state is provenance tied to the base-trusted workflow or another immutable check identity, not merely its mutable name and shared Actions app.",
+        "path": ".github/scripts/df-release.mjs",
+        "line": 149
+      },
+      {
+        "id": "df-d6baf4b05f4e57863f4a",
+        "title": "Collision detection examines only the first 100 check runs",
+        "details": "The check-runs request fetches one page with per_page=100 and neither paginates nor rejects truncation. An untrusted head can produce more than 100 Actions check runs so that a forged successful required-name run is visible while the authentic same-name candidate is on a later page; evaluateRequiredChecks then sees one matching candidate and reports green instead of ambiguity. Fetch complete evidence or fail closed on pagination, with a regression test crossing the 100-run boundary.",
+        "path": ".github/scripts/df-release.mjs",
+        "line": 569
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

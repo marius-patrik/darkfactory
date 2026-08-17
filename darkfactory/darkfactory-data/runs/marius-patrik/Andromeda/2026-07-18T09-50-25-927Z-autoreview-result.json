@@ -1,0 +1,342 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T09:50:25.927Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#303",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "malformed_fix",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "4739cf8f38191f0879952db04ef4c9a9e9d7ead9:34c7964179fa39244d7520f5d7d5aa8e8c51f2e2",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "f1a14fa5151e3dc896167935cb377b4bba666182",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:2c43e5ac3323f41d155ae086107b14d7f861dcde2034901be648c00ce903547a",
+          "inputChecksum": "sha256:4bae83aa207e5c9a151e51bfe04a074e2c7077352b6a825e649919b1e2202f9e",
+          "profile": {
+            "id": "profile/pr-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-pr",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/pr-reviewer",
+            "skills": [
+              "skill/acceptance-driven-delivery",
+              "skill/untrusted-input-handling",
+              "skill/validation-autoreview",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/pr-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/pr-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/pr-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+            },
+            {
+              "id": "skill/acceptance-driven-delivery",
+              "version": "0.2.0",
+              "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/pr-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/pr-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 584554,
+          "outputTokens": 5065,
+          "totalTokens": 589619
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "The complete base-to-head diff is empty, and head 34c7964179fa39244d7520f5d7d5aa8e8c51f2e2 is a merge of the advertised dev and main revisions with a tree identical to dev. Approval is blocked because required exact-head submodule validation evidence is missing.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-fa2cb4d15e1b407e5d86",
+              "title": "Required exact-head submodule validation is unverified",
+              "details": "For marius-patrik/Andromeda PR #303 at head 34c7964179fa39244d7520f5d7d5aa8e8c51f2e2, git diff --check passed, but no verified result is available for the independently required git submodule status --recursive gate. The supplied verified state also contains no exact-head required-check results. Policy requires missing validation to block closed.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "The merge commit parents are exactly dev 4739cf8f38191f0879952db04ef4c9a9e9d7ead9 and main cd511544eae8798c6d2a86ebb4c49dc7aac1e57d.",
+            "Head and base both resolve to tree a98b39d1f238288952c521b04cc5917bc5911715; the complete PR diff contains no file changes."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-fa2cb4d15e1b407e5d86",
+            "title": "Required exact-head submodule validation is unverified",
+            "details": "For marius-patrik/Andromeda PR #303 at head 34c7964179fa39244d7520f5d7d5aa8e8c51f2e2, git diff --check passed, but no verified result is available for the independently required git submodule status --recursive gate. The supplied verified state also contains no exact-head required-check results. Policy requires missing validation to block closed.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 2,
+        "phase": "medium_fix",
+        "targetVersion": "4739cf8f38191f0879952db04ef4c9a9e9d7ead9:34c7964179fa39244d7520f5d7d5aa8e8c51f2e2",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "f1a14fa5151e3dc896167935cb377b4bba666182",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:abf29dfb9cf24772d8ee52d091c422ba20914a537e91b067ae397da42f26912b",
+          "inputChecksum": "sha256:c555dbe6778da98f4509d96fbca50323ef02d23105ba9bc0764329d00a005e2a",
+          "profile": {
+            "id": "profile/pr-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-pr",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/pr-fixer",
+            "skills": [
+              "skill/acceptance-driven-delivery",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/branch-release-policy",
+              "skill/no-bypass",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/pr-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/pr-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/pr-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:85f333fddc6155527e1c7c3a6b696d8310cb393af7b429ca81ee6faa09bcf120"
+            },
+            {
+              "id": "skill/acceptance-driven-delivery",
+              "version": "0.2.0",
+              "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/branch-release-policy",
+              "version": "0.2.0",
+              "checksum": "sha256:b70e9fd57a74ec2f556906206dd6aefd0fd842372a47d3bc1455e933a7a017b7"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/pr-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/pr-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:af6162ebe3b4ecd50c0fd57c7d05e0862f8395efa535c5413aa56abcc38055a2"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 20858,
+          "outputTokens": 1733,
+          "totalTokens": 22591
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-fa2cb4d15e1b407e5d86",
+            "title": "Required exact-head submodule validation is unverified",
+            "details": "For marius-patrik/Andromeda PR #303 at head 34c7964179fa39244d7520f5d7d5aa8e8c51f2e2, git diff --check passed, but no verified result is available for the independently required git submodule status --recursive gate. The supplied verified state also contains no exact-head required-check results. Policy requires missing validation to block closed.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-fa2cb4d15e1b407e5d86"
+        ],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": "malformed_fix",
+        "outcome": "blocked"
+      }
+    ]
+  }
+}

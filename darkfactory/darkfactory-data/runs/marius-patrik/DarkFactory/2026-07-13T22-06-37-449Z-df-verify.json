@@ -1,0 +1,39 @@
+{
+  "kind": "df-verify",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-13T22:06:37.453Z",
+  "trigger": "workflow_run",
+  "issue": "marius-patrik/DarkFactory#49",
+  "verified": false,
+  "mismatches": [
+    "PR #259 author darkfactory-agent[bot] is not an allowed worker author."
+  ],
+  "claim": {
+    "repo": "marius-patrik/DarkFactory",
+    "issueNumber": 49,
+    "branch": "df/49-scaffold-provider-agnostic-prompt-skill-library-and-typed-contract",
+    "baseBranch": "dev",
+    "pullRequestNumber": 0,
+    "pullRequestUrl": "https://github.com/marius-patrik/DarkFactory/pull/259",
+    "provider": "",
+    "model": "",
+    "status": "success",
+    "summary": ""
+  },
+  "pull_request": {
+    "number": 259,
+    "url": "https://github.com/marius-patrik/DarkFactory/pull/259"
+  },
+  "actions": [
+    {
+      "action": "block",
+      "reason": "claim-mismatch"
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Worker claim verification is deterministic and uses no model calls"
+  }
+}

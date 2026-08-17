@@ -1,0 +1,1150 @@
+{
+  "kind": "setup-admission",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-20T08:13:00.453Z",
+  "plan_id": "setup-c95a73828f8e3767d02b",
+  "evidence_hash": "c95a73828f8e3767d02bbdc5550aa23263443ba6269a3e35335f0f604d2b6343",
+  "pass": 1,
+  "planned_actions": [
+    {
+      "id": "marius-patrik/Andromeda:andromeda-root-apps-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-root-apps-missing",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:andromeda-submodule-apps-fabrica-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-submodule-apps-fabrica-missing",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:andromeda-submodule-apps-singularity-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-submodule-apps-singularity-missing",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:andromeda-submodule-plugins-darkfactory-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-submodule-plugins-darkfactory-missing",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:andromeda-submodule-plugins-lifequest-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-submodule-plugins-lifequest-missing",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:andromeda-submodule-plugins-skyagent-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-submodule-plugins-skyagent-missing",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:andromeda-submodule-unexpected-packages-darkfactory",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-submodule-unexpected-packages-darkfactory",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:andromeda-submodule-unexpected-packages-fabrica",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-submodule-unexpected-packages-fabrica",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:andromeda-submodule-unexpected-packages-lifequest",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-submodule-unexpected-packages-lifequest",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:andromeda-submodule-unexpected-packages-memory",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-submodule-unexpected-packages-memory",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:andromeda-submodule-unexpected-packages-singularity",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-submodule-unexpected-packages-singularity",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:andromeda-submodule-unexpected-packages-skyagent",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "andromeda-submodule-unexpected-packages-skyagent",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:automation-admin-bypass-guard-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "automation-admin-bypass-guard-missing",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-drift-agents-md",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-drift-agents-md",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-drift-darkfactory-branching-policy-md",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-drift-darkfactory-branching-policy-md",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-drift-darkfactory-installer-policy-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-drift-darkfactory-installer-policy-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-drift-darkfactory-managed-repository-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-drift-darkfactory-managed-repository-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-darkfactory-autoreview-policy-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-darkfactory-autoreview-policy-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-darkfactory-data-repository-policy-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-darkfactory-data-repository-policy-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-darkfactory-enforcement-rules-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-darkfactory-enforcement-rules-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-darkfactory-issue-draft-policy-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-darkfactory-issue-draft-policy-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-darkfactory-managed-repos-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-darkfactory-managed-repos-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-darkfactory-model-policy-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-darkfactory-model-policy-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-darkfactory-orchestration-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-darkfactory-orchestration-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-darkfactory-submodule-policy-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-darkfactory-submodule-policy-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-darkfactory-trigger-policy-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-darkfactory-trigger-policy-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-darkfactory-autoreview-schema-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-darkfactory-autoreview-schema-json",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-dark-factory-managed-check-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-dark-factory-managed-check-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-autoreview-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-autoreview-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-autoreview-recovery-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-autoreview-recovery-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-enforcement-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-enforcement-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-issue-draft-hygiene-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-issue-draft-hygiene-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-lib-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-lib-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-model-policy-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-model-policy-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-orchestrate-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-orchestrate-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-plan-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-plan-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-release-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-release-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-submodule-autoupdate-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-submodule-autoupdate-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-submodule-checkout-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-submodule-checkout-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-sweep-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-sweep-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-trigger-policy-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-trigger-policy-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-df-work-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-df-work-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-scripts-run-darkfactory-autoreview-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-scripts-run-darkfactory-autoreview-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-removed-file-darkfactory-release-conventions-md",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-removed-file-darkfactory-release-conventions-md",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-removed-file-github-scripts-dark-factory-release-check-mjs",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-removed-file-github-scripts-dark-factory-release-check-mjs",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:retired-agents-data-repository-name",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "retired-agents-data-repository-name",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:retired-agents-manager-owner-name",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "retired-agents-manager-owner-name",
+      "stage": "repository-bootstrap",
+      "repairClass": "pr",
+      "operation": "open-managed-setup-pr",
+      "supported": true,
+      "reason": "Protected repository content changes only through the managed setup PR lane."
+    },
+    {
+      "id": "marius-patrik/Andromeda:label-df-audit-drift",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "label-df-audit-drift",
+      "stage": "settings-enforcement",
+      "repairClass": "auto",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:label-df-class-hard-drift",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "label-df-class-hard-drift",
+      "stage": "settings-enforcement",
+      "repairClass": "auto",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:label-df-class-mechanical-drift",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "label-df-class-mechanical-drift",
+      "stage": "settings-enforcement",
+      "repairClass": "auto",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:label-df-class-standard-drift",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "label-df-class-standard-drift",
+      "stage": "settings-enforcement",
+      "repairClass": "auto",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-drift-darkfactory-labels-json",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-drift-darkfactory-labels-json",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-drift-github-workflows-ci-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-drift-github-workflows-ci-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-drift-github-workflows-dark-factory-autoupdate-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-drift-github-workflows-dark-factory-autoupdate-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-drift-github-workflows-dark-factory-bootstrap-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-drift-github-workflows-dark-factory-bootstrap-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-workflows-df-autoreview-recovery-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-workflows-df-autoreview-recovery-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-workflows-df-clean-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-workflows-df-clean-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-workflows-df-follow-through-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-workflows-df-follow-through-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-workflows-df-issue-draft-hygiene-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-workflows-df-issue-draft-hygiene-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-workflows-df-orchestrate-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-workflows-df-orchestrate-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-workflows-df-plan-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-workflows-df-plan-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-workflows-df-release-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-workflows-df-release-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-workflows-df-submodule-autoupdate-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-workflows-df-submodule-autoupdate-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-file-missing-github-workflows-df-work-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-file-missing-github-workflows-df-work-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:managed-removed-file-github-workflows-dark-factory-release-yml",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "managed-removed-file-github-workflows-dark-factory-release-yml",
+      "stage": "settings-enforcement",
+      "repairClass": "pr",
+      "operation": "converge-settings",
+      "supported": true,
+      "reason": "Repository settings and taxonomy are reconciled from canonical policy."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-210-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-210-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-211-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-211-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-212-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-212-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-213-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-213-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-214-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-214-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-215-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-215-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-216-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-216-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-217-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-217-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-218-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-218-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-219-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-219-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-221-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-221-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-222-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-222-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-223-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-223-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-224-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-224-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-225-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-225-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-227-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-227-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-243-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-243-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-246-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-246-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-251-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-251-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-253-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-253-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-255-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-255-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-256-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-256-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-257-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-257-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-258-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-258-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-275-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-275-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-286-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-286-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-291-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-291-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-293-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-293-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-294-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-294-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-299-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-299-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-301-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-301-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-302-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-302-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-304-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-304-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-307-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-307-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:issue-309-prd-backing-missing",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "issue-309-prd-backing-missing",
+      "stage": "issue-lane-cut",
+      "repairClass": "pr",
+      "operation": "reconcile-issue-lane",
+      "supported": true,
+      "reason": "PRD scaffolding and issue mutations use stable markers and successor-preserving reconciliation."
+    },
+    {
+      "id": "marius-patrik/Andromeda:dev-behind-main",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "dev-behind-main",
+      "stage": "verification",
+      "repairClass": "pr",
+      "operation": "reconcile-branches",
+      "supported": true,
+      "reason": "Branch reconciliation is delegated to the trusted release engine, which preserves both histories and escalates semantic conflicts."
+    },
+    {
+      "id": "marius-patrik/Andromeda:submodule-data-andromeda-pointer-drift-dev",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "submodule-data-andromeda-pointer-drift-dev",
+      "stage": "verification",
+      "repairClass": "pr",
+      "operation": "converge-submodules",
+      "supported": true,
+      "reason": "Released child pointers are delegated to the trusted submodule engine, which changes only an exact admitted gitlink through a reviewed PR."
+    },
+    {
+      "id": "marius-patrik/Andromeda:submodule-data-andromeda-pointer-drift-main",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "submodule-data-andromeda-pointer-drift-main",
+      "stage": "verification",
+      "repairClass": "pr",
+      "operation": "converge-submodules",
+      "supported": true,
+      "reason": "Released child pointers are delegated to the trusted submodule engine, which changes only an exact admitted gitlink through a reviewed PR."
+    },
+    {
+      "id": "marius-patrik/Andromeda:submodule-data-darkfactory-pointer-drift-dev",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "submodule-data-darkfactory-pointer-drift-dev",
+      "stage": "verification",
+      "repairClass": "pr",
+      "operation": "converge-submodules",
+      "supported": true,
+      "reason": "Released child pointers are delegated to the trusted submodule engine, which changes only an exact admitted gitlink through a reviewed PR."
+    },
+    {
+      "id": "marius-patrik/Andromeda:submodule-data-darkfactory-pointer-drift-main",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "submodule-data-darkfactory-pointer-drift-main",
+      "stage": "verification",
+      "repairClass": "pr",
+      "operation": "converge-submodules",
+      "supported": true,
+      "reason": "Released child pointers are delegated to the trusted submodule engine, which changes only an exact admitted gitlink through a reviewed PR."
+    },
+    {
+      "id": "marius-patrik/Andromeda:submodule-packages-darkfactory-pointer-drift-dev",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "submodule-packages-darkfactory-pointer-drift-dev",
+      "stage": "verification",
+      "repairClass": "pr",
+      "operation": "converge-submodules",
+      "supported": true,
+      "reason": "Released child pointers are delegated to the trusted submodule engine, which changes only an exact admitted gitlink through a reviewed PR."
+    },
+    {
+      "id": "marius-patrik/Andromeda:submodule-packages-darkfactory-pointer-drift-main",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "submodule-packages-darkfactory-pointer-drift-main",
+      "stage": "verification",
+      "repairClass": "pr",
+      "operation": "converge-submodules",
+      "supported": true,
+      "reason": "Released child pointers are delegated to the trusted submodule engine, which changes only an exact admitted gitlink through a reviewed PR."
+    },
+    {
+      "id": "marius-patrik/Andromeda:submodule-packages-skyagent-pointer-drift-dev",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "submodule-packages-skyagent-pointer-drift-dev",
+      "stage": "verification",
+      "repairClass": "pr",
+      "operation": "converge-submodules",
+      "supported": true,
+      "reason": "Released child pointers are delegated to the trusted submodule engine, which changes only an exact admitted gitlink through a reviewed PR."
+    },
+    {
+      "id": "marius-patrik/Andromeda:submodule-packages-skyagent-pointer-drift-main",
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "submodule-packages-skyagent-pointer-drift-main",
+      "stage": "verification",
+      "repairClass": "pr",
+      "operation": "converge-submodules",
+      "supported": true,
+      "reason": "Released child pointers are delegated to the trusted submodule engine, which changes only an exact admitted gitlink through a reviewed PR."
+    }
+  ],
+  "residue": [
+    {
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "extra-branch-reconcile-ci-inventory-dedup",
+      "repairClass": "owner",
+      "message": "Extra branch `reconcile/ci-inventory-dedup` is not the head of an open same-repository PR."
+    },
+    {
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "pr-393-not-mergeable",
+      "repairClass": "owner",
+      "message": "PR #393 is not mergeable (blocked)."
+    },
+    {
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "pr-393-red",
+      "repairClass": "owner",
+      "message": "PR #393 has failing checks: Suite / fail-closed inventory (ubuntu-latest):failure."
+    },
+    {
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "workflow-dev-codex-review-red",
+      "repairClass": "owner",
+      "message": "Workflow `Codex Review` concluded `failure` on `dev`."
+    },
+    {
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "workflow-dev-darkfactory-autoreview-red",
+      "repairClass": "owner",
+      "message": "Workflow `DarkFactory Autoreview` concluded `failure` on `dev`."
+    },
+    {
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "workflow-dev-head-checks-red",
+      "repairClass": "owner",
+      "message": "Current `dev` head has failing checks: DarkFactory Autoreview:failure, Codex Review:failure."
+    },
+    {
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "workflow-main-ci-red",
+      "repairClass": "owner",
+      "message": "Workflow `CI` concluded `failure` on `main`."
+    },
+    {
+      "repository": "marius-patrik/Andromeda",
+      "findingId": "workflow-main-head-checks-red",
+      "repairClass": "owner",
+      "message": "Current `main` head has failing checks: Validate:failure, Suite / manager platform (windows-latest):failure."
+    }
+  ]
+}

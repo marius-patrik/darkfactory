@@ -1,0 +1,45 @@
+{
+  "kind": "df-work",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-13T21:21:45.115Z",
+  "trigger": "workflow_dispatch",
+  "issue": "marius-patrik/DarkFactory#49",
+  "branch": "df/49-scaffold-provider-agnostic-prompt-skill-library-and-typed-contract",
+  "status": "blocked",
+  "actions": [
+    {
+      "action": "enforcement-rules",
+      "result": {
+        "ok": true,
+        "findings": []
+      }
+    },
+    {
+      "action": "preflight-merge-policy",
+      "result": {
+        "blocked": false,
+        "useAutomerge": false,
+        "autoMergeSupported": true,
+        "branchProtection": {
+          "configured": false,
+          "status": 403,
+          "reason": "GET /repos/marius-patrik/DarkFactory/branches/dev/protection failed with 403: {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/branches/branch-protection#get-branch-protection\",\"status\":\"403\"}"
+        },
+        "requiredChecks": [],
+        "summary": "no branch protection on `dev`; green-PR sweep will squash-merge directly after checks"
+      }
+    }
+  ],
+  "agent_os": {
+    "turns": 1,
+    "note": "Provider, model, identity, memory, and session state are resolved only by the canonical agents launcher.",
+    "input_brief_characters": 15488
+  },
+  "resume": null,
+  "base_branch": "dev",
+  "error": "Error: Worker completed without producing a commit.\n    at main (file:///C:/actions-runner-darkfactory/_work/DarkFactory/DarkFactory/darkfactory-control/.github/scripts/df-work.mjs:208:13)",
+  "cleanup": {
+    "ok": true,
+    "warning": ""
+  }
+}

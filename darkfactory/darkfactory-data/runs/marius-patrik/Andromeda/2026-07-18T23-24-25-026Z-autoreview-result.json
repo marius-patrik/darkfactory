@@ -1,0 +1,466 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T23:24:25.026Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#211",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "fix_no_change",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "db7547c8b51839093b00bcdf7eadda7cb905f76eb2d2d6b74383e34d44a9c8c7",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "828c1efd8f92f48fc3e19ebfec5d58172ef0f60b",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:7e8f991399b2851c4f5d9558b6d365979bf36acc1e3043308e7eabb41b3fd200",
+          "inputChecksum": "sha256:d7c51629b521403cbff2083473b15f93d21d2e3691259da767e38ce4aa0b7fad",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 44936,
+          "outputTokens": 1317,
+          "totalTokens": 46253
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Blocked. The complete current version of marius-patrik/Andromeda#211 was reviewed at db7547c8b51839093b00bcdf7eadda7cb905f76eb2d2d6b74383e34d44a9c8c7. Its appended review text identifies missing decisions but does not supply authenticated owner authorization or an executable contract.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-8963e4078718430d706a",
+              "title": "Canonical backend and fallback authority remain undecided",
+              "details": "Issue #211 still presents Postgres and config projection as alternatives. The authenticated owner must select the authoritative source, decide whether the other backend remains supported, and define fallback activation and write behavior that prevent split-brain, silent divergence, and automatic promotion.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-157eeaf4e62539405646",
+              "title": "Single repository and revision ownership are unspecified",
+              "details": "The issue does not identify the owning child repository or gitlink, configured URL, admitted base revision, affected paths, branch boundary, or whether an umbrella pointer update belongs to this lane. The submodule pointer contract and single-lane ownership are therefore unverifiable.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-907d36d135440d3f9eab",
+              "title": "Scope and dependency boundaries remain unresolved",
+              "details": "Owner-approved non-goals are absent. Open issues #210 and #212 overlap this work, but #211 defines neither objective completion evidence for #210 nor the ownership split with #212 for active-role and switcher state. Naming, Switcher Connect behavior, deployment topology, credentials, and unrelated configuration remain exposed to scope conflict.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-0e3196a1f410b558ceca",
+              "title": "Persistence, failure, and trust semantics are not executable",
+              "details": "The issue requests but does not establish an owner-approved schema, identity rules, atomicity, concurrency control, ordering, durability, restart guarantees, disagreement and corruption handling, partial-migration behavior, or trust boundaries for DSNs, configuration, stored data, logs, and errors. Objective implementation and acceptance cannot be derived from requests for future decisions.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-c0386903686a85e8e938",
+              "title": "Migration and rollout policy require owner authorization",
+              "details": "No authenticated owner policy governs existing registry/*.yaml installations, mixed-version deployments, cutover, canonical-backend unavailability, or rollback. The contract must authorize an idempotent migration with preflight checks, recoverable backup, integrity verification, compatibility rules, cutover verification, losslessness evidence, and rollback behavior.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-aabc428ee372312bfb17",
+              "title": "Required validation and delivery evidence are unspecified",
+              "details": "The issue does not select GATEWAY_PG_DSN, a container fixture, or both as the mandatory live gate; identify authoritative child and umbrella validation commands; assign fixture ownership; enumerate required failure cases; or define exact delivered-revision and main-branch or release evidence. Independent Validate owns command execution, but the specification still lacks verifiable coverage requirements.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-ff5294eea6a57169dac9",
+              "title": "Workflow label does not reflect the owner-blocked state",
+              "details": "Verified target data shows only label P1. Trusted policy provides df:ask-owner and df:reviewed. Because authenticated owner decisions remain unresolved, df:ask-owner is required and df:reviewed must remain absent until clean medium-tier and independent high-tier reviews succeed.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner question: Which backend is canonical, why is it authoritative, what support remains for the other backend, and what exact fallback behavior is authorized?",
+            "Owner question: Which child repository, URL, base revision, paths, and branch own this lane, and is the umbrella gitlink update included or separate?",
+            "Owner question: What are the non-goals, the objective completion evidence for #210, and the exact state-ownership boundary with #212?",
+            "Owner question: Which live-validation gate is mandatory: GATEWAY_PG_DSN, a container fixture, or both?",
+            "Owner question: What rollout, mixed-version, cutover, unavailability, and rollback policy is authorized?",
+            "Closed issue #100 is explicitly identified as replaced; no separate duplication finding remains."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-8963e4078718430d706a",
+            "title": "Canonical backend and fallback authority remain undecided",
+            "details": "Issue #211 still presents Postgres and config projection as alternatives. The authenticated owner must select the authoritative source, decide whether the other backend remains supported, and define fallback activation and write behavior that prevent split-brain, silent divergence, and automatic promotion.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-157eeaf4e62539405646",
+            "title": "Single repository and revision ownership are unspecified",
+            "details": "The issue does not identify the owning child repository or gitlink, configured URL, admitted base revision, affected paths, branch boundary, or whether an umbrella pointer update belongs to this lane. The submodule pointer contract and single-lane ownership are therefore unverifiable.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-907d36d135440d3f9eab",
+            "title": "Scope and dependency boundaries remain unresolved",
+            "details": "Owner-approved non-goals are absent. Open issues #210 and #212 overlap this work, but #211 defines neither objective completion evidence for #210 nor the ownership split with #212 for active-role and switcher state. Naming, Switcher Connect behavior, deployment topology, credentials, and unrelated configuration remain exposed to scope conflict.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-0e3196a1f410b558ceca",
+            "title": "Persistence, failure, and trust semantics are not executable",
+            "details": "The issue requests but does not establish an owner-approved schema, identity rules, atomicity, concurrency control, ordering, durability, restart guarantees, disagreement and corruption handling, partial-migration behavior, or trust boundaries for DSNs, configuration, stored data, logs, and errors. Objective implementation and acceptance cannot be derived from requests for future decisions.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-c0386903686a85e8e938",
+            "title": "Migration and rollout policy require owner authorization",
+            "details": "No authenticated owner policy governs existing registry/*.yaml installations, mixed-version deployments, cutover, canonical-backend unavailability, or rollback. The contract must authorize an idempotent migration with preflight checks, recoverable backup, integrity verification, compatibility rules, cutover verification, losslessness evidence, and rollback behavior.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-aabc428ee372312bfb17",
+            "title": "Required validation and delivery evidence are unspecified",
+            "details": "The issue does not select GATEWAY_PG_DSN, a container fixture, or both as the mandatory live gate; identify authoritative child and umbrella validation commands; assign fixture ownership; enumerate required failure cases; or define exact delivered-revision and main-branch or release evidence. Independent Validate owns command execution, but the specification still lacks verifiable coverage requirements.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-ff5294eea6a57169dac9",
+            "title": "Workflow label does not reflect the owner-blocked state",
+            "details": "Verified target data shows only label P1. Trusted policy provides df:ask-owner and df:reviewed. Because authenticated owner decisions remain unresolved, df:ask-owner is required and df:reviewed must remain absent until clean medium-tier and independent high-tier reviews succeed.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 2,
+        "phase": "medium_fix",
+        "targetVersion": "db7547c8b51839093b00bcdf7eadda7cb905f76eb2d2d6b74383e34d44a9c8c7",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "828c1efd8f92f48fc3e19ebfec5d58172ef0f60b",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:cd5f2717780c2cb3d5b8f92de2de9f320421917e648f3c6a79c23e6ee348d745",
+          "inputChecksum": "sha256:3f74dbd8cfe4cffddcc69628c98af3e91ca475f4b695d975bd924dbd808f40bd",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": null,
+          "model": null,
+          "agentPreset": null,
+          "providerVersion": null
+        },
+        "attempts": [],
+        "usage": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-8963e4078718430d706a",
+            "title": "Canonical backend and fallback authority remain undecided",
+            "details": "Issue #211 still presents Postgres and config projection as alternatives. The authenticated owner must select the authoritative source, decide whether the other backend remains supported, and define fallback activation and write behavior that prevent split-brain, silent divergence, and automatic promotion.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-157eeaf4e62539405646",
+            "title": "Single repository and revision ownership are unspecified",
+            "details": "The issue does not identify the owning child repository or gitlink, configured URL, admitted base revision, affected paths, branch boundary, or whether an umbrella pointer update belongs to this lane. The submodule pointer contract and single-lane ownership are therefore unverifiable.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-907d36d135440d3f9eab",
+            "title": "Scope and dependency boundaries remain unresolved",
+            "details": "Owner-approved non-goals are absent. Open issues #210 and #212 overlap this work, but #211 defines neither objective completion evidence for #210 nor the ownership split with #212 for active-role and switcher state. Naming, Switcher Connect behavior, deployment topology, credentials, and unrelated configuration remain exposed to scope conflict.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-0e3196a1f410b558ceca",
+            "title": "Persistence, failure, and trust semantics are not executable",
+            "details": "The issue requests but does not establish an owner-approved schema, identity rules, atomicity, concurrency control, ordering, durability, restart guarantees, disagreement and corruption handling, partial-migration behavior, or trust boundaries for DSNs, configuration, stored data, logs, and errors. Objective implementation and acceptance cannot be derived from requests for future decisions.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-c0386903686a85e8e938",
+            "title": "Migration and rollout policy require owner authorization",
+            "details": "No authenticated owner policy governs existing registry/*.yaml installations, mixed-version deployments, cutover, canonical-backend unavailability, or rollback. The contract must authorize an idempotent migration with preflight checks, recoverable backup, integrity verification, compatibility rules, cutover verification, losslessness evidence, and rollback behavior.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-aabc428ee372312bfb17",
+            "title": "Required validation and delivery evidence are unspecified",
+            "details": "The issue does not select GATEWAY_PG_DSN, a container fixture, or both as the mandatory live gate; identify authoritative child and umbrella validation commands; assign fixture ownership; enumerate required failure cases; or define exact delivered-revision and main-branch or release evidence. Independent Validate owns command execution, but the specification still lacks verifiable coverage requirements.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-ff5294eea6a57169dac9",
+            "title": "Workflow label does not reflect the owner-blocked state",
+            "details": "Verified target data shows only label P1. Trusted policy provides df:ask-owner and df:reviewed. Because authenticated owner decisions remain unresolved, df:ask-owner is required and df:reviewed must remain absent until clean medium-tier and independent high-tier reviews succeed.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-8963e4078718430d706a",
+          "df-157eeaf4e62539405646",
+          "df-907d36d135440d3f9eab",
+          "df-0e3196a1f410b558ceca",
+          "df-c0386903686a85e8e938",
+          "df-aabc428ee372312bfb17",
+          "df-ff5294eea6a57169dac9"
+        ],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": "fix_no_change",
+        "outcome": "blocked"
+      }
+    ]
+  }
+}

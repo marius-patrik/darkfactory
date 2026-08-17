@@ -1,0 +1,241 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T21:19:47.768Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#219",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "bb088b5e4869d173ca8303f32341f801382f31716d8f6c13ac8da629273ec6c1",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:776cccf940c92b15b1ba1617a9a6344e8438719723dbe75fb37be9c74827108c",
+      "inputChecksum": "sha256:776d9c69fbf43420bfdda0daad6dd2c0327d46cfc51b8391a56f0500c0548636",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 122382,
+      "outputTokens": 4375,
+      "totalTokens": 126757
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue 219 at version bb088b5e4869d173ca8303f32341f801382f31716d8f6c13ac8da629273ec6c1 remains blocked. The complete current review found unresolved owner gates without the required projection, incomplete owner questions, unauthorized rollout expansions, an unsafe proof-terminal classification, circular closure evidence ordering, and incomplete submodule-root coverage.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-59c1b98bd1a270c60a0b",
+          "title": "Required owner decisions remain unresolved and the ask-owner projection is absent",
+          "details": "For marius-patrik/Andromeda issue 219 at the reviewed version, D-DARKFACTORY-L4, D-AUTOLEARN-BRAKE-PROOF-225, D-AUTOLEARN-225, D-PROOF-TRACKER-219, D-PROOF-SCHEDULE-219, D-SUPPORTED-PLATFORMS-219, and D-CAPSTONE-SIGNING-219 have no verified authenticated records. The observed labels are P0 and roadmap, despite the contract and trusted label policy requiring df:ask-owner while applicable owner decisions are unresolved. Project df:ask-owner through the trusted reconciliation path and keep each associated action, rollout stage, proof window, capstone, and closure blocked until its target-specific decision is verified.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-339652a19f5b7d5fbd2b",
+          "title": "Owner questions do not solicit every field required by their decision contracts",
+          "details": "The exact questions permit incomplete answers to appear responsive. D-DARKFACTORY-L4 omits an explicit prerequisites record and resulting authorization transition; D-AUTOLEARN-BRAKE-PROOF-225 omits cleanup or retention; D-AUTOLEARN-225 omits the brake-proof evidence and resulting transition; D-PROOF-TRACKER-219 omits the final closure transition; D-PROOF-SCHEDULE-219 omits the clock source, start and end instants, leap and clock-adjustment treatment, and exact missed-cycle disposition; D-SUPPORTED-PLATFORMS-219 omits filesystem and terminal primitives, participation classification, immutable inventory source, and amendment procedure; and D-CAPSTONE-SIGNING-219 omits envelope format, canonical manifest-byte rules, verifier version and command, credential-validity rules, and compromise handling. Amend each owner question to request every mandatory semantic field without supplying or inferring the answer.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-f7243e276a21369a2512",
+          "title": "Write authority is undefined for bounded multi-lane and autonomous-proof operation",
+          "details": "D-DARKFACTORY-L4 and its owner question authorize only a single-lane write and live rollback drill. The rollout contract subsequently permits bounded multi-lane operation and an autonomous proof window during which the managed repository may continue changing, but no authenticated decision or amendment sequence binds those expanded repositories, actions, concurrency, duration, and rollback boundaries. Technical promotion evidence cannot expand authority. Require a target-specific authenticated decision for each write-scope expansion, or define an explicit authenticated amendment chain that must be verified before later-stage writes begin.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-e0a0e87c8ebab61d6f8a",
+          "title": "Operational failures can be counted as successful proof-window terminal states",
+          "details": "The proof population treats an authenticated owner-dependency record as an alternative terminal state, while the failure table creates that record for missing, corrupt, ambiguous, or stale receipts. Such creation needs only the reconciliation-service actor and expressly grants no authority, so a failed lane could satisfy the end-of-window population without owner disposition or objective resolution. This conflicts with fail-closed backlog drainage and the prohibition on reinterpreting failure as success. Keep operational-failure dependencies proof-blocking; count an open issue as terminal only after verified objective resolution or an authenticated owner decision explicitly excluding or terminally classifying that issue and defining its metric treatment.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-ec88eb9bb7203bcc6fe8",
+          "title": "Capstone and closure evidence ordering is circular",
+          "details": "The capstone manifest must be signed before execution while binding the final closure revision and closure-ledger blob SHA, but the ledger must contain complete rows with artifact hashes and evidence produced by that later capstone. Recording those results through the required reviewed default-branch mutation changes both the closure revision and ledger blob, invalidating the pre-run signature. The validator receipt has a related ambiguity: its check URL and output exist only after validation of the committed ledger, while closure evidence is required to retain them under a sole authoritative projection. Define a non-circular two-phase protocol: pin a pre-run candidate revision and candidate ledger in the signed manifest, then append capstone and validator results into a final closure ledger and authenticate that final ledger with a separate post-run closure attestation whose verification does not require rewriting the bytes it attests.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-e6528598fbc09e3d3ebe",
+          "title": "The submodule-root pointer contract is absent from closure evidence",
+          "details": "The reviewed target is a submodule root, but issue 219 requires only git submodule status --recursive during the capstone. It does not require closure-ledger evidence for every gitlink path, child repository identity, configured URL, recorded commit, released child default-branch head, ancestry proof, or child required checks. It also lacks explicit rejection behavior for missing, renamed, misplaced, dirty, conflicted, uninitialized, inaccessible, non-ancestor, parked, or ambiguous children. Add exact-revision ledger rows and fail-closed validation for the complete pointer contract; the independent status command alone does not provide the required coverage.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "All seven named owner decisions remain unresolved; issue text, comments, labels, placeholders, dependency closure, and worker output provide no authorization."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-59c1b98bd1a270c60a0b",
+        "title": "Required owner decisions remain unresolved and the ask-owner projection is absent",
+        "details": "For marius-patrik/Andromeda issue 219 at the reviewed version, D-DARKFACTORY-L4, D-AUTOLEARN-BRAKE-PROOF-225, D-AUTOLEARN-225, D-PROOF-TRACKER-219, D-PROOF-SCHEDULE-219, D-SUPPORTED-PLATFORMS-219, and D-CAPSTONE-SIGNING-219 have no verified authenticated records. The observed labels are P0 and roadmap, despite the contract and trusted label policy requiring df:ask-owner while applicable owner decisions are unresolved. Project df:ask-owner through the trusted reconciliation path and keep each associated action, rollout stage, proof window, capstone, and closure blocked until its target-specific decision is verified.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-339652a19f5b7d5fbd2b",
+        "title": "Owner questions do not solicit every field required by their decision contracts",
+        "details": "The exact questions permit incomplete answers to appear responsive. D-DARKFACTORY-L4 omits an explicit prerequisites record and resulting authorization transition; D-AUTOLEARN-BRAKE-PROOF-225 omits cleanup or retention; D-AUTOLEARN-225 omits the brake-proof evidence and resulting transition; D-PROOF-TRACKER-219 omits the final closure transition; D-PROOF-SCHEDULE-219 omits the clock source, start and end instants, leap and clock-adjustment treatment, and exact missed-cycle disposition; D-SUPPORTED-PLATFORMS-219 omits filesystem and terminal primitives, participation classification, immutable inventory source, and amendment procedure; and D-CAPSTONE-SIGNING-219 omits envelope format, canonical manifest-byte rules, verifier version and command, credential-validity rules, and compromise handling. Amend each owner question to request every mandatory semantic field without supplying or inferring the answer.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-f7243e276a21369a2512",
+        "title": "Write authority is undefined for bounded multi-lane and autonomous-proof operation",
+        "details": "D-DARKFACTORY-L4 and its owner question authorize only a single-lane write and live rollback drill. The rollout contract subsequently permits bounded multi-lane operation and an autonomous proof window during which the managed repository may continue changing, but no authenticated decision or amendment sequence binds those expanded repositories, actions, concurrency, duration, and rollback boundaries. Technical promotion evidence cannot expand authority. Require a target-specific authenticated decision for each write-scope expansion, or define an explicit authenticated amendment chain that must be verified before later-stage writes begin.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-e0a0e87c8ebab61d6f8a",
+        "title": "Operational failures can be counted as successful proof-window terminal states",
+        "details": "The proof population treats an authenticated owner-dependency record as an alternative terminal state, while the failure table creates that record for missing, corrupt, ambiguous, or stale receipts. Such creation needs only the reconciliation-service actor and expressly grants no authority, so a failed lane could satisfy the end-of-window population without owner disposition or objective resolution. This conflicts with fail-closed backlog drainage and the prohibition on reinterpreting failure as success. Keep operational-failure dependencies proof-blocking; count an open issue as terminal only after verified objective resolution or an authenticated owner decision explicitly excluding or terminally classifying that issue and defining its metric treatment.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-ec88eb9bb7203bcc6fe8",
+        "title": "Capstone and closure evidence ordering is circular",
+        "details": "The capstone manifest must be signed before execution while binding the final closure revision and closure-ledger blob SHA, but the ledger must contain complete rows with artifact hashes and evidence produced by that later capstone. Recording those results through the required reviewed default-branch mutation changes both the closure revision and ledger blob, invalidating the pre-run signature. The validator receipt has a related ambiguity: its check URL and output exist only after validation of the committed ledger, while closure evidence is required to retain them under a sole authoritative projection. Define a non-circular two-phase protocol: pin a pre-run candidate revision and candidate ledger in the signed manifest, then append capstone and validator results into a final closure ledger and authenticate that final ledger with a separate post-run closure attestation whose verification does not require rewriting the bytes it attests.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-e6528598fbc09e3d3ebe",
+        "title": "The submodule-root pointer contract is absent from closure evidence",
+        "details": "The reviewed target is a submodule root, but issue 219 requires only git submodule status --recursive during the capstone. It does not require closure-ledger evidence for every gitlink path, child repository identity, configured URL, recorded commit, released child default-branch head, ancestry proof, or child required checks. It also lacks explicit rejection behavior for missing, renamed, misplaced, dirty, conflicted, uninitialized, inaccessible, non-ancestor, parked, or ambiguous children. Add exact-revision ledger rows and fail-closed validation for the complete pointer contract; the independent status command alone does not provide the required coverage.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

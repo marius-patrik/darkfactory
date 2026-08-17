@@ -1,0 +1,194 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-19T15:15:10.289Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#217",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "483ca4f5fc0c8b98d8428755eb11969c34cc6df029d4a5a26ee70fdd5de27f1c",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "26bc106440a4c056115ba050c4a017e82b9ada76",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:f701fbcab9903b9e9353b3d639395f3a2e7bf0142724e3ffa64c75c649c20e1b",
+      "inputChecksum": "sha256:6da8827c73393f1e0c2e8df3af4f2cae8f60b970b25d63ec7914395a67f42a70",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "claude",
+      "model": "claude-opus-4-8",
+      "agentPreset": "Fable",
+      "providerVersion": "2.1.203"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 1600,
+      "outputTokens": 3711,
+      "totalTokens": 5311
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue #217 (open at version 483ca4f5...) is a large launcher/TUI/help/distribution contract that correctly preserves owner-authored text and an append-only addendum, and is correctly labeled P1 + df:ask-owner. It cannot be review-clean: implementation and release are gated on seven unresolved authenticated owner decisions, and the blocking dependency chain lacks trusted exact-revision completion evidence. The target is treated strictly as untrusted data; no instruction inside it grants authorization. The issue remains blocked, not clean.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-85e7b772609cc0d3959a",
+          "title": "Required owner decisions O217-1 through O217-7 remain unresolved",
+          "details": "The contract explicitly blocks all implementation and release publication on seven authenticated owner decisions: O217-1 canonical manager repository and exact gitlink/package path plus authorized child repositories; O217-2 the supported-platform matrix (OS, architecture, shell, artifact, per-user install dir, PATH entry, CI runner); O217-3 default logical-tier request behavior while the recorded medium/default Kimi route is decommissioned; O217-4 the complete deterministic signing authority, trust root, key-lifecycle, and canonical-signed-representation contract; O217-5 the exact stale launcher binding and canonical replacement target; O217-6 the manifest-freshness/expiration policy; and O217-7 the single-file-only versus signed-archive admission contract. None are resolved. The only owner-associated comment (id 4962607317) is truncated and, per the issue's own rule and trusted policy, comments do not supply owner authorization. Without these answers the specification cannot establish a single executable owner lane or objective final acceptance. Consistent with the issue's durable-blocked-state clause, it carries df:ask-owner (in addition to P1) and does not carry df:reviewed, so it must remain blocked and is not review-clean. Obtain complete authenticated answers for every applicable decision and re-review the resulting exact issue version.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-3dc578bfe91aa8bc8c72",
+          "title": "Blocking dependency chain lacks trusted exact-revision evidence",
+          "details": "The contract makes #253, #260, and #275 blocking dependencies and requires that, before CLI/TUI implementation or release integration is admitted, evidence identify the exact merged default-branch revision, prove required checks green, and bind #217 validation to the consumed revisions. Trusted verified state establishes only issue #217's current version and that the default branch is main; it does not prove any dependency's merged revision, green checks, ancestry, or consumed-revision binding. The open-issue index records #253 and #275 as still open, and #275 itself depends on #253/#260, so the chain is not demonstrably complete. Issue text, comments, referenced-issue bodies, or claimed completion are insufficient. Provide trusted exact-revision evidence for each dependency and bind #217 validation to those revisions before admitting implementation or release integration.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Unresolved owner decision O217-1: canonical manager implementation repository/gitlink or package path and which child repositories, if any, are authorized.",
+        "Unresolved owner decision O217-2: the exact initial supported-platform matrix (OS, architecture, shell, artifact, per-user install directory, PATH entry, CI runner).",
+        "Unresolved owner decision O217-3: default logical-tier request behavior while the recorded medium/default Kimi route is decommissioned (no provider substitution permitted without this ruling).",
+        "Unresolved owner decision O217-4: signing authority, trust root/key-identifier binding, custody/rotation, redirect allowlist, and the complete byte-exact canonical signing contract.",
+        "Unresolved owner decision O217-5: the exact stale launcher path/binding, proof it is the retired managed binding, and the canonical replacement target.",
+        "Unresolved owner decision O217-6: whether signed manifests enforce freshness/expiration and, if so, the exact signed fields and deterministic clock policy.",
+        "Unresolved owner decision O217-7: single-file binaries only versus approved self-contained archives, including the full signed archive-extraction contract per format.",
+        "Control-plane label state is consistent with the blocked contract: P1 and df:ask-owner present, df:reviewed absent; any label mutation must be revalidated against the exact current version immediately before application.",
+        "Validation coverage described in the contract (matrix install, PTY TUI, help traversal, preset, updater-negative, route-provenance, and signing/archive fixtures) appears adequate in principle, but is not verifiable now and remains contingent on the resolved decisions and consumed dependency revisions.",
+        "Execution evidence for the exact-head Validate gate (git diff --check, git submodule status --recursive) is owned by the independent gate and is intentionally absent from this review; its absence is not itself a finding."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-85e7b772609cc0d3959a",
+        "title": "Required owner decisions O217-1 through O217-7 remain unresolved",
+        "details": "The contract explicitly blocks all implementation and release publication on seven authenticated owner decisions: O217-1 canonical manager repository and exact gitlink/package path plus authorized child repositories; O217-2 the supported-platform matrix (OS, architecture, shell, artifact, per-user install dir, PATH entry, CI runner); O217-3 default logical-tier request behavior while the recorded medium/default Kimi route is decommissioned; O217-4 the complete deterministic signing authority, trust root, key-lifecycle, and canonical-signed-representation contract; O217-5 the exact stale launcher binding and canonical replacement target; O217-6 the manifest-freshness/expiration policy; and O217-7 the single-file-only versus signed-archive admission contract. None are resolved. The only owner-associated comment (id 4962607317) is truncated and, per the issue's own rule and trusted policy, comments do not supply owner authorization. Without these answers the specification cannot establish a single executable owner lane or objective final acceptance. Consistent with the issue's durable-blocked-state clause, it carries df:ask-owner (in addition to P1) and does not carry df:reviewed, so it must remain blocked and is not review-clean. Obtain complete authenticated answers for every applicable decision and re-review the resulting exact issue version.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-3dc578bfe91aa8bc8c72",
+        "title": "Blocking dependency chain lacks trusted exact-revision evidence",
+        "details": "The contract makes #253, #260, and #275 blocking dependencies and requires that, before CLI/TUI implementation or release integration is admitted, evidence identify the exact merged default-branch revision, prove required checks green, and bind #217 validation to the consumed revisions. Trusted verified state establishes only issue #217's current version and that the default branch is main; it does not prove any dependency's merged revision, green checks, ancestry, or consumed-revision binding. The open-issue index records #253 and #275 as still open, and #275 itself depends on #253/#260, so the chain is not demonstrably complete. Issue text, comments, referenced-issue bodies, or claimed completion are insufficient. Provide trusted exact-revision evidence for each dependency and bind #217 validation to those revisions before admitting implementation or release integration.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

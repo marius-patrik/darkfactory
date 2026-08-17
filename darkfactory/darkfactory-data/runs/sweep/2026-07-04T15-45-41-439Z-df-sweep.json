@@ -1,0 +1,111 @@
+{
+  "kind": "df-sweep",
+  "target_repo": "sweep",
+  "created_at": "2026-07-04T15:45:41.446Z",
+  "trigger": "schedule",
+  "mode": "sweep",
+  "excluded_repos": [
+    "marius-patrik/agents-harness"
+  ],
+  "actions": [
+    {
+      "repo": "marius-patrik/Fabrica",
+      "action": "skip",
+      "reason": "parked"
+    },
+    {
+      "repo": "marius-patrik/agents-harness",
+      "action": "skip",
+      "reason": "excluded"
+    },
+    {
+      "repo": "marius-patrik/media-streamer",
+      "pr": "marius-patrik/media-streamer#1",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/data-agentos",
+      "action": "error",
+      "error": "[{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",0,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":22,\"column\":13}],\"message\":\"Resource not accessible by integration\"}]"
+    },
+    {
+      "repo": "marius-patrik/life-support",
+      "action": "skip",
+      "reason": "parked"
+    },
+    {
+      "repo": "marius-patrik/yacht",
+      "action": "error",
+      "error": "[{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",0,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":22,\"column\":13}],\"message\":\"Resource not accessible by integration\"}]"
+    },
+    {
+      "repo": "marius-patrik/mssgs",
+      "pr": "marius-patrik/mssgs#50",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/singularity",
+      "action": "skip",
+      "reason": "parked"
+    },
+    {
+      "repo": "marius-patrik/skyblock-agent",
+      "action": "skip",
+      "reason": "parked"
+    },
+    {
+      "repo": "marius-patrik/vsc-utils",
+      "pr": "marius-patrik/vsc-utils#1",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/darkfactory-templates",
+      "pr": "marius-patrik/darkfactory-templates#22",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/template-repo",
+      "pr": "marius-patrik/template-repo#3",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/template-bot",
+      "pr": "marius-patrik/template-bot#1",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/workspace-darkfactory",
+      "action": "error",
+      "error": "[{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",0,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":22,\"column\":13}],\"message\":\"Resource not accessible by integration\"},{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",1,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":22,\"column\":13}],\"message\":\"Resource not accessible by integration\"}]"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#23",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#20",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/darkfactory-data",
+      "action": "error",
+      "error": "[{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",0,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":22,\"column\":13}],\"message\":\"Resource not accessible by integration\"}]"
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Green-PR sweep is deterministic and uses no model calls"
+  }
+}

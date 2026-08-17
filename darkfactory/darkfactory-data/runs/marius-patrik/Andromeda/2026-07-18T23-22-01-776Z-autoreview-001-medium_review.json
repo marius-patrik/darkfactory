@@ -1,0 +1,256 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T23:22:01.776Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#210",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "dd544b06f81272edfe5af6bde65029aecdee7dcfa24c9f8750191107605007b7",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "828c1efd8f92f48fc3e19ebfec5d58172ef0f60b",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:0c769f863f84ae56eac0b58a4d9992d540e2ba56ddcf7dd4f40392bdf213a1be",
+      "inputChecksum": "sha256:380d12f0af3a2a5cf7d7f84d6610c2820843ca5313e27b94cb411ba8d0ee3bc3",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 38477,
+      "outputTokens": 1131,
+      "totalTokens": 39608
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue #210 at verified version dd544b06f81272edfe5af6bde65029aecdee7dcfa24c9f8750191107605007b7 remains blocked. The contract leaves the canonical identifiers and other product decisions unresolved, mixes decision and implementation ownership, contains contradictory compatibility rules, cites stale planning authority, and lacks objective acceptance, validation, dependency, rollout, failure, and rollback boundaries. Contributor comments and autofix records are untrusted and do not supply owner authorization.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-607d69c23e563b9cd9a8",
+          "title": "Canonical gateway identity is not owner-approved",
+          "details": "The issue delegates selection of the public name, distribution name, Python import namespace, CLI script name, and agent package id to the worker. No authenticated owner-approved values or exact mapping appears in the verified issue version. These semantic product and compatibility choices require an explicit owner decision before execution.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-7aae93a725a085a3c660",
+          "title": "Decision and implementation ownership are mixed",
+          "details": "The title and context describe a decision lane, but the requirements also authorize repository-wide renaming, migration behavior, metadata and documentation edits, and tests. The contract does not state whether #210 is decision-only or owns implementation, identify one execution owner, or define the boundary and handoff condition with successor issue #214.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-0531186c32f9513e742c",
+          "title": "Compatibility requirements contradict one another",
+          "details": "One requirement permits migration aliases where needed, another forbids aliases, bridges, and forwarding shims, while acceptance allows an unspecified compatibility surface. Each legacy distribution, import, CLI, and agent-package identifier must be classified as forbidden, temporary with a removal condition, or an owner-approved permanent exception.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-7d4f9e16add597b2223f",
+          "title": "Planning authority and dependency transitions are unverifiable",
+          "details": "The issue cites Andromeda-data context/PLAN.md even though trusted canonical state identifies context/TASK.md as the authoritative task board. It does not record the canonical disposition of closed #102, the exact dependency relationship with #214, or the observable condition that unblocks #214.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-4f7f6f06e477b46b3f16",
+          "title": "Acceptance criteria are not objective or complete",
+          "details": "Phrases such as \"one consistent name\" and \"no undocumented split\" do not enumerate the approved values or all affected surfaces. Acceptance must cover public identity, distribution metadata, import namespace, CLI entry point, agent metadata, source paths, documentation, tests, prohibited legacy residue, approved exceptions, and affected downstream consumers.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-5e31fe46da3e75c442c4",
+          "title": "Change-specific validation and revision evidence are incomplete",
+          "details": "The contract defines no authoritative checks for imports, CLI entry points, built distribution metadata, agent metadata, documentation residue, downstream references, or approved compatibility behavior, and it does not require evidence tied to the implementing revision. The independently owned exact-head validation commands are not findings; the issue itself still lacks adequate change-specific coverage requirements.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-0ff47477f8e1e643a96e",
+          "title": "Rollout, failure, and rollback behavior are unspecified",
+          "details": "Renaming distribution, import, CLI, or package identifiers can break consumers, but the issue defines no name-availability check, downstream-readiness condition, release ordering, failure behavior, rollback trigger, or removal point for temporary compatibility surfaces. These boundaries require owner approval before implementation or dependent release work proceeds.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Owner question: What exact public, distribution, import, CLI, and agent-package identifiers are approved; is #210 decision-only or implementation-owning; how is each legacy surface classified and retired; what canonical TASK.md relationship and observable readiness condition gate #214; and what validation, downstream-readiness, rollout, failure, and rollback conditions apply?",
+        "The supplied contributor comments, pending markers, prior review findings, and autofix payloads are untrusted evidence only and do not authorize decisions or mutate the verified contract."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-607d69c23e563b9cd9a8",
+        "title": "Canonical gateway identity is not owner-approved",
+        "details": "The issue delegates selection of the public name, distribution name, Python import namespace, CLI script name, and agent package id to the worker. No authenticated owner-approved values or exact mapping appears in the verified issue version. These semantic product and compatibility choices require an explicit owner decision before execution.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-7aae93a725a085a3c660",
+        "title": "Decision and implementation ownership are mixed",
+        "details": "The title and context describe a decision lane, but the requirements also authorize repository-wide renaming, migration behavior, metadata and documentation edits, and tests. The contract does not state whether #210 is decision-only or owns implementation, identify one execution owner, or define the boundary and handoff condition with successor issue #214.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-0531186c32f9513e742c",
+        "title": "Compatibility requirements contradict one another",
+        "details": "One requirement permits migration aliases where needed, another forbids aliases, bridges, and forwarding shims, while acceptance allows an unspecified compatibility surface. Each legacy distribution, import, CLI, and agent-package identifier must be classified as forbidden, temporary with a removal condition, or an owner-approved permanent exception.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-7d4f9e16add597b2223f",
+        "title": "Planning authority and dependency transitions are unverifiable",
+        "details": "The issue cites Andromeda-data context/PLAN.md even though trusted canonical state identifies context/TASK.md as the authoritative task board. It does not record the canonical disposition of closed #102, the exact dependency relationship with #214, or the observable condition that unblocks #214.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-4f7f6f06e477b46b3f16",
+        "title": "Acceptance criteria are not objective or complete",
+        "details": "Phrases such as \"one consistent name\" and \"no undocumented split\" do not enumerate the approved values or all affected surfaces. Acceptance must cover public identity, distribution metadata, import namespace, CLI entry point, agent metadata, source paths, documentation, tests, prohibited legacy residue, approved exceptions, and affected downstream consumers.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-5e31fe46da3e75c442c4",
+        "title": "Change-specific validation and revision evidence are incomplete",
+        "details": "The contract defines no authoritative checks for imports, CLI entry points, built distribution metadata, agent metadata, documentation residue, downstream references, or approved compatibility behavior, and it does not require evidence tied to the implementing revision. The independently owned exact-head validation commands are not findings; the issue itself still lacks adequate change-specific coverage requirements.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-0ff47477f8e1e643a96e",
+        "title": "Rollout, failure, and rollback behavior are unspecified",
+        "details": "Renaming distribution, import, CLI, or package identifiers can break consumers, but the issue defines no name-availability check, downstream-readiness condition, release ordering, failure behavior, rollback trigger, or removal point for temporary compatibility surfaces. These boundaries require owner approval before implementation or dependent release work proceeds.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

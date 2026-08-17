@@ -1,0 +1,165 @@
+{
+  "kind": "autoreview-002-medium_fix",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-19T00:29:05.486Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#217",
+  "round": {
+    "sequence": 2,
+    "phase": "medium_fix",
+    "targetVersion": "483ca4f5fc0c8b98d8428755eb11969c34cc6df029d4a5a26ee70fdd5de27f1c",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "3835955691a9beec49474ca985f27b7cafe0911d",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:68ee0f98b31601a0276c5ac7f206722dfee4df2da17ec181d80f5b39b68cd6ff",
+      "inputChecksum": "sha256:e777839e070361a4e0f8950db703be59144c507fc81ef4659306dd25b0c1127b",
+      "profile": {
+        "id": "profile/issue-fixer",
+        "version": "0.2.0",
+        "runKind": "fix-issue",
+        "purpose": "review-fix"
+      },
+      "selection": {
+        "role": "role/issue-fixer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/minimal-diff",
+          "skill/owner-escalation",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-fixer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-fixer",
+          "version": "0.2.0",
+          "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/minimal-diff",
+          "version": "0.2.0",
+          "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-fixer",
+          "version": "0.3.0",
+          "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": null,
+      "model": null,
+      "agentPreset": null,
+      "providerVersion": null
+    },
+    "attempts": [],
+    "usage": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalTokens": 0
+    },
+    "verdict": null,
+    "findings": [
+      {
+        "id": "df-50e7b9804a45b01ea55a",
+        "title": "Required owner decisions O217-1 through O217-7 remain unresolved",
+        "details": "The specification cannot establish a single executable owner lane or objective final acceptance until authenticated, issue-specific owner answers define the canonical manager repository/path and authorized children, supported-platform matrix, default logical-tier request behavior, complete deterministic signing and key-lifecycle policy, stale launcher binding and migration target, manifest-freshness policy, and archive admission contract. The supplied owner comment is truncated and does not completely authorize any decision. Obtain complete answers for every applicable decision and review the resulting exact issue version again.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-f1c5a2eeda015841b75f",
+        "title": "Blocking dependency chain lacks trusted exact-revision evidence",
+        "details": "The contract depends on #253, #260, and #275, but the trusted verified state establishes only issue #217's current version and the repository default branch. It does not prove the exact merged default-branch revision, required green checks, ancestry, or consumed-revision binding for each dependency. Provide trusted exact-revision evidence and bind #217 validation to those revisions before admitting CLI/TUI implementation or release integration.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [
+      "df-50e7b9804a45b01ea55a",
+      "df-f1c5a2eeda015841b75f"
+    ],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": "fix_no_change",
+    "outcome": "blocked"
+  }
+}

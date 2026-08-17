@@ -1,0 +1,18 @@
+{
+  "kind": "release-admission",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-18T19:29:42.953Z",
+  "status": "admitted",
+  "mode": "run",
+  "plan_id": "release-bd2e8aa4de7e6f020533",
+  "evidence": {
+    "repository": "marius-patrik/DarkFactory",
+    "main": "6cf08fc896b39249be8295be66809f1ce9b48587",
+    "dev": "13c4b96d16410dfb6cf108f50c32bce763540d91",
+    "mainTree": "5a947ba121aad0e53475a66200eb3381b651166d",
+    "devTree": "8bfa377804252df266444b1b1440d6736b59e07e",
+    "classification": "diverged",
+    "policy": "tagged"
+  },
+  "planned_action": "reconcile-merge"
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "df-orchestrate",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-06T18:34:47.821Z",
+  "trigger": "workflow_run",
+  "control_repo": "marius-patrik/agent-darkfactory",
+  "limits": {
+    "global": 4,
+    "perRepo": 1,
+    "perStream": 1
+  },
+  "dispatched": [],
+  "escalations": [],
+  "actions": [
+    {
+      "action": "dashboard",
+      "issue": "#130",
+      "result": "updated"
+    }
+  ],
+  "global_state_brief": "Generated: 2026-07-06T18:34:46.314Z\nRepos assessed: 9\nConcurrency caps: global=4 per-repo=1 per-stream=1\nBacklog: managed=51 ready=0 running=1 blocked=3 ask-owner=3\n\nRepositories:\n- marius-patrik/agent-darkfactory: main@f7541b113a94e0ffca7e24c6cf4447deaf04db80 ci=DarkFactory Orchestrate:in_progress/none prd=present ready=0 running=1 blocked=0 ask-owner=0\n  streams: default:ready=0,running=1,blocked=0\n- marius-patrik/agents-core: main@b4eab2c23fcdb8bc7f279837b71089196c2704bf ci=DarkFactory Auto Update:completed/success prd=missing ready=0 running=0 blocked=0 ask-owner=0\n  streams: default:ready=0,running=0,blocked=0\n- marius-patrik/agents-harness: main@a5b05019a9c5743b10b831222d96a94eb923a296 ci=DarkFactory Auto Update:completed/success prd=present ready=0 running=0 blocked=0 ask-owner=0\n  streams: default:ready=0,running=0,blocked=0\n- marius-patrik/agents-manager: main@a4d2de2edee559a4f2311ddf093ecedd594ed4a6 ci=DarkFactory Auto Update:completed/success prd=present ready=0 running=0 blocked=0 ask-owner=0\n  streams: default:ready=0,running=0,blocked=0\n- marius-patrik/agents-plugin: main@bd5e8f19de705cb3badaa22318ed43899e3e5b46 ci=DarkFactory Auto Update:completed/success prd=missing ready=0 running=0 blocked=1 ask-owner=1\n  streams: default:ready=0,running=0,blocked=1\n  blockers: #2\n- marius-patrik/dream: main@72efac04632789551d8c8bd76425d673060099e7 ci=DarkFactory Auto Update:completed/success prd=missing ready=0 running=0 blocked=0 ask-owner=0\n  streams: default:ready=0,running=0,blocked=0\n- marius-patrik/inference-engine: main@78a4ff52f158b4131c18a81b731d937fbf00d695 ci=DarkFactory Auto Update:completed/success prd=missing ready=0 running=0 blocked=0 ask-owner=0\n  streams: default:ready=0,running=0,blocked=0\n- marius-patrik/llm-gateway: main@0b3879c6492f35733298ee9701b229a0a8b9b44b ci=DarkFactory Auto Update:completed/success prd=missing ready=0 running=0 blocked=2 ask-owner=2\n  streams: default:ready=0,running=0,blocked=2\n  blockers: #13, #10\n- marius-patrik/workspace-agents: main@16eeb6cf0691afc1c3ee381fa5e3e7fd217f7018 ci=DarkFactory Auto Update:completed/success prd=missing ready=0 running=0 blocked=0 ask-owner=0\n  streams: default:ready=0,running=0,blocked=0\n\nActions:\n- no changes\n\nToken use: 0 model calls; this L0 tick used deterministic GitHub state reconstruction.\nHarness migration: this state machine can move behind the harness scheduler without changing GitHub as the source of truth.",
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "L0 orchestrator tick is deterministic; AI escalation is represented by df:ask-owner issues"
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "kind": "autoreview-007-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T15:23:23.119Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#217",
+  "round": {
+    "sequence": 7,
+    "phase": "medium_review",
+    "targetVersion": "483ca4f5fc0c8b98d8428755eb11969c34cc6df029d4a5a26ee70fdd5de27f1c",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:897ee6ad7e03cd304f61cf9e1312065d08fcb79c113ec2894fd595509a8a8b8e",
+      "inputChecksum": "sha256:e5c3bb0bcca0ac854a4ea90ade146e049bc2c0ae6f2a9ac6777ef9a52eae3c68",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 95837,
+      "outputTokens": 1081,
+      "totalTokens": 96918
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue #217 at version 483ca4f5fc0c8b98d8428755eb11969c34cc6df029d4a5a26ee70fdd5de27f1c is not implementation-ready. Its scope, failure boundaries, validation, and rollout are substantially defined, but owner authorization, dependency evidence, and required control-plane state remain unresolved.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-e163ecd1871b5a592afe",
+          "title": "Required owner decisions remain unresolved",
+          "details": "The contract explicitly blocks implementation and release publication pending authenticated owner answers for O217-1 through O217-7. These decisions determine implementation ownership, the supported platform matrix, the default logical-tier request, release signing and trust policy, stale-launcher migration, manifest freshness, and archive admission. The truncated owner comment does not resolve any decision, and no worker or contributor text can supply owner authorization.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-cae76e0d789d38a461b7",
+          "title": "Blocking dependency chain is not satisfied or revision-proven",
+          "details": "The corrected contract requires #253, #260, and #275 to be merged on their default branches with green required checks and exact consumed revisions bound to #217 validation. Verified state shows #253 and #275 remain open. Although #260 is closed and its body claims to close #253, the still-open #253 state is inconsistent and no exact merged revisions, ancestry, required-check evidence, or consumption binding is supplied. CLI/TUI implementation and release integration therefore remain blocked.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-c9cfe7bf24eca7655a31",
+          "title": "Required GitHub policy label is missing",
+          "details": "The exact issue version declares that unresolved owner decisions require labels P1 and df:ask-owner and prohibit df:reviewed. Verified target state contains only P1. The durable control-plane state therefore disagrees with the contract and trusted label policy; the issue cannot be review-clean until the exact current version is revalidated and df:ask-owner is applied.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "O217-1 asks the owner to identify the exact canonical manager repository and package or gitlink path, plus any authorized child repositories.",
+        "O217-2 asks the owner to approve every initial OS, architecture, shell, artifact, per-user installation directory, PATH entry, and CI-runner matrix row.",
+        "O217-3 asks the owner to choose the default logical-tier request or require explicit tier selection while medium/Kimi is decommissioned; it cannot change runtime-owned fallback policy.",
+        "O217-4 asks the owner to approve the complete deterministic signing contract, trust root, custody, rotation and revocation behavior, release-origin binding, and redirect allowlist.",
+        "O217-5 asks the owner to identify and prove ownership of the exact stale launcher binding and approve its canonical replacement.",
+        "O217-6 asks the owner either to remove manifest-expiration enforcement or define the complete signed freshness and trusted-clock policy.",
+        "O217-7 asks the owner to require single-file binaries or approve complete per-format archive, inventory, extraction-limit, permission, and filesystem semantics."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-e163ecd1871b5a592afe",
+        "title": "Required owner decisions remain unresolved",
+        "details": "The contract explicitly blocks implementation and release publication pending authenticated owner answers for O217-1 through O217-7. These decisions determine implementation ownership, the supported platform matrix, the default logical-tier request, release signing and trust policy, stale-launcher migration, manifest freshness, and archive admission. The truncated owner comment does not resolve any decision, and no worker or contributor text can supply owner authorization.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-cae76e0d789d38a461b7",
+        "title": "Blocking dependency chain is not satisfied or revision-proven",
+        "details": "The corrected contract requires #253, #260, and #275 to be merged on their default branches with green required checks and exact consumed revisions bound to #217 validation. Verified state shows #253 and #275 remain open. Although #260 is closed and its body claims to close #253, the still-open #253 state is inconsistent and no exact merged revisions, ancestry, required-check evidence, or consumption binding is supplied. CLI/TUI implementation and release integration therefore remain blocked.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-c9cfe7bf24eca7655a31",
+        "title": "Required GitHub policy label is missing",
+        "details": "The exact issue version declares that unresolved owner decisions require labels P1 and df:ask-owner and prohibit df:reviewed. Verified target state contains only P1. The durable control-plane state therefore disagrees with the contract and trusted label policy; the issue cannot be review-clean until the exact current version is revalidated and df:ask-owner is applied.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

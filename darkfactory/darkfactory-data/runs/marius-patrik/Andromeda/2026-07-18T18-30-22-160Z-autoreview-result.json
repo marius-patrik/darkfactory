@@ -1,0 +1,1606 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T18:30:22.160Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#219",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "exhausted_medium_rounds",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "0b7dfc4854ceec687e02fe93451be3f47f1806376bd2597801be113c4326ad41",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:58585815c3968985d57fe71f40d4f5bb3799a3d533a144b1886fd4fed41ea825",
+          "inputChecksum": "sha256:391fd529d6a7c1d3f45aa57ef6f00f832ffcacfc22cdc1a7b42aa585f402da90",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 24246,
+          "outputTokens": 2541,
+          "totalTokens": 26787
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #219 version 0b7dfc4854ceec687e02fe93451be3f47f1806376bd2597801be113c4326ad41 states a coherent long-term goal but is not yet an executable or objectively closable program contract. Its authority chain is unsafe, ownership and dependencies are incomplete, acceptance evidence is underspecified, rollout and failure handling are absent, and required owner-gated decisions are not operationalized.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-9fd08fbfbb2c3f074945",
+              "title": "The declared authority chain permits unverifiable authority outside the issue contract",
+              "details": "The body declares \"owner instruction > program plan > PRD > issues\" without identifying authenticated, versioned owner decisions or immutable revisions of PLAN.md and PRD.md. This could let informal instructions or mutable documents silently override the durable issue contract. Replace this with a trust-safe rule requiring authenticated owner decisions to be recorded against their exact target and action, and pin the authoritative plan and PRD revisions used for closure.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-7770070bece195b73f58",
+              "title": "No single accountable program lane owns reconciliation and closure",
+              "details": "The issue spans orchestration, DarkFactory, manager, harness, gateway, inference, memory, CI, packaging, and platform work but does not name one lane responsible for maintaining the dependency state, collecting closure evidence, resolving cross-lane conflicts, and deciding when every criterion is proven. Assign one program lane and define its authority boundary without granting implementation authority through this issue.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-342e0350f8b51da14bc9",
+              "title": "The dependency and sequencing contract is incomplete and unverifiable",
+              "details": "Criteria depend on #206, #210-#218, #221-#225, and #227, while sequencing is delegated to an unversioned external plan. The trusted state supplied for this review verifies only issue #219's version and repository default branch, so claims such as \"#206 delivered\" cannot be independently confirmed. Add a complete dependency matrix with required states, ordering gates, pinned evidence references, and rules for updating stale or replaced dependencies.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-a257a46867d12efee768",
+              "title": "Program acceptance is not objectively reproducible",
+              "details": "The continuous woven-session acceptance does not define the exact supported environment, task fixture, concurrency threshold, synthetic fault, expected recovery sequence, artifact set, receipt assertions, validation coverage, or pass/fail thresholds. Terms including \"memory-informed behavior,\" \"clean recovery,\" and \"validated artifacts\" are subjective. Specify a reproducible capstone protocol and a criterion-to-evidence closure checklist tied to exact default-branch revisions and releases.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-b9a3f7660bdb9355fe7b",
+              "title": "The full-backlog and zero-session criteria have no measurable boundary",
+              "details": "\"The full backlog drains\" does not identify a frozen or queryable backlog population, treatment of work created during execution, or precise exclusions beyond broad parked-scope language. \"Zero orchestrator terminal sessions\" likewise lacks an observation window and definition of qualifying sessions. These criteria can neither be conclusively satisfied nor kept satisfied; define their populations, measurement periods, exclusions, and evidence queries.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-ee291a8cd58553d6bd88",
+              "title": "Rollout, degradation, and recovery requirements are missing",
+              "details": "The contract requires scheduled autonomous operation and fail-closed behavior but does not define staged enablement, rollback, or required outcomes for GitHub unavailability, partial waves, stale leases, missing or corrupt receipts, unavailable model routes, validation failures, or interrupted releases. Add program-level rollout gates and observable fail-closed recovery expectations, delegating component details to named issues where appropriate.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-130ad30005af6118549e",
+              "title": "Owner-gated prerequisites lack exact decision records",
+              "details": "DarkFactory lane 4 dispatch and #225 are required by the end state but explicitly remain owner-gated. The issue does not name the authenticated decision artifact, precise scope, prerequisites, or resulting state transition for either authorization. Record these as explicit blocking decision dependencies; comments or issue text must not be treated as authorization.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner question: Do you authorize DarkFactory lane 4 dispatch for this program; if so, what exact scope, prerequisites, and authenticated decision record define that authorization?",
+            "Owner question: Should #225 remain a deferred prerequisite, or is its planted-bad-adapter brake-path work authorized under a separately recorded, target-specific owner decision?"
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-9fd08fbfbb2c3f074945",
+            "title": "The declared authority chain permits unverifiable authority outside the issue contract",
+            "details": "The body declares \"owner instruction > program plan > PRD > issues\" without identifying authenticated, versioned owner decisions or immutable revisions of PLAN.md and PRD.md. This could let informal instructions or mutable documents silently override the durable issue contract. Replace this with a trust-safe rule requiring authenticated owner decisions to be recorded against their exact target and action, and pin the authoritative plan and PRD revisions used for closure.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-7770070bece195b73f58",
+            "title": "No single accountable program lane owns reconciliation and closure",
+            "details": "The issue spans orchestration, DarkFactory, manager, harness, gateway, inference, memory, CI, packaging, and platform work but does not name one lane responsible for maintaining the dependency state, collecting closure evidence, resolving cross-lane conflicts, and deciding when every criterion is proven. Assign one program lane and define its authority boundary without granting implementation authority through this issue.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-342e0350f8b51da14bc9",
+            "title": "The dependency and sequencing contract is incomplete and unverifiable",
+            "details": "Criteria depend on #206, #210-#218, #221-#225, and #227, while sequencing is delegated to an unversioned external plan. The trusted state supplied for this review verifies only issue #219's version and repository default branch, so claims such as \"#206 delivered\" cannot be independently confirmed. Add a complete dependency matrix with required states, ordering gates, pinned evidence references, and rules for updating stale or replaced dependencies.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-a257a46867d12efee768",
+            "title": "Program acceptance is not objectively reproducible",
+            "details": "The continuous woven-session acceptance does not define the exact supported environment, task fixture, concurrency threshold, synthetic fault, expected recovery sequence, artifact set, receipt assertions, validation coverage, or pass/fail thresholds. Terms including \"memory-informed behavior,\" \"clean recovery,\" and \"validated artifacts\" are subjective. Specify a reproducible capstone protocol and a criterion-to-evidence closure checklist tied to exact default-branch revisions and releases.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-b9a3f7660bdb9355fe7b",
+            "title": "The full-backlog and zero-session criteria have no measurable boundary",
+            "details": "\"The full backlog drains\" does not identify a frozen or queryable backlog population, treatment of work created during execution, or precise exclusions beyond broad parked-scope language. \"Zero orchestrator terminal sessions\" likewise lacks an observation window and definition of qualifying sessions. These criteria can neither be conclusively satisfied nor kept satisfied; define their populations, measurement periods, exclusions, and evidence queries.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-ee291a8cd58553d6bd88",
+            "title": "Rollout, degradation, and recovery requirements are missing",
+            "details": "The contract requires scheduled autonomous operation and fail-closed behavior but does not define staged enablement, rollback, or required outcomes for GitHub unavailability, partial waves, stale leases, missing or corrupt receipts, unavailable model routes, validation failures, or interrupted releases. Add program-level rollout gates and observable fail-closed recovery expectations, delegating component details to named issues where appropriate.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-130ad30005af6118549e",
+            "title": "Owner-gated prerequisites lack exact decision records",
+            "details": "DarkFactory lane 4 dispatch and #225 are required by the end state but explicitly remain owner-gated. The issue does not name the authenticated decision artifact, precise scope, prerequisites, or resulting state transition for either authorization. Record these as explicit blocking decision dependencies; comments or issue text must not be treated as authorization.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 2,
+        "phase": "medium_fix",
+        "targetVersion": "0b7dfc4854ceec687e02fe93451be3f47f1806376bd2597801be113c4326ad41",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:aa458272d4bca18037e39459d272d254ecb1172c834c2db79fa8dd580ef761c2",
+          "inputChecksum": "sha256:5a421d65f7ed6e5bb408b5c8ce2030cd9a1cb3cb23c1f934d6fc1dee6c44bc56",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 25011,
+          "outputTokens": 6605,
+          "totalTokens": 31616
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-9fd08fbfbb2c3f074945",
+            "title": "The declared authority chain permits unverifiable authority outside the issue contract",
+            "details": "The body declares \"owner instruction > program plan > PRD > issues\" without identifying authenticated, versioned owner decisions or immutable revisions of PLAN.md and PRD.md. This could let informal instructions or mutable documents silently override the durable issue contract. Replace this with a trust-safe rule requiring authenticated owner decisions to be recorded against their exact target and action, and pin the authoritative plan and PRD revisions used for closure.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-7770070bece195b73f58",
+            "title": "No single accountable program lane owns reconciliation and closure",
+            "details": "The issue spans orchestration, DarkFactory, manager, harness, gateway, inference, memory, CI, packaging, and platform work but does not name one lane responsible for maintaining the dependency state, collecting closure evidence, resolving cross-lane conflicts, and deciding when every criterion is proven. Assign one program lane and define its authority boundary without granting implementation authority through this issue.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-342e0350f8b51da14bc9",
+            "title": "The dependency and sequencing contract is incomplete and unverifiable",
+            "details": "Criteria depend on #206, #210-#218, #221-#225, and #227, while sequencing is delegated to an unversioned external plan. The trusted state supplied for this review verifies only issue #219's version and repository default branch, so claims such as \"#206 delivered\" cannot be independently confirmed. Add a complete dependency matrix with required states, ordering gates, pinned evidence references, and rules for updating stale or replaced dependencies.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-a257a46867d12efee768",
+            "title": "Program acceptance is not objectively reproducible",
+            "details": "The continuous woven-session acceptance does not define the exact supported environment, task fixture, concurrency threshold, synthetic fault, expected recovery sequence, artifact set, receipt assertions, validation coverage, or pass/fail thresholds. Terms including \"memory-informed behavior,\" \"clean recovery,\" and \"validated artifacts\" are subjective. Specify a reproducible capstone protocol and a criterion-to-evidence closure checklist tied to exact default-branch revisions and releases.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-b9a3f7660bdb9355fe7b",
+            "title": "The full-backlog and zero-session criteria have no measurable boundary",
+            "details": "\"The full backlog drains\" does not identify a frozen or queryable backlog population, treatment of work created during execution, or precise exclusions beyond broad parked-scope language. \"Zero orchestrator terminal sessions\" likewise lacks an observation window and definition of qualifying sessions. These criteria can neither be conclusively satisfied nor kept satisfied; define their populations, measurement periods, exclusions, and evidence queries.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-ee291a8cd58553d6bd88",
+            "title": "Rollout, degradation, and recovery requirements are missing",
+            "details": "The contract requires scheduled autonomous operation and fail-closed behavior but does not define staged enablement, rollback, or required outcomes for GitHub unavailability, partial waves, stale leases, missing or corrupt receipts, unavailable model routes, validation failures, or interrupted releases. Add program-level rollout gates and observable fail-closed recovery expectations, delegating component details to named issues where appropriate.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-130ad30005af6118549e",
+            "title": "Owner-gated prerequisites lack exact decision records",
+            "details": "DarkFactory lane 4 dispatch and #225 are required by the end state but explicitly remain owner-gated. The issue does not name the authenticated decision artifact, precise scope, prerequisites, or resulting state transition for either authorization. Record these as explicit blocking decision dependencies; comments or issue text must not be treated as authorization.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-9fd08fbfbb2c3f074945",
+          "df-7770070bece195b73f58",
+          "df-342e0350f8b51da14bc9",
+          "df-a257a46867d12efee768",
+          "df-b9a3f7660bdb9355fe7b",
+          "df-ee291a8cd58553d6bd88",
+          "df-130ad30005af6118549e"
+        ],
+        "changeRef": "issue-comment:5012373926:3ebc3a04d9954317083674bc9f9f900562d2e8030f666107f815640ee31d56cc",
+        "afterVersion": "3ebc3a04d9954317083674bc9f9f900562d2e8030f666107f815640ee31d56cc",
+        "blockCode": null,
+        "outcome": "fixed"
+      },
+      {
+        "sequence": 3,
+        "phase": "medium_review",
+        "targetVersion": "3ebc3a04d9954317083674bc9f9f900562d2e8030f666107f815640ee31d56cc",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:d7551a3e0ea879507fdae28cd72a39cbdd280c6e9e87992aad793ad7168074ac",
+          "inputChecksum": "sha256:9ae4ee20fc1c3beeab42ca96348e76b0d8f61a6184a74874ab0f6e45e370c72d",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 51711,
+          "outputTokens": 6975,
+          "totalTokens": 58686
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Review of marius-patrik/Andromeda issue #219 at verified version 3ebc3a04d9954317083674bc9f9f900562d2e8030f666107f815640ee31d56cc found ten blocking contract, evidence, and owner-decision gaps.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-4f5a1269506e8fbadf54",
+              "title": "The proof-window backlog definition circularly includes issue #219",
+              "details": "The verified target is open, while the contract includes every open repository issue in the proof-window population. Issue #219 cannot complete its own pipeline and close until that same window and its closure checklist have passed. The contract must explicitly define a non-circular treatment for the program tracker. Because exclusions require authenticated owner approval, the owner must decide whether #219 is excluded or receives a distinct terminal classification.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-d8a873657265f8146d8e",
+              "title": "The pinned proof revision conflicts with backlog mutations during the window",
+              "details": "The 30-day proof is stated to run on a pinned default-branch revision, but its required pipeline merges eligible Andromeda work and therefore advances that same default branch. The contract does not distinguish the runtime revision under test from the evolving managed repository head, identify the closure revision, or say whether runtime-affecting merges reset the window. These revision roles and reset rules must be explicit before the proof can produce reproducible evidence.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-e6a5636b764c43090d69",
+              "title": "The terminal ask-owner dependency state has no trusted state contract",
+              "details": "An eligible issue may be counted terminal through an “authenticated ask-owner dependency state,” but the issue does not define its authenticated actor, canonical record type, marker identity, creation and clearing rules, or binding to the trusted `df:ask-owner` label. A mutable label or comment cannot supply authorization. Define the canonical state transition, evidence schema, authority, and idempotent reconciliation behavior.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-b29dc4b22ac00afee1b0",
+              "title": "Sampled session inventories cannot prove zero unmanaged sessions throughout 30 days",
+              "details": "The acceptance requires zero unmanaged orchestrator terminal sessions throughout the proof window, while evidence is captured only at scheduled-cycle boundaries and orchestrator start or stop. A transient PTY, ConPTY, tmux, or psmux-hosted runtime between samples would be unobservable. Continuous or tamper-evident process/session lifecycle evidence with explicit gap handling is required to substantiate the stated invariant.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-c9803fce3a8df0d5083c",
+              "title": "The closure ledger lacks a canonical artifact and validation contract",
+              "details": "The reconciliation lane must maintain a machine-readable ledger, but no authoritative repository path or external record identity, schema version, canonical serialization, mutation protocol, or validator is specified. Consequently competing ledgers or structurally invalid rows could claim closure. Pin one ledger authority and define its schema, update and history rules, validator, and immutable evidence reference.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-b422bd26125b79e8187f",
+              "title": "The signed capstone manifest has no verifiable signing trust boundary",
+              "details": "The capstone requires a signed manifest but does not identify the authorized signer, trusted key or identity source, signature format and algorithm, canonical bytes, verification procedure, or revocation behavior. An arbitrary agent-generated signature could therefore satisfy the wording. Define the signing authority and fail-closed verification contract.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-07c86dada35150e1b1fb",
+              "title": "The 30-day orchestration schedule and missed-cycle failure rule are unspecified",
+              "details": "The contract requires every scheduled cycle to have a complete receipt chain but does not pin the operational proof cadence, expected cycle count, clock source, scheduling tolerance, or treatment of missed and delayed cycles. The capstone’s 60-second interval applies to a separate live session. Pin the proof-window schedule and make any missing or unverifiable cycle fail closed.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-56ca1fe19abae462e126",
+              "title": "The supported-platform acceptance population is not fixed",
+              "details": "Several criteria require evidence on every supported platform, but issue #219 does not enumerate that population or require a pinned, owner-approved platform inventory before rollout. The capstone pins only one OS image, while referenced scope includes multiple live machine platforms. The owner must identify the supported platform set, or authorize an immutable source and amendment process that fixes it before evidence collection.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-081fcec9d0f66ebe62a5",
+              "title": "D-DARKFACTORY-L4 remains an unresolved owner-only authorization",
+              "details": "The issue correctly records that autonomous package writes are blocked until `D-DARKFACTORY-L4` authenticates the exact repositories, actions, bounds, rollout stage, receipt schema, prerequisites, and rollback boundary. No verified decision is present. Owner question: what exact lane-4 write scope and transition, if any, is authorized after the stated prerequisites pass?",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-2681ef8e24f8d4c3f5e6",
+              "title": "D-AUTOLEARN-225 remains an unresolved owner-only authorization",
+              "details": "The issue correctly records that #225 remains recorded-only until `D-AUTOLEARN-225` authenticates its learning scope, mutations, data boundary, brake evidence, and rollback boundary. No verified decision is present. Owner question: after the planted-bad-adapter proof passes, what exact #225 scope and mutations, if any, are authorized?",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "The target preserves the prior owner-authored text and clearly states that issue content, comments, worker output, and decision placeholders do not grant authority.",
+            "Both named owner decisions are correctly represented as non-authorizing placeholders, but they remain closure blockers as reported above.",
+            "Absence of exact-head command results was not treated as a finding because the independent Validate gate owns that execution evidence."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-4f5a1269506e8fbadf54",
+            "title": "The proof-window backlog definition circularly includes issue #219",
+            "details": "The verified target is open, while the contract includes every open repository issue in the proof-window population. Issue #219 cannot complete its own pipeline and close until that same window and its closure checklist have passed. The contract must explicitly define a non-circular treatment for the program tracker. Because exclusions require authenticated owner approval, the owner must decide whether #219 is excluded or receives a distinct terminal classification.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d8a873657265f8146d8e",
+            "title": "The pinned proof revision conflicts with backlog mutations during the window",
+            "details": "The 30-day proof is stated to run on a pinned default-branch revision, but its required pipeline merges eligible Andromeda work and therefore advances that same default branch. The contract does not distinguish the runtime revision under test from the evolving managed repository head, identify the closure revision, or say whether runtime-affecting merges reset the window. These revision roles and reset rules must be explicit before the proof can produce reproducible evidence.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-e6a5636b764c43090d69",
+            "title": "The terminal ask-owner dependency state has no trusted state contract",
+            "details": "An eligible issue may be counted terminal through an “authenticated ask-owner dependency state,” but the issue does not define its authenticated actor, canonical record type, marker identity, creation and clearing rules, or binding to the trusted `df:ask-owner` label. A mutable label or comment cannot supply authorization. Define the canonical state transition, evidence schema, authority, and idempotent reconciliation behavior.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-b29dc4b22ac00afee1b0",
+            "title": "Sampled session inventories cannot prove zero unmanaged sessions throughout 30 days",
+            "details": "The acceptance requires zero unmanaged orchestrator terminal sessions throughout the proof window, while evidence is captured only at scheduled-cycle boundaries and orchestrator start or stop. A transient PTY, ConPTY, tmux, or psmux-hosted runtime between samples would be unobservable. Continuous or tamper-evident process/session lifecycle evidence with explicit gap handling is required to substantiate the stated invariant.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-c9803fce3a8df0d5083c",
+            "title": "The closure ledger lacks a canonical artifact and validation contract",
+            "details": "The reconciliation lane must maintain a machine-readable ledger, but no authoritative repository path or external record identity, schema version, canonical serialization, mutation protocol, or validator is specified. Consequently competing ledgers or structurally invalid rows could claim closure. Pin one ledger authority and define its schema, update and history rules, validator, and immutable evidence reference.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-b422bd26125b79e8187f",
+            "title": "The signed capstone manifest has no verifiable signing trust boundary",
+            "details": "The capstone requires a signed manifest but does not identify the authorized signer, trusted key or identity source, signature format and algorithm, canonical bytes, verification procedure, or revocation behavior. An arbitrary agent-generated signature could therefore satisfy the wording. Define the signing authority and fail-closed verification contract.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-07c86dada35150e1b1fb",
+            "title": "The 30-day orchestration schedule and missed-cycle failure rule are unspecified",
+            "details": "The contract requires every scheduled cycle to have a complete receipt chain but does not pin the operational proof cadence, expected cycle count, clock source, scheduling tolerance, or treatment of missed and delayed cycles. The capstone’s 60-second interval applies to a separate live session. Pin the proof-window schedule and make any missing or unverifiable cycle fail closed.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-56ca1fe19abae462e126",
+            "title": "The supported-platform acceptance population is not fixed",
+            "details": "Several criteria require evidence on every supported platform, but issue #219 does not enumerate that population or require a pinned, owner-approved platform inventory before rollout. The capstone pins only one OS image, while referenced scope includes multiple live machine platforms. The owner must identify the supported platform set, or authorize an immutable source and amendment process that fixes it before evidence collection.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-081fcec9d0f66ebe62a5",
+            "title": "D-DARKFACTORY-L4 remains an unresolved owner-only authorization",
+            "details": "The issue correctly records that autonomous package writes are blocked until `D-DARKFACTORY-L4` authenticates the exact repositories, actions, bounds, rollout stage, receipt schema, prerequisites, and rollback boundary. No verified decision is present. Owner question: what exact lane-4 write scope and transition, if any, is authorized after the stated prerequisites pass?",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-2681ef8e24f8d4c3f5e6",
+            "title": "D-AUTOLEARN-225 remains an unresolved owner-only authorization",
+            "details": "The issue correctly records that #225 remains recorded-only until `D-AUTOLEARN-225` authenticates its learning scope, mutations, data boundary, brake evidence, and rollback boundary. No verified decision is present. Owner question: after the planted-bad-adapter proof passes, what exact #225 scope and mutations, if any, are authorized?",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 4,
+        "phase": "medium_fix",
+        "targetVersion": "3ebc3a04d9954317083674bc9f9f900562d2e8030f666107f815640ee31d56cc",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:f5be0bf0cd44a54e5d672b00e00fc5a5f798997698fe53052839488a4bf6ffe7",
+          "inputChecksum": "sha256:07455ddac1a61b244f5c1af3d1522dc105d86d34000d60589429de45b4a4c35f",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 52810,
+          "outputTokens": 8336,
+          "totalTokens": 61146
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-4f5a1269506e8fbadf54",
+            "title": "The proof-window backlog definition circularly includes issue #219",
+            "details": "The verified target is open, while the contract includes every open repository issue in the proof-window population. Issue #219 cannot complete its own pipeline and close until that same window and its closure checklist have passed. The contract must explicitly define a non-circular treatment for the program tracker. Because exclusions require authenticated owner approval, the owner must decide whether #219 is excluded or receives a distinct terminal classification.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d8a873657265f8146d8e",
+            "title": "The pinned proof revision conflicts with backlog mutations during the window",
+            "details": "The 30-day proof is stated to run on a pinned default-branch revision, but its required pipeline merges eligible Andromeda work and therefore advances that same default branch. The contract does not distinguish the runtime revision under test from the evolving managed repository head, identify the closure revision, or say whether runtime-affecting merges reset the window. These revision roles and reset rules must be explicit before the proof can produce reproducible evidence.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-e6a5636b764c43090d69",
+            "title": "The terminal ask-owner dependency state has no trusted state contract",
+            "details": "An eligible issue may be counted terminal through an “authenticated ask-owner dependency state,” but the issue does not define its authenticated actor, canonical record type, marker identity, creation and clearing rules, or binding to the trusted `df:ask-owner` label. A mutable label or comment cannot supply authorization. Define the canonical state transition, evidence schema, authority, and idempotent reconciliation behavior.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-b29dc4b22ac00afee1b0",
+            "title": "Sampled session inventories cannot prove zero unmanaged sessions throughout 30 days",
+            "details": "The acceptance requires zero unmanaged orchestrator terminal sessions throughout the proof window, while evidence is captured only at scheduled-cycle boundaries and orchestrator start or stop. A transient PTY, ConPTY, tmux, or psmux-hosted runtime between samples would be unobservable. Continuous or tamper-evident process/session lifecycle evidence with explicit gap handling is required to substantiate the stated invariant.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-c9803fce3a8df0d5083c",
+            "title": "The closure ledger lacks a canonical artifact and validation contract",
+            "details": "The reconciliation lane must maintain a machine-readable ledger, but no authoritative repository path or external record identity, schema version, canonical serialization, mutation protocol, or validator is specified. Consequently competing ledgers or structurally invalid rows could claim closure. Pin one ledger authority and define its schema, update and history rules, validator, and immutable evidence reference.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-b422bd26125b79e8187f",
+            "title": "The signed capstone manifest has no verifiable signing trust boundary",
+            "details": "The capstone requires a signed manifest but does not identify the authorized signer, trusted key or identity source, signature format and algorithm, canonical bytes, verification procedure, or revocation behavior. An arbitrary agent-generated signature could therefore satisfy the wording. Define the signing authority and fail-closed verification contract.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-07c86dada35150e1b1fb",
+            "title": "The 30-day orchestration schedule and missed-cycle failure rule are unspecified",
+            "details": "The contract requires every scheduled cycle to have a complete receipt chain but does not pin the operational proof cadence, expected cycle count, clock source, scheduling tolerance, or treatment of missed and delayed cycles. The capstone’s 60-second interval applies to a separate live session. Pin the proof-window schedule and make any missing or unverifiable cycle fail closed.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-56ca1fe19abae462e126",
+            "title": "The supported-platform acceptance population is not fixed",
+            "details": "Several criteria require evidence on every supported platform, but issue #219 does not enumerate that population or require a pinned, owner-approved platform inventory before rollout. The capstone pins only one OS image, while referenced scope includes multiple live machine platforms. The owner must identify the supported platform set, or authorize an immutable source and amendment process that fixes it before evidence collection.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-081fcec9d0f66ebe62a5",
+            "title": "D-DARKFACTORY-L4 remains an unresolved owner-only authorization",
+            "details": "The issue correctly records that autonomous package writes are blocked until `D-DARKFACTORY-L4` authenticates the exact repositories, actions, bounds, rollout stage, receipt schema, prerequisites, and rollback boundary. No verified decision is present. Owner question: what exact lane-4 write scope and transition, if any, is authorized after the stated prerequisites pass?",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-2681ef8e24f8d4c3f5e6",
+            "title": "D-AUTOLEARN-225 remains an unresolved owner-only authorization",
+            "details": "The issue correctly records that #225 remains recorded-only until `D-AUTOLEARN-225` authenticates its learning scope, mutations, data boundary, brake evidence, and rollback boundary. No verified decision is present. Owner question: after the planted-bad-adapter proof passes, what exact #225 scope and mutations, if any, are authorized?",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-4f5a1269506e8fbadf54",
+          "df-d8a873657265f8146d8e",
+          "df-e6a5636b764c43090d69",
+          "df-b29dc4b22ac00afee1b0",
+          "df-c9803fce3a8df0d5083c",
+          "df-b422bd26125b79e8187f",
+          "df-07c86dada35150e1b1fb",
+          "df-56ca1fe19abae462e126",
+          "df-081fcec9d0f66ebe62a5",
+          "df-2681ef8e24f8d4c3f5e6"
+        ],
+        "changeRef": "issue-comment:5012396464:3b9fe597164ef6c13eba25908605012884d17b8101497596a800ad0dd4f50fea",
+        "afterVersion": "3b9fe597164ef6c13eba25908605012884d17b8101497596a800ad0dd4f50fea",
+        "blockCode": null,
+        "outcome": "fixed"
+      },
+      {
+        "sequence": 5,
+        "phase": "medium_review",
+        "targetVersion": "3b9fe597164ef6c13eba25908605012884d17b8101497596a800ad0dd4f50fea",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:5737f95139b99896575232b0cdb71a354bb1179cb9a538adb31fdc952a176c21",
+          "inputChecksum": "sha256:67b3dc71f1b2efa204ac97c6c44133237ac91cd5d3f8a331b479373358f184ff",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 84972,
+          "outputTokens": 4563,
+          "totalTokens": 89535
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Review of marius-patrik/Andromeda issue #219 at verified version 3b9fe597164ef6c13eba25908605012884d17b8101497596a800ad0dd4f50fea is blocked by unresolved owner decisions, two circular or unauthorised prerequisite paths, and an ambiguous dev-to-main delivery contract.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-1f757fb857ffc57887c4",
+              "title": "Required owner decisions remain unresolved",
+              "details": "The contract cannot begin or complete several required stages until authenticated decisions D-DARKFACTORY-L4, D-AUTOLEARN-225, D-PROOF-TRACKER-219, D-PROOF-SCHEDULE-219, D-SUPPORTED-PLATFORMS-219, and D-CAPSTONE-SIGNING-219 exist. Their placeholders and issue text grant no authority. Issue #219 must remain blocked until each applicable decision is recorded through the trusted owner-action path.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-dc65835313caed3d8e09",
+              "title": "The dev-to-main delivery path is ambiguous",
+              "details": "The pipeline requires branches from dev, while the repository default branch and all closure evidence are main. The contract does not specify PR base branches, the dev-to-main promotion step, which revision each review and CI gate evaluates, or which branch produces the release. This prevents receipts and closure evidence from proving one deterministic delivery path.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-d6236bf43925d7d0bd3c",
+              "title": "The lane-4 rollback prerequisite has no authorised execution path",
+              "details": "D-DARKFACTORY-L4 is ordered after a successful rollback drill, but the rollout definition exercises rollback in a write-enabled single lane and no separate decision authorises that prerequisite drill. The contract must either define a non-mutating rollback proof or name an authenticated, bounded authorization and evidence owner for the write-enabled drill before D-DARKFACTORY-L4 is requested.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-0d152a80de83eca4e0a8",
+              "title": "The autolearn brake proof and authorization are circular",
+              "details": "D-AUTOLEARN-225 may be recorded only after the planted-bad-adapter brake proof, while issue #225 prohibits execution before explicit owner authorization and its brake proof is executable #225 scope. The contract must define a separately authorised brake-proof-only lane or move the owner decision before that proof while limiting it to the proof.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "D-DARKFACTORY-L4 requires the owner to select exact repositories, write actions, concurrency bounds, rollout stage, receipt schema revision, and rollback boundary.",
+            "D-AUTOLEARN-225 requires the owner to select the exact learning scope, permitted mutations, data boundary, and rollback boundary.",
+            "D-PROOF-TRACKER-219 requires the owner to select a non-circular treatment of issue #219 and its evidence and metric effects.",
+            "D-PROOF-SCHEDULE-219 requires the owner to pin the UTC clock, cadence, phase, tolerance, receipt deadline, and expected-cycle calculation.",
+            "D-SUPPORTED-PLATFORMS-219 requires the owner to pin the operating-system, architecture, runtime-profile, and evidence population.",
+            "D-CAPSTONE-SIGNING-219 requires the owner to pin the signer identity, trust source, signature scheme, verifier, revocation policy, and rotation process."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-1f757fb857ffc57887c4",
+            "title": "Required owner decisions remain unresolved",
+            "details": "The contract cannot begin or complete several required stages until authenticated decisions D-DARKFACTORY-L4, D-AUTOLEARN-225, D-PROOF-TRACKER-219, D-PROOF-SCHEDULE-219, D-SUPPORTED-PLATFORMS-219, and D-CAPSTONE-SIGNING-219 exist. Their placeholders and issue text grant no authority. Issue #219 must remain blocked until each applicable decision is recorded through the trusted owner-action path.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-dc65835313caed3d8e09",
+            "title": "The dev-to-main delivery path is ambiguous",
+            "details": "The pipeline requires branches from dev, while the repository default branch and all closure evidence are main. The contract does not specify PR base branches, the dev-to-main promotion step, which revision each review and CI gate evaluates, or which branch produces the release. This prevents receipts and closure evidence from proving one deterministic delivery path.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d6236bf43925d7d0bd3c",
+            "title": "The lane-4 rollback prerequisite has no authorised execution path",
+            "details": "D-DARKFACTORY-L4 is ordered after a successful rollback drill, but the rollout definition exercises rollback in a write-enabled single lane and no separate decision authorises that prerequisite drill. The contract must either define a non-mutating rollback proof or name an authenticated, bounded authorization and evidence owner for the write-enabled drill before D-DARKFACTORY-L4 is requested.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-0d152a80de83eca4e0a8",
+            "title": "The autolearn brake proof and authorization are circular",
+            "details": "D-AUTOLEARN-225 may be recorded only after the planted-bad-adapter brake proof, while issue #225 prohibits execution before explicit owner authorization and its brake proof is executable #225 scope. The contract must define a separately authorised brake-proof-only lane or move the owner decision before that proof while limiting it to the proof.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 6,
+        "phase": "medium_fix",
+        "targetVersion": "3b9fe597164ef6c13eba25908605012884d17b8101497596a800ad0dd4f50fea",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:3e6e60a042b6a7c211ac36eba076e7da5456d14e5e8095d778cea390cce60487",
+          "inputChecksum": "sha256:782ca1bade053d77c6b74501cf80c36724658ec8f262da0e3873ff9bbd73c676",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 261006,
+          "outputTokens": 9469,
+          "totalTokens": 270475
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-1f757fb857ffc57887c4",
+            "title": "Required owner decisions remain unresolved",
+            "details": "The contract cannot begin or complete several required stages until authenticated decisions D-DARKFACTORY-L4, D-AUTOLEARN-225, D-PROOF-TRACKER-219, D-PROOF-SCHEDULE-219, D-SUPPORTED-PLATFORMS-219, and D-CAPSTONE-SIGNING-219 exist. Their placeholders and issue text grant no authority. Issue #219 must remain blocked until each applicable decision is recorded through the trusted owner-action path.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-dc65835313caed3d8e09",
+            "title": "The dev-to-main delivery path is ambiguous",
+            "details": "The pipeline requires branches from dev, while the repository default branch and all closure evidence are main. The contract does not specify PR base branches, the dev-to-main promotion step, which revision each review and CI gate evaluates, or which branch produces the release. This prevents receipts and closure evidence from proving one deterministic delivery path.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d6236bf43925d7d0bd3c",
+            "title": "The lane-4 rollback prerequisite has no authorised execution path",
+            "details": "D-DARKFACTORY-L4 is ordered after a successful rollback drill, but the rollout definition exercises rollback in a write-enabled single lane and no separate decision authorises that prerequisite drill. The contract must either define a non-mutating rollback proof or name an authenticated, bounded authorization and evidence owner for the write-enabled drill before D-DARKFACTORY-L4 is requested.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-0d152a80de83eca4e0a8",
+            "title": "The autolearn brake proof and authorization are circular",
+            "details": "D-AUTOLEARN-225 may be recorded only after the planted-bad-adapter brake proof, while issue #225 prohibits execution before explicit owner authorization and its brake proof is executable #225 scope. The contract must define a separately authorised brake-proof-only lane or move the owner decision before that proof while limiting it to the proof.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-1f757fb857ffc57887c4",
+          "df-dc65835313caed3d8e09",
+          "df-d6236bf43925d7d0bd3c",
+          "df-0d152a80de83eca4e0a8"
+        ],
+        "changeRef": "issue-comment:5012417508:bb088b5e4869d173ca8303f32341f801382f31716d8f6c13ac8da629273ec6c1",
+        "afterVersion": "bb088b5e4869d173ca8303f32341f801382f31716d8f6c13ac8da629273ec6c1",
+        "blockCode": null,
+        "outcome": "fixed"
+      },
+      {
+        "sequence": 7,
+        "phase": "medium_review",
+        "targetVersion": "bb088b5e4869d173ca8303f32341f801382f31716d8f6c13ac8da629273ec6c1",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:9777c8098fdcb923522ffb57f9ae50a41d30903457bd4bb551bdd77768b786f3",
+          "inputChecksum": "sha256:1dba0ff54bc3c46d22b7e9759d764b3d83c9091b57dd4301be1216a3169b935c",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 120946,
+          "outputTokens": 6695,
+          "totalTokens": 127641
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue 219 is not ready for a clean iterative verdict. Seven required owner decisions remain unresolved, several owner questions omit mandatory decision fields, later rollout stages lack explicit write authority, owner-dependency handling can count operational failures as terminal progress, and the submodule-root closure contract is incomplete.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-773895daf105f86b2658",
+              "title": "Required owner decisions are unresolved and the ask-owner projection is absent",
+              "details": "For marius-patrik/Andromeda issue 219 at verified version bb088b5e4869d173ca8303f32341f801382f31716d8f6c13ac8da629273ec6c1, D-DARKFACTORY-L4, D-AUTOLEARN-BRAKE-PROOF-225, D-AUTOLEARN-225, D-PROOF-TRACKER-219, D-PROOF-SCHEDULE-219, D-SUPPORTED-PLATFORMS-219, and D-CAPSTONE-SIGNING-219 are explicitly unresolved. The observed labels are only P0 and roadmap, although the contract requires the trusted df:ask-owner projection while any applicable decision is unresolved. Each decision must be recorded through the authenticated canonical owner-action path and verified before its named action; reconciliation must project df:ask-owner until no live owner decision dependency remains. Rollout, the proof window, capstone execution, and closure remain blocked.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-2ecec3b217d08a77da50",
+              "title": "The owner questions omit fields required by their own decision contracts",
+              "details": "The exact questions do not request all mandatory semantic choices. D-AUTOLEARN-BRAKE-PROOF-225 omits the cleanup or retention rule; D-AUTOLEARN-225 omits the required brake-proof evidence and resulting authorization transition; D-PROOF-SCHEDULE-219 omits the clock source, explicit start and end instants, leap and clock-adjustment treatment, and missed-cycle disposition; D-SUPPORTED-PLATFORMS-219 omits filesystem and terminal primitives, the immutable inventory source, and the amendment procedure; and D-CAPSTONE-SIGNING-219 omits canonical manifest-byte rules, verifier version and command, credential-validity rules, and compromise handling. Exact owner questions must solicit every field needed for a complete target-specific decision so a partial answer cannot be mistaken for authorization.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-c7b680ce5634a3397d7c",
+              "title": "Write authority is undefined for bounded multi-lane and autonomous-proof stages",
+              "details": "D-DARKFACTORY-L4 and its owner question are scoped to the single-lane write and live rollback drill. The rollout then advances to bounded multi-lane operation and an autonomous 30-day proof that can continue mutating the managed repository, but the contract provides no named authenticated decision or amendment chain authorizing those expanded repositories, actions, concurrency bounds, duration, and rollback boundaries. Passing technical promotion gates cannot expand authority. Add target-specific owner decisions for each write-scope expansion, or define an authenticated amendment sequence that explicitly binds every later stage before its writes begin.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-11894064336ffc90dee0",
+              "title": "Owner-dependency records can convert operational failures into proof-window terminal success",
+              "details": "The proof population accepts an authenticated ask-owner dependency as an alternative terminal state, while the failure contract creates such a dependency for missing, corrupt, ambiguous, or stale receipts. Because creation requires only the reconciliation-service actor and expressly grants no authority, failed lanes could satisfy the end-of-window population without an owner decision or objective resolution. This conflicts with the rule that failures cannot be reinterpreted as success and weakens the backlog-drain criterion. Unresolved owner dependencies must remain non-successful for proof metrics unless an authenticated owner decision explicitly excludes or terminally classifies the issue; operational receipt failures must remain proof-blocking.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-cada5926bbad63edea13",
+              "title": "The submodule-root pointer contract is not included in closure evidence",
+              "details": "The target is reviewed under the submodule-root overlay, but the issue requires only git submodule status --recursive in the capstone. It does not require ledger evidence for every gitlink path, child repository identity, configured URL, recorded commit, released child default-branch head, ancestry proof, or child required checks. It also lacks explicit rejection behavior for missing, renamed, misplaced, dirty, conflicted, uninitialized, inaccessible, non-ancestor, parked, or ambiguous children. Add exact-revision ledger rows and fail-closed validation for the complete pointer contract; a clean status command alone is insufficient.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "D-DARKFACTORY-L4 requires an authenticated owner answer defining the single-lane repositories, writes, concurrency, receipt schema, rollout stage, and rollback boundary.",
+            "D-AUTOLEARN-BRAKE-PROOF-225 requires a proof-only authorization for the isolated planted-bad-adapter experiment.",
+            "D-AUTOLEARN-225 may be decided only after the separately authorized brake proof passes.",
+            "D-PROOF-TRACKER-219 must select a non-circular treatment of issue 219 before sealing the proof population.",
+            "D-PROOF-SCHEDULE-219 must define the complete immutable 30-day schedule.",
+            "D-SUPPORTED-PLATFORMS-219 must pin the supported-platform population and amendment process.",
+            "D-CAPSTONE-SIGNING-219 must establish the authorized signer and complete verification trust policy.",
+            "Referenced implementation dependencies remain open except issue 206; their state supplies no closure credit without exact default-branch ledger evidence."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-773895daf105f86b2658",
+            "title": "Required owner decisions are unresolved and the ask-owner projection is absent",
+            "details": "For marius-patrik/Andromeda issue 219 at verified version bb088b5e4869d173ca8303f32341f801382f31716d8f6c13ac8da629273ec6c1, D-DARKFACTORY-L4, D-AUTOLEARN-BRAKE-PROOF-225, D-AUTOLEARN-225, D-PROOF-TRACKER-219, D-PROOF-SCHEDULE-219, D-SUPPORTED-PLATFORMS-219, and D-CAPSTONE-SIGNING-219 are explicitly unresolved. The observed labels are only P0 and roadmap, although the contract requires the trusted df:ask-owner projection while any applicable decision is unresolved. Each decision must be recorded through the authenticated canonical owner-action path and verified before its named action; reconciliation must project df:ask-owner until no live owner decision dependency remains. Rollout, the proof window, capstone execution, and closure remain blocked.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-2ecec3b217d08a77da50",
+            "title": "The owner questions omit fields required by their own decision contracts",
+            "details": "The exact questions do not request all mandatory semantic choices. D-AUTOLEARN-BRAKE-PROOF-225 omits the cleanup or retention rule; D-AUTOLEARN-225 omits the required brake-proof evidence and resulting authorization transition; D-PROOF-SCHEDULE-219 omits the clock source, explicit start and end instants, leap and clock-adjustment treatment, and missed-cycle disposition; D-SUPPORTED-PLATFORMS-219 omits filesystem and terminal primitives, the immutable inventory source, and the amendment procedure; and D-CAPSTONE-SIGNING-219 omits canonical manifest-byte rules, verifier version and command, credential-validity rules, and compromise handling. Exact owner questions must solicit every field needed for a complete target-specific decision so a partial answer cannot be mistaken for authorization.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-c7b680ce5634a3397d7c",
+            "title": "Write authority is undefined for bounded multi-lane and autonomous-proof stages",
+            "details": "D-DARKFACTORY-L4 and its owner question are scoped to the single-lane write and live rollback drill. The rollout then advances to bounded multi-lane operation and an autonomous 30-day proof that can continue mutating the managed repository, but the contract provides no named authenticated decision or amendment chain authorizing those expanded repositories, actions, concurrency bounds, duration, and rollback boundaries. Passing technical promotion gates cannot expand authority. Add target-specific owner decisions for each write-scope expansion, or define an authenticated amendment sequence that explicitly binds every later stage before its writes begin.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-11894064336ffc90dee0",
+            "title": "Owner-dependency records can convert operational failures into proof-window terminal success",
+            "details": "The proof population accepts an authenticated ask-owner dependency as an alternative terminal state, while the failure contract creates such a dependency for missing, corrupt, ambiguous, or stale receipts. Because creation requires only the reconciliation-service actor and expressly grants no authority, failed lanes could satisfy the end-of-window population without an owner decision or objective resolution. This conflicts with the rule that failures cannot be reinterpreted as success and weakens the backlog-drain criterion. Unresolved owner dependencies must remain non-successful for proof metrics unless an authenticated owner decision explicitly excludes or terminally classifies the issue; operational receipt failures must remain proof-blocking.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-cada5926bbad63edea13",
+            "title": "The submodule-root pointer contract is not included in closure evidence",
+            "details": "The target is reviewed under the submodule-root overlay, but the issue requires only git submodule status --recursive in the capstone. It does not require ledger evidence for every gitlink path, child repository identity, configured URL, recorded commit, released child default-branch head, ancestry proof, or child required checks. It also lacks explicit rejection behavior for missing, renamed, misplaced, dirty, conflicted, uninitialized, inaccessible, non-ancestor, parked, or ambiguous children. Add exact-revision ledger rows and fail-closed validation for the complete pointer contract; a clean status command alone is insufficient.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      }
+    ]
+  }
+}

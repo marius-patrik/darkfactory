@@ -1,0 +1,14 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T22:30:05.273Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#227",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "target_policy_blocked",
+    "targetVersion": null,
+    "rounds": []
+  }
+}

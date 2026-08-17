@@ -1,0 +1,17 @@
+{
+  "kind": "df-sweep",
+  "target_repo": "sweep",
+  "created_at": "2026-07-05T09:30:34.093Z",
+  "trigger": "schedule",
+  "mode": "sweep",
+  "excluded_repos": [
+    "marius-patrik/agents-harness"
+  ],
+  "actions": [],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Green-PR sweep is deterministic and uses no model calls"
+  }
+}

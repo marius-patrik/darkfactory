@@ -1,0 +1,67 @@
+{
+  "kind": "df-plan",
+  "target_repo": "marius-patrik/agents-manager",
+  "created_at": "2026-07-07T20:18:46.633Z",
+  "trigger": "schedule",
+  "default_branch": "main",
+  "source_ref": "main",
+  "prd_files": [
+    "PRD.md",
+    "packages/core/src/harness/PRD.md",
+    "packages/core/src/manager/PRD.md"
+  ],
+  "actions": [
+    {
+      "action": "package-prd-scaffold-pr",
+      "state": "created",
+      "pull_request": {
+        "number": 125,
+        "url": "https://github.com/marius-patrik/agents-manager/pull/125"
+      },
+      "missing": [
+        "packages/core/PRD.md",
+        "packages/core/src/core/clients/shared-ts/PRD.md",
+        "packages/core/src/core/clients/tui/PRD.md",
+        "packages/core/src/core/clients/web/PRD.md",
+        "packages/core/src/inference/legacy/src-root/PRD.md"
+      ]
+    },
+    {
+      "action": "drift-report",
+      "issue": {
+        "number": 91,
+        "url": "https://github.com/marius-patrik/agents-manager/issues/91"
+      },
+      "findings": [
+        "Open issue #107 is not tracked by any PRD item.",
+        "Open issue #95 is not tracked by any PRD item.",
+        "Open issue #104 is not tracked by any PRD item.",
+        "Open issue #34 is not tracked by any PRD item.",
+        "Open issue #35 is not tracked by any PRD item.",
+        "Open issue #15 is not tracked by any PRD item.",
+        "Open issue #92 is not tracked by any PRD item.",
+        "Open issue #11 is not tracked by any PRD item.",
+        "Open PR #125 is not linked to a PRD-tracked issue.",
+        "Open PR #32 is not linked to a PRD-tracked issue."
+      ]
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "L4 planning used deterministic PRD parsing only"
+  },
+  "prd_coverage": {
+    "root_present": true,
+    "package_prds": 0,
+    "total_packages": 5,
+    "missing": [
+      "packages/core/PRD.md",
+      "packages/core/src/core/clients/shared-ts/PRD.md",
+      "packages/core/src/core/clients/tui/PRD.md",
+      "packages/core/src/core/clients/web/PRD.md",
+      "packages/core/src/inference/legacy/src-root/PRD.md"
+    ]
+  }
+}

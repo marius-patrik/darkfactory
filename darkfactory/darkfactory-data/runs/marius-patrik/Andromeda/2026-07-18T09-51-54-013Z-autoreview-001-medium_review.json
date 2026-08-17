@@ -1,0 +1,273 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T09:51:54.013Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#214",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "401e128250d15ed63e0ea966c84a33c2c67239594d6625ac2d85258b17e8a54d",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "f1a14fa5151e3dc896167935cb377b4bba666182",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+      },
+      "promptChecksum": "sha256:d1bb7776763c5b91e3431c42db8b1d8ee06e048914d91f2d80c2b3790c10d147",
+      "inputChecksum": "sha256:0c5fc71ae66db9e642fb33b38c9d3d19d28e02deafa26b607338fc725a2b294f",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 20591,
+      "outputTokens": 1818,
+      "totalTokens": 22409
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue #214 has a coherent outcome but is not yet an executable contract. Packaging, deployment mode, repository ownership, dependency sequencing, acceptance evidence, failure semantics, and rollout remain ambiguous or undecided.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-e1789e65e0738f2c64b1",
+          "title": "Supported packaging is an unresolved owner decision",
+          "details": "The issue delegates selection among Docker, service installation, package-runner integration, or another target to the worker. This materially determines supported platforms, artifacts, security boundaries, update behavior, and rollback behavior. The contract must record the owner-selected packaging target and supported host platforms before implementation.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-1102d66a52c8f0bf5cd7",
+          "title": "Cross-repository ownership and submodule delivery sequence are undefined",
+          "details": "The requested gateway packaging, inference integration, root deployment profiles, and documentation may span the Andromeda root and child repositories, but the issue does not identify which repository owns each change. It also omits the required child release, green-evidence, and root gitlink update sequence. A single accountable lane with explicit repository boundaries and pointer-delivery steps is required.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-0cc62b682b285582b181",
+          "title": "Dependencies are named without executable gates",
+          "details": "Open issues #210 and #211 determine baked naming and data mounts, but #214 does not state whether work is blocked on their closure, which accepted decisions or revisions satisfy the dependencies, or how implementation must react if those contracts change. Dependency order and exact completion evidence must be specified.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-72e1575ad13687d0b158",
+          "title": "Scope and non-goals are incomplete",
+          "details": "The issue does not bound supported operating systems, architectures, deployment topology, inference implementation, migration from legacy artifacts, or whether both local and container starts are required. It also does not distinguish profile wiring from the broader inference-substrate work represented by open issue #224. Explicit inclusions, exclusions, and overlap ownership are needed.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-79b1c9261a13481b294a",
+          "title": "Acceptance criteria are not objectively reproducible",
+          "details": "“Fresh machine,” “healthy,” “gateway + inference profiles,” and “local/container start” lack precise definitions. The contract must name the supported clean environment, exact commands and profile identifiers, whether local and container execution are both mandatory, expected ports and health responses, required mounted paths and environment variables, and observable assertions proving shared-store and inference-path visibility.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-fa3d43aa18a1c5cdb250",
+          "title": "Credential and trust boundaries are underspecified",
+          "details": "“Secrets handling” does not define the canonical credential source, permitted injection mechanism, prohibited persistence, or required redaction from dry-run output, logs, generated files, and process arguments. The specification must preserve Agent OS ownership of credentials and prohibit repository-local credential or execution fallbacks.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-35dd4528419e85387e6a",
+          "title": "Failure and health behavior are undefined",
+          "details": "The service is expected to report health without live model engines, but the issue does not define healthy versus degraded state or behavior for missing mounts, unavailable inference, invalid secrets, port conflicts, stale shared state, or partial startup. Required exit behavior, diagnostics, cleanup, and health-state semantics must be explicit.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-3fd5da2ef7aa32dacee7",
+          "title": "Validation, evidence, update, and rollback gates are incomplete",
+          "details": "The issue requests documentation and smoke validation but does not prescribe authoritative automated tests, clean-machine evidence, dry-run assertions, update and rollback exercises, or retained evidence. It must also require the repository gates `git diff --check` and `git submodule status --recursive`, plus any child-repository and packaged-service checks, with expected successful results and explicit treatment of skipped live-service validation.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Owner question: Which packaging target and host platforms are supported for this issue?",
+        "Owner question: Must both local and container starts work, or is one deployment mode the supported MVP?",
+        "Owner question: Which repositories own the gateway, inference, profile, and documentation changes, and what child-release/root-gitlink sequence is authorized?",
+        "Owner question: Must #210 and #211 be completed before implementation begins, and what exact accepted revisions satisfy those dependencies?",
+        "Owner question: Is cluster or multi-machine inference explicitly excluded and left to #224?"
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-e1789e65e0738f2c64b1",
+        "title": "Supported packaging is an unresolved owner decision",
+        "details": "The issue delegates selection among Docker, service installation, package-runner integration, or another target to the worker. This materially determines supported platforms, artifacts, security boundaries, update behavior, and rollback behavior. The contract must record the owner-selected packaging target and supported host platforms before implementation.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-1102d66a52c8f0bf5cd7",
+        "title": "Cross-repository ownership and submodule delivery sequence are undefined",
+        "details": "The requested gateway packaging, inference integration, root deployment profiles, and documentation may span the Andromeda root and child repositories, but the issue does not identify which repository owns each change. It also omits the required child release, green-evidence, and root gitlink update sequence. A single accountable lane with explicit repository boundaries and pointer-delivery steps is required.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-0cc62b682b285582b181",
+        "title": "Dependencies are named without executable gates",
+        "details": "Open issues #210 and #211 determine baked naming and data mounts, but #214 does not state whether work is blocked on their closure, which accepted decisions or revisions satisfy the dependencies, or how implementation must react if those contracts change. Dependency order and exact completion evidence must be specified.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-72e1575ad13687d0b158",
+        "title": "Scope and non-goals are incomplete",
+        "details": "The issue does not bound supported operating systems, architectures, deployment topology, inference implementation, migration from legacy artifacts, or whether both local and container starts are required. It also does not distinguish profile wiring from the broader inference-substrate work represented by open issue #224. Explicit inclusions, exclusions, and overlap ownership are needed.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-79b1c9261a13481b294a",
+        "title": "Acceptance criteria are not objectively reproducible",
+        "details": "“Fresh machine,” “healthy,” “gateway + inference profiles,” and “local/container start” lack precise definitions. The contract must name the supported clean environment, exact commands and profile identifiers, whether local and container execution are both mandatory, expected ports and health responses, required mounted paths and environment variables, and observable assertions proving shared-store and inference-path visibility.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-fa3d43aa18a1c5cdb250",
+        "title": "Credential and trust boundaries are underspecified",
+        "details": "“Secrets handling” does not define the canonical credential source, permitted injection mechanism, prohibited persistence, or required redaction from dry-run output, logs, generated files, and process arguments. The specification must preserve Agent OS ownership of credentials and prohibit repository-local credential or execution fallbacks.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-35dd4528419e85387e6a",
+        "title": "Failure and health behavior are undefined",
+        "details": "The service is expected to report health without live model engines, but the issue does not define healthy versus degraded state or behavior for missing mounts, unavailable inference, invalid secrets, port conflicts, stale shared state, or partial startup. Required exit behavior, diagnostics, cleanup, and health-state semantics must be explicit.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-3fd5da2ef7aa32dacee7",
+        "title": "Validation, evidence, update, and rollback gates are incomplete",
+        "details": "The issue requests documentation and smoke validation but does not prescribe authoritative automated tests, clean-machine evidence, dry-run assertions, update and rollback exercises, or retained evidence. It must also require the repository gates `git diff --check` and `git submodule status --recursive`, plus any child-repository and packaged-service checks, with expected successful results and explicit treatment of skipped live-service validation.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

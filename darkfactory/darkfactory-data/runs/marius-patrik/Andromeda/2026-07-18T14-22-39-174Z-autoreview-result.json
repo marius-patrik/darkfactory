@@ -1,0 +1,307 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T14:22:39.174Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#305",
+  "result": {
+    "ok": true,
+    "state": "clean",
+    "code": null,
+    "targetVersion": "a09cee8f8812fc2fdcedbd335b45c7449cbf4113:a0dde765cd324a85c3733ea4c1c44b8fd06a69f3",
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "a09cee8f8812fc2fdcedbd335b45c7449cbf4113:a0dde765cd324a85c3733ea4c1c44b8fd06a69f3",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:65a8eae883658bab5d39d2230e4d549f7b93787982f5ac0a08782250b3db99e1",
+          "inputChecksum": "sha256:f596874477c37385553cf6e927833e247e453adc117ac8d980ed7462143198f9",
+          "profile": {
+            "id": "profile/pr-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-pr",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/pr-reviewer",
+            "skills": [
+              "skill/acceptance-driven-delivery",
+              "skill/untrusted-input-handling",
+              "skill/validation-autoreview",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/pr-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/pr-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/pr-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+            },
+            {
+              "id": "skill/acceptance-driven-delivery",
+              "version": "0.2.0",
+              "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/pr-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/pr-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 61320,
+          "outputTokens": 3149,
+          "totalTokens": 64469
+        },
+        "verdict": {
+          "approved": true,
+          "summary": "Complete review of PR #305 at head a0dde765cd324a85c3733ea4c1c44b8fd06a69f3 found no blocking correctness, acceptance-coverage, trust-boundary, regression, or scope issues. The legacy provider-specific review stack is removed while Validate and DarkFactory Autoreview remain the documented and regression-covered gates.",
+          "findingsComplete": true,
+          "blockingFindings": [],
+          "nonBlockingNotes": []
+        },
+        "findings": [],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "clean"
+      },
+      {
+        "sequence": 2,
+        "phase": "high_review",
+        "targetVersion": "a09cee8f8812fc2fdcedbd335b45c7449cbf4113:a0dde765cd324a85c3733ea4c1c44b8fd06a69f3",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:1544a2eb980cf8f509feeba7bad6e305d87fa469038e9ac10f57dd6aab0b7ca0",
+          "inputChecksum": "sha256:5ac24b19ba40fc5ea4ea451637bd1fa3ca8ea568a87a823b1922e4ba4776bcc8",
+          "profile": {
+            "id": "profile/pr-final-review",
+            "version": "0.2.0",
+            "runKind": "review-pr",
+            "purpose": "final-review"
+          },
+          "selection": {
+            "role": "role/pr-reviewer",
+            "skills": [
+              "skill/acceptance-driven-delivery",
+              "skill/untrusted-input-handling",
+              "skill/validation-autoreview",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "high",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/pr-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/pr-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/pr-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+            },
+            {
+              "id": "skill/acceptance-driven-delivery",
+              "version": "0.2.0",
+              "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/high",
+              "version": "0.2.0",
+              "checksum": "sha256:c3f885bdc7bf6b88c24c9c92f9c5ce0b2e03f60d573be2f6517faf5c17ecda9f"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/pr-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/pr-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "high",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 61323,
+          "outputTokens": 1682,
+          "totalTokens": 63005
+        },
+        "verdict": {
+          "approved": true,
+          "summary": "PR #305 at a0dde765cd324a85c3733ea4c1c44b8fd06a69f3 satisfies issue #304: it removes the legacy Codex/Kimi review assets, updates managed enforcement and documentation to the provider-agnostic DarkFactory Autoreview gate, preserves Validate plus Autoreview protection semantics, and provides focused regression coverage. No blocking correctness, scope, trust-boundary, or validation-coverage findings were identified.",
+          "findingsComplete": true,
+          "blockingFindings": [],
+          "nonBlockingNotes": []
+        },
+        "findings": [],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "clean"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "kind": "df-work",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-07T16:39:26.368Z",
+  "trigger": "workflow_dispatch",
+  "issue": "marius-patrik/agent-darkfactory#80",
+  "branch": "df/80-feat-df-configurable-enforcement-rules-system",
+  "status": "success",
+  "actions": [
+    {
+      "action": "preflight-merge-policy",
+      "result": {
+        "blocked": false,
+        "useAutomerge": false,
+        "autoMergeSupported": true,
+        "branchProtection": {
+          "configured": false,
+          "status": 403,
+          "reason": "GET /repos/marius-patrik/agent-darkfactory/branches/dev/protection failed with 403: {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/branches/branch-protection#get-branch-protection\",\"status\":\"403\"}"
+        },
+        "summary": "no branch protection on `dev`; green-PR sweep will squash-merge directly after checks"
+      }
+    },
+    {
+      "action": "open-pr",
+      "url": "https://github.com/marius-patrik/agent-darkfactory/pull/195",
+      "automerge": {
+        "enabled": false,
+        "reason": "Direct green-PR sweep will merge after checks because branch protection is not configured."
+      },
+      "provider": "kimi",
+      "model": "kimi-code/kimi-for-coding"
+    }
+  ],
+  "provider_attempts": [
+    {
+      "provider": "kimi",
+      "model": "kimi-code/kimi-for-coding",
+      "startedAt": "2026-07-07T16:26:04.041Z",
+      "endedAt": "2026-07-07T16:39:22.270Z",
+      "result": "success"
+    }
+  ],
+  "token_usage": {
+    "total_calls": 1,
+    "provider": "kimi",
+    "model": "kimi-code/kimi-for-coding",
+    "model_reasoning_effort": "medium",
+    "input_tokens": null,
+    "output_tokens": null,
+    "note": "provider token counters are not exposed to this script yet",
+    "input_brief_characters": 14767
+  },
+  "pull_request": "https://github.com/marius-patrik/agent-darkfactory/pull/195",
+  "cleanup": {
+    "ok": false,
+    "warning": "DarkFactory cleanup warning: EACCES: permission denied, rmdir '/tmp/df-work-zTGTTV/kimi-home/.npm/_logs'"
+  }
+}

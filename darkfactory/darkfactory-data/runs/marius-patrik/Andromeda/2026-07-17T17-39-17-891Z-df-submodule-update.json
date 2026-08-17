@@ -1,0 +1,93 @@
+{
+  "kind": "df-submodule-update",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-17T17:39:17.892Z",
+  "schemaVersion": 1,
+  "mode": "update",
+  "status": "blocked",
+  "plan": {
+    "schemaVersion": 1,
+    "planId": "submodule-8df7323f1e46e031ea8e",
+    "action": "block",
+    "branch": null,
+    "evidence": {
+      "child": "marius-patrik/Andromeda-data",
+      "child_sha": "bea77c2842aad40755c4d465164b70bd39278c87",
+      "parent": "marius-patrik/Andromeda",
+      "parent_main": "feb9342b22be880fa718da53939abf30f6751467",
+      "parent_dev": "feb9342b22be880fa718da53939abf30f6751467",
+      "path": "data/andromeda",
+      "main_pointer": "4cc0568323494e8b6fc58af9b222c7f2ea92f4c7",
+      "dev_pointer": "4cc0568323494e8b6fc58af9b222c7f2ea92f4c7",
+      "pointer_state": "behind",
+      "receipt": "https://github.com/marius-patrik/Andromeda-data/actions/runs/29576920145/job/87873374524"
+    },
+    "blockers": [
+      "main-only-data-validate-not-green",
+      "unexpected-andromeda-gitlink:plugins/Memory"
+    ]
+  },
+  "action": {
+    "status": "blocked",
+    "reason": "main-only-data-validate-not-green;unexpected-andromeda-gitlink:plugins/Memory"
+  },
+  "observation": {
+    "child": "marius-patrik/Andromeda-data",
+    "child_release": {
+      "repository": "marius-patrik/Andromeda-data",
+      "branch": "main",
+      "sha": "bea77c2842aad40755c4d465164b70bd39278c87",
+      "receipt": "https://github.com/marius-patrik/Andromeda-data/actions/runs/29576920145/job/87873374524",
+      "main_checks": {
+        "checks": [
+          {
+            "name": "Validate",
+            "expectedAppId": 15368,
+            "actualAppId": 15368,
+            "id": 87873374524,
+            "url": "https://github.com/marius-patrik/Andromeda-data/actions/runs/29576920145/job/87873374524",
+            "state": "red"
+          }
+        ],
+        "green": false,
+        "missing": [],
+        "pending": [],
+        "red": [
+          "Validate"
+        ]
+      }
+    },
+    "parent": {
+      "repository": "marius-patrik/Andromeda",
+      "path": "data/andromeda",
+      "name": "data",
+      "main_sha": "feb9342b22be880fa718da53939abf30f6751467",
+      "dev_sha": "feb9342b22be880fa718da53939abf30f6751467",
+      "main_pointer": "4cc0568323494e8b6fc58af9b222c7f2ea92f4c7",
+      "dev_pointer": "4cc0568323494e8b6fc58af9b222c7f2ea92f4c7",
+      "released_sha": "bea77c2842aad40755c4d465164b70bd39278c87",
+      "relation": {
+        "status": "ahead",
+        "ahead_by": 13,
+        "behind_by": 0
+      },
+      "pointer_state": "behind",
+      "pull_request": null,
+      "evidence": {
+        "parent_pointer": "https://github.com/marius-patrik/Andromeda/tree/feb9342b22be880fa718da53939abf30f6751467/data/andromeda",
+        "child_release": "https://github.com/marius-patrik/Andromeda-data/actions/runs/29576920145/job/87873374524",
+        "child_commit": "https://github.com/marius-patrik/Andromeda-data/commit/bea77c2842aad40755c4d465164b70bd39278c87",
+        "ancestry": "https://github.com/marius-patrik/Andromeda-data/compare/4cc0568323494e8b6fc58af9b222c7f2ea92f4c7...bea77c2842aad40755c4d465164b70bd39278c87"
+      }
+    },
+    "local": {
+      "observed": false,
+      "clean": null,
+      "blockers": []
+    },
+    "blockers": [
+      "main-only-data-validate-not-green",
+      "unexpected-andromeda-gitlink:plugins/Memory"
+    ]
+  }
+}

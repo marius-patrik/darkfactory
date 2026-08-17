@@ -1,0 +1,24 @@
+{
+  "kind": "submodule-update-admission",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-17T19:40:38.243Z",
+  "status": "admitted",
+  "mode": "update",
+  "plan_id": "submodule-6e5ee8628cf94f4cca00",
+  "action": "block",
+  "evidence": {
+    "child": "marius-patrik/Andromeda-data",
+    "child_sha": "80c25291dc292bc2507f166cb96ece9c104f61cc",
+    "parent": "marius-patrik/Andromeda",
+    "parent_main": "feb9342b22be880fa718da53939abf30f6751467",
+    "parent_dev": "feb9342b22be880fa718da53939abf30f6751467",
+    "path": "data/andromeda",
+    "main_pointer": "4cc0568323494e8b6fc58af9b222c7f2ea92f4c7",
+    "dev_pointer": "4cc0568323494e8b6fc58af9b222c7f2ea92f4c7",
+    "pointer_state": "behind",
+    "receipt": "https://github.com/marius-patrik/Andromeda-data/actions/runs/29601915179/job/87955817128"
+  },
+  "blockers": [
+    "unexpected-andromeda-gitlink:plugins/Memory"
+  ]
+}

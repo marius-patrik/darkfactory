@@ -1,0 +1,169 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-18T13:12:09.201Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#342",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "3528c21e632606305ba4296ebdf7c7a70afcb5e1:586a43afbd996c49b55a038fbf83a6066936926d",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:20818e1ae68d7e0d5d48ebf3106424f83213984e8d0995a4035ae9d59a91dd4f",
+      "inputChecksum": "sha256:0e267072217a087dcbc9e30d39c690131bb8b52b17e85d4461f9eea80997e42b",
+      "profile": {
+        "id": "profile/pr-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-pr",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/pr-reviewer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/validation-autoreview",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/bun-node",
+        "output": "output/pr-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/bun-node",
+          "version": "0.2.0",
+          "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+        },
+        {
+          "id": "output/pr-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 154035,
+      "outputTokens": 4491,
+      "totalTokens": 158526
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "The complete medium-tier review is blocked because a required reconciliation acceptance criterion lacks trusted provenance for the exact current head.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-72678c58b1101a011321",
+          "title": "Protected-main tree identity is unverified",
+          "details": "For marius-patrik/DarkFactory PR #342 at head 586a43afbd996c49b55a038fbf83a6066936926d, linked issue #360 requires the PR tree to match protected main. The only tree-identity assertion is in the untrusted PR body; the trusted evidence proves the fetched base/head identities, diff --check result, and empty gitlink manifests but provides neither the protected-main tree OID nor an exact comparison with the head tree. Supply trusted exact-revision tree-comparison evidence before treating this criterion as satisfied.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": []
+    },
+    "findings": [
+      {
+        "id": "df-72678c58b1101a011321",
+        "title": "Protected-main tree identity is unverified",
+        "details": "For marius-patrik/DarkFactory PR #342 at head 586a43afbd996c49b55a038fbf83a6066936926d, linked issue #360 requires the PR tree to match protected main. The only tree-identity assertion is in the untrusted PR body; the trusted evidence proves the fetched base/head identities, diff --check result, and empty gitlink manifests but provides neither the protected-main tree OID nor an exact comparison with the head tree. Supply trusted exact-revision tree-comparison evidence before treating this criterion as satisfied.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

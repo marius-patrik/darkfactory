@@ -1,0 +1,21 @@
+{
+  "kind": "df-fix",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-17T22:34:51.798Z",
+  "trigger": "schedule",
+  "control_repo": "marius-patrik/DarkFactory",
+  "max_rounds": 3,
+  "actions": [
+    {
+      "repo": "marius-patrik/Andromeda-data",
+      "action": "error",
+      "error": "Error: [{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",0,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":30,\"column\":13}],\"message\":\"Resource not accessible by integration\"}]\n    at Object.graphql (file:///home/runner/work/DarkFactory/DarkFactory/darkfactory-control/.github/scripts/df-lib.mjs:441:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async listOpenPullRequests (file:///home/runner/work/DarkFactory/DarkFactory/darkfactory-control/.github/scripts/df-fix.mjs:313:18)\n    at async main (file:///home/runner/work/DarkFactory/DarkFactory/darkfactory-control/.github/scripts/df-fix.mjs:205:21)"
+    }
+  ],
+  "token_usage": {
+    "model_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Fix-forward is deterministic and uses no model calls"
+  }
+}

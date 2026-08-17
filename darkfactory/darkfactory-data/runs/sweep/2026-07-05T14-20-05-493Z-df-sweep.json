@@ -1,0 +1,89 @@
+{
+  "kind": "df-sweep",
+  "target_repo": "sweep",
+  "created_at": "2026-07-05T14:20:05.496Z",
+  "trigger": "schedule",
+  "mode": "sweep",
+  "excluded_repos": [
+    "marius-patrik/agents-harness"
+  ],
+  "actions": [
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#88",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#101",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#99",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#98",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#97",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#95",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#87",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#77",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-harness",
+      "action": "skip",
+      "reason": "excluded"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#20",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#18",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/dream",
+      "pr": "marius-patrik/dream#14",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Green-PR sweep is deterministic and uses no model calls"
+  }
+}

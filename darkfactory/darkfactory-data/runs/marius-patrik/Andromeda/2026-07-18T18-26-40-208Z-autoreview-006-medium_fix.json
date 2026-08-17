@@ -1,0 +1,187 @@
+{
+  "kind": "autoreview-006-medium_fix",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T18:26:40.208Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#219",
+  "round": {
+    "sequence": 6,
+    "phase": "medium_fix",
+    "targetVersion": "3b9fe597164ef6c13eba25908605012884d17b8101497596a800ad0dd4f50fea",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:3e6e60a042b6a7c211ac36eba076e7da5456d14e5e8095d778cea390cce60487",
+      "inputChecksum": "sha256:782ca1bade053d77c6b74501cf80c36724658ec8f262da0e3873ff9bbd73c676",
+      "profile": {
+        "id": "profile/issue-fixer",
+        "version": "0.2.0",
+        "runKind": "fix-issue",
+        "purpose": "review-fix"
+      },
+      "selection": {
+        "role": "role/issue-fixer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/minimal-diff",
+          "skill/owner-escalation",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-fixer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-fixer",
+          "version": "0.2.0",
+          "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/minimal-diff",
+          "version": "0.2.0",
+          "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-fixer",
+          "version": "0.3.0",
+          "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 261006,
+      "outputTokens": 9469,
+      "totalTokens": 270475
+    },
+    "verdict": null,
+    "findings": [
+      {
+        "id": "df-1f757fb857ffc57887c4",
+        "title": "Required owner decisions remain unresolved",
+        "details": "The contract cannot begin or complete several required stages until authenticated decisions D-DARKFACTORY-L4, D-AUTOLEARN-225, D-PROOF-TRACKER-219, D-PROOF-SCHEDULE-219, D-SUPPORTED-PLATFORMS-219, and D-CAPSTONE-SIGNING-219 exist. Their placeholders and issue text grant no authority. Issue #219 must remain blocked until each applicable decision is recorded through the trusted owner-action path.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-dc65835313caed3d8e09",
+        "title": "The dev-to-main delivery path is ambiguous",
+        "details": "The pipeline requires branches from dev, while the repository default branch and all closure evidence are main. The contract does not specify PR base branches, the dev-to-main promotion step, which revision each review and CI gate evaluates, or which branch produces the release. This prevents receipts and closure evidence from proving one deterministic delivery path.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-d6236bf43925d7d0bd3c",
+        "title": "The lane-4 rollback prerequisite has no authorised execution path",
+        "details": "D-DARKFACTORY-L4 is ordered after a successful rollback drill, but the rollout definition exercises rollback in a write-enabled single lane and no separate decision authorises that prerequisite drill. The contract must either define a non-mutating rollback proof or name an authenticated, bounded authorization and evidence owner for the write-enabled drill before D-DARKFACTORY-L4 is requested.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-0d152a80de83eca4e0a8",
+        "title": "The autolearn brake proof and authorization are circular",
+        "details": "D-AUTOLEARN-225 may be recorded only after the planted-bad-adapter brake proof, while issue #225 prohibits execution before explicit owner authorization and its brake proof is executable #225 scope. The contract must define a separately authorised brake-proof-only lane or move the owner decision before that proof while limiting it to the proof.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [
+      "df-1f757fb857ffc57887c4",
+      "df-dc65835313caed3d8e09",
+      "df-d6236bf43925d7d0bd3c",
+      "df-0d152a80de83eca4e0a8"
+    ],
+    "changeRef": "issue-comment:5012417508:bb088b5e4869d173ca8303f32341f801382f31716d8f6c13ac8da629273ec6c1",
+    "afterVersion": "bb088b5e4869d173ca8303f32341f801382f31716d8f6c13ac8da629273ec6c1",
+    "blockCode": null,
+    "outcome": "fixed"
+  }
+}

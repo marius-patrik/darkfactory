@@ -1,0 +1,50 @@
+{
+  "kind": "df-work",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-07T15:51:00.261Z",
+  "trigger": "workflow_dispatch",
+  "issue": "marius-patrik/agent-darkfactory#44",
+  "branch": "df/44-regenerate-fleet-backlogs-from-prds-and-create-missing-package-prds",
+  "status": "blocked",
+  "actions": [
+    {
+      "action": "preflight-merge-policy",
+      "result": {
+        "blocked": false,
+        "useAutomerge": false,
+        "autoMergeSupported": true,
+        "branchProtection": {
+          "configured": false,
+          "status": 403,
+          "reason": "GET /repos/marius-patrik/agent-darkfactory/branches/dev/protection failed with 403: {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/branches/branch-protection#get-branch-protection\",\"status\":\"403\"}"
+        },
+        "summary": "no branch protection on `dev`; green-PR sweep will squash-merge directly after checks"
+      }
+    }
+  ],
+  "provider_attempts": [
+    {
+      "provider": "kimi",
+      "model": "kimi-code/kimi-for-coding",
+      "startedAt": "2026-07-07T15:50:41.128Z",
+      "error": "docker failed with exit 1\n\nerror: failed to run prompt: config.invalid: Provider \"managed:kimi-code\" for model \"kimi-code/kimi-for-coding\" is not configured.\nSee log: /kimi-home/.kimi-code/logs/kimi-code.log",
+      "endedAt": "2026-07-07T15:50:58.045Z",
+      "result": "task-failure"
+    }
+  ],
+  "token_usage": {
+    "total_calls": 0,
+    "provider": "",
+    "model": "",
+    "model_reasoning_effort": "medium",
+    "input_tokens": null,
+    "output_tokens": null,
+    "note": "provider token counters are not exposed to this script yet",
+    "input_brief_characters": 15636
+  },
+  "error": "Error: docker failed with exit 1\n\nerror: failed to run prompt: config.invalid: Provider \"managed:kimi-code\" for model \"kimi-code/kimi-for-coding\" is not configured.\nSee log: /kimi-home/.kimi-code/logs/kimi-code.log\n    at runCommand (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-providers.mjs:272:19)\n    at runKimiWorker (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-providers.mjs:195:10)\n    at runProviderWorker (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-providers.mjs:145:12)\n    at runWithFailover.taskClass (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-work.mjs:185:16)\n    at async runWithFailover (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-providers.mjs:226:22)\n    at async main (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-work.mjs:178:26)",
+  "cleanup": {
+    "ok": false,
+    "warning": "DarkFactory cleanup warning: EACCES: permission denied, scandir '/tmp/df-work-kxd5By/kimi-home/.kimi-code/telemetry'"
+  }
+}

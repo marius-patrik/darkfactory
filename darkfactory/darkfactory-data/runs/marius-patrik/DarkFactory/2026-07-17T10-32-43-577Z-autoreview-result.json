@@ -1,0 +1,14 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-17T10:32:43.578Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#282",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "target_policy_blocked",
+    "targetVersion": null,
+    "rounds": []
+  }
+}

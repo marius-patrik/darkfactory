@@ -1,0 +1,40 @@
+{
+  "kind": "pull_request",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-16T21:50:33.384Z",
+  "status": "admitted",
+  "repository": "marius-patrik/DarkFactory",
+  "number": 277,
+  "version": "d347ec90b07f041620fd2883d694c833b268ac5f:28cab0e9eed01514c9d0939d9aa579db37045db5",
+  "completion": "stale",
+  "recoveryAction": "rerun-pull-request-target",
+  "gate": {
+    "id": 87732152896,
+    "headSha": "28cab0e9eed01514c9d0939d9aa579db37045db5",
+    "expectedHeadSha": "28cab0e9eed01514c9d0939d9aa579db37045db5",
+    "status": "completed",
+    "conclusion": "failure",
+    "checkSuiteId": 79965021929,
+    "url": "https://github.com/marius-patrik/DarkFactory/actions/runs/29530896341/job/87732152896",
+    "workflowRunId": 29530896341,
+    "state": "red"
+  },
+  "workflowRun": {
+    "id": 29530896341,
+    "checkSuiteId": 79965021929,
+    "runAttempt": 3,
+    "status": "completed",
+    "conclusion": "failure",
+    "event": "pull_request_target",
+    "headSha": "28cab0e9eed01514c9d0939d9aa579db37045db5",
+    "headBranch": "feat/276-tagged-release-producer",
+    "path": ".github/workflows/darkfactory-autoreview.yml",
+    "url": "https://github.com/marius-patrik/DarkFactory/actions/runs/29530896341",
+    "rerunUrl": "https://api.github.com/repos/marius-patrik/DarkFactory/actions/runs/29530896341/rerun",
+    "createdAt": "2026-07-16T20:09:39Z"
+  },
+  "recoveryReason": "missing-or-stale-result",
+  "trigger": "7,22,37,52 * * * *",
+  "control_revision": "87502d30a15b883378dc8642a2d1fe95d49b89dc",
+  "workflow": "darkfactory-autoreview.yml"
+}

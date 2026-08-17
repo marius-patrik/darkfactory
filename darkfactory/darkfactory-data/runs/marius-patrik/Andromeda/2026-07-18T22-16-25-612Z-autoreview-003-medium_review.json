@@ -1,0 +1,241 @@
+{
+  "kind": "autoreview-003-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T22:16:25.612Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#223",
+  "round": {
+    "sequence": 3,
+    "phase": "medium_review",
+    "targetVersion": "197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:bd16c3b4de237a29243018219d78e03ed2da8593eda23362e2e68ebabd00cb6b",
+      "inputChecksum": "sha256:c8826d9cec44bf0b7da2d441ef380bd4be9c0e796a09193ec37836a6126dd6dd",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 37560,
+      "outputTokens": 5082,
+      "totalTokens": 42642
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue #223 is substantially developed but remains blocked by prerequisite-contract gaps, ambiguous terminal and resource ownership, undefined restart-safe timing, unresolved related-issue ownership, and an unauthenticated rollout decision.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-3f59a234411dc0d86a74",
+          "title": "Prerequisite issues do not contract the interfaces #223 requires",
+          "details": "At verified version 197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3, marius-patrik/Andromeda#223 assumes #221 will expose cancellation, termination, normalized attempt-level provenance, and atomic durable ownership/capacity operations, while #222 will expose ordered lane intents and qualifying checkpoint evidence. The supplied #221 and #222 contracts do not require all of those interfaces. Closing them under their current acceptance could therefore leave #223 permanently blocked or force it to create authority outside its declared lane. Amend the prerequisite contracts or narrow #223 to interfaces they actually guarantee.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-98e3336af67e9822fe7c",
+          "title": "Coordinator terminal events conflict with the declared lifecycle authority",
+          "details": "Issue #223 says #221 remains the sole cancellation, termination, and terminal-state authority, but its watchdog directs the coordinator to commit `cancelled` and `force_terminated` and later requires exactly one terminal outcome. It does not distinguish a non-authoritative #223 observation from the canonical #221 terminal event or define which event releases reservations. Specify the sole terminal transition, the coordinator's derived record if any, and replay behavior so two authorities or duplicate terminal events cannot arise.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-ee89fa6cba8d52d84060",
+          "title": "Restart-safe monotonic deadline semantics are undefined",
+          "details": "The contract persists monotonic deadlines and requires deterministic replay after process restart, but it does not define the clock epoch, boot identity, suspend/reboot behavior, or conversion used when the replacement process cannot compare its monotonic clock directly with a recorded value. The controllable-clock acceptance cases also omit epoch discontinuity. Define a canonical restart-safe time representation and add crash, process-restart, reboot or epoch-change, and suspend behavior to acceptance.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-d4b152b2cea2b14f14ef",
+          "title": "Descendant budget and reservation release semantics are contradictory",
+          "details": "The resource contract says a descendant reservation consumes a unit only for its lifetime and terminalization releases reservations, while acceptance calls `maxDescendants` a budget that can be exhausted such that no subsequent work starts. It is therefore unclear whether descendant units are cumulative spawn budget, concurrent subtree capacity, or both; `maxActiveChildren` already supplies a separate concurrency limit. Define the counters independently, state which debits remain after terminalization, and assert those exact values during retry, replacement, cancellation, and replay.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-bfcc43f20df1d8da16d0",
+          "title": "Overlapping open watchdog and lifecycle work has no ownership reconciliation",
+          "details": "The verified open-issue index includes #255 for stalled provider turns and #258 for dead-owner turns lacking terminal completion, both overlapping #223's stall detection, cancellation, terminalization, and recovery surface. Issue #223 neither declares them dependencies nor assigns their behavior to a separate authority. Inspect their complete contracts and record whether #223 consumes, supersedes, or remains disjoint from each one before implementation, preserving a single owner for every lifecycle transition.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-023a7cc6e3852917904c",
+          "title": "Feature enablement and disablement require an unresolved owner decision",
+          "details": "Issue #223 defaults the feature disabled but only says enablement is explicit; it does not identify the authenticated authority allowed to enable model-backed delegation and watchdog termination. Safe disablement likewise permits either draining or cancelling without a selection rule or deadline. This conflicts with the assertion that no owner decision remains. Record who may enable the feature and the deterministic drain-versus-cancel policy, including the evidence that authorizes each transition.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Owner question: Who is authorized to enable #223, and on disablement should active lanes drain until a defined deadline or be cancelled immediately?"
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-3f59a234411dc0d86a74",
+        "title": "Prerequisite issues do not contract the interfaces #223 requires",
+        "details": "At verified version 197126ce29cf3ae226d379ecbb588c42bec84798364c6e3281c0bfcdebceaec3, marius-patrik/Andromeda#223 assumes #221 will expose cancellation, termination, normalized attempt-level provenance, and atomic durable ownership/capacity operations, while #222 will expose ordered lane intents and qualifying checkpoint evidence. The supplied #221 and #222 contracts do not require all of those interfaces. Closing them under their current acceptance could therefore leave #223 permanently blocked or force it to create authority outside its declared lane. Amend the prerequisite contracts or narrow #223 to interfaces they actually guarantee.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-98e3336af67e9822fe7c",
+        "title": "Coordinator terminal events conflict with the declared lifecycle authority",
+        "details": "Issue #223 says #221 remains the sole cancellation, termination, and terminal-state authority, but its watchdog directs the coordinator to commit `cancelled` and `force_terminated` and later requires exactly one terminal outcome. It does not distinguish a non-authoritative #223 observation from the canonical #221 terminal event or define which event releases reservations. Specify the sole terminal transition, the coordinator's derived record if any, and replay behavior so two authorities or duplicate terminal events cannot arise.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-ee89fa6cba8d52d84060",
+        "title": "Restart-safe monotonic deadline semantics are undefined",
+        "details": "The contract persists monotonic deadlines and requires deterministic replay after process restart, but it does not define the clock epoch, boot identity, suspend/reboot behavior, or conversion used when the replacement process cannot compare its monotonic clock directly with a recorded value. The controllable-clock acceptance cases also omit epoch discontinuity. Define a canonical restart-safe time representation and add crash, process-restart, reboot or epoch-change, and suspend behavior to acceptance.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-d4b152b2cea2b14f14ef",
+        "title": "Descendant budget and reservation release semantics are contradictory",
+        "details": "The resource contract says a descendant reservation consumes a unit only for its lifetime and terminalization releases reservations, while acceptance calls `maxDescendants` a budget that can be exhausted such that no subsequent work starts. It is therefore unclear whether descendant units are cumulative spawn budget, concurrent subtree capacity, or both; `maxActiveChildren` already supplies a separate concurrency limit. Define the counters independently, state which debits remain after terminalization, and assert those exact values during retry, replacement, cancellation, and replay.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-bfcc43f20df1d8da16d0",
+        "title": "Overlapping open watchdog and lifecycle work has no ownership reconciliation",
+        "details": "The verified open-issue index includes #255 for stalled provider turns and #258 for dead-owner turns lacking terminal completion, both overlapping #223's stall detection, cancellation, terminalization, and recovery surface. Issue #223 neither declares them dependencies nor assigns their behavior to a separate authority. Inspect their complete contracts and record whether #223 consumes, supersedes, or remains disjoint from each one before implementation, preserving a single owner for every lifecycle transition.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-023a7cc6e3852917904c",
+        "title": "Feature enablement and disablement require an unresolved owner decision",
+        "details": "Issue #223 defaults the feature disabled but only says enablement is explicit; it does not identify the authenticated authority allowed to enable model-backed delegation and watchdog termination. Safe disablement likewise permits either draining or cancelling without a selection rule or deadline. This conflicts with the assertion that no owner decision remains. Record who may enable the feature and the deterministic drain-versus-cancel policy, including the evidence that authorizes each transition.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

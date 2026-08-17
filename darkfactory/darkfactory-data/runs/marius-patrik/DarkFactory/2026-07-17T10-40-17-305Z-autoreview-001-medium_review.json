@@ -1,0 +1,158 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-17T10:40:17.305Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#282",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "7c74aa97a98655a41cb6c2decfd8e58275274337:b022c5a2355928385bd821c8dea89c646d4cbb54",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "b022c5a2355928385bd821c8dea89c646d4cbb54",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+      },
+      "promptChecksum": "sha256:296279bd245538c9de51818cf7389786b2adaec16f3fa40b46bbd6c684c642da",
+      "inputChecksum": "sha256:51b8c4caf570e2fe511bde31cae0624032be002c2512f7679b948f737e70c6fc",
+      "profile": {
+        "id": "profile/pr-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-pr",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/pr-reviewer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/validation-autoreview",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/bun-node",
+        "output": "output/pr-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/bun-node",
+          "version": "0.2.0",
+          "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+        },
+        {
+          "id": "output/pr-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "claude",
+      "model": "claude-opus-4-8",
+      "agentPreset": "Fable",
+      "providerVersion": "2.1.203"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 1851,
+      "outputTokens": 11163,
+      "totalTokens": 13014
+    },
+    "verdict": {
+      "approved": true,
+      "summary": "PR #282 exports assertPullPolicy and adds an engine-automation admission branch that relaxes only the author-association and linked-execution-issue requirements, gated on exact trusted App actor provenance (normalizeWorkerPullRequestActor(pull.user)) AND a release/ or reconcile/ head-branch prefix. All other admission controls are preserved (open/ready, same-repository head, protected main/dev base, non-protected non-base head, and all stale-target checks). The App actor is GitHub-authoritative and cannot be forged by head-controlled content; the branch prefix is only consequential when combined with that trusted actor, so no trust-boundary violation is introduced. normalizeWorkerPullRequestActor is an unchanged base-trusted primitive already relied upon in this file to authenticate the App's own review-result comments, so its reuse for actor provenance is consistent. The regression triplet correctly proves the positive path (both prefixes admitted without association or linked issue), the negative-actor path (non-App on release/ stays blocked on provenance), and the negative-prefix paths (App on an unowned branch still needs the worker marker and then an execution issue). Change is minimal, cohesive, and maps to linked issue #280; complete review of the current head found no blocking issues.",
+      "findingsComplete": true,
+      "blockingFindings": [],
+      "nonBlockingNotes": [
+        "Scope is intentionally broader than issue #280 (which describes zero-diff reconcile PRs): the change admits all trusted-App release/ and reconcile/ PRs regardless of diff size. This is documented and justified by observed #279/#281, and non-empty release PR diffs still receive full model review; only the provenance/linked-issue admission gate is relaxed.",
+        "Zero-diff reconcile PRs are now admitted but still run the medium+high model rounds rather than being short-circuit auto-approved; issue #280 explicitly allowed either behavior, so this is acceptable.",
+        "The branch-prefix regex /^(?:release|reconcile)\\// is case-sensitive (no i flag), which is appropriately conservative given the engine authors lowercase prefixes.",
+        "Safety depends on normalizeWorkerPullRequestActor denoting exact DarkFactory App provenance rather than generic bot detection; it is an unchanged base-trusted helper (out of this diff's scope) already used for App comment authentication, so it was not re-verified here."
+      ]
+    },
+    "findings": [],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "clean"
+  }
+}

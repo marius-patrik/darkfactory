@@ -1,0 +1,256 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T17:12:11.364Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#213",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "483f3184ca7b184e70a865b43331c08c4651b690c3dce29be9cffe8fedc0fdbc",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:1de27a3f8dd137fc9b00e2655c3aad37eb807734810db283d35ffd0909ac6589",
+      "inputChecksum": "sha256:f5a64a94ade9eb93aafd8706d1b7f232eb98ee20119f7db4380d787e8f25aeb8",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 96532,
+      "outputTokens": 2476,
+      "totalTokens": 99008
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue #213 remains blocked by seven specification defects affecting admission, deterministic classification, evidence production, secret handling, receipt provenance, and exact-version reproducibility.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-ad16621d1038c91847e2",
+          "title": "Disabled routes have no valid path into admission probing",
+          "details": "Routes begin disabled, and the contract requires disabled routes to be rejected before dispatch with the outcome matching their persistent reason. It also requires a successful first live proof to move a disabled route into probing, including recovery of Codex and Agy. No eligible-but-disabled state, runtime-owned admission exception, or pre-proof transition permits that dispatch. Define the exact transition that allows credential-gated admission while retaining pre-dispatch rejection for administratively disabled and decommissioned routes.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-6f214340b5cac9a8ec74",
+          "title": "Concurrent gate failures lack deterministic precedence",
+          "details": "Administrative state, proof expiry, credential state, quota state, billing eligibility, route availability, receipt validation, and secret-leak detection can overlap, but the contract does not define which outcome and transition takes precedence. This can change the required terminal classification for Kimi, Agy, and Codex. Specify a complete gate evaluation order, including which stages may inspect credential-owner metadata and which may perform network dispatch.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-5d08b542a0dc7fa6fee8",
+          "title": "No command deterministically produces required disabled-route evidence",
+          "details": "Acceptance requires records for Codex, Agy, and Kimi in their disabled terminal states, including a non-dispatched Kimi record. The live command processes only currently eligible configured routes, observation processes probing routes, and evidence only validates existing records. Define provider-agnostic command behavior that enumerates every required route and emits schema-valid pre-dispatch records for ineligible routes without invoking them.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-5f7c681105eb7759e47c",
+          "title": "The exhaustive transition model still has unmapped values",
+          "details": "A route disabled by the rollback kill switch has reason repeated_malformed_timeout, but that value is absent from normalizedOutcome even though later rejection must match the persistent reason. The allowed transitionAction keep_terminal_state also has no event mapping or invariant. Define exactly one valid record representation for every reachable persistent state and subsequent evaluation.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-59a89927ea3892e715d8",
+          "title": "Secret-leak failures cannot satisfy the mandatory evidence schema",
+          "details": "The state machine requires secret_leak_detected records and disabling transitions, while every admission record unconditionally requires secretScan.status to be passed. A scan that detects a leak cannot truthfully pass, so the required failure cannot be represented as schema-valid evidence. Separate detection records from sanitized publication validation or define an explicit detected/failed scan state and fail-closed publication rules.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-43ddd4f1a69cacae7fc2",
+          "title": "Immutable execution-receipt storage and reference provenance are undefined",
+          "details": "Issue #275 creates its receipt as a new file in the caller worktree, while #213 stores admission evidence in Andromeda-data and requires validators to reject references outside that evidence repository. The specification does not define the authoritative receipt repository, immutable commit identity, or byte-preserving transfer and reference procedure. Define those details without forking or reinterpreting the #275 schema.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-138b122b17fc23567f24",
+          "title": "Admission evidence cannot prove the reviewed issue version",
+          "details": "Admission records and publication markers identify the implementation target revision but omit the canonical digest of the complete issue version. Publication-time comparison therefore depends on transient run context and cannot later associate evidence with the reviewed specification or deterministically invalidate it after an edit. Add the exact issue-version identity to records and markers and require evidence validation against the complete current issue version.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Issues #253, #275, #291, and #293 remain explicit dependencies or recovery owners; their open state is sequencing evidence, not an additional specification defect.",
+        "No additional owner-only policy choice is required if the specified terminal provider states are retained."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-ad16621d1038c91847e2",
+        "title": "Disabled routes have no valid path into admission probing",
+        "details": "Routes begin disabled, and the contract requires disabled routes to be rejected before dispatch with the outcome matching their persistent reason. It also requires a successful first live proof to move a disabled route into probing, including recovery of Codex and Agy. No eligible-but-disabled state, runtime-owned admission exception, or pre-proof transition permits that dispatch. Define the exact transition that allows credential-gated admission while retaining pre-dispatch rejection for administratively disabled and decommissioned routes.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-6f214340b5cac9a8ec74",
+        "title": "Concurrent gate failures lack deterministic precedence",
+        "details": "Administrative state, proof expiry, credential state, quota state, billing eligibility, route availability, receipt validation, and secret-leak detection can overlap, but the contract does not define which outcome and transition takes precedence. This can change the required terminal classification for Kimi, Agy, and Codex. Specify a complete gate evaluation order, including which stages may inspect credential-owner metadata and which may perform network dispatch.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-5d08b542a0dc7fa6fee8",
+        "title": "No command deterministically produces required disabled-route evidence",
+        "details": "Acceptance requires records for Codex, Agy, and Kimi in their disabled terminal states, including a non-dispatched Kimi record. The live command processes only currently eligible configured routes, observation processes probing routes, and evidence only validates existing records. Define provider-agnostic command behavior that enumerates every required route and emits schema-valid pre-dispatch records for ineligible routes without invoking them.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-5f7c681105eb7759e47c",
+        "title": "The exhaustive transition model still has unmapped values",
+        "details": "A route disabled by the rollback kill switch has reason repeated_malformed_timeout, but that value is absent from normalizedOutcome even though later rejection must match the persistent reason. The allowed transitionAction keep_terminal_state also has no event mapping or invariant. Define exactly one valid record representation for every reachable persistent state and subsequent evaluation.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-59a89927ea3892e715d8",
+        "title": "Secret-leak failures cannot satisfy the mandatory evidence schema",
+        "details": "The state machine requires secret_leak_detected records and disabling transitions, while every admission record unconditionally requires secretScan.status to be passed. A scan that detects a leak cannot truthfully pass, so the required failure cannot be represented as schema-valid evidence. Separate detection records from sanitized publication validation or define an explicit detected/failed scan state and fail-closed publication rules.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-43ddd4f1a69cacae7fc2",
+        "title": "Immutable execution-receipt storage and reference provenance are undefined",
+        "details": "Issue #275 creates its receipt as a new file in the caller worktree, while #213 stores admission evidence in Andromeda-data and requires validators to reject references outside that evidence repository. The specification does not define the authoritative receipt repository, immutable commit identity, or byte-preserving transfer and reference procedure. Define those details without forking or reinterpreting the #275 schema.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-138b122b17fc23567f24",
+        "title": "Admission evidence cannot prove the reviewed issue version",
+        "details": "Admission records and publication markers identify the implementation target revision but omit the canonical digest of the complete issue version. Publication-time comparison therefore depends on transient run context and cannot later associate evidence with the reviewed specification or deterministically invalidate it after an edit. Add the exact issue-version identity to records and markers and require evidence validation against the complete current issue version.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

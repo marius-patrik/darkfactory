@@ -1,0 +1,228 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T18:31:31.053Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#221",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "2672a5da4656799143bf2919a082b084e9ce5276756c83aef674c3307e9d87ff",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:3fb3c531ab5b8d84b60977f42880efd9c16605f76d60ea15c47b63c0b0015ec3",
+      "inputChecksum": "sha256:8649908b36c909bbdc3c882c065d17fadc61e3cabd2cdb42cbd0b50f3f4f3990",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 21860,
+      "outputTokens": 1507,
+      "totalTokens": 23367
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue 221 at verified version 2672a5da4656799143bf2919a082b084e9ce5276756c83aef674c3307e9d87ff has a clear migration goal and high-level ownership split, but it is not yet an executable contract. Runtime boundaries, failure and trust semantics, dependency sequencing, objective validation, and the authorized rollout posture remain incomplete.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-da76ed0884859bf6927e",
+          "title": "The runtime contract lacks concrete boundaries and acceptance criteria",
+          "details": "The specification lists waves, leases, scheduling, session events, and the tool loop, but does not identify the contract artifact, exported operations, package ownership, callers, event schemas, compatibility guarantees, or enforceable dependency direction between manager, harness, CLI, and shared state/memory contracts. Define these boundaries and objective checks that prove manager remains management-only and orchestration is harness-owned.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-d0a977ff67717a98c686",
+          "title": "Failure and trust behavior is unspecified",
+          "details": "The contract does not define required behavior for lease expiry or contention, process death, cancellation, duplicate or out-of-order events, corrupt or incomplete replay, scheduler-cap violations, tool failures, untrusted tool or session payloads, or unavailable canonical Agent OS authority. Specify durable events, recovery or fail-closed outcomes, authorization boundaries, and the prohibition on repository-local execution fallbacks.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-9bb3bcbb2849aca2dadf",
+          "title": "Validation requirements are not objectively reproducible",
+          "details": "Phrases such as \"runs harness-owned,\" \"proofs green,\" and \"harness suite runs in CI\" do not name the behavioral cases or evidence needed for acceptance. Require focused tests for contract conformance, deterministic replay, crash and lease recovery, duplicate-event handling, concurrency-cap enforcement, CLI-to-contract invocation, manager-to-harness dependency direction, and CI fail-closed detection when the harness suite is absent or skipped.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-388a181e209f46e20537",
+          "title": "Dependencies and sequencing are incomplete",
+          "details": "The issue references epic 218 and closed issue 206 but does not declare the prerequisite state/memory v2 contracts or existing replay surface by issue or revision, nor explicitly sequence downstream issues 222 and 223. It also does not reconcile potentially overlapping active session and orchestration work visible in issues 258 and 275. Record authoritative dependencies, required completion states, downstream blockers, and any overlap disposition before implementation.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-974d3e7d565c37000904",
+          "title": "Migration rollout and compatibility posture requires an owner decision",
+          "details": "The issue does not specify whether migration is an atomic cutover or a staged compatibility bridge, how persisted in-flight sessions and events cross the boundary, when manager-owned orchestration code may be removed, or what rollback behavior is authorized. This semantic and operational choice cannot be inferred by a worker.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Owner question: Should issue 221 require an atomic manager-to-harness cutover, or authorize a temporary compatibility bridge; and in either case, what compatibility and rollback guarantees are required for persisted and in-flight sessions?",
+        "The two contributor comments are pending workflow markers only and provide no specification authority or completion evidence."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-da76ed0884859bf6927e",
+        "title": "The runtime contract lacks concrete boundaries and acceptance criteria",
+        "details": "The specification lists waves, leases, scheduling, session events, and the tool loop, but does not identify the contract artifact, exported operations, package ownership, callers, event schemas, compatibility guarantees, or enforceable dependency direction between manager, harness, CLI, and shared state/memory contracts. Define these boundaries and objective checks that prove manager remains management-only and orchestration is harness-owned.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-d0a977ff67717a98c686",
+        "title": "Failure and trust behavior is unspecified",
+        "details": "The contract does not define required behavior for lease expiry or contention, process death, cancellation, duplicate or out-of-order events, corrupt or incomplete replay, scheduler-cap violations, tool failures, untrusted tool or session payloads, or unavailable canonical Agent OS authority. Specify durable events, recovery or fail-closed outcomes, authorization boundaries, and the prohibition on repository-local execution fallbacks.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-9bb3bcbb2849aca2dadf",
+        "title": "Validation requirements are not objectively reproducible",
+        "details": "Phrases such as \"runs harness-owned,\" \"proofs green,\" and \"harness suite runs in CI\" do not name the behavioral cases or evidence needed for acceptance. Require focused tests for contract conformance, deterministic replay, crash and lease recovery, duplicate-event handling, concurrency-cap enforcement, CLI-to-contract invocation, manager-to-harness dependency direction, and CI fail-closed detection when the harness suite is absent or skipped.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-388a181e209f46e20537",
+        "title": "Dependencies and sequencing are incomplete",
+        "details": "The issue references epic 218 and closed issue 206 but does not declare the prerequisite state/memory v2 contracts or existing replay surface by issue or revision, nor explicitly sequence downstream issues 222 and 223. It also does not reconcile potentially overlapping active session and orchestration work visible in issues 258 and 275. Record authoritative dependencies, required completion states, downstream blockers, and any overlap disposition before implementation.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-974d3e7d565c37000904",
+        "title": "Migration rollout and compatibility posture requires an owner decision",
+        "details": "The issue does not specify whether migration is an atomic cutover or a staged compatibility bridge, how persisted in-flight sessions and events cross the boundary, when manager-owned orchestration code may be removed, or what rollback behavior is authorized. This semantic and operational choice cannot be inferred by a worker.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

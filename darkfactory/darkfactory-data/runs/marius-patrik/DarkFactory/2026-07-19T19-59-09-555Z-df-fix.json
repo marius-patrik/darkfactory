@@ -1,0 +1,26 @@
+{
+  "kind": "df-fix",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-19T19:59:09.629Z",
+  "trigger": "schedule",
+  "control_repo": "marius-patrik/DarkFactory",
+  "max_rounds": 3,
+  "actions": [
+    {
+      "repo": "marius-patrik/Andromeda",
+      "pr": "marius-patrik/Andromeda#391",
+      "action": "blocked",
+      "reason": "branch-protection-inaccessible",
+      "protection_status": 403,
+      "findings": [
+        "branch protection is inaccessible"
+      ]
+    }
+  ],
+  "token_usage": {
+    "model_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Fix-forward is deterministic and uses no model calls"
+  }
+}

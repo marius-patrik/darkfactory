@@ -1,0 +1,143 @@
+{
+  "kind": "release-completion",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T11:18:00.407Z",
+  "status": "waiting-for-green",
+  "mode": "run",
+  "repository": "marius-patrik/Andromeda",
+  "plan": {
+    "schemaVersion": 1,
+    "planId": "release-c60c1b0ea3f56a35f48c",
+    "evidence": {
+      "repository": "marius-patrik/Andromeda",
+      "main": "cd511544eae8798c6d2a86ebb4c49dc7aac1e57d",
+      "dev": "4739cf8f38191f0879952db04ef4c9a9e9d7ead9",
+      "mainTree": "d8b34750cebff637341e3e345a32551e50337d86",
+      "devTree": "a98b39d1f238288952c521b04cc5917bc5911715",
+      "classification": "diverged",
+      "policy": "tagged"
+    },
+    "action": "reconcile-merge",
+    "reason": "main-dev-diverged"
+  },
+  "action": {
+    "action": "reconcile",
+    "status": "waiting-for-green",
+    "pull_request": "https://github.com/marius-patrik/Andromeda/pull/303",
+    "branch": "reconcile/cd511544-4739cf8f",
+    "checks": {
+      "checks": [
+        {
+          "name": "Validate",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 88068817391,
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29639662614/job/88068817391",
+          "state": "green"
+        },
+        {
+          "name": "DarkFactory Autoreview",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 88067951884,
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29639662611/job/88067951884",
+          "state": "red"
+        }
+      ],
+      "green": false,
+      "missing": [],
+      "pending": [],
+      "red": [
+        "DarkFactory Autoreview"
+      ]
+    }
+  },
+  "after": {
+    "repository": "marius-patrik/Andromeda",
+    "classification": "diverged",
+    "main_sha": "cd511544eae8798c6d2a86ebb4c49dc7aac1e57d",
+    "dev_sha": "4739cf8f38191f0879952db04ef4c9a9e9d7ead9",
+    "main_tree_sha": "d8b34750cebff637341e3e345a32551e50337d86",
+    "dev_tree_sha": "a98b39d1f238288952c521b04cc5917bc5911715",
+    "convergence_invariant": "reviewed-ancestry-and-exact-tree-identity",
+    "policy": {
+      "schemaVersion": 1,
+      "enabled": true,
+      "mode": "tagged",
+      "releaseBranchPrefix": "release/",
+      "reconcileBranchPrefix": "reconcile/",
+      "requiredChecks": [
+        "Validate",
+        "DarkFactory Autoreview"
+      ],
+      "mainChecks": [
+        "Validate"
+      ],
+      "tagPattern": "^refs/tags/v\\d+\\.\\d+\\.\\d+$",
+      "artifactWorkflows": [],
+      "publicationChecks": [],
+      "producer": {
+        "workflow": "df-release-producer.yml",
+        "ref": "main",
+        "maxAttempts": 3,
+        "inputs": {}
+      }
+    },
+    "protections": {
+      "main": {
+        "configured": true,
+        "safe": true,
+        "requiredChecks": [
+          {
+            "context": "Validate",
+            "appId": 15368
+          },
+          {
+            "context": "DarkFactory Autoreview",
+            "appId": 15368
+          }
+        ]
+      },
+      "dev": {
+        "configured": true,
+        "safe": true,
+        "requiredChecks": [
+          {
+            "context": "Validate",
+            "appId": 15368
+          },
+          {
+            "context": "DarkFactory Autoreview",
+            "appId": 15368
+          }
+        ]
+      }
+    },
+    "main_checks": {
+      "checks": [
+        {
+          "name": "Validate",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 88061224645,
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29636760542/job/88061224645",
+          "state": "green"
+        },
+        {
+          "name": "DarkFactory Autoreview",
+          "expectedAppId": 15368,
+          "actualAppId": 15368,
+          "id": 88073390569,
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29641786506/job/88073390569",
+          "state": "red"
+        }
+      ],
+      "green": false,
+      "missing": [],
+      "pending": [],
+      "red": [
+        "DarkFactory Autoreview"
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-17T10:45:17.155Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#282",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "malformed_verdict",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "7c74aa97a98655a41cb6c2decfd8e58275274337:d40049be1fa73247232699344a64f4d1ff1d8f20",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": null,
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": null,
+          "model": null,
+          "agentPreset": null,
+          "providerVersion": null
+        },
+        "attempts": [],
+        "usage": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "verdict": null,
+        "findings": [],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": "malformed_verdict",
+        "outcome": "blocked"
+      }
+    ]
+  }
+}

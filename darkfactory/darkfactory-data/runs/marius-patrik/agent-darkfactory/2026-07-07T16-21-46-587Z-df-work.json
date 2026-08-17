@@ -1,0 +1,49 @@
+{
+  "kind": "df-work",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-07T16:21:46.587Z",
+  "trigger": "workflow_dispatch",
+  "issue": "marius-patrik/agent-darkfactory#47",
+  "branch": "df/47-verify-worker-claims-against-github-reality-before-advancing-state",
+  "status": "blocked",
+  "actions": [
+    {
+      "action": "preflight-merge-policy",
+      "result": {
+        "blocked": false,
+        "useAutomerge": false,
+        "autoMergeSupported": true,
+        "branchProtection": {
+          "configured": false,
+          "status": 403,
+          "reason": "GET /repos/marius-patrik/agent-darkfactory/branches/dev/protection failed with 403: {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/branches/branch-protection#get-branch-protection\",\"status\":\"403\"}"
+        },
+        "summary": "no branch protection on `dev`; green-PR sweep will squash-merge directly after checks"
+      }
+    }
+  ],
+  "provider_attempts": [
+    {
+      "provider": "kimi",
+      "model": "kimi-code/kimi-for-coding",
+      "startedAt": "2026-07-07T15:59:36.656Z",
+      "endedAt": "2026-07-07T16:21:42.585Z",
+      "result": "success"
+    }
+  ],
+  "token_usage": {
+    "total_calls": 1,
+    "provider": "kimi",
+    "model": "kimi-code/kimi-for-coding",
+    "model_reasoning_effort": "medium",
+    "input_tokens": null,
+    "output_tokens": null,
+    "note": "provider token counters are not exposed to this script yet",
+    "input_brief_characters": 15655
+  },
+  "error": "ReferenceError: workerResult is not defined\n    at createPullRequest (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-work.mjs:539:33)\n    at main (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-work.mjs:223:25)",
+  "cleanup": {
+    "ok": false,
+    "warning": "DarkFactory cleanup warning: EACCES: permission denied, unlink '/tmp/df-work-zxMrVR/repo/dist/bot.js'"
+  }
+}

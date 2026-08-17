@@ -1,0 +1,254 @@
+{
+  "kind": "df-fix",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-05T20:02:41.980Z",
+  "trigger": "schedule",
+  "control_repo": "marius-patrik/agent-darkfactory",
+  "max_rounds": 3,
+  "actions": [
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#119",
+      "url": "https://github.com/marius-patrik/agent-darkfactory/pull/119",
+      "action": "redispatch",
+      "issue": "#59",
+      "round": 2,
+      "max_rounds": 3,
+      "reason": "checks-failing",
+      "revision": "created",
+      "stale_pr_closed": true,
+      "head_branch_deleted": true,
+      "head_branch": "df/59-l0-orchestrator",
+      "head_branch_delete_reason": "deleted",
+      "dispatched_workflow": "df-work.yml"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#118",
+      "url": "https://github.com/marius-patrik/agent-darkfactory/pull/118",
+      "action": "redispatch",
+      "issue": "#79",
+      "round": 2,
+      "max_rounds": 3,
+      "reason": "checks-failing",
+      "revision": "created",
+      "stale_pr_closed": true,
+      "head_branch_deleted": true,
+      "head_branch": "df/79-feat-df-work-provider-failover-matrix-use-all-provider-quotas-across-all-windows",
+      "head_branch_delete_reason": "deleted",
+      "dispatched_workflow": "df-work.yml"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#117",
+      "url": "https://github.com/marius-patrik/agent-darkfactory/pull/117",
+      "action": "redispatch",
+      "issue": "#80",
+      "round": 2,
+      "max_rounds": 3,
+      "reason": "checks-failing",
+      "revision": "created",
+      "stale_pr_closed": true,
+      "head_branch_deleted": true,
+      "head_branch": "df/80-feat-df-configurable-enforcement-rules-system",
+      "head_branch_delete_reason": "deleted",
+      "dispatched_workflow": "df-work.yml"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#115",
+      "url": "https://github.com/marius-patrik/agent-darkfactory/pull/115",
+      "action": "redispatch",
+      "issue": "#30",
+      "round": 2,
+      "max_rounds": 3,
+      "reason": "checks-failing",
+      "revision": "created",
+      "stale_pr_closed": true,
+      "head_branch_deleted": true,
+      "head_branch": "df/30-dev-main-follow-through-issue-closure-on-dev-merge-automerge-fallback-when-no-re",
+      "head_branch_delete_reason": "deleted",
+      "dispatched_workflow": "df-work.yml"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#101",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#95",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#77",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-core",
+      "pr": "marius-patrik/agents-core#14",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-harness",
+      "pr": "marius-patrik/agents-harness#1384",
+      "url": "https://github.com/marius-patrik/agents-harness/pull/1384",
+      "action": "redispatch",
+      "issue": "#1343",
+      "round": 2,
+      "max_rounds": 3,
+      "reason": "checks-failing",
+      "revision": "created",
+      "stale_pr_closed": true,
+      "head_branch_deleted": true,
+      "head_branch": "df/1343-h-3-agent-seeding-agent-provider-orthogonality-b14",
+      "head_branch_delete_reason": "deleted",
+      "dispatched_workflow": "df-work.yml"
+    },
+    {
+      "repo": "marius-patrik/agents-harness",
+      "pr": "marius-patrik/agents-harness#1383",
+      "url": "https://github.com/marius-patrik/agents-harness/pull/1383",
+      "action": "redispatch",
+      "issue": "#1350",
+      "round": 2,
+      "max_rounds": 3,
+      "reason": "checks-failing",
+      "revision": "created",
+      "stale_pr_closed": true,
+      "head_branch_deleted": true,
+      "head_branch": "df/1350-propagate-andromeda-whole-system-concepts-into-the-integrated-program-harness-as",
+      "head_branch_delete_reason": "deleted",
+      "dispatched_workflow": "df-work.yml"
+    },
+    {
+      "repo": "marius-patrik/agents-harness",
+      "pr": "marius-patrik/agents-harness#1378",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-manager",
+      "pr": "marius-patrik/agents-manager#26",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#22",
+      "url": "https://github.com/marius-patrik/agents-plugin/pull/22",
+      "action": "redispatch",
+      "issue": "#2",
+      "round": 2,
+      "max_rounds": 3,
+      "reason": "checks-failing",
+      "revision": "created",
+      "stale_pr_closed": true,
+      "head_branch_deleted": true,
+      "head_branch": "df/2-add-package-local-plugin-validation-and-make-it-green",
+      "head_branch_delete_reason": "deleted",
+      "dispatched_workflow": "df-work.yml"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#18",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/darkfactory-templates",
+      "pr": "marius-patrik/darkfactory-templates#23",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/darkfactory-templates",
+      "pr": "marius-patrik/darkfactory-templates#22",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/data-agentos",
+      "action": "error",
+      "error": "Error: [{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",0,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":30,\"column\":13}],\"message\":\"Resource not accessible by integration\"},{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",1,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":30,\"column\":13}],\"message\":\"Resource not accessible by integration\"},{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",2,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":30,\"column\":13}],\"message\":\"Resource not accessible by integration\"}]\n    at Object.graphql (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-lib.mjs:353:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async listOpenPullRequests (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-fix.mjs:297:18)\n    at async main (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-fix.mjs:205:21)"
+    },
+    {
+      "repo": "marius-patrik/dream",
+      "pr": "marius-patrik/dream#14",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/inference-engine",
+      "pr": "marius-patrik/inference-engine#20",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#28",
+      "url": "https://github.com/marius-patrik/llm-gateway/pull/28",
+      "action": "redispatch",
+      "issue": "#10",
+      "round": 2,
+      "max_rounds": 3,
+      "reason": "checks-failing",
+      "revision": "created",
+      "stale_pr_closed": true,
+      "head_branch_deleted": true,
+      "head_branch": "df/10-integrate-inferctl-driven-local-engine-discovery",
+      "head_branch_delete_reason": "deleted",
+      "dispatched_workflow": "df-work.yml"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#27",
+      "url": "https://github.com/marius-patrik/llm-gateway/pull/27",
+      "action": "redispatch",
+      "issue": "#13",
+      "round": 2,
+      "max_rounds": 3,
+      "reason": "checks-failing",
+      "revision": "created",
+      "stale_pr_closed": true,
+      "head_branch_deleted": true,
+      "head_branch": "df/13-implement-remaining-vs2-gateway-runtime-hardening",
+      "head_branch_delete_reason": "deleted",
+      "dispatched_workflow": "df-work.yml"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#20",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#23",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/workspace-agents",
+      "pr": "marius-patrik/workspace-agents#2",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/workspace-darkfactory",
+      "action": "error",
+      "error": "Error: [{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",0,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":30,\"column\":13}],\"message\":\"Resource not accessible by integration\"},{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",1,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":30,\"column\":13}],\"message\":\"Resource not accessible by integration\"}]\n    at Object.graphql (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-lib.mjs:353:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async listOpenPullRequests (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-fix.mjs:297:18)\n    at async main (file:///home/runner/work/agent-darkfactory/agent-darkfactory/darkfactory-control/.github/scripts/df-fix.mjs:205:21)"
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Fix-forward is deterministic and uses no model calls"
+  }
+}

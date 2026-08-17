@@ -1,0 +1,172 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-19T00:37:03.096Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#427",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "3835955691a9beec49474ca985f27b7cafe0911d:7dd4c0d31a68c0262706239c476ed268752c4bc9",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "3835955691a9beec49474ca985f27b7cafe0911d",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:cce751c299a80f9529eba7210a6fe4c90c43c57713cce31a093ed287f0b3afbf",
+      "inputChecksum": "sha256:aec1db44e7ddb65f31743e2ec267904569978c94b22ce1cd2768f0155ef1ba2d",
+      "profile": {
+        "id": "profile/pr-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-pr",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/pr-reviewer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/validation-autoreview",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/bun-node",
+        "output": "output/pr-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/bun-node",
+          "version": "0.2.0",
+          "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+        },
+        {
+          "id": "output/pr-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 66908,
+      "outputTokens": 2566,
+      "totalTokens": 69474
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "The complete two-file diff was reviewed against issue #426 and trusted policy. Workflow provenance binding is substantially improved, but check-suite evidence is collected without being enforced, leaving the required suite-state consistency acceptance criterion uncovered.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-9db9d6463b1c07742a1c",
+          "title": "Trusted gates are not bound to consistent check-suite state",
+          "details": "scanCompleteCheckRuns records each suite's app, status, conclusion, and latest_check_runs_count, but listCompleteSuiteCheckRunsOnce only verifies the suite ID on each check run, and isTrustedPolicyWorkflowRun receives no suite evidence. Consequently a selected Actions check can be marked trusted and green even when its containing suite has a different app, is incomplete or failed, or declares a latest-check count inconsistent with the enumerated runs. This does not satisfy issue #426's requirement to bind the gates to check-suite identity and consistent run state. Preserve the suite metadata alongside each run and fail closed unless the suite app matches the check-run app, the latest count matches the complete filtered inventory, and relevant suite/run state is consistent; add focused mismatch tests.",
+          "path": ".github/scripts/df-release.mjs",
+          "line": 270
+        }
+      ],
+      "nonBlockingNotes": [
+        "The new tests cover pagination, duplicate and malformed inventory evidence, two-pass mutation detection, wrong workflow provenance, and ambiguous workflow-run bindings.",
+        "Independent exact-head command execution remains owned by the separate Validate gate and was not treated as missing review evidence."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-9db9d6463b1c07742a1c",
+        "title": "Trusted gates are not bound to consistent check-suite state",
+        "details": "scanCompleteCheckRuns records each suite's app, status, conclusion, and latest_check_runs_count, but listCompleteSuiteCheckRunsOnce only verifies the suite ID on each check run, and isTrustedPolicyWorkflowRun receives no suite evidence. Consequently a selected Actions check can be marked trusted and green even when its containing suite has a different app, is incomplete or failed, or declares a latest-check count inconsistent with the enumerated runs. This does not satisfy issue #426's requirement to bind the gates to check-suite identity and consistent run state. Preserve the suite metadata alongside each run and fail closed unless the suite app matches the check-run app, the latest count matches the complete filtered inventory, and relevant suite/run state is consistent; add focused mismatch tests.",
+        "path": ".github/scripts/df-release.mjs",
+        "line": 270
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

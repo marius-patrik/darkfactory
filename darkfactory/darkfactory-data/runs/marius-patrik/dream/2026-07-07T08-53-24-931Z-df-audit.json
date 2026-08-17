@@ -1,0 +1,66 @@
+{
+  "kind": "df-audit",
+  "target_repo": "marius-patrik/dream",
+  "created_at": "2026-07-07T08:53:24.931Z",
+  "trigger": "schedule",
+  "default_branch": "main",
+  "findings": [
+    {
+      "category": "git state",
+      "message": "Default branch `main` does not have readable branch protection."
+    },
+    {
+      "category": "enforcement conformance",
+      "message": "Required managed file `PRD.md` is missing on `main`."
+    },
+    {
+      "category": "enforcement conformance",
+      "message": "Required managed file `.github/workflows/df-work.yml` is missing on `main`."
+    },
+    {
+      "category": "enforcement conformance",
+      "message": "Required managed file `.github/workflows/df-plan.yml` is missing on `main`."
+    },
+    {
+      "category": "PRD drift",
+      "message": "Root `PRD.md` is missing on `main`."
+    }
+  ],
+  "actions": [
+    {
+      "action": "audit-findings-issue",
+      "issue": {
+        "number": 17,
+        "url": "https://github.com/marius-patrik/dream/issues/17"
+      },
+      "findings": [
+        {
+          "category": "git state",
+          "message": "Default branch `main` does not have readable branch protection."
+        },
+        {
+          "category": "enforcement conformance",
+          "message": "Required managed file `PRD.md` is missing on `main`."
+        },
+        {
+          "category": "enforcement conformance",
+          "message": "Required managed file `.github/workflows/df-work.yml` is missing on `main`."
+        },
+        {
+          "category": "enforcement conformance",
+          "message": "Required managed file `.github/workflows/df-plan.yml` is missing on `main`."
+        },
+        {
+          "category": "PRD drift",
+          "message": "Root `PRD.md` is missing on `main`."
+        }
+      ]
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "L5 audit used deterministic GitHub and repository metadata checks only"
+  }
+}

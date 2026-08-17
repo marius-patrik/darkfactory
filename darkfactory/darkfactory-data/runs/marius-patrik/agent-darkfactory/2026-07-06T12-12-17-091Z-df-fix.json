@@ -1,0 +1,131 @@
+{
+  "kind": "df-fix",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-06T12:12:17.095Z",
+  "trigger": "workflow_dispatch",
+  "control_repo": "marius-patrik/agent-darkfactory",
+  "max_rounds": 3,
+  "actions": [
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#139",
+      "url": "https://github.com/marius-patrik/agent-darkfactory/pull/139",
+      "action": "redispatch",
+      "issue": "#68",
+      "round": 1,
+      "max_rounds": 3,
+      "reason": "checks-failing",
+      "revision": "created",
+      "stale_pr_closed": true,
+      "head_branch_deleted": true,
+      "head_branch": "df/68-m3-orchestrator-loop-streams",
+      "head_branch_delete_reason": "deleted",
+      "dispatched_workflow": "df-work.yml"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#77",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-core",
+      "pr": "marius-patrik/agents-core#14",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-harness",
+      "pr": "marius-patrik/agents-harness#1378",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-manager",
+      "pr": "marius-patrik/agents-manager#26",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#18",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#24",
+      "url": "https://github.com/marius-patrik/agents-plugin/pull/24",
+      "action": "escalate",
+      "reason": "max-rounds",
+      "issue": "#2",
+      "max_rounds": 3
+    },
+    {
+      "repo": "marius-patrik/darkfactory-templates",
+      "pr": "marius-patrik/darkfactory-templates#23",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/darkfactory-templates",
+      "pr": "marius-patrik/darkfactory-templates#22",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/dream",
+      "pr": "marius-patrik/dream#14",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/inference-engine",
+      "pr": "marius-patrik/inference-engine#20",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#20",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#33",
+      "url": "https://github.com/marius-patrik/llm-gateway/pull/33",
+      "action": "escalate",
+      "reason": "max-rounds",
+      "issue": "#13",
+      "max_rounds": 3
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#32",
+      "url": "https://github.com/marius-patrik/llm-gateway/pull/32",
+      "action": "escalate",
+      "reason": "max-rounds",
+      "issue": "#10",
+      "max_rounds": 3
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#23",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/workspace-agents",
+      "pr": "marius-patrik/workspace-agents#2",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Fix-forward is deterministic and uses no model calls"
+  }
+}

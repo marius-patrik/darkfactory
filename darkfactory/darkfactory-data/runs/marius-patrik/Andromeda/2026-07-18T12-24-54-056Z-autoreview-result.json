@@ -1,0 +1,902 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T12:24:54.056Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#211",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "provider_route_blocked",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "a7fd6f13c2f79183a7ed00fccd5875a19c1212468c09c203eadbe79185d3f456",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:45381f2f768c21867f30f58f65f4bc59b37dfbad089adad3d7a4d8e2ee1955e2",
+          "inputChecksum": "sha256:6197b6eab06744917f457f740bd1c3aeeaa07211c7cdad76037ef0926165c67a",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 20606,
+          "outputTokens": 1717,
+          "totalTokens": 22323
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue marius-patrik/Andromeda#211 at verified version a7fd6f13c2f79183a7ed00fccd5875a19c1212468c09c203eadbe79185d3f456 is blocked: the architecture decision, ownership boundary, persistence semantics, dependency sequencing, rollout, and objective validation contract remain incomplete.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-7052e61cf7b6c358610e",
+              "title": "Canonical backend is an unresolved owner decision",
+              "details": "The issue delegates the semantic choice between Postgres and config projection to the worker without recording an authenticated owner decision or objective selection criteria. The chosen source of truth materially determines architecture, operations, migration, and failure behavior and must be resolved before implementation.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-7f1b676fc836122b0351",
+              "title": "Implementation ownership and repository scope are unspecified",
+              "details": "The issue does not identify the owning child repository or gitlink, affected paths, branch/revision boundary, or non-goals. For the Andromeda submodule root, this leaves unclear whether the lane changes child source, umbrella pointers, configuration, or multiple repositories, so single-lane ownership and the required pointer contract cannot be verified.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-40b0a38a1c7093ec8db5",
+              "title": "Persistence and fallback semantics are not defined",
+              "details": "“Registry content,” active-role state, and switcher state lack a defined data model, atomicity and concurrency requirements, durability guarantees, source-of-truth rules, and behavior for unavailable, corrupt, stale, or partially migrated backends. “Deterministic local fallback” does not specify when fallback activates, whether writes are allowed, how divergence is prevented or reconciled, or how DSN credentials and stored data cross trust boundaries.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-de65473a05c8f96b83b8",
+              "title": "Dependencies and adjacent lane boundaries are unverifiable",
+              "details": "The dependency is described only as “gateway naming convergence” rather than an exact work item and verified completion condition; the matching open issue #210 remains unresolved in the supplied state. Ownership of active-role and switcher state also potentially intersects open issue #212, but the issue does not define the boundary or sequencing between those lanes.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-d2441edbb8562a639063",
+              "title": "Migration and rollout contract is incomplete",
+              "details": "Requiring operator documentation does not define migration mechanics. The issue lacks backup and integrity checks, idempotency, compatibility with existing YAML state, cutover and rollback behavior, handling of mixed-version deployments, and evidence proving that no registry or active-role state is lost.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-298450d444f40f4d8bfb",
+              "title": "Acceptance and validation are not objective enough",
+              "details": "Restart survival alone does not cover fallback, concurrency, failure recovery, migration, or active-role/switcher correctness. The issue does not identify authoritative tests, required CI versus optional live coverage, fixtures and failure cases, or the revision and evidence needed to prove delivery. Live validation being alternatively gated by an environment variable or container fixture also leaves the required gate undecided.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner question: Which backend is the canonical source of truth—Postgres or config projection—and what exact local-fallback, reconciliation, and operational availability contract is authorized?",
+            "Owner question: Which child repository and lane own registry persistence, and where is the boundary with issues #210 and #212?"
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-7052e61cf7b6c358610e",
+            "title": "Canonical backend is an unresolved owner decision",
+            "details": "The issue delegates the semantic choice between Postgres and config projection to the worker without recording an authenticated owner decision or objective selection criteria. The chosen source of truth materially determines architecture, operations, migration, and failure behavior and must be resolved before implementation.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-7f1b676fc836122b0351",
+            "title": "Implementation ownership and repository scope are unspecified",
+            "details": "The issue does not identify the owning child repository or gitlink, affected paths, branch/revision boundary, or non-goals. For the Andromeda submodule root, this leaves unclear whether the lane changes child source, umbrella pointers, configuration, or multiple repositories, so single-lane ownership and the required pointer contract cannot be verified.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-40b0a38a1c7093ec8db5",
+            "title": "Persistence and fallback semantics are not defined",
+            "details": "“Registry content,” active-role state, and switcher state lack a defined data model, atomicity and concurrency requirements, durability guarantees, source-of-truth rules, and behavior for unavailable, corrupt, stale, or partially migrated backends. “Deterministic local fallback” does not specify when fallback activates, whether writes are allowed, how divergence is prevented or reconciled, or how DSN credentials and stored data cross trust boundaries.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-de65473a05c8f96b83b8",
+            "title": "Dependencies and adjacent lane boundaries are unverifiable",
+            "details": "The dependency is described only as “gateway naming convergence” rather than an exact work item and verified completion condition; the matching open issue #210 remains unresolved in the supplied state. Ownership of active-role and switcher state also potentially intersects open issue #212, but the issue does not define the boundary or sequencing between those lanes.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d2441edbb8562a639063",
+            "title": "Migration and rollout contract is incomplete",
+            "details": "Requiring operator documentation does not define migration mechanics. The issue lacks backup and integrity checks, idempotency, compatibility with existing YAML state, cutover and rollback behavior, handling of mixed-version deployments, and evidence proving that no registry or active-role state is lost.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-298450d444f40f4d8bfb",
+            "title": "Acceptance and validation are not objective enough",
+            "details": "Restart survival alone does not cover fallback, concurrency, failure recovery, migration, or active-role/switcher correctness. The issue does not identify authoritative tests, required CI versus optional live coverage, fixtures and failure cases, or the revision and evidence needed to prove delivery. Live validation being alternatively gated by an environment variable or container fixture also leaves the required gate undecided.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 2,
+        "phase": "medium_fix",
+        "targetVersion": "a7fd6f13c2f79183a7ed00fccd5875a19c1212468c09c203eadbe79185d3f456",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:50f5302dbdd95a077dcf487f1922df9cc08b496b88596403dc4de40fd811db11",
+          "inputChecksum": "sha256:36eac76e031f133340948453c9d97c19c523f99dee68416bc7e54007bcebe060",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 69096,
+          "outputTokens": 2629,
+          "totalTokens": 71725
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-7052e61cf7b6c358610e",
+            "title": "Canonical backend is an unresolved owner decision",
+            "details": "The issue delegates the semantic choice between Postgres and config projection to the worker without recording an authenticated owner decision or objective selection criteria. The chosen source of truth materially determines architecture, operations, migration, and failure behavior and must be resolved before implementation.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-7f1b676fc836122b0351",
+            "title": "Implementation ownership and repository scope are unspecified",
+            "details": "The issue does not identify the owning child repository or gitlink, affected paths, branch/revision boundary, or non-goals. For the Andromeda submodule root, this leaves unclear whether the lane changes child source, umbrella pointers, configuration, or multiple repositories, so single-lane ownership and the required pointer contract cannot be verified.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-40b0a38a1c7093ec8db5",
+            "title": "Persistence and fallback semantics are not defined",
+            "details": "“Registry content,” active-role state, and switcher state lack a defined data model, atomicity and concurrency requirements, durability guarantees, source-of-truth rules, and behavior for unavailable, corrupt, stale, or partially migrated backends. “Deterministic local fallback” does not specify when fallback activates, whether writes are allowed, how divergence is prevented or reconciled, or how DSN credentials and stored data cross trust boundaries.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-de65473a05c8f96b83b8",
+            "title": "Dependencies and adjacent lane boundaries are unverifiable",
+            "details": "The dependency is described only as “gateway naming convergence” rather than an exact work item and verified completion condition; the matching open issue #210 remains unresolved in the supplied state. Ownership of active-role and switcher state also potentially intersects open issue #212, but the issue does not define the boundary or sequencing between those lanes.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d2441edbb8562a639063",
+            "title": "Migration and rollout contract is incomplete",
+            "details": "Requiring operator documentation does not define migration mechanics. The issue lacks backup and integrity checks, idempotency, compatibility with existing YAML state, cutover and rollback behavior, handling of mixed-version deployments, and evidence proving that no registry or active-role state is lost.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-298450d444f40f4d8bfb",
+            "title": "Acceptance and validation are not objective enough",
+            "details": "Restart survival alone does not cover fallback, concurrency, failure recovery, migration, or active-role/switcher correctness. The issue does not identify authoritative tests, required CI versus optional live coverage, fixtures and failure cases, or the revision and evidence needed to prove delivery. Live validation being alternatively gated by an environment variable or container fixture also leaves the required gate undecided.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-7052e61cf7b6c358610e",
+          "df-7f1b676fc836122b0351",
+          "df-40b0a38a1c7093ec8db5",
+          "df-de65473a05c8f96b83b8",
+          "df-d2441edbb8562a639063",
+          "df-298450d444f40f4d8bfb"
+        ],
+        "changeRef": "issue-comment:5011233861:db7547c8b51839093b00bcdf7eadda7cb905f76eb2d2d6b74383e34d44a9c8c7",
+        "afterVersion": "db7547c8b51839093b00bcdf7eadda7cb905f76eb2d2d6b74383e34d44a9c8c7",
+        "blockCode": null,
+        "outcome": "fixed"
+      },
+      {
+        "sequence": 3,
+        "phase": "medium_review",
+        "targetVersion": "db7547c8b51839093b00bcdf7eadda7cb905f76eb2d2d6b74383e34d44a9c8c7",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:827584c483b5c12d3c8d99247207dbd4b49e138de613d7e611e37921bc5cd151",
+          "inputChecksum": "sha256:a9f1c0720d3eee1c38d717cfd00ced938207771116253a8bb6c118c756f13736",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 27348,
+          "outputTokens": 1851,
+          "totalTokens": 29199
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #211 at verified version db7547c8b51839093b00bcdf7eadda7cb905f76eb2d2d6b74383e34d44a9c8c7 is intentionally blocked and remains an incomplete execution contract. The appended review section identifies required choices but supplies no authenticated owner decisions, executable persistence contract, rollout policy, or objective validation evidence. Contributor comments and autofix proposals provide no authorization.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-1be9988f2ec309046159",
+              "title": "Canonical backend and fallback authority remain undecided",
+              "details": "The contract does not select Postgres or config projection as the canonical source of truth, state whether the other backend remains supported, or define exact fallback activation and write behavior. Without an authenticated owner decision, implementation could create split-brain, silent divergence, or unauthorized automatic promotion.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-0dbb2ed3840f12bab639",
+              "title": "Single repository ownership and revision boundary are unspecified",
+              "details": "The issue does not identify the owning child repository/gitlink, configured repository URL, admitted base revision, affected paths, feature-branch boundary, or whether the umbrella gitlink update belongs to this lane. The submodule pointer contract therefore cannot be verified or safely assigned to one implementation lane.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-efb23bea63c8aeaffb90",
+              "title": "Scope and dependency boundaries are unresolved",
+              "details": "Non-goals are not approved, and the issue does not objectively define completion evidence for dependency #210 or divide active-role and switcher-state ownership and sequencing with #212. This leaves naming, control-plane behavior, deployment topology, credentials, and overlapping persisted state exposed to conflicting changes.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-756e2b75049d43be20c7",
+              "title": "Persistence, failure, and trust semantics are not executable",
+              "details": "The issue requests later definition but does not currently specify schema and identities, atomicity, concurrency control, ordering, durability, restart guarantees, disagreement handling, corruption and partial-migration behavior, or credential/data/log trust boundaries. Acceptance cannot be implemented or objectively adjudicated from the present contract.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-d5c2915aebdc422e6c0a",
+              "title": "Migration and rollout policy require owner authorization",
+              "details": "No approved policy covers existing YAML installations, mixed-version operation, cutover, canonical-backend unavailability, rollback, or prevention of data loss. The migration is not yet defined as an idempotent procedure with preflight, backup, integrity verification, compatibility handling, cutover verification, and recoverable rollback.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-ee8d7db771fe0ee22fa5",
+              "title": "Required validation and delivery evidence are unspecified",
+              "details": "The contract does not select GATEWAY_PG_DSN, a container fixture, or both as the mandatory live gate; name authoritative child-repository and root validation commands; assign fixture ownership; enumerate required failure cases; or define exact-revision and default-branch or release evidence. The current acceptance text is consequently unverifiable.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-95687a0bee79c4d8fec4",
+              "title": "Workflow label does not reflect the blocked owner-decision state",
+              "details": "The verified target data carries only P1 while the contract is blocked on authenticated owner decisions. Under the trusted label policy it must remain unreviewed and be routed with df:ask-owner; df:reviewed would be incorrect until a complete clean iterative review and independent final confirmation succeed.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner question: Which backend is authoritative, why, what support remains for the alternative, and what exact deterministic fallback behavior is approved?",
+            "Owner question: Which child repository, URL, base revision, paths, branch boundary, and umbrella-pointer policy own this lane?",
+            "Owner question: What are the approved non-goals and the objective completion and ownership boundaries with #210 and #212?",
+            "Owner question: Which live-validation gate is mandatory: GATEWAY_PG_DSN, a container fixture, or both?",
+            "Owner question: What rollout, mixed-version, cutover, unavailable-backend, and rollback policy is approved for existing YAML installations?"
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-1be9988f2ec309046159",
+            "title": "Canonical backend and fallback authority remain undecided",
+            "details": "The contract does not select Postgres or config projection as the canonical source of truth, state whether the other backend remains supported, or define exact fallback activation and write behavior. Without an authenticated owner decision, implementation could create split-brain, silent divergence, or unauthorized automatic promotion.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-0dbb2ed3840f12bab639",
+            "title": "Single repository ownership and revision boundary are unspecified",
+            "details": "The issue does not identify the owning child repository/gitlink, configured repository URL, admitted base revision, affected paths, feature-branch boundary, or whether the umbrella gitlink update belongs to this lane. The submodule pointer contract therefore cannot be verified or safely assigned to one implementation lane.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-efb23bea63c8aeaffb90",
+            "title": "Scope and dependency boundaries are unresolved",
+            "details": "Non-goals are not approved, and the issue does not objectively define completion evidence for dependency #210 or divide active-role and switcher-state ownership and sequencing with #212. This leaves naming, control-plane behavior, deployment topology, credentials, and overlapping persisted state exposed to conflicting changes.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-756e2b75049d43be20c7",
+            "title": "Persistence, failure, and trust semantics are not executable",
+            "details": "The issue requests later definition but does not currently specify schema and identities, atomicity, concurrency control, ordering, durability, restart guarantees, disagreement handling, corruption and partial-migration behavior, or credential/data/log trust boundaries. Acceptance cannot be implemented or objectively adjudicated from the present contract.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d5c2915aebdc422e6c0a",
+            "title": "Migration and rollout policy require owner authorization",
+            "details": "No approved policy covers existing YAML installations, mixed-version operation, cutover, canonical-backend unavailability, rollback, or prevention of data loss. The migration is not yet defined as an idempotent procedure with preflight, backup, integrity verification, compatibility handling, cutover verification, and recoverable rollback.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-ee8d7db771fe0ee22fa5",
+            "title": "Required validation and delivery evidence are unspecified",
+            "details": "The contract does not select GATEWAY_PG_DSN, a container fixture, or both as the mandatory live gate; name authoritative child-repository and root validation commands; assign fixture ownership; enumerate required failure cases; or define exact-revision and default-branch or release evidence. The current acceptance text is consequently unverifiable.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-95687a0bee79c4d8fec4",
+            "title": "Workflow label does not reflect the blocked owner-decision state",
+            "details": "The verified target data carries only P1 while the contract is blocked on authenticated owner decisions. Under the trusted label policy it must remain unreviewed and be routed with df:ask-owner; df:reviewed would be incorrect until a complete clean iterative review and independent final confirmation succeed.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 4,
+        "phase": "medium_fix",
+        "targetVersion": "db7547c8b51839093b00bcdf7eadda7cb905f76eb2d2d6b74383e34d44a9c8c7",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+          },
+          "promptChecksum": "sha256:4f22dccce87dd96a6cd3cd8c9c204ba717d5829a9bee2ebfcf43ee2f3dcb2750",
+          "inputChecksum": "sha256:6e3c162b3122b5b87cbb5e8c7a26d7e908a30459dd9417a68e7b3c118d0eb1a3",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "unresolved",
+          "model": "unresolved",
+          "agentPreset": "unresolved",
+          "providerVersion": "unresolved"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "blocked",
+            "reason": "execution_pending"
+          }
+        ],
+        "usage": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-1be9988f2ec309046159",
+            "title": "Canonical backend and fallback authority remain undecided",
+            "details": "The contract does not select Postgres or config projection as the canonical source of truth, state whether the other backend remains supported, or define exact fallback activation and write behavior. Without an authenticated owner decision, implementation could create split-brain, silent divergence, or unauthorized automatic promotion.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-0dbb2ed3840f12bab639",
+            "title": "Single repository ownership and revision boundary are unspecified",
+            "details": "The issue does not identify the owning child repository/gitlink, configured repository URL, admitted base revision, affected paths, feature-branch boundary, or whether the umbrella gitlink update belongs to this lane. The submodule pointer contract therefore cannot be verified or safely assigned to one implementation lane.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-efb23bea63c8aeaffb90",
+            "title": "Scope and dependency boundaries are unresolved",
+            "details": "Non-goals are not approved, and the issue does not objectively define completion evidence for dependency #210 or divide active-role and switcher-state ownership and sequencing with #212. This leaves naming, control-plane behavior, deployment topology, credentials, and overlapping persisted state exposed to conflicting changes.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-756e2b75049d43be20c7",
+            "title": "Persistence, failure, and trust semantics are not executable",
+            "details": "The issue requests later definition but does not currently specify schema and identities, atomicity, concurrency control, ordering, durability, restart guarantees, disagreement handling, corruption and partial-migration behavior, or credential/data/log trust boundaries. Acceptance cannot be implemented or objectively adjudicated from the present contract.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d5c2915aebdc422e6c0a",
+            "title": "Migration and rollout policy require owner authorization",
+            "details": "No approved policy covers existing YAML installations, mixed-version operation, cutover, canonical-backend unavailability, rollback, or prevention of data loss. The migration is not yet defined as an idempotent procedure with preflight, backup, integrity verification, compatibility handling, cutover verification, and recoverable rollback.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-ee8d7db771fe0ee22fa5",
+            "title": "Required validation and delivery evidence are unspecified",
+            "details": "The contract does not select GATEWAY_PG_DSN, a container fixture, or both as the mandatory live gate; name authoritative child-repository and root validation commands; assign fixture ownership; enumerate required failure cases; or define exact-revision and default-branch or release evidence. The current acceptance text is consequently unverifiable.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-95687a0bee79c4d8fec4",
+            "title": "Workflow label does not reflect the blocked owner-decision state",
+            "details": "The verified target data carries only P1 while the contract is blocked on authenticated owner decisions. Under the trusted label policy it must remain unreviewed and be routed with df:ask-owner; df:reviewed would be incorrect until a complete clean iterative review and independent final confirmation succeed.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-1be9988f2ec309046159",
+          "df-0dbb2ed3840f12bab639",
+          "df-efb23bea63c8aeaffb90",
+          "df-756e2b75049d43be20c7",
+          "df-d5c2915aebdc422e6c0a",
+          "df-ee8d7db771fe0ee22fa5",
+          "df-95687a0bee79c4d8fec4"
+        ],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": "provider_route_blocked",
+        "outcome": "blocked"
+      }
+    ]
+  }
+}

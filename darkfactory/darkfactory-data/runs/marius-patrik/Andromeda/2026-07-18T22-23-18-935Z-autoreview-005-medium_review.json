@@ -1,0 +1,227 @@
+{
+  "kind": "autoreview-005-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T22:23:18.935Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#223",
+  "round": {
+    "sequence": 5,
+    "phase": "medium_review",
+    "targetVersion": "e3c74148aef1a77a120ffadc246780a0786e814316381958567efecf32dde156",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "24d89ebc93f5cb247c28a94239fc219f2f1347e1",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:9d888904a291926f9ba2d3f38e686217a6dd85cd04d0cb51cfdeb897eed9dba4",
+      "inputChecksum": "sha256:bd4618bf2ba13bee624f2004ae36b53a9a5654f40b22ef23f562bf53027eef4c",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 59102,
+      "outputTokens": 5323,
+      "totalTokens": 64425
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue #223 at verified version e3c74148aef1a77a120ffadc246780a0786e814316381958567efecf32dde156 remains blocked. The contract has an unresolved owner-level meaning of \"kill\" and incomplete crash-safe launch, accounting, and watchdog timing semantics.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-31847d258966244ecf7b",
+          "title": "The required meaning of killing a stalled lane is contradictory",
+          "details": "In marius-patrik/Andromeda issue #223, the preserved owner goal and epic #218 acceptance require the watchdog to kill stalled work. The current Lifecycle authority and Watchdog sections instead stop only the logical #223 delegation, explicitly synthesize no #221 terminal event, and permit the underlying provider process to remain alive under #255 ownership. Consequently, the detailed acceptance can pass without proving the owner-authored kill outcome. The contract must define whether kill means irrevocable logical revocation or physical runtime cancellation. If physical cancellation is required, #255 or another accepted cancellation interface must become a dependency; if logical revocation is sufficient, that semantic narrowing requires authenticated owner confirmation and objective acceptance must state it explicitly.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-0549579532bba59c3f4f",
+          "title": "Crash-safe child launch relies on an unguaranteed idempotency interface",
+          "details": "The issue promises that a crash after admission replays to one idempotent spawn attempt and that restart tests after spawn cannot duplicate work, while explicitly declining to require attempt-level execution provenance. Referenced issues #221 and #222 guarantee scheduling, event handling, and recorded spawn semantics, but do not guarantee an idempotency key, atomic event-to-launch handoff, or reconciliation of a process started immediately before a crash. The contract must either require such a prerequisite interface or define a fail-closed ambiguous-launch outcome that never relaunches until canonical evidence resolves the attempt. Acceptance must cover the crash window between external launch and durable launch evidence.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-c7a92336ccec252e21a3",
+          "title": "Subsequent model-turn debits lack a durable pre-launch transition",
+          "details": "The Resource and accounting contract requires every launcher invocation, including an in-place retry, to increment modelTurnsUsed before launch. Only delegation_admitted is defined as the durable append-before-spawn debit record, and that event occurs once per admitted child. No event, compare-and-set rule, or scheduler-lease transition is defined for later turns and retries. This leaves crash replay and concurrent retry paths unable to prove that each invocation was charged exactly once before execution. Specify the durable per-invocation debit/admission transition, its idempotency identity, its serialization rule, and recovery behavior, then cover crashes before and after that transition.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-d2e6af236d7e3ffd68a5",
+          "title": "Nested accounting does not define enforcement for intermediate ancestors",
+          "details": "Nested delegation may have arbitrary depth, but the contract debits only the immediate parent and root operation. For a root → child → grandchild → great-grandchild tree, the great-grandchild can therefore bypass the cumulative descendant or active-child limit of the intermediate child unless those limits are intended to cover direct children only. The names maxDescendants and descendantsAdmitted imply subtree limits, while acceptance checks only parent/root accounting. Define whether each limit is direct-child or subtree-wide; if subtree-wide, admission must atomically check and debit every ancestor, with acceptance covering depth greater than two.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-130f33e7da30e313fae0",
+          "title": "Watchdog expiry initialization and progress advancement are undefined",
+          "details": "The time contract defines clock comparison and the watchdog defines qualifying progress, but it never specifies how the initial recorded expiry is derived or how an advancing checkpoint updates it. The relationship among admission time, launchGraceMs, stallTimeoutMs, the last qualifying event, parent-authorized extensions, and the overall deadline is therefore ambiguous. Deterministic implementations could disagree on whether progress resets the stall window or whether launch grace overlaps it. Define the exact durable expiry formula and transition for admission, spawn, each qualifying progress event, and extension—bounded by the overall deadline—and add acceptance for progress immediately before expiry and crash/replay around an expiry update.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Owner question: For #223, does \"kill what stalls\" authorize and require only irreversible logical delegation revocation, or must acceptance also prove cancellation or termination of the underlying runtime/provider work?"
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-31847d258966244ecf7b",
+        "title": "The required meaning of killing a stalled lane is contradictory",
+        "details": "In marius-patrik/Andromeda issue #223, the preserved owner goal and epic #218 acceptance require the watchdog to kill stalled work. The current Lifecycle authority and Watchdog sections instead stop only the logical #223 delegation, explicitly synthesize no #221 terminal event, and permit the underlying provider process to remain alive under #255 ownership. Consequently, the detailed acceptance can pass without proving the owner-authored kill outcome. The contract must define whether kill means irrevocable logical revocation or physical runtime cancellation. If physical cancellation is required, #255 or another accepted cancellation interface must become a dependency; if logical revocation is sufficient, that semantic narrowing requires authenticated owner confirmation and objective acceptance must state it explicitly.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-0549579532bba59c3f4f",
+        "title": "Crash-safe child launch relies on an unguaranteed idempotency interface",
+        "details": "The issue promises that a crash after admission replays to one idempotent spawn attempt and that restart tests after spawn cannot duplicate work, while explicitly declining to require attempt-level execution provenance. Referenced issues #221 and #222 guarantee scheduling, event handling, and recorded spawn semantics, but do not guarantee an idempotency key, atomic event-to-launch handoff, or reconciliation of a process started immediately before a crash. The contract must either require such a prerequisite interface or define a fail-closed ambiguous-launch outcome that never relaunches until canonical evidence resolves the attempt. Acceptance must cover the crash window between external launch and durable launch evidence.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-c7a92336ccec252e21a3",
+        "title": "Subsequent model-turn debits lack a durable pre-launch transition",
+        "details": "The Resource and accounting contract requires every launcher invocation, including an in-place retry, to increment modelTurnsUsed before launch. Only delegation_admitted is defined as the durable append-before-spawn debit record, and that event occurs once per admitted child. No event, compare-and-set rule, or scheduler-lease transition is defined for later turns and retries. This leaves crash replay and concurrent retry paths unable to prove that each invocation was charged exactly once before execution. Specify the durable per-invocation debit/admission transition, its idempotency identity, its serialization rule, and recovery behavior, then cover crashes before and after that transition.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-d2e6af236d7e3ffd68a5",
+        "title": "Nested accounting does not define enforcement for intermediate ancestors",
+        "details": "Nested delegation may have arbitrary depth, but the contract debits only the immediate parent and root operation. For a root → child → grandchild → great-grandchild tree, the great-grandchild can therefore bypass the cumulative descendant or active-child limit of the intermediate child unless those limits are intended to cover direct children only. The names maxDescendants and descendantsAdmitted imply subtree limits, while acceptance checks only parent/root accounting. Define whether each limit is direct-child or subtree-wide; if subtree-wide, admission must atomically check and debit every ancestor, with acceptance covering depth greater than two.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-130f33e7da30e313fae0",
+        "title": "Watchdog expiry initialization and progress advancement are undefined",
+        "details": "The time contract defines clock comparison and the watchdog defines qualifying progress, but it never specifies how the initial recorded expiry is derived or how an advancing checkpoint updates it. The relationship among admission time, launchGraceMs, stallTimeoutMs, the last qualifying event, parent-authorized extensions, and the overall deadline is therefore ambiguous. Deterministic implementations could disagree on whether progress resets the stall window or whether launch grace overlaps it. Define the exact durable expiry formula and transition for admission, spawn, each qualifying progress event, and extension—bounded by the overall deadline—and add acceptance for progress immediately before expiry and crash/replay around an expiry update.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

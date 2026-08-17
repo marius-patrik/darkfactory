@@ -1,0 +1,339 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-18T19:14:48.252Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#368",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "provider_route_blocked",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "6cf08fc896b39249be8295be66809f1ce9b48587:a46698d9e34aa997dbc6a280f13b0c6268321818",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:69dd3c84b55b7efb8215eb06a6ae839d105461229fd9ac919650d92014281c8d",
+          "inputChecksum": "sha256:06430b31b09c9c035581e51c281bd747556f552a26f27ff7ba9aa0dae928d32b",
+          "profile": {
+            "id": "profile/pr-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-pr",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/pr-reviewer",
+            "skills": [
+              "skill/acceptance-driven-delivery",
+              "skill/untrusted-input-handling",
+              "skill/validation-autoreview",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/pr-review-fix"
+            ],
+            "repositoryOverlay": "overlay/bun-node",
+            "output": "output/pr-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/pr-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+            },
+            {
+              "id": "skill/acceptance-driven-delivery",
+              "version": "0.2.0",
+              "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/pr-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+            },
+            {
+              "id": "overlay/bun-node",
+              "version": "0.2.0",
+              "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+            },
+            {
+              "id": "output/pr-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 51614,
+          "outputTokens": 2682,
+          "totalTokens": 54296
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "The reconciliation-evidence implementation covers the linked issue, but the current head includes one unrelated API-surface change.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-dc16841b0aa543260c93",
+              "title": "Remove the unrelated resultComment export",
+              "details": "At head a46698d9e34aa997dbc6a280f13b0c6268321818, resultComment is changed from module-private to exported even though the reconciliation-evidence runtime and added tests never import it. This expands the workflow module's API without contributing to issue #369 and violates the pull request's requirement to avoid unrelated backported state. Keep the function private or provide acceptance-backed usage within this pull request.",
+              "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+              "line": 1265
+            }
+          ],
+          "nonBlockingNotes": []
+        },
+        "findings": [
+          {
+            "id": "df-dc16841b0aa543260c93",
+            "title": "Remove the unrelated resultComment export",
+            "details": "At head a46698d9e34aa997dbc6a280f13b0c6268321818, resultComment is changed from module-private to exported even though the reconciliation-evidence runtime and added tests never import it. This expands the workflow module's API without contributing to issue #369 and violates the pull request's requirement to avoid unrelated backported state. Keep the function private or provide acceptance-backed usage within this pull request.",
+            "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+            "line": 1265
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 2,
+        "phase": "medium_fix",
+        "targetVersion": "6cf08fc896b39249be8295be66809f1ce9b48587:a46698d9e34aa997dbc6a280f13b0c6268321818",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:64284d9fa4fa2cb21fb5f016cb1a163ecd4011da6a62aecf5de03562883fe60d",
+          "inputChecksum": "sha256:e13132e3e2503838c4fa77d45107c7c4c220fc3e83d734e50a1c8d8c0d28ef26",
+          "profile": {
+            "id": "profile/pr-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-pr",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/pr-fixer",
+            "skills": [
+              "skill/acceptance-driven-delivery",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/branch-release-policy",
+              "skill/no-bypass",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/pr-review-fix"
+            ],
+            "repositoryOverlay": "overlay/bun-node",
+            "output": "output/pr-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/pr-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:85f333fddc6155527e1c7c3a6b696d8310cb393af7b429ca81ee6faa09bcf120"
+            },
+            {
+              "id": "skill/acceptance-driven-delivery",
+              "version": "0.2.0",
+              "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/branch-release-policy",
+              "version": "0.2.0",
+              "checksum": "sha256:b70e9fd57a74ec2f556906206dd6aefd0fd842372a47d3bc1455e933a7a017b7"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/pr-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+            },
+            {
+              "id": "overlay/bun-node",
+              "version": "0.2.0",
+              "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+            },
+            {
+              "id": "output/pr-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:af6162ebe3b4ecd50c0fd57c7d05e0862f8395efa535c5413aa56abcc38055a2"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "blocked",
+            "reason": "provider_failed"
+          }
+        ],
+        "usage": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-dc16841b0aa543260c93",
+            "title": "Remove the unrelated resultComment export",
+            "details": "At head a46698d9e34aa997dbc6a280f13b0c6268321818, resultComment is changed from module-private to exported even though the reconciliation-evidence runtime and added tests never import it. This expands the workflow module's API without contributing to issue #369 and violates the pull request's requirement to avoid unrelated backported state. Keep the function private or provide acceptance-backed usage within this pull request.",
+            "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+            "line": 1265
+          }
+        ],
+        "findingIds": [
+          "df-dc16841b0aa543260c93"
+        ],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": "provider_route_blocked",
+        "outcome": "blocked"
+      }
+    ]
+  }
+}

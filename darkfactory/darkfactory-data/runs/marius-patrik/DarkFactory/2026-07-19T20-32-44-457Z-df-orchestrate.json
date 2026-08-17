@@ -1,0 +1,1446 @@
+{
+  "kind": "df-orchestrate",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-19T20:32:44.457Z",
+  "trigger": "schedule",
+  "control_repo": "marius-patrik/DarkFactory",
+  "wave_order": [
+    "hygiene",
+    "enforcement",
+    "features"
+  ],
+  "concurrency": {
+    "global": 6,
+    "perRepository": 2,
+    "perStream": 3
+  },
+  "repositories": [
+    {
+      "repo": "marius-patrik/Andromeda",
+      "gate_wave": "features",
+      "repository_gate_wave": "features",
+      "open_work": 9,
+      "ready": 0,
+      "running": 0,
+      "done": 0,
+      "blocked": 2,
+      "ask_owner": 3,
+      "dispatchable": 0
+    },
+    {
+      "repo": "marius-patrik/Andromeda-data",
+      "gate_wave": "features",
+      "repository_gate_wave": "features",
+      "open_work": 1,
+      "ready": 0,
+      "running": 0,
+      "done": 0,
+      "blocked": 0,
+      "ask_owner": 0,
+      "dispatchable": 0
+    }
+  ],
+  "dispatched": [],
+  "recovery": [],
+  "auto_readied": [],
+  "readiness_evaluations": [
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 219,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 243,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 246,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 275,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 286,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 307,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 309,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 210,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 211,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 213,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 214,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 215,
+      "ready": false,
+      "findings": [
+        "blocked",
+        "owner-decision",
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 217,
+      "ready": false,
+      "findings": [
+        "owner-decision",
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 221,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 222,
+      "ready": false,
+      "findings": [
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 223,
+      "ready": false,
+      "findings": [
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 224,
+      "ready": false,
+      "findings": [
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 227,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 251,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 253,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 255,
+      "ready": false,
+      "findings": [
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 256,
+      "ready": false,
+      "findings": [
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 257,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 301,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 302,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 304,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda-data",
+      "issue": 5,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 212,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 216,
+      "ready": false,
+      "findings": [
+        "blocked",
+        "owner-decision",
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 218,
+      "ready": false,
+      "findings": [
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 225,
+      "ready": false,
+      "findings": [
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 258,
+      "ready": false,
+      "findings": [
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 291,
+      "ready": false,
+      "findings": [
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 293,
+      "ready": false,
+      "findings": [
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 294,
+      "ready": false,
+      "findings": [
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 299,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "acceptance-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 311,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 312,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 313,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 314,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 315,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 316,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 317,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 318,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 319,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 320,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 321,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 322,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 323,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 324,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 325,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 326,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 327,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 328,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 329,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 330,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 331,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 332,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 333,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 334,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 335,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 336,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 337,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 338,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 339,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 340,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 341,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 342,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 343,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 344,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 345,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 346,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 347,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 348,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 349,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 350,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 351,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 352,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 353,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 354,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 355,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 356,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 357,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 358,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 359,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 360,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 361,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 362,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 363,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 364,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 365,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 366,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 367,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 368,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 369,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 370,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 371,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 372,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 373,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 374,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 375,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 376,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 377,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 378,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 379,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 380,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 381,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 382,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 383,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 384,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 385,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 386,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 387,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 388,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 389,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    },
+    {
+      "repo": "marius-patrik/Andromeda",
+      "issue": 390,
+      "ready": false,
+      "findings": [
+        "scope-missing",
+        "repository-state-unobservable"
+      ],
+      "target_version": null,
+      "ready_label_ownership": null,
+      "action": "no-op"
+    }
+  ],
+  "evaluation_only": false,
+  "escalated": [],
+  "token_usage": {
+    "model_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Orchestrator dispatch is deterministic and uses no model calls"
+  },
+  "trigger_policy": {
+    "version": "1.2.0",
+    "source_ref": "refs/heads/main"
+  }
+}

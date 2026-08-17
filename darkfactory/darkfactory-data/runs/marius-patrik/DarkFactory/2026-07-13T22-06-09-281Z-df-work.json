@@ -1,0 +1,55 @@
+{
+  "kind": "df-work",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-13T22:06:09.282Z",
+  "trigger": "workflow_dispatch",
+  "issue": "marius-patrik/DarkFactory#49",
+  "branch": "df/49-scaffold-provider-agnostic-prompt-skill-library-and-typed-contract",
+  "status": "success",
+  "actions": [
+    {
+      "action": "enforcement-rules",
+      "result": {
+        "ok": true,
+        "findings": []
+      }
+    },
+    {
+      "action": "preflight-merge-policy",
+      "result": {
+        "blocked": false,
+        "useAutomerge": false,
+        "autoMergeSupported": true,
+        "branchProtection": {
+          "configured": false,
+          "status": 403,
+          "reason": "GET /repos/marius-patrik/DarkFactory/branches/dev/protection failed with 403: {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/branches/branch-protection#get-branch-protection\",\"status\":\"403\"}"
+        },
+        "requiredChecks": [],
+        "summary": "no branch protection on `dev`; green-PR sweep will squash-merge directly after checks"
+      }
+    },
+    {
+      "action": "open-pr",
+      "url": "https://github.com/marius-patrik/DarkFactory/pull/259",
+      "automerge": {
+        "enabled": false,
+        "reason": "Direct green-PR sweep will merge after checks because branch protection is not configured."
+      },
+      "execution": "agent-os",
+      "resumed": false
+    }
+  ],
+  "agent_os": {
+    "turns": 1,
+    "note": "Provider, model, identity, memory, and session state are resolved only by the canonical agents launcher.",
+    "input_brief_characters": 15500
+  },
+  "resume": null,
+  "base_branch": "dev",
+  "pull_request": "https://github.com/marius-patrik/DarkFactory/pull/259",
+  "cleanup": {
+    "ok": true,
+    "warning": ""
+  }
+}

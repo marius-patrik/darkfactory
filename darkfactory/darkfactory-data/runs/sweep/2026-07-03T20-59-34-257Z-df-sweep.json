@@ -1,0 +1,41 @@
+{
+  "kind": "df-sweep",
+  "target_repo": "sweep",
+  "created_at": "2026-07-03T20:59:34.257Z",
+  "trigger": "local-df-m2-rerun-3",
+  "mode": "sweep",
+  "excluded_repos": [
+    "marius-patrik/agents-harness"
+  ],
+  "actions": [
+    {
+      "repo": "marius-patrik/agents-manager",
+      "pr": "marius-patrik/agents-manager#15",
+      "url": "https://github.com/marius-patrik/agents-manager/pull/15",
+      "action": "merge",
+      "sha": "9ad27dd7e628b0ed0cd2cf3f19a39a9620af8253",
+      "base": "dev",
+      "checks": "Validate:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/darkfactory-workspace",
+      "pr": "marius-patrik/darkfactory-workspace#10",
+      "url": "https://github.com/marius-patrik/darkfactory-workspace/pull/10",
+      "action": "merge",
+      "sha": "87a3d9b94ebcfd335ea849c3326bbd18dd8d3fd7",
+      "base": "main",
+      "checks": "no checks configured"
+    },
+    {
+      "repo": "marius-patrik/darkfactory-workspace",
+      "action": "error",
+      "error": "PUT /repos/marius-patrik/darkfactory-workspace/pulls/9/merge failed with 405: {\"message\":\"Pull Request has merge conflicts\",\"documentation_url\":\"https://docs.github.com/rest/pulls/pulls#merge-a-pull-request\",\"status\":\"405\"}"
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Green-PR sweep is deterministic and uses no model calls"
+  }
+}

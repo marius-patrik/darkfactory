@@ -1,0 +1,171 @@
+{
+  "kind": "autoreview-007-medium_fix",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T12:47:26.624Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#213",
+  "round": {
+    "sequence": 7,
+    "phase": "medium_fix",
+    "targetVersion": "1a948677449c889b4cd9851c721d31a17f63e988aaf8b068e313de071230fefc",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+      },
+      "promptChecksum": "sha256:87d38ea2097a94b24bb8ee0cb851c424d17d86e24705f4ecfa42b142cba04b59",
+      "inputChecksum": "sha256:29ffceb241df6deff8c3b1332bc6343b5911fe9e61c69100ba54e3d66273edf3",
+      "profile": {
+        "id": "profile/issue-fixer",
+        "version": "0.2.0",
+        "runKind": "fix-issue",
+        "purpose": "review-fix"
+      },
+      "selection": {
+        "role": "role/issue-fixer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/minimal-diff",
+          "skill/owner-escalation",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-fixer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-fixer",
+          "version": "0.2.0",
+          "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/minimal-diff",
+          "version": "0.2.0",
+          "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-fixer",
+          "version": "0.3.0",
+          "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 64114,
+      "outputTokens": 11032,
+      "totalTokens": 75146
+    },
+    "verdict": null,
+    "findings": [
+      {
+        "id": "df-ab107c7a36a41105f993",
+        "title": "Route states and normalized outcomes lack one exhaustive state machine",
+        "details": "The contract alternates between `disabled` as a route status and phrases such as \"disabled as quota_blocked\", \"disabled as credential_missing\", and \"disabled as decommissioned\", while the schema status enumeration treats those reason codes as distinct statuses. No separate enabled flag or reason field is required. Rollback likewise selects an unspecified \"disabled or blocked status\", and no normalized successful-proof outcome is defined. Specify exhaustive status and outcome enums plus the exact before/after transition for every admission, failure, rollback, and required provider terminal state.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-3c913d7b64fcb6659f8b",
+        "title": "Observation evidence does not fully define the data needed to reproduce promotion and rollback",
+        "details": "Promotion compares route-configuration and credential-state digests, while rollback depends on an immutable route tuple, checkpoint series, and counter resets. These fields and their representations are not explicitly required by the admission-record field list or authoritative schema contract. The credential-state digest derivation is also undefined, so implementations could expose a credential-derived hash, change identity on refresh, or produce incompatible values. Require schema fields for the complete immutable tuple, series/checkpoint identity, T0, counter inputs and resets, and define a canonical non-secret credential-state attestation produced by the credential owner.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [
+      "df-ab107c7a36a41105f993",
+      "df-3c913d7b64fcb6659f8b"
+    ],
+    "changeRef": "issue-comment:5011308623:483f3184ca7b184e70a865b43331c08c4651b690c3dce29be9cffe8fedc0fdbc",
+    "afterVersion": "483f3184ca7b184e70a865b43331c08c4651b690c3dce29be9cffe8fedc0fdbc",
+    "blockCode": null,
+    "outcome": "fixed"
+  }
+}

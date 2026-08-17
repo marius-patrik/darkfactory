@@ -1,0 +1,273 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T15:08:46.695Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#217",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "1a728713a3319cf421caa35c6d395d1ab5a8bd6c91a0197a76cd6ba3d3f3c1e1",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:2603818af3425c791d526e6d988f5122ad44c3f8e0f8511329ae87a22c9eb17a",
+      "inputChecksum": "sha256:e5ab7fe72d307e25cd56d3fafb5fa43d593b768d43ce636f298229aa0cd382b9",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 21916,
+      "outputTokens": 2364,
+      "totalTokens": 24280
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue 217 at verified version 1a728713a3319cf421caa35c6d395d1ab5a8bd6c91a0197a76cd6ba3d3f3c1e1 is blocked. Its execution lane, dependencies, acceptance evidence, supply-chain boundaries, failure behavior, rollout, and several owner decisions remain incomplete or contradictory.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-90c2fcd4000cffb6bb4d",
+          "title": "Implementation ownership and repository boundaries are not defined",
+          "details": "In marius-patrik/Andromeda issue 217, the observed scope combines launcher installation, TUI behavior, manager-owned operations, help generation, release automation, signing, updating, and package distribution without identifying the owning package or child repository for each surface. For a submodule-root repository, the contract must identify affected child repositories, their sequencing, release/default-branch requirements, and the resulting trusted gitlink updates. Define one primary execution lane and explicitly partition or depend on separately owned work.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-6e71544d38e2f243e4ec",
+          "title": "Provider-routing requirements contradict the stated non-goal and verified route state",
+          "details": "Issue 217 calls provider dispatch a lane-4 non-goal while requiring CLI/TUI tier resolution, provider and concrete-model selection, authentication-aware failure, and session/receipt provenance. Those requirements overlap open issues 253 and 275 and are affected by issues 291 and 293. The issue also specifies Kimi as the medium/default route, but trusted current state marks Kimi decommissioned. The corrupted and truncated owner comment does not provide verifiable contrary evidence. Define the boundary with the routing issues, declare dependencies, and obtain an owner ruling on the default behavior while Kimi is unavailable.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-9cf07976934d5ffe9a87",
+          "title": "The TUI and manager-action scope is unbounded",
+          "details": "The acceptance phrase \"every manager action\" has no versioned command or capability inventory, while \"working presets\" does not define required behavior beyond visual resemblance. The contract must enumerate the actions required for this issue, identify explicitly deferred capabilities, define parity between TUI and noninteractive commands, and provide objective preset-selection and persistence criteria.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-4890ea0a53dc8543ea5a",
+          "title": "Supported platforms and global-launcher behavior are unspecified",
+          "details": "The phrases \"supported machines,\" \"globally,\" and \"per-platform\" do not name an OS, architecture, shell, installation scope, PATH location, privilege model, or command-collision policy. The stale retired-path binding is also not identified by current and expected location. Define the support matrix and objective fresh-install, migration, uninstall, and command-resolution behavior for every supported platform.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-2274704c877a11ea7ae4",
+          "title": "Release installer and self-update trust boundaries are incomplete",
+          "details": "The issue requires signed artifacts or checksums and release-driven self-update but does not define the authoritative release origin, manifest format, signature authority and key custody, mandatory verification order, channel selection, downgrade policy, redirect handling, or behavior when metadata or verification is unavailable. Checksums alone do not authenticate a compromised release source. Define a fail-closed supply-chain contract before authorizing installer or updater implementation.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-96f2b78794fdfce116eb",
+          "title": "Updater and installer failure behavior is not specified",
+          "details": "Acceptance only covers a successful move to the next release. It does not cover interrupted downloads, unsupported artifacts, failed verification, locked executables, insufficient permissions, partial replacement, concurrent updates, offline operation, or post-install launch failure. Require staged download, atomic replacement where supported, preservation or restoration of the last working executable, deterministic exit behavior, and recoverable cleanup.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-fbbc7fae2a46aa8c0a2a",
+          "title": "Acceptance and validation evidence are not objective or complete",
+          "details": "The issue provides no authoritative command inventory for help coverage, platform test matrix, TUI test oracle, release fixture, updater transition pair, signature-negative tests, or evidence locations. \"Command-specific everywhere\" and \"working presets\" cannot produce a reproducible pass/fail verdict. Add explicit automated and manual evidence requirements covering fresh install, existing-install migration, bare launch, every scoped TUI action, every command's help, successful update, unavailable-route failure, and installer/updater negative cases.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-d0c309aba23ac8c8f715",
+          "title": "Rollout, compatibility, and rollback policy are absent",
+          "details": "Changing bare `agents` from command help or another existing behavior to an interactive TUI and introducing self-update can break scripts and managed installations. The issue does not specify noninteractive or CI behavior, opt-out or compatibility entry points, configuration migration, staged rollout, telemetry-free health evidence, rollback, or when package-manager channels become eligible. Define these policies and their release gates.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Owner question: While Kimi is decommissioned, should medium remain configured but fail closed, should another authenticated route temporarily become the default, or should TUI-first release work wait for route recovery?",
+        "Owner question: Which exact OS, architecture, shell, and installation-scope combinations constitute the supported platform matrix for this issue?",
+        "Owner question: Who controls the artifact-signing identity and key custody, and is signature verification mandatory in addition to checksums?",
+        "Owner question: What compatibility behavior should bare `agents` use in noninteractive terminals and existing automation after the TUI becomes the interactive default?",
+        "Owner question: Which package-manager channels, if any, are authorized after direct release distribution is proven, and what evidence permits that rollout?"
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-90c2fcd4000cffb6bb4d",
+        "title": "Implementation ownership and repository boundaries are not defined",
+        "details": "In marius-patrik/Andromeda issue 217, the observed scope combines launcher installation, TUI behavior, manager-owned operations, help generation, release automation, signing, updating, and package distribution without identifying the owning package or child repository for each surface. For a submodule-root repository, the contract must identify affected child repositories, their sequencing, release/default-branch requirements, and the resulting trusted gitlink updates. Define one primary execution lane and explicitly partition or depend on separately owned work.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-6e71544d38e2f243e4ec",
+        "title": "Provider-routing requirements contradict the stated non-goal and verified route state",
+        "details": "Issue 217 calls provider dispatch a lane-4 non-goal while requiring CLI/TUI tier resolution, provider and concrete-model selection, authentication-aware failure, and session/receipt provenance. Those requirements overlap open issues 253 and 275 and are affected by issues 291 and 293. The issue also specifies Kimi as the medium/default route, but trusted current state marks Kimi decommissioned. The corrupted and truncated owner comment does not provide verifiable contrary evidence. Define the boundary with the routing issues, declare dependencies, and obtain an owner ruling on the default behavior while Kimi is unavailable.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-9cf07976934d5ffe9a87",
+        "title": "The TUI and manager-action scope is unbounded",
+        "details": "The acceptance phrase \"every manager action\" has no versioned command or capability inventory, while \"working presets\" does not define required behavior beyond visual resemblance. The contract must enumerate the actions required for this issue, identify explicitly deferred capabilities, define parity between TUI and noninteractive commands, and provide objective preset-selection and persistence criteria.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-4890ea0a53dc8543ea5a",
+        "title": "Supported platforms and global-launcher behavior are unspecified",
+        "details": "The phrases \"supported machines,\" \"globally,\" and \"per-platform\" do not name an OS, architecture, shell, installation scope, PATH location, privilege model, or command-collision policy. The stale retired-path binding is also not identified by current and expected location. Define the support matrix and objective fresh-install, migration, uninstall, and command-resolution behavior for every supported platform.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-2274704c877a11ea7ae4",
+        "title": "Release installer and self-update trust boundaries are incomplete",
+        "details": "The issue requires signed artifacts or checksums and release-driven self-update but does not define the authoritative release origin, manifest format, signature authority and key custody, mandatory verification order, channel selection, downgrade policy, redirect handling, or behavior when metadata or verification is unavailable. Checksums alone do not authenticate a compromised release source. Define a fail-closed supply-chain contract before authorizing installer or updater implementation.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-96f2b78794fdfce116eb",
+        "title": "Updater and installer failure behavior is not specified",
+        "details": "Acceptance only covers a successful move to the next release. It does not cover interrupted downloads, unsupported artifacts, failed verification, locked executables, insufficient permissions, partial replacement, concurrent updates, offline operation, or post-install launch failure. Require staged download, atomic replacement where supported, preservation or restoration of the last working executable, deterministic exit behavior, and recoverable cleanup.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-fbbc7fae2a46aa8c0a2a",
+        "title": "Acceptance and validation evidence are not objective or complete",
+        "details": "The issue provides no authoritative command inventory for help coverage, platform test matrix, TUI test oracle, release fixture, updater transition pair, signature-negative tests, or evidence locations. \"Command-specific everywhere\" and \"working presets\" cannot produce a reproducible pass/fail verdict. Add explicit automated and manual evidence requirements covering fresh install, existing-install migration, bare launch, every scoped TUI action, every command's help, successful update, unavailable-route failure, and installer/updater negative cases.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-d0c309aba23ac8c8f715",
+        "title": "Rollout, compatibility, and rollback policy are absent",
+        "details": "Changing bare `agents` from command help or another existing behavior to an interactive TUI and introducing self-update can break scripts and managed installations. The issue does not specify noninteractive or CI behavior, opt-out or compatibility entry points, configuration migration, staged rollout, telemetry-free health evidence, rollback, or when package-manager channels become eligible. Define these policies and their release gates.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

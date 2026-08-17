@@ -1,0 +1,218 @@
+{
+  "kind": "df-sweep",
+  "target_repo": "sweep",
+  "created_at": "2026-07-05T18:09:53.545Z",
+  "trigger": "workflow_dispatch",
+  "mode": "sweep",
+  "excluded_repos": [],
+  "actions": [
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#99",
+      "action": "skip",
+      "reason": "checks-not-green",
+      "issue_update": {
+        "status": "blocked",
+        "issue": "#30",
+        "reason": "checks-not-green"
+      },
+      "required_checks": [],
+      "checks": "Codex Review:COMPLETED/FAILURE, Validate:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#98",
+      "action": "skip",
+      "reason": "checks-not-green",
+      "issue_update": {
+        "status": "blocked",
+        "issue": "#79",
+        "reason": "checks-not-green"
+      },
+      "required_checks": [],
+      "checks": "Codex Review:COMPLETED/FAILURE, Validate:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#97",
+      "action": "skip",
+      "reason": "checks-not-green",
+      "issue_update": {
+        "status": "blocked",
+        "issue": "#80",
+        "reason": "checks-not-green"
+      },
+      "required_checks": [],
+      "checks": "Codex Review:COMPLETED/FAILURE, Validate:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#101",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#95",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#87",
+      "action": "skip",
+      "reason": "checks-not-green",
+      "issue_update": {
+        "status": "blocked",
+        "issue": "#59",
+        "reason": "checks-not-green"
+      },
+      "required_checks": [],
+      "checks": "Codex Review:COMPLETED/FAILURE, Validate:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "pr": "marius-patrik/agent-darkfactory#77",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-core",
+      "pr": "marius-patrik/agents-core#14",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-harness",
+      "pr": "marius-patrik/agents-harness#1381",
+      "url": "https://github.com/marius-patrik/agents-harness/pull/1381",
+      "action": "merge",
+      "sha": "5a42132beab520961e0fd9cc0d9e77c2916a7f48",
+      "base": "dev",
+      "checks": "Codex Review:COMPLETED/SUCCESS, Validate harness package boundary:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/agents-harness",
+      "pr": "marius-patrik/agents-harness#1380",
+      "action": "skip",
+      "reason": "checks-not-green",
+      "issue_update": {
+        "status": "blocked",
+        "issue": "#1343",
+        "reason": "checks-not-green"
+      },
+      "required_checks": [],
+      "checks": "Codex Review:COMPLETED/FAILURE, Validate harness package boundary:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/agents-harness",
+      "pr": "marius-patrik/agents-harness#1378",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-manager",
+      "pr": "marius-patrik/agents-manager#26",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#21",
+      "url": "https://github.com/marius-patrik/agents-plugin/pull/21",
+      "action": "merge",
+      "sha": "87df99d87703afeb9e1a4eb5967abc80de69d390",
+      "base": "dev",
+      "checks": "Validate:COMPLETED/SUCCESS, Codex Review:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#20",
+      "action": "skip",
+      "reason": "checks-not-green",
+      "issue_update": {
+        "status": "blocked",
+        "issue": "#2",
+        "reason": "checks-not-green"
+      },
+      "required_checks": [],
+      "checks": "Codex Review:COMPLETED/FAILURE, Validate:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS, Managed setup:COMPLETED/SUCCESS"
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "pr": "marius-patrik/agents-plugin#18",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/darkfactory-templates",
+      "pr": "marius-patrik/darkfactory-templates#23",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/darkfactory-templates",
+      "pr": "marius-patrik/darkfactory-templates#22",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/data-agentos",
+      "action": "error",
+      "error": "[{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",0,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":22,\"column\":13}],\"message\":\"Resource not accessible by integration\"},{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",1,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":22,\"column\":13}],\"message\":\"Resource not accessible by integration\"},{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",2,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":22,\"column\":13}],\"message\":\"Resource not accessible by integration\"}]"
+    },
+    {
+      "repo": "marius-patrik/dream",
+      "pr": "marius-patrik/dream#14",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/inference-engine",
+      "pr": "marius-patrik/inference-engine#21",
+      "action": "skip",
+      "reason": "worker-issue-blocked"
+    },
+    {
+      "repo": "marius-patrik/inference-engine",
+      "pr": "marius-patrik/inference-engine#20",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#25",
+      "action": "skip",
+      "reason": "worker-issue-blocked"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#20",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/llm-gateway",
+      "pr": "marius-patrik/llm-gateway#23",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/workspace-agents",
+      "pr": "marius-patrik/workspace-agents#2",
+      "action": "skip",
+      "reason": "not-worker-pr"
+    },
+    {
+      "repo": "marius-patrik/workspace-darkfactory",
+      "action": "error",
+      "error": "[{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",0,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":22,\"column\":13}],\"message\":\"Resource not accessible by integration\"},{\"type\":\"FORBIDDEN\",\"path\":[\"repository\",\"pullRequests\",\"nodes\",1,\"statusCheckRollup\"],\"extensions\":{\"saml_failure\":false},\"locations\":[{\"line\":22,\"column\":13}],\"message\":\"Resource not accessible by integration\"}]"
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Green-PR sweep is deterministic and uses no model calls"
+  }
+}

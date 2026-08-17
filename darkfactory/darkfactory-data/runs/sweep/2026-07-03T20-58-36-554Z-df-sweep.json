@@ -1,0 +1,28 @@
+{
+  "kind": "df-sweep",
+  "target_repo": "sweep",
+  "created_at": "2026-07-03T20:58:36.554Z",
+  "trigger": "local-df-m2-rerun",
+  "mode": "sweep",
+  "excluded_repos": [
+    "marius-patrik/agents-harness"
+  ],
+  "actions": [
+    {
+      "repo": "marius-patrik/agents-manager",
+      "action": "error",
+      "error": "[{\"path\":[\"query Pulls\",\"repository\",\"pullRequests\",\"nodes\",\"statusCheckRollup\",\"contexts\",\"nodes\",\"... on CheckRun\",\"workflowName\"],\"extensions\":{\"code\":\"undefinedField\",\"typeName\":\"CheckRun\",\"fieldName\":\"workflowName\"},\"locations\":[{\"line\":24,\"column\":21}],\"message\":\"Field 'workflowName' doesn't exist on type 'CheckRun'\"}]"
+    },
+    {
+      "repo": "marius-patrik/darkfactory-workspace",
+      "action": "error",
+      "error": "[{\"path\":[\"query Pulls\",\"repository\",\"pullRequests\",\"nodes\",\"statusCheckRollup\",\"contexts\",\"nodes\",\"... on CheckRun\",\"workflowName\"],\"extensions\":{\"code\":\"undefinedField\",\"typeName\":\"CheckRun\",\"fieldName\":\"workflowName\"},\"locations\":[{\"line\":24,\"column\":21}],\"message\":\"Field 'workflowName' doesn't exist on type 'CheckRun'\"}]"
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Green-PR sweep is deterministic and uses no model calls"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "kind": "df-submodule-update",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T17:31:46.848Z",
+  "schemaVersion": 1,
+  "mode": "update",
+  "status": "blocked",
+  "plan": {
+    "schemaVersion": 1,
+    "planId": "submodule-3bc2b4899edb274eab12",
+    "action": "block",
+    "branch": null,
+    "evidence": {
+      "child": "marius-patrik/Andromeda-data",
+      "child_sha": "945896deafc8ba4ba76a1945aa8ad6e822d07c51",
+      "parent": "marius-patrik/Andromeda",
+      "parent_main": "cd511544eae8798c6d2a86ebb4c49dc7aac1e57d",
+      "parent_dev": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56",
+      "path": "data/andromeda",
+      "main_pointer": "4cc0568323494e8b6fc58af9b222c7f2ea92f4c7",
+      "dev_pointer": "4cc0568323494e8b6fc58af9b222c7f2ea92f4c7",
+      "pointer_state": "behind",
+      "receipt": "https://github.com/marius-patrik/Andromeda-data/actions/runs/29632919464/job/88050007930"
+    },
+    "blockers": [
+      "canonical-andromeda-gitlink-invalid:apps/Fabrica",
+      "canonical-andromeda-gitlink-invalid:apps/Singularity",
+      "canonical-andromeda-gitlink-invalid:plugins/DarkFactory",
+      "canonical-andromeda-gitlink-invalid:plugins/LifeQuest",
+      "canonical-andromeda-gitlink-invalid:plugins/SkyAgent",
+      "parent-main-dev-diverged",
+      "unexpected-andromeda-gitlink:packages/darkfactory",
+      "unexpected-andromeda-gitlink:packages/fabrica",
+      "unexpected-andromeda-gitlink:packages/lifequest",
+      "unexpected-andromeda-gitlink:packages/memory",
+      "unexpected-andromeda-gitlink:packages/singularity",
+      "unexpected-andromeda-gitlink:packages/skyagent",
+      "unexpected-andromeda-gitlink:plugins/Memory"
+    ]
+  },
+  "action": {
+    "status": "blocked",
+    "reason": "canonical-andromeda-gitlink-invalid:apps/Fabrica;canonical-andromeda-gitlink-invalid:apps/Singularity;canonical-andromeda-gitlink-invalid:plugins/DarkFactory;canonical-andromeda-gitlink-invalid:plugins/LifeQuest;canonical-andromeda-gitlink-invalid:plugins/SkyAgent;parent-main-dev-diverged;unexpected-andromeda-gitlink:packages/darkfactory;unexpected-andromeda-gitlink:packages/fabrica;unexpected-andromeda-gitlink:packages/lifequest;unexpected-andromeda-gitlink:packages/memory;unexpected-andromeda-gitlink:packages/singularity;unexpected-andromeda-gitlink:packages/skyagent;unexpected-andromeda-gitlink:plugins/Memory"
+  },
+  "observation": {
+    "child": "marius-patrik/Andromeda-data",
+    "child_release": {
+      "repository": "marius-patrik/Andromeda-data",
+      "branch": "main",
+      "sha": "945896deafc8ba4ba76a1945aa8ad6e822d07c51",
+      "receipt": "https://github.com/marius-patrik/Andromeda-data/actions/runs/29632919464/job/88050007930",
+      "main_checks": {
+        "checks": [
+          {
+            "name": "Validate",
+            "expectedAppId": 15368,
+            "actualAppId": 15368,
+            "id": 88050007930,
+            "url": "https://github.com/marius-patrik/Andromeda-data/actions/runs/29632919464/job/88050007930",
+            "state": "green"
+          }
+        ],
+        "green": true,
+        "missing": [],
+        "pending": [],
+        "red": []
+      }
+    },
+    "parent": {
+      "repository": "marius-patrik/Andromeda",
+      "path": "data/andromeda",
+      "name": "data",
+      "main_sha": "cd511544eae8798c6d2a86ebb4c49dc7aac1e57d",
+      "dev_sha": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56",
+      "main_pointer": "4cc0568323494e8b6fc58af9b222c7f2ea92f4c7",
+      "dev_pointer": "4cc0568323494e8b6fc58af9b222c7f2ea92f4c7",
+      "released_sha": "945896deafc8ba4ba76a1945aa8ad6e822d07c51",
+      "relation": {
+        "status": "ahead",
+        "ahead_by": 18,
+        "behind_by": 0
+      },
+      "pointer_state": "behind",
+      "pull_request": null,
+      "evidence": {
+        "parent_pointer": "https://github.com/marius-patrik/Andromeda/tree/2b78936e4b7099cc30998f08fcdf4d9a806a5e56/data/andromeda",
+        "child_release": "https://github.com/marius-patrik/Andromeda-data/actions/runs/29632919464/job/88050007930",
+        "child_commit": "https://github.com/marius-patrik/Andromeda-data/commit/945896deafc8ba4ba76a1945aa8ad6e822d07c51",
+        "ancestry": "https://github.com/marius-patrik/Andromeda-data/compare/4cc0568323494e8b6fc58af9b222c7f2ea92f4c7...945896deafc8ba4ba76a1945aa8ad6e822d07c51"
+      }
+    },
+    "local": {
+      "observed": false,
+      "clean": null,
+      "blockers": []
+    },
+    "blockers": [
+      "canonical-andromeda-gitlink-invalid:apps/Fabrica",
+      "canonical-andromeda-gitlink-invalid:apps/Singularity",
+      "canonical-andromeda-gitlink-invalid:plugins/DarkFactory",
+      "canonical-andromeda-gitlink-invalid:plugins/LifeQuest",
+      "canonical-andromeda-gitlink-invalid:plugins/SkyAgent",
+      "parent-main-dev-diverged",
+      "unexpected-andromeda-gitlink:packages/darkfactory",
+      "unexpected-andromeda-gitlink:packages/fabrica",
+      "unexpected-andromeda-gitlink:packages/lifequest",
+      "unexpected-andromeda-gitlink:packages/memory",
+      "unexpected-andromeda-gitlink:packages/singularity",
+      "unexpected-andromeda-gitlink:packages/skyagent",
+      "unexpected-andromeda-gitlink:plugins/Memory"
+    ]
+  }
+}

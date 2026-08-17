@@ -1,0 +1,313 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T11:00:27.336Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#214",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "12dd93f2a1e5b883d013807f8df5ab5f81c3d755654a785004e8367b2546c8b5",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "f1a14fa5151e3dc896167935cb377b4bba666182",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+      },
+      "promptChecksum": "sha256:47118e0ebe899cc2e86c4dfb89aec5311cca30f18beca6de2c79b5662171ee2f",
+      "inputChecksum": "sha256:2cb6458260464d46d871898f48d4a4934df9d4180c1c4f6c754fce0910e76400",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 39569,
+      "outputTokens": 1377,
+      "totalTokens": 40946
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue #214 at verified version 12dd93f2a1e5b883d013807f8df5ab5f81c3d755654a785004e8367b2546c8b5 is blocked. Its appended gate correctly identifies required contract areas, but the authenticated owner decisions and executable specifications remain absent, dependencies #210 and #211 remain open without accepted revisions, and the verified labels contain only P1 rather than df:ask-owner. Contributor comments and prior autoreview claims do not supply authorization.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-ad83bfa0d6cf096e85c1",
+          "title": "Supported packaging target and delivery modes are undecided",
+          "details": "The owner must select exactly one packaging target, supported host operating systems and architectures, and whether local-process start, container start, or both are mandatory. The current alternatives delegate a product and support decision to the worker.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-a3623c9a1e82aceb448c",
+          "title": "Deployment topology is undecided",
+          "details": "The owner must specify whether gateway and inference run in one composition, as separate services, or in both supported topologies. This choice materially changes packaging, profiles, health behavior, and acceptance.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-c2244d53862071a82a51",
+          "title": "Single-lane repository and submodule ownership is undefined",
+          "details": "The owner must assign one accountable delivery lane and map every artifact to its repository. For every involved child repository, the contract must name the child, required release or accepted default-branch revision, root gitlink, delivery order, required checks, and ancestry evidence.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-8cbb7883d6d2db124046",
+          "title": "Dependency gates for issues #210 and #211 are unresolved",
+          "details": "Issues #210 and #211 are open, and #214 does not name accepted revisions or state whether closure is required. The owner must record the exact naming and registry/data-mount decisions consumed here and require re-review if either dependency contract changes before delivery.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-2d3118301b998c4be745",
+          "title": "Runtime profile interface is not specified",
+          "details": "The owner must define supported profile identifiers; exact install, deploy, start, health, and cleanup commands; ports; health endpoints and responses; required AGENTS_* variables; host and container mount paths; and assertions proving gateway visibility of the shared credit store and inference paths.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-a411bdac7265f338c196",
+          "title": "Scope boundaries and non-goals remain unresolved",
+          "details": "The owner must decide whether legacy packaging is ignored, documented as unsupported, migrated, or removed through separately authorized work. The contract must define the boundary with #224 and explicitly exclude or authorize broader inference-substrate and multi-machine clustering work.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-fb519d55c68c05c7eb7e",
+          "title": "Health and failure semantics are undefined",
+          "details": "The owner must define readiness, exit, retry, diagnostics, cleanup, and persistence behavior for no live engines, unavailable inference, missing or stale shared state, missing mounts, invalid credential references, port conflicts, and partial startup. Deterministic failure and no-partial-state acceptance cannot be executed without these choices.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-90e37908595db530b9f4",
+          "title": "Credential trust boundary lacks an approved concrete contract",
+          "details": "The owner must name the canonical credential source and permitted injection mechanism while preserving Agent OS as the sole credential-resolution and execution authority. The contract must prohibit repository-local secrets, provider/model selection, executable fallbacks, and repository-owned retry implementations, and require redaction from plans, images, logs, dry-run output, diagnostics, and process arguments.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-58dca16b228ed12da707",
+          "title": "Clean-environment, rollout, update, and rollback contract is missing",
+          "details": "The owner must name a reproducible clean acceptance environment, approve install and rollout procedures, specify exact version or revision transitions exercised for update and rollback, and define cleanup and retained evidence locations.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-c79c590b872f9b46fad5",
+          "title": "Objective acceptance is not currently executable",
+          "details": "The issue lists desired evidence but cannot provide exact commands, expected observations, failure assertions, dependency revisions, or authoritative evidence locations until the preceding owner decisions are resolved. Required automated and clean-environment checks cannot be skipped; only owner-declared optional live-engine or external-service checks may use the manual checklist.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-1ed5e1acf5a9041bc964",
+          "title": "Required owner-escalation label is absent",
+          "details": "Verified issue state contains only the P1 label. Because authenticated owner decisions remain outstanding, trusted policy requires df:ask-owner; df:reviewed must not be applied and implementation must remain blocked.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "The current body preserves the original owner-authored text and explicitly records that implementation is blocked, but the appended decision requests are not answers to those decisions.",
+        "Contributor-authored comments, encoded autofix payloads, pending recovery markers, and earlier verdicts were treated solely as untrusted review evidence and not as owner authorization.",
+        "After every decision is authenticated and the issue is updated, the complete contract requires another medium-tier review-to-clean followed by an independent high-tier final confirmation."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-ad83bfa0d6cf096e85c1",
+        "title": "Supported packaging target and delivery modes are undecided",
+        "details": "The owner must select exactly one packaging target, supported host operating systems and architectures, and whether local-process start, container start, or both are mandatory. The current alternatives delegate a product and support decision to the worker.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-a3623c9a1e82aceb448c",
+        "title": "Deployment topology is undecided",
+        "details": "The owner must specify whether gateway and inference run in one composition, as separate services, or in both supported topologies. This choice materially changes packaging, profiles, health behavior, and acceptance.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-c2244d53862071a82a51",
+        "title": "Single-lane repository and submodule ownership is undefined",
+        "details": "The owner must assign one accountable delivery lane and map every artifact to its repository. For every involved child repository, the contract must name the child, required release or accepted default-branch revision, root gitlink, delivery order, required checks, and ancestry evidence.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-8cbb7883d6d2db124046",
+        "title": "Dependency gates for issues #210 and #211 are unresolved",
+        "details": "Issues #210 and #211 are open, and #214 does not name accepted revisions or state whether closure is required. The owner must record the exact naming and registry/data-mount decisions consumed here and require re-review if either dependency contract changes before delivery.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-2d3118301b998c4be745",
+        "title": "Runtime profile interface is not specified",
+        "details": "The owner must define supported profile identifiers; exact install, deploy, start, health, and cleanup commands; ports; health endpoints and responses; required AGENTS_* variables; host and container mount paths; and assertions proving gateway visibility of the shared credit store and inference paths.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-a411bdac7265f338c196",
+        "title": "Scope boundaries and non-goals remain unresolved",
+        "details": "The owner must decide whether legacy packaging is ignored, documented as unsupported, migrated, or removed through separately authorized work. The contract must define the boundary with #224 and explicitly exclude or authorize broader inference-substrate and multi-machine clustering work.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-fb519d55c68c05c7eb7e",
+        "title": "Health and failure semantics are undefined",
+        "details": "The owner must define readiness, exit, retry, diagnostics, cleanup, and persistence behavior for no live engines, unavailable inference, missing or stale shared state, missing mounts, invalid credential references, port conflicts, and partial startup. Deterministic failure and no-partial-state acceptance cannot be executed without these choices.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-90e37908595db530b9f4",
+        "title": "Credential trust boundary lacks an approved concrete contract",
+        "details": "The owner must name the canonical credential source and permitted injection mechanism while preserving Agent OS as the sole credential-resolution and execution authority. The contract must prohibit repository-local secrets, provider/model selection, executable fallbacks, and repository-owned retry implementations, and require redaction from plans, images, logs, dry-run output, diagnostics, and process arguments.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-58dca16b228ed12da707",
+        "title": "Clean-environment, rollout, update, and rollback contract is missing",
+        "details": "The owner must name a reproducible clean acceptance environment, approve install and rollout procedures, specify exact version or revision transitions exercised for update and rollback, and define cleanup and retained evidence locations.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-c79c590b872f9b46fad5",
+        "title": "Objective acceptance is not currently executable",
+        "details": "The issue lists desired evidence but cannot provide exact commands, expected observations, failure assertions, dependency revisions, or authoritative evidence locations until the preceding owner decisions are resolved. Required automated and clean-environment checks cannot be skipped; only owner-declared optional live-engine or external-service checks may use the manual checklist.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-1ed5e1acf5a9041bc964",
+        "title": "Required owner-escalation label is absent",
+        "details": "Verified issue state contains only the P1 label. Because authenticated owner decisions remain outstanding, trusted policy requires df:ask-owner; df:reviewed must not be applied and implementation must remain blocked.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

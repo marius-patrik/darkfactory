@@ -1,0 +1,183 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-18T17:26:37.032Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#363",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "d9edfebff12fc1de529aaadc28a40ed9c26cd7e4:a8736762e104a91349a2553afbba79a81c8b00dc",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:a0877305b58ad1ff6ca4374dc9052f7c7d12a0c2ff76ac5042687511037d3743",
+      "inputChecksum": "sha256:5093e1c55795706bcad6294065cfd288a2523bd4d93dbede744ec2c33425c11c",
+      "profile": {
+        "id": "profile/pr-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-pr",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/pr-reviewer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/validation-autoreview",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/bun-node",
+        "output": "output/pr-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/bun-node",
+          "version": "0.2.0",
+          "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+        },
+        {
+          "id": "output/pr-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 81376,
+      "outputTokens": 4910,
+      "totalTokens": 86286
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "The zero-diff admission proof is technically sound, but the exact decision evidence is discarded before publication and recovery misclassifies one new successful state.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-7aff4dd1d096db5350c6",
+          "title": "Zero-diff approval drops its trusted revision evidence",
+          "details": "For marius-patrik/DarkFactory#363 at head a8736762e104a91349a2553afbba79a81c8b00dc, trustedZeroDiffResult retains only the target version, state, and empty rounds. executeAutoreview consequently persists no exact base/head trees, merge base, changed-path count/digest, or engine-provenance evidence, while the result comment merely claims those checks succeeded. The model-free approval therefore lacks a durable evidence trace for the facts that authorized it. Carry the exact revalidated proof and trusted actor decision into the published ledger evidence before treating this state as successful.",
+          "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+          "line": 1324
+        },
+        {
+          "id": "df-b816c1107ba60f22febc",
+          "title": "Recovery misreports a trusted zero-diff result when its gate is red",
+          "details": "The red-gate recovery path recognizes only clean and owner_override when selecting the successful-comment-with-red-gate reason. A trusted_zero_diff completion is therefore recorded as missing-or-stale-result even though the exact successful comment was observed. The rerun action is correct, but its durable operational evidence is false. Use isSuccessfulPullCompletion here and add the corresponding red-gate regression case.",
+          "path": ".github/scripts/df-autoreview-recovery.mjs",
+          "line": 207
+        }
+      ],
+      "nonBlockingNotes": []
+    },
+    "findings": [
+      {
+        "id": "df-7aff4dd1d096db5350c6",
+        "title": "Zero-diff approval drops its trusted revision evidence",
+        "details": "For marius-patrik/DarkFactory#363 at head a8736762e104a91349a2553afbba79a81c8b00dc, trustedZeroDiffResult retains only the target version, state, and empty rounds. executeAutoreview consequently persists no exact base/head trees, merge base, changed-path count/digest, or engine-provenance evidence, while the result comment merely claims those checks succeeded. The model-free approval therefore lacks a durable evidence trace for the facts that authorized it. Carry the exact revalidated proof and trusted actor decision into the published ledger evidence before treating this state as successful.",
+        "path": ".github/scripts/run-darkfactory-autoreview.mjs",
+        "line": 1324
+      },
+      {
+        "id": "df-b816c1107ba60f22febc",
+        "title": "Recovery misreports a trusted zero-diff result when its gate is red",
+        "details": "The red-gate recovery path recognizes only clean and owner_override when selecting the successful-comment-with-red-gate reason. A trusted_zero_diff completion is therefore recorded as missing-or-stale-result even though the exact successful comment was observed. The rerun action is correct, but its durable operational evidence is false. Use isSuccessfulPullCompletion here and add the corresponding red-gate regression case.",
+        "path": ".github/scripts/df-autoreview-recovery.mjs",
+        "line": 207
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

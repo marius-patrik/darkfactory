@@ -1,0 +1,36 @@
+{
+  "kind": "df-plan",
+  "target_repo": "marius-patrik/agents-plugin",
+  "created_at": "2026-07-07T20:18:58.858Z",
+  "trigger": "schedule",
+  "default_branch": "main",
+  "source_ref": "main",
+  "prd_files": [],
+  "actions": [
+    {
+      "action": "prd-scaffold-pr",
+      "state": "created",
+      "pull_request": {
+        "number": 26,
+        "url": "https://github.com/marius-patrik/agents-plugin/pull/26"
+      },
+      "missing": [
+        "PRD.md"
+      ]
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "L4 planning used deterministic PRD parsing only"
+  },
+  "prd_coverage": {
+    "root_present": false,
+    "package_prds": 0,
+    "total_packages": 0,
+    "missing": [
+      "PRD.md"
+    ]
+  }
+}

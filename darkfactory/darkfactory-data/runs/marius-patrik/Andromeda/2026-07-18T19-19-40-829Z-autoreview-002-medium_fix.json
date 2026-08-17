@@ -1,0 +1,197 @@
+{
+  "kind": "autoreview-002-medium_fix",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T19:19:40.829Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#216",
+  "round": {
+    "sequence": 2,
+    "phase": "medium_fix",
+    "targetVersion": "52f37a039ee0263c17bfb0935a85f1cd9847eba1e16a5af8b4e654419ee94662",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "6cf08fc896b39249be8295be66809f1ce9b48587",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:b41c87eeaa0465317de51e229178b817d8f5b4c9768329fadcf7cc5ca47b690c",
+      "inputChecksum": "sha256:cf3a0a172429b4041749e6df8a886797a7f4330769f978a06c3fbe71841b595f",
+      "profile": {
+        "id": "profile/issue-fixer",
+        "version": "0.2.0",
+        "runKind": "fix-issue",
+        "purpose": "review-fix"
+      },
+      "selection": {
+        "role": "role/issue-fixer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/minimal-diff",
+          "skill/owner-escalation",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-fixer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-fixer",
+          "version": "0.2.0",
+          "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/minimal-diff",
+          "version": "0.2.0",
+          "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-fixer",
+          "version": "0.3.0",
+          "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": null,
+      "model": null,
+      "agentPreset": null,
+      "providerVersion": null
+    },
+    "attempts": [],
+    "usage": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalTokens": 0
+    },
+    "verdict": null,
+    "findings": [
+      {
+        "id": "df-09d91182f52ef29fd0de",
+        "title": "Package-metadata authority and layering are undefined",
+        "details": "The requirement for “one authoritative package.json surface” does not identify the authoritative file, enumerate fields owned at the root versus package level, define permitted package-local metadata, or specify how conflicting values are resolved. A worker cannot determine the intended end state without making semantic owner decisions.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-d723956976378d0f310b",
+        "title": "Documentation scope and disposition are not specified",
+        "details": "The issue provides no inventory of affected root or package documents, no per-document keep, relocate, redirect, retire, or remove disposition, and no exact PRD.md/PLAN.md precedence wording. Deciding which documents compete with authority or may be removed is ambiguous and potentially destructive.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-b6620b9f0711c51b46ea",
+        "title": "Dependency and residual-scope claims are unverifiable",
+        "details": "The contract depends on work attributed to #179 and claims to replace #178, but it identifies no verified #179 revision or delivered-state evidence and does not map every #178 requirement to completed, retained, or residual scope. The available state therefore cannot establish prerequisites, prevent omissions, or rule out duplicated work.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-a8995856b5bd55bb85ef",
+        "title": "Single-lane ownership and boundaries are unclear",
+        "details": "“PLAN lane 2” does not define the lane owner, the exact files or repository surfaces it owns, or its boundary against repository-authority, package-layout, validation, and documentation work. The contract cannot safely assign one implementation lane or adjudicate overlaps.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-73ef6f5948cd7990ff68",
+        "title": "Acceptance criteria are subjective and not evidentiary",
+        "details": "Terms such as “internally consistent,” “remaining root documentation,” and “no stale competing authority” are not expressed as objective assertions over named files, metadata fields, references, or repository searches. The issue also does not state what reviewable evidence proves each acceptance condition.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-37aa8081fc78e4c05ec8",
+        "title": "Failure, compatibility, migration, and rollout behavior are missing",
+        "details": "The issue does not say how to fail closed when metadata or document authority is ambiguous, whether package consumers or published artifacts require compatibility handling, how moved or retired documentation remains discoverable, or how the consolidation is rolled out and reverted. These choices must be resolved before implementation.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [
+      "df-09d91182f52ef29fd0de",
+      "df-d723956976378d0f310b",
+      "df-b6620b9f0711c51b46ea",
+      "df-a8995856b5bd55bb85ef",
+      "df-73ef6f5948cd7990ff68",
+      "df-37aa8081fc78e4c05ec8"
+    ],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": "fix_no_change",
+    "outcome": "blocked"
+  }
+}

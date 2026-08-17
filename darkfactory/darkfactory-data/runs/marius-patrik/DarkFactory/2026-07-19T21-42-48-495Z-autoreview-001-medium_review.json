@@ -1,0 +1,157 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-19T21:42:48.495Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/DarkFactory#442",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "975775f41839709f63bfa3944694403866473bf5:929fcf5bab99dd7291429989de465f41b8663c91",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "26bc106440a4c056115ba050c4a017e82b9ada76",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:3851929f6f0dd4bc26b7b197d66684e0ae5aa1881e446eecaa6c5ed1d3ee229a",
+      "inputChecksum": "sha256:11a43f4793e661280adcab1ae23bcdbef399b9dd580718d0d2173a7ac25cb902",
+      "profile": {
+        "id": "profile/pr-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-pr",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/pr-reviewer",
+        "skills": [
+          "skill/acceptance-driven-delivery",
+          "skill/untrusted-input-handling",
+          "skill/validation-autoreview",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/pr-review-fix"
+        ],
+        "repositoryOverlay": "overlay/bun-node",
+        "output": "output/pr-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/pr-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:deabf68249e568551df11b2eb26c8f1f75d7a4047f7844025008c4830cf9f7e8"
+        },
+        {
+          "id": "skill/acceptance-driven-delivery",
+          "version": "0.2.0",
+          "checksum": "sha256:2c0d1226f9d46c2aa40567f14cb1516a0de0a6b926e9e0bcabae5c0669961609"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/pr-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:faa616c5493b65b14a805b6564e0a8c758337bfa4d65f0d5d5e3b7fad4dc2048"
+        },
+        {
+          "id": "overlay/bun-node",
+          "version": "0.2.0",
+          "checksum": "sha256:2df252cf89d378784a045af7c0becebcd0854bc304b575e0fb3eb1639b40c8c5"
+        },
+        {
+          "id": "output/pr-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:58e6d7f78f6e14f57d045462a3eaf267c79f24fe67330b01b26a9380a5ea0d7c"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "claude",
+      "model": "claude-opus-4-8",
+      "agentPreset": "Fable",
+      "providerVersion": "2.1.203"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 1601,
+      "outputTokens": 12264,
+      "totalTokens": 13865
+    },
+    "verdict": {
+      "approved": true,
+      "summary": "Reviewed the complete head 929fcf5 of reconciliation PR #442 (main->dev, base 975775f, baseIsAncestor=true, first-parent ancestry reaches base with the expected two-parent merge, changed-path count=4, no gitlinks). The diff hardens release check verification in .github/scripts/df-release.mjs: check-run/commit-status/check-suite/workflow-run inventories are now completely paginated with bounded limits and double-scan fingerprint consistency; evaluateRequiredChecks collects all same-name candidates and fails closed on app-id ambiguity; and policy checks reporting under the shared GitHub Actions app id (15368) are bound to their exact trusted workflow file, ref, event, same-repo (non-fork) provenance, and pull/branch evidence via bindTrustedPolicyCheckRuns, with pull_request runs additionally requiring the head workflow file blob to equal the base definition. The df-audit.yml change replaces hashFiles gating with a deterministic report_exists step output while preserving node exit-code propagation. Trust-boundary review confirms untrusted head content is treated as data, release logic stays in df-release.mjs, no provider/model/runtime mechanics are embedded, no managed-file or protected-ref write path is introduced, and tests under tests/ cover the new runtime branches (ambiguity, wrong app, missing/malformed/truncated/oversized/changing inventories, and each provenance-rejection case). No correctness, security, regression, or coverage defect blocks this exact head.",
+      "findingsComplete": true,
+      "blockingFindings": [],
+      "nonBlockingNotes": [
+        "Exact-head Validate execution evidence (npm run check) is owned by the independent Validate gate and is intentionally absent from review context; this is not a finding.",
+        "The df-audit.yml report_exists change is bundled with the df-release check-binding hardening, which is expected for a main->dev reconciliation head rather than a single-purpose PR.",
+        "pull_request-triggered policy runs are trusted only when the head workflow file blob matches the observed base definition; pull_request_target (Autoreview) correctly relies on base-loaded execution without that comparison."
+      ]
+    },
+    "findings": [],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "clean"
+  }
+}

@@ -1,0 +1,2628 @@
+{
+  "kind": "repo-doctor-admission",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-19T15:24:24.769Z",
+  "phase": "admission",
+  "schema_version": 2,
+  "machine_evidence_schema": 0,
+  "mode": "report",
+  "trigger": "workflow_dispatch",
+  "source_refs": {
+    "default_branch": "main",
+    "default_branch_revision": "cd511544eae8798c6d2a86ebb4c49dc7aac1e57d",
+    "main": "cd511544eae8798c6d2a86ebb4c49dc7aac1e57d",
+    "dev": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56",
+    "control": "marius-patrik/DarkFactory@26bc106440a4c056115ba050c4a017e82b9ada76",
+    "agent_os_data": "marius-patrik/Andromeda-data@c45229b315e765657555da8af5071752701f6826"
+  },
+  "findings": [
+    {
+      "id": "andromeda-submodule-unexpected-plugins-memory",
+      "severity": "error",
+      "category": "product layout",
+      "message": "Unexpected Andromeda submodule declaration `Memory` at `plugins/Memory`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": []
+    },
+    {
+      "id": "automation-admin-bypass-guard-missing",
+      "severity": "critical",
+      "category": "runtime authority",
+      "message": "Managed enforcement does not fail closed on automation admin/bypass merge attempts.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": []
+    },
+    {
+      "id": "extra-branch-agent-227-memory-plugin",
+      "severity": "warning",
+      "category": "branch hygiene",
+      "message": "Extra branch `agent/227-memory-plugin` is not the head of an open same-repository PR.",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "agent/227-memory-plugin",
+          "url": "https://github.com/marius-patrik/Andromeda/tree/agent%2F227-memory-plugin"
+        }
+      ],
+      "repair": [
+        "Delete only after re-fetching refs and proving it is not protected, active, or unmerged."
+      ]
+    },
+    {
+      "id": "extra-branch-wip-cli-pin-wrappers",
+      "severity": "warning",
+      "category": "branch hygiene",
+      "message": "Extra branch `wip/cli-pin-wrappers` is not the head of an open same-repository PR.",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "wip/cli-pin-wrappers",
+          "url": "https://github.com/marius-patrik/Andromeda/tree/wip%2Fcli-pin-wrappers"
+        }
+      ],
+      "repair": [
+        "Delete only after re-fetching refs and proving it is not protected, active, or unmerged."
+      ]
+    },
+    {
+      "id": "extra-branch-wip-compact-skill-archive",
+      "severity": "warning",
+      "category": "branch hygiene",
+      "message": "Extra branch `wip/compact-skill-archive` is not the head of an open same-repository PR.",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "wip/compact-skill-archive",
+          "url": "https://github.com/marius-patrik/Andromeda/tree/wip%2Fcompact-skill-archive"
+        }
+      ],
+      "repair": [
+        "Delete only after re-fetching refs and proving it is not protected, active, or unmerged."
+      ]
+    },
+    {
+      "id": "issue-210-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #210 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #210",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/210"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-211-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #211 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #211",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/211"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-212-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #212 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #212",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/212"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-213-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #213 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #213",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/213"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-214-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #214 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #214",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/214"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-215-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #215 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #215",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/215"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-216-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #216 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #216",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/216"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-217-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #217 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #217",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/217"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-218-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #218 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #218",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/218"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-219-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #219 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #219",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/219"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-221-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #221 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #221",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/221"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-222-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #222 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #222",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/222"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-223-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #223 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #223",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/223"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-224-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #224 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #224",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/224"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-225-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #225 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #225",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/225"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-227-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #227 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #227",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/227"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-243-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #243 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #243",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/243"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-246-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #246 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #246",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/246"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-251-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #251 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #251",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/251"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-253-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #253 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #253",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/253"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-255-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #255 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #255",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/255"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-256-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #256 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #256",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/256"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-257-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #257 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #257",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/257"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-258-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #258 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #258",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/258"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-275-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #275 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #275",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/275"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-286-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #286 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #286",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/286"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-291-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #291 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #291",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/291"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-293-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #293 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #293",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/293"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-294-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #294 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #294",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/294"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-299-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #299 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #299",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/299"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-301-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #301 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #301",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/301"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-302-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #302 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #302",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/302"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-304-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #304 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #304",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/304"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-307-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #307 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #307",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/307"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-309-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #309 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #309",
+          "url": "https://github.com/marius-patrik/Andromeda/issues/309"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "label-df-audit-drift",
+      "severity": "warning",
+      "category": "configuration prerequisites",
+      "message": "Label `df:audit` differs from the canonical color or description.",
+      "repair_class": "auto",
+      "evidence": [],
+      "repair": []
+    },
+    {
+      "id": "label-df-class-hard-drift",
+      "severity": "warning",
+      "category": "configuration prerequisites",
+      "message": "Label `df:class:hard` differs from the canonical color or description.",
+      "repair_class": "auto",
+      "evidence": [],
+      "repair": []
+    },
+    {
+      "id": "label-df-class-mechanical-drift",
+      "severity": "warning",
+      "category": "configuration prerequisites",
+      "message": "Label `df:class:mechanical` differs from the canonical color or description.",
+      "repair_class": "auto",
+      "evidence": [],
+      "repair": []
+    },
+    {
+      "id": "label-df-class-standard-drift",
+      "severity": "warning",
+      "category": "configuration prerequisites",
+      "message": "Label `df:class:standard` differs from the canonical color or description.",
+      "repair_class": "auto",
+      "evidence": [],
+      "repair": []
+    },
+    {
+      "id": "main-dev-diverged",
+      "severity": "critical",
+      "category": "branch convergence",
+      "message": "`main` and `dev` have diverged.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "main...dev",
+          "url": "https://github.com/marius-patrik/Andromeda/compare/main...dev"
+        }
+      ],
+      "repair": [
+        "Create a reconciliation branch and escalate semantic conflicts; block release until green."
+      ]
+    },
+    {
+      "id": "managed-file-drift-agents-md",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `AGENTS.md` differs from `marius-patrik/Andromeda-data:managed-repository/AGENTS.md`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-darkfactory-branching-policy-md",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.darkfactory/branching-policy.md` differs from `marius-patrik/Andromeda-data:managed-repository/.darkfactory/branching-policy.md`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-darkfactory-installer-policy-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.darkfactory/installer-policy.json` differs from `marius-patrik/Andromeda-data:managed-repository/.darkfactory/installer-policy.json`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-darkfactory-labels-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.darkfactory/labels.json` differs from `marius-patrik/Andromeda-data:managed-repository/.darkfactory/labels.json`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-darkfactory-managed-repository-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.darkfactory/managed-repository.json` differs from `marius-patrik/Andromeda-data:managed-repository/.darkfactory/managed-repository.json`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-github-workflows-ci-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.github/workflows/ci.yml` differs from `marius-patrik/Andromeda-data:managed-repository/.github/workflows/ci.yml`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-github-workflows-dark-factory-autoupdate-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.github/workflows/dark-factory-autoupdate.yml` differs from `marius-patrik/Andromeda-data:managed-repository/.github/workflows/dark-factory-autoupdate.yml`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-github-workflows-dark-factory-bootstrap-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.github/workflows/dark-factory-bootstrap.yml` differs from `marius-patrik/Andromeda-data:managed-repository/.github/workflows/dark-factory-bootstrap.yml`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-missing-darkfactory-autoreview-policy-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.darkfactory/autoreview-policy.json` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-darkfactory-data-repository-policy-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.darkfactory/data-repository-policy.json` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-darkfactory-enforcement-rules-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.darkfactory/enforcement-rules.json` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-darkfactory-issue-draft-policy-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.darkfactory/issue-draft-policy.json` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-darkfactory-managed-repos-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.darkfactory/managed-repos.json` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-darkfactory-model-policy-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.darkfactory/model-policy.json` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-darkfactory-orchestration-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.darkfactory/orchestration.json` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-darkfactory-submodule-policy-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.darkfactory/submodule-policy.json` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-darkfactory-trigger-policy-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.darkfactory/trigger-policy.json` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-darkfactory-autoreview-schema-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/darkfactory-autoreview.schema.json` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-dark-factory-managed-check-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/dark-factory-managed-check.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-autoreview-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-autoreview.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-autoreview-recovery-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-autoreview-recovery.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-enforcement-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-enforcement.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-issue-draft-hygiene-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-issue-draft-hygiene.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-lib-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-lib.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-model-policy-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-model-policy.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-orchestrate-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-orchestrate.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-plan-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-plan.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-release-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-release.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-submodule-autoupdate-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-submodule-autoupdate.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-submodule-checkout-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-submodule-checkout.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-sweep-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-sweep.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-trigger-policy-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-trigger-policy.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-df-work-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/df-work.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-scripts-run-darkfactory-autoreview-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/scripts/run-darkfactory-autoreview.mjs` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-workflows-df-autoreview-recovery-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/workflows/df-autoreview-recovery.yml` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-workflows-df-clean-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/workflows/df-clean.yml` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-workflows-df-follow-through-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/workflows/df-follow-through.yml` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-workflows-df-issue-draft-hygiene-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/workflows/df-issue-draft-hygiene.yml` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-workflows-df-orchestrate-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/workflows/df-orchestrate.yml` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-workflows-df-plan-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/workflows/df-plan.yml` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-workflows-df-release-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/workflows/df-release.yml` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-workflows-df-submodule-autoupdate-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/workflows/df-submodule-autoupdate.yml` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-file-missing-github-workflows-df-work-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Required managed file `.github/workflows/df-work.yml` is missing on `cd511544eae8798c6d2a86ebb4c49dc7aac1e57d`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Open/update the marker-owned managed setup PR from the authoritative source."
+      ]
+    },
+    {
+      "id": "managed-removed-file-darkfactory-release-conventions-md",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Retired managed file `.darkfactory/release-conventions.md` is still present.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Remove it through the managed setup PR after verifying no active workflow depends on it."
+      ]
+    },
+    {
+      "id": "managed-removed-file-github-codex-review-dockerfile",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Retired managed file `.github/codex-review.Dockerfile` is still present.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Remove it through the managed setup PR after verifying no active workflow depends on it."
+      ]
+    },
+    {
+      "id": "managed-removed-file-github-codex-review-schema-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Retired managed file `.github/codex-review.schema.json` is still present.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Remove it through the managed setup PR after verifying no active workflow depends on it."
+      ]
+    },
+    {
+      "id": "managed-removed-file-github-scripts-dark-factory-release-check-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Retired managed file `.github/scripts/dark-factory-release-check.mjs` is still present.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Remove it through the managed setup PR after verifying no active workflow depends on it."
+      ]
+    },
+    {
+      "id": "managed-removed-file-github-scripts-run-codex-review-sh",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Retired managed file `.github/scripts/run-codex-review.sh` is still present.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Remove it through the managed setup PR after verifying no active workflow depends on it."
+      ]
+    },
+    {
+      "id": "managed-removed-file-github-workflows-codex-review-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Retired managed file `.github/workflows/codex-review.yml` is still present.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Remove it through the managed setup PR after verifying no active workflow depends on it."
+      ]
+    },
+    {
+      "id": "managed-removed-file-github-workflows-dark-factory-release-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Retired managed file `.github/workflows/dark-factory-release.yml` is still present.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Remove it through the managed setup PR after verifying no active workflow depends on it."
+      ]
+    },
+    {
+      "id": "pr-295-red",
+      "severity": "error",
+      "category": "pull request health",
+      "message": "PR #295 has failing checks: DarkFactory Autoreview:failure, Codex Review:failure.",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "Codex Review",
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29636886776/job/88060687785"
+        },
+        {
+          "label": "DarkFactory Autoreview",
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29636886780/job/88060687969"
+        },
+        {
+          "label": "PR #295",
+          "url": "https://github.com/marius-patrik/Andromeda/pull/295"
+        }
+      ],
+      "repair": [
+        "Run bounded review/fix or implementation repair; never merge while red."
+      ]
+    },
+    {
+      "id": "pr-306-not-mergeable",
+      "severity": "error",
+      "category": "pull request health",
+      "message": "PR #306 is not mergeable (blocked).",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "PR #306",
+          "url": "https://github.com/marius-patrik/Andromeda/pull/306"
+        }
+      ],
+      "repair": [
+        "Reconcile through a normal branch update; never force-push or bypass."
+      ]
+    },
+    {
+      "id": "pr-306-red",
+      "severity": "error",
+      "category": "pull request health",
+      "message": "PR #306 has failing checks: DarkFactory Autoreview:failure, Codex Review:failure.",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "Codex Review",
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29650103861/job/88094881098"
+        },
+        {
+          "label": "DarkFactory Autoreview",
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29650103889/job/88094891969"
+        },
+        {
+          "label": "PR #306",
+          "url": "https://github.com/marius-patrik/Andromeda/pull/306"
+        }
+      ],
+      "repair": [
+        "Run bounded review/fix or implementation repair; never merge while red."
+      ]
+    },
+    {
+      "id": "pr-308-not-mergeable",
+      "severity": "error",
+      "category": "pull request health",
+      "message": "PR #308 is not mergeable (blocked).",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "PR #308",
+          "url": "https://github.com/marius-patrik/Andromeda/pull/308"
+        }
+      ],
+      "repair": [
+        "Reconcile through a normal branch update; never force-push or bypass."
+      ]
+    },
+    {
+      "id": "pr-308-red",
+      "severity": "error",
+      "category": "pull request health",
+      "message": "PR #308 has failing checks: DarkFactory Autoreview:failure, Codex Review:failure.",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "Codex Review",
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29691212543/job/88204167837"
+        },
+        {
+          "label": "DarkFactory Autoreview",
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29691212541/job/88204983071"
+        },
+        {
+          "label": "PR #308",
+          "url": "https://github.com/marius-patrik/Andromeda/pull/308"
+        }
+      ],
+      "repair": [
+        "Run bounded review/fix or implementation repair; never merge while red."
+      ]
+    },
+    {
+      "id": "pr-310-not-mergeable",
+      "severity": "error",
+      "category": "pull request health",
+      "message": "PR #310 is not mergeable (blocked).",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "PR #310",
+          "url": "https://github.com/marius-patrik/Andromeda/pull/310"
+        }
+      ],
+      "repair": [
+        "Reconcile through a normal branch update; never force-push or bypass."
+      ]
+    },
+    {
+      "id": "pr-310-red",
+      "severity": "error",
+      "category": "pull request health",
+      "message": "PR #310 has failing checks: DarkFactory Autoreview:failure, Codex Review:failure.",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "Codex Review",
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29692146868/job/88206646818"
+        },
+        {
+          "label": "DarkFactory Autoreview",
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29692146945/job/88206647289"
+        },
+        {
+          "label": "PR #310",
+          "url": "https://github.com/marius-patrik/Andromeda/pull/310"
+        }
+      ],
+      "repair": [
+        "Run bounded review/fix or implementation repair; never merge while red."
+      ]
+    },
+    {
+      "id": "retired-agents-data-repository-name",
+      "severity": "error",
+      "category": "authority naming",
+      "message": "Active authority still names the retired Agent OS data repository; canonical repository is `marius-patrik/Andromeda-data`. Found in `.darkfactory/installer-policy.json`, `.darkfactory/managed-repository.json`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Update active authority through a reviewed migration; preserve genuinely historical evidence only in explicitly marked historical sections."
+      ]
+    },
+    {
+      "id": "retired-agents-manager-owner-name",
+      "severity": "error",
+      "category": "authority naming",
+      "message": "Active authority still names the retired `agents-manager` repository; repository ownership must name Andromeda or DarkFactory explicitly. Found in `README.md`, `PRD.md`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Update active authority through a reviewed migration; preserve genuinely historical evidence only in explicitly marked historical sections."
+      ]
+    },
+    {
+      "id": "submodule-data-andromeda-pointer-drift-dev",
+      "severity": "warning",
+      "category": "submodule pointer",
+      "message": "Submodule `data/andromeda` records `4cc056832349` on `dev`, while marius-patrik/Andromeda-data `main` is `c45229b315e7`.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "compare",
+          "url": "https://github.com/marius-patrik/Andromeda-data/compare/4cc0568323494e8b6fc58af9b222c7f2ea92f4c7...c45229b315e765657555da8af5071752701f6826"
+        }
+      ],
+      "repair": [
+        "Update only after proving the child head is the eligible released/default commit and parent validation is green."
+      ]
+    },
+    {
+      "id": "submodule-data-andromeda-pointer-drift-main",
+      "severity": "warning",
+      "category": "submodule pointer",
+      "message": "Submodule `data/andromeda` records `4cc056832349` on `main`, while marius-patrik/Andromeda-data `main` is `c45229b315e7`.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "compare",
+          "url": "https://github.com/marius-patrik/Andromeda-data/compare/4cc0568323494e8b6fc58af9b222c7f2ea92f4c7...c45229b315e765657555da8af5071752701f6826"
+        }
+      ],
+      "repair": [
+        "Update only after proving the child head is the eligible released/default commit and parent validation is green."
+      ]
+    },
+    {
+      "id": "submodule-data-darkfactory-pointer-drift-dev",
+      "severity": "warning",
+      "category": "submodule pointer",
+      "message": "Submodule `data/darkfactory` records `9f118b1bd615` on `dev`, while marius-patrik/darkfactory-data `main` is `5be24ec469c1`.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "compare",
+          "url": "https://github.com/marius-patrik/darkfactory-data/compare/9f118b1bd61594d0c4817185f4de4f8edab32ea6...5be24ec469c1c32ac4bccd2debaa346684d6e63f"
+        }
+      ],
+      "repair": [
+        "Update only after proving the child head is the eligible released/default commit and parent validation is green."
+      ]
+    },
+    {
+      "id": "submodule-data-darkfactory-pointer-drift-main",
+      "severity": "warning",
+      "category": "submodule pointer",
+      "message": "Submodule `data/darkfactory` records `9f118b1bd615` on `main`, while marius-patrik/darkfactory-data `main` is `5be24ec469c1`.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "compare",
+          "url": "https://github.com/marius-patrik/darkfactory-data/compare/9f118b1bd61594d0c4817185f4de4f8edab32ea6...5be24ec469c1c32ac4bccd2debaa346684d6e63f"
+        }
+      ],
+      "repair": [
+        "Update only after proving the child head is the eligible released/default commit and parent validation is green."
+      ]
+    },
+    {
+      "id": "submodule-packages-darkfactory-pointer-drift-dev",
+      "severity": "warning",
+      "category": "submodule pointer",
+      "message": "Submodule `packages/darkfactory` records `49ddfc220dd2` on `dev`, while marius-patrik/DarkFactory `main` is `26bc106440a4`.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "compare",
+          "url": "https://github.com/marius-patrik/DarkFactory/compare/49ddfc220dd2981680f9173eb5ebfa081b2806f4...26bc106440a4c056115ba050c4a017e82b9ada76"
+        }
+      ],
+      "repair": [
+        "Update only after proving the child head is the eligible released/default commit and parent validation is green."
+      ]
+    },
+    {
+      "id": "submodule-packages-skyagent-pointer-drift-dev",
+      "severity": "warning",
+      "category": "submodule pointer",
+      "message": "Submodule `packages/skyagent` records `2cb1e4d62059` on `dev`, while marius-patrik/SkyAgent `main` is `e103357655d1`.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "compare",
+          "url": "https://github.com/marius-patrik/SkyAgent/compare/2cb1e4d6205959d500d57155fed325026c17519b...e103357655d1cf365a9f57262882122b0f3195fa"
+        }
+      ],
+      "repair": [
+        "Update only after proving the child head is the eligible released/default commit and parent validation is green."
+      ]
+    },
+    {
+      "id": "submodule-plugins-darkfactory-pointer-drift-main",
+      "severity": "warning",
+      "category": "submodule pointer",
+      "message": "Submodule `plugins/DarkFactory` records `49ddfc220dd2` on `main`, while marius-patrik/DarkFactory `main` is `26bc106440a4`.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "compare",
+          "url": "https://github.com/marius-patrik/DarkFactory/compare/49ddfc220dd2981680f9173eb5ebfa081b2806f4...26bc106440a4c056115ba050c4a017e82b9ada76"
+        }
+      ],
+      "repair": [
+        "Update only after proving the child head is the eligible released/default commit and parent validation is green."
+      ]
+    },
+    {
+      "id": "submodule-plugins-skyagent-pointer-drift-main",
+      "severity": "warning",
+      "category": "submodule pointer",
+      "message": "Submodule `plugins/SkyAgent` records `2cb1e4d62059` on `main`, while marius-patrik/SkyAgent `main` is `e103357655d1`.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "compare",
+          "url": "https://github.com/marius-patrik/SkyAgent/compare/2cb1e4d6205959d500d57155fed325026c17519b...e103357655d1cf365a9f57262882122b0f3195fa"
+        }
+      ],
+      "repair": [
+        "Update only after proving the child head is the eligible released/default commit and parent validation is green."
+      ]
+    },
+    {
+      "id": "workflow-main-darkfactory-autoreview-red",
+      "severity": "error",
+      "category": "health",
+      "message": "Workflow `DarkFactory Autoreview` concluded `failure` on `main`.",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "DarkFactory Autoreview",
+          "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29692316515"
+        }
+      ],
+      "repair": []
+    },
+    {
+      "id": "workflow-main-head-checks-red",
+      "severity": "error",
+      "category": "health",
+      "message": "Current `main` head has failing checks: DarkFactory Autoreview:failure.",
+      "repair_class": "owner",
+      "evidence": [],
+      "repair": []
+    }
+  ],
+  "accepted_residue": [],
+  "observations": [
+    "Branch dev protection: protection_required=true, gates_required=true, strict=true, enforce_admins=true, required=Validate@app:15368, DarkFactory Autoreview@app:15368.",
+    "Branch main protection: protection_required=true, gates_required=true, strict=true, enforce_admins=true, required=Validate@app:15368, DarkFactory Autoreview@app:15368.",
+    "Local dirty and recursive submodule worktree state was not observable; only committed GitHub state was inspected.",
+    "Repository auto-merge posture is enabled (graphql).",
+    "main...dev is diverged (ahead=8, behind=2)."
+  ],
+  "publication_status": "admitted",
+  "actions": [
+    {
+      "action": "upsert-repair-issue",
+      "finding": "andromeda-submodule-unexpected-plugins-memory",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "automation-admin-bypass-guard-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "extra-branch-agent-227-memory-plugin",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "extra-branch-wip-cli-pin-wrappers",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "extra-branch-wip-compact-skill-archive",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-210-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-211-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-212-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-213-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-214-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-215-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-216-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-217-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-218-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-219-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-221-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-222-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-223-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-224-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-225-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-227-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-243-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-246-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-251-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-253-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-255-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-256-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-257-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-258-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-275-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-286-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-291-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-293-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-294-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-299-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-301-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-302-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-304-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-307-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-309-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-audit-drift",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-hard-drift",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-mechanical-drift",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-standard-drift",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "main-dev-diverged",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-agents-md",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-branching-policy-md",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-installer-policy-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-labels-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-managed-repository-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-github-workflows-ci-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-github-workflows-dark-factory-autoupdate-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-github-workflows-dark-factory-bootstrap-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-autoreview-policy-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-data-repository-policy-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-enforcement-rules-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-issue-draft-policy-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-managed-repos-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-model-policy-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-orchestration-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-submodule-policy-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-trigger-policy-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-darkfactory-autoreview-schema-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-dark-factory-managed-check-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-autoreview-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-autoreview-recovery-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-enforcement-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-issue-draft-hygiene-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-lib-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-model-policy-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-orchestrate-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-plan-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-release-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-submodule-autoupdate-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-submodule-checkout-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-sweep-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-trigger-policy-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-work-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-run-darkfactory-autoreview-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-autoreview-recovery-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-clean-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-follow-through-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-issue-draft-hygiene-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-orchestrate-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-plan-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-release-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-submodule-autoupdate-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-work-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-darkfactory-release-conventions-md",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-codex-review-dockerfile",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-codex-review-schema-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-scripts-dark-factory-release-check-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-scripts-run-codex-review-sh",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-workflows-codex-review-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-workflows-dark-factory-release-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-295-red",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-306-not-mergeable",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-306-red",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-308-not-mergeable",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-308-red",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-310-not-mergeable",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-310-red",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "retired-agents-data-repository-name",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "retired-agents-manager-owner-name",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-data-andromeda-pointer-drift-dev",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-data-andromeda-pointer-drift-main",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-data-darkfactory-pointer-drift-dev",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-data-darkfactory-pointer-drift-main",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-packages-darkfactory-pointer-drift-dev",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-packages-skyagent-pointer-drift-dev",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-plugins-darkfactory-pointer-drift-main",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-plugins-skyagent-pointer-drift-main",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-darkfactory-autoreview-red",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-head-checks-red",
+      "state": "admitted"
+    },
+    {
+      "action": "close-resolved-repair-issues",
+      "scope": "trusted df-doctor markers absent from the current finding set",
+      "state": "admitted"
+    },
+    {
+      "action": "retire-legacy-audit-issues",
+      "scope": "trusted aggregate df-audit marker",
+      "state": "admitted"
+    }
+  ],
+  "planned_actions": [
+    {
+      "action": "upsert-repair-issue",
+      "finding": "andromeda-submodule-unexpected-plugins-memory"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "automation-admin-bypass-guard-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "extra-branch-agent-227-memory-plugin"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "extra-branch-wip-cli-pin-wrappers"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "extra-branch-wip-compact-skill-archive"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-210-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-211-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-212-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-213-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-214-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-215-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-216-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-217-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-218-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-219-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-221-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-222-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-223-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-224-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-225-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-227-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-243-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-246-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-251-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-253-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-255-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-256-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-257-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-258-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-275-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-286-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-291-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-293-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-294-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-299-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-301-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-302-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-304-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-307-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-309-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-audit-drift"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-hard-drift"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-mechanical-drift"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-standard-drift"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "main-dev-diverged"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-agents-md"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-branching-policy-md"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-installer-policy-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-labels-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-managed-repository-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-github-workflows-ci-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-github-workflows-dark-factory-autoupdate-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-github-workflows-dark-factory-bootstrap-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-autoreview-policy-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-data-repository-policy-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-enforcement-rules-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-issue-draft-policy-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-managed-repos-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-model-policy-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-orchestration-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-submodule-policy-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-darkfactory-trigger-policy-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-darkfactory-autoreview-schema-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-dark-factory-managed-check-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-autoreview-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-autoreview-recovery-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-enforcement-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-issue-draft-hygiene-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-lib-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-model-policy-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-orchestrate-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-plan-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-release-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-submodule-autoupdate-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-submodule-checkout-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-sweep-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-trigger-policy-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-df-work-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-scripts-run-darkfactory-autoreview-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-autoreview-recovery-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-clean-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-follow-through-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-issue-draft-hygiene-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-orchestrate-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-plan-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-release-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-submodule-autoupdate-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-missing-github-workflows-df-work-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-darkfactory-release-conventions-md"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-codex-review-dockerfile"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-codex-review-schema-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-scripts-dark-factory-release-check-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-scripts-run-codex-review-sh"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-workflows-codex-review-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-removed-file-github-workflows-dark-factory-release-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-295-red"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-306-not-mergeable"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-306-red"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-308-not-mergeable"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-308-red"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-310-not-mergeable"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "pr-310-red"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "retired-agents-data-repository-name"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "retired-agents-manager-owner-name"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-data-andromeda-pointer-drift-dev"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-data-andromeda-pointer-drift-main"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-data-darkfactory-pointer-drift-dev"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-data-darkfactory-pointer-drift-main"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-packages-darkfactory-pointer-drift-dev"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-packages-skyagent-pointer-drift-dev"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-plugins-darkfactory-pointer-drift-main"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "submodule-plugins-skyagent-pointer-drift-main"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-darkfactory-autoreview-red"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-head-checks-red"
+    },
+    {
+      "action": "close-resolved-repair-issues",
+      "scope": "trusted df-doctor markers absent from the current finding set"
+    },
+    {
+      "action": "retire-legacy-audit-issues",
+      "scope": "trusted aggregate df-audit marker"
+    }
+  ],
+  "token_usage": {
+    "model_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Repository doctor is deterministic and uses no model tokens."
+  }
+}

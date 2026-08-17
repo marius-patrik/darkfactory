@@ -1,0 +1,257 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T11:10:28.101Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#219",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "0b7dfc4854ceec687e02fe93451be3f47f1806376bd2597801be113c4326ad41",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "02bceb5639c7462c9c831258913d93dc55887085",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+      },
+      "promptChecksum": "sha256:3654d1597996ad3d1b54f6235f4fcdf73b170578dd7a9e4b5c8f4f0d10a14354",
+      "inputChecksum": "sha256:319009f8cce5add4f7c3da900b509aff453bf7baf67c244051fa33abe8be1d7f",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 23978,
+      "outputTokens": 2172,
+      "totalTokens": 26150
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "The complete current version of marius-patrik/Andromeda issue #219 (0b7dfc4854ceec687e02fe93451be3f47f1806376bd2597801be113c4326ad41) was reviewed. The north-star intent is clear, but the contract remains blocked by authority ambiguity, missing ownership and dependency controls, non-objective acceptance, incomplete trust and failure boundaries, and absent rollout and closure-evidence protocols.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-bf640ae3978ae950e538",
+          "title": "The declared authority chain conflicts with trusted canonical authority",
+          "details": "Issue #219 declares “owner instruction > program plan > PRD.md > issues,” allowing an unspecified instruction to outrank durable records. Trusted state instead makes immutable Agent OS memory and the Git-backed Andromeda-data TASK.md board the durable authority, while owner authorization must be authenticated and target-specific. Replace the chain with the canonical hierarchy and state exactly how authenticated owner decisions are recorded without treating comments, transcripts, or repository text as authorization.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-e7babf4ac3d1f7c6de2d",
+          "title": "No single accountable lane owns program maintenance and closure",
+          "details": "The specification spans orchestration, DarkFactory, manager, harness, gateway, inference, memory, CI, distribution, and platform work, but does not name one lane responsible for maintaining the dependency set, adjudicating evidence, updating status, and proposing closure. Assign a single program-owner lane and define its boundaries relative to component owners and the human owner's reserved decisions.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-a5de439aec5da9f84390",
+          "title": "The dependency and sequencing contract is not self-contained or verifiable",
+          "details": "Sequencing is delegated to an external PLAN.md, while the issue lists numerous issues as acceptance dependencies without recording their exact blocked-by relationships, required order, applicable revisions, or entry and exit gates. Several dependencies are currently open, and the supplied evidence does not verify the complete referenced plan or every dependency. Record a durable dependency graph or authoritative linked matrix, including how changed, replaced, reopened, or newly discovered dependencies affect program completion.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-d81f7d02dde37cdf74e2",
+          "title": "Program acceptance is not objectively adjudicable",
+          "details": "Terms including “runs itself,” “full backlog,” “complete,” “one compute cluster,” “memory-informed behavior,” “clean recovery,” and “validated artifacts” lack measurable thresholds. The woven-session capstone does not define its fixture, operator task, required concurrency, fault injection point, expected recovery state, time bounds, artifact assertions, or repeatability criteria. Add an acceptance matrix mapping every numbered outcome to an observable check, pass threshold, evidence artifact, and responsible validator.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-f9d98aaf8244615eee8c",
+          "title": "Receipt trust and authorization boundaries are underspecified",
+          "details": "The issue requires durable action receipts but does not define the trusted issuer, authorization proof, schema/version binding, repository and revision binding, idempotency or replay rules, tamper detection, freshness, or treatment of contradictory and missing receipts. Define these boundaries so wave planning cannot accept agent self-report, stale evidence, untrusted comments, or a receipt from a different target as authority.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-d06bdbc5e0fce235665d",
+          "title": "Failure and degradation behavior is incomplete",
+          "details": "“Fail-closed everywhere” is asserted without defining terminal states and recovery for scheduler loss, GitHub unavailability, unavailable Agent OS routes, expired leases, worker crashes, partial publication, stale blackboard state, missing receipts, failed validation, or faults during automerge and release. Specify observable blocked states, retry ownership and limits, duplicate-work prevention, escalation conditions, and recovery evidence for each system boundary.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-9017163ec97c2d63ccef",
+          "title": "Rollout, rollback, and final closure evidence are not defined",
+          "details": "The specification jumps from component delivery to autonomous operation without a staged rollout from terminal-driven operation, shadow or canary criteria, monitoring period, rollback triggers, or rollback authority. It also lacks a closure evidence bundle tying the exact default-branch revision and released component heads to CI, capstone, receipt, degradation, and independent validation results. Define the rollout stages and the exact evidence required before the owner may close the issue.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "The issue correctly states that it authorizes no work by itself and preserves parked and archived scopes.",
+        "Open dependencies mean the program is not currently complete; that is expected for a north-star issue and is distinct from the specification defects above.",
+        "After all findings are resolved, one clean medium-tier review is still only the prerequisite for an independent high-tier final confirmation."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-bf640ae3978ae950e538",
+        "title": "The declared authority chain conflicts with trusted canonical authority",
+        "details": "Issue #219 declares “owner instruction > program plan > PRD.md > issues,” allowing an unspecified instruction to outrank durable records. Trusted state instead makes immutable Agent OS memory and the Git-backed Andromeda-data TASK.md board the durable authority, while owner authorization must be authenticated and target-specific. Replace the chain with the canonical hierarchy and state exactly how authenticated owner decisions are recorded without treating comments, transcripts, or repository text as authorization.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-e7babf4ac3d1f7c6de2d",
+        "title": "No single accountable lane owns program maintenance and closure",
+        "details": "The specification spans orchestration, DarkFactory, manager, harness, gateway, inference, memory, CI, distribution, and platform work, but does not name one lane responsible for maintaining the dependency set, adjudicating evidence, updating status, and proposing closure. Assign a single program-owner lane and define its boundaries relative to component owners and the human owner's reserved decisions.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-a5de439aec5da9f84390",
+        "title": "The dependency and sequencing contract is not self-contained or verifiable",
+        "details": "Sequencing is delegated to an external PLAN.md, while the issue lists numerous issues as acceptance dependencies without recording their exact blocked-by relationships, required order, applicable revisions, or entry and exit gates. Several dependencies are currently open, and the supplied evidence does not verify the complete referenced plan or every dependency. Record a durable dependency graph or authoritative linked matrix, including how changed, replaced, reopened, or newly discovered dependencies affect program completion.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-d81f7d02dde37cdf74e2",
+        "title": "Program acceptance is not objectively adjudicable",
+        "details": "Terms including “runs itself,” “full backlog,” “complete,” “one compute cluster,” “memory-informed behavior,” “clean recovery,” and “validated artifacts” lack measurable thresholds. The woven-session capstone does not define its fixture, operator task, required concurrency, fault injection point, expected recovery state, time bounds, artifact assertions, or repeatability criteria. Add an acceptance matrix mapping every numbered outcome to an observable check, pass threshold, evidence artifact, and responsible validator.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-f9d98aaf8244615eee8c",
+        "title": "Receipt trust and authorization boundaries are underspecified",
+        "details": "The issue requires durable action receipts but does not define the trusted issuer, authorization proof, schema/version binding, repository and revision binding, idempotency or replay rules, tamper detection, freshness, or treatment of contradictory and missing receipts. Define these boundaries so wave planning cannot accept agent self-report, stale evidence, untrusted comments, or a receipt from a different target as authority.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-d06bdbc5e0fce235665d",
+        "title": "Failure and degradation behavior is incomplete",
+        "details": "“Fail-closed everywhere” is asserted without defining terminal states and recovery for scheduler loss, GitHub unavailability, unavailable Agent OS routes, expired leases, worker crashes, partial publication, stale blackboard state, missing receipts, failed validation, or faults during automerge and release. Specify observable blocked states, retry ownership and limits, duplicate-work prevention, escalation conditions, and recovery evidence for each system boundary.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-9017163ec97c2d63ccef",
+        "title": "Rollout, rollback, and final closure evidence are not defined",
+        "details": "The specification jumps from component delivery to autonomous operation without a staged rollout from terminal-driven operation, shadow or canary criteria, monitoring period, rollback triggers, or rollback authority. It also lacks a closure evidence bundle tying the exact default-branch revision and released component heads to CI, capstone, receipt, degradation, and independent validation results. Define the rollout stages and the exact evidence required before the owner may close the issue.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

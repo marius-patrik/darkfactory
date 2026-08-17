@@ -1,0 +1,625 @@
+{
+  "kind": "df-plan",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-07T20:18:28.223Z",
+  "trigger": "schedule",
+  "default_branch": "main",
+  "source_ref": "main",
+  "prd_files": [
+    "PRD.md",
+    "templates/packages/cli/PRD.md",
+    "templates/packages/web/PRD.md",
+    "templates/PRD.md",
+    "templates/templates/template-bot/PRD.md",
+    "templates/templates/template-cli/PRD.md",
+    "templates/templates/template-repo/PRD.md",
+    "templates/templates/template-web/PRD.md"
+  ],
+  "actions": [
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l0",
+      "issue": {
+        "number": 59,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/59"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l1",
+      "issue": {
+        "number": 60,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/60"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l2",
+      "issue": {
+        "number": 61,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/61"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l3",
+      "issue": {
+        "number": 62,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/62"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l4",
+      "issue": {
+        "number": 63,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/63"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l5",
+      "issue": {
+        "number": 64,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/64"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l6",
+      "issue": {
+        "number": 65,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/65"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:milestones-m1",
+      "issue": {
+        "number": 66,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/66"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:milestones-m2",
+      "issue": {
+        "number": 67,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/67"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:milestones-m3",
+      "issue": {
+        "number": 68,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/68"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:milestones-m4",
+      "issue": {
+        "number": 69,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/69"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:milestones-m5",
+      "issue": {
+        "number": 70,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/70"
+      }
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-packages-cli-prd-md-core-loops-l1",
+      "issue": {
+        "number": 205,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/205"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard",
+        "df:ready"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-packages-cli-prd-md-core-loops-l2",
+      "issue": {
+        "number": 206,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/206"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:hard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-packages-cli-prd-md-core-loops-l3",
+      "issue": {
+        "number": 207,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/207"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-packages-cli-prd-md-core-loops-l4",
+      "issue": {
+        "number": 208,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/208"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-packages-cli-prd-md-milestones-m1",
+      "issue": {
+        "number": 209,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/209"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-packages-web-prd-md-core-loops-l1",
+      "issue": {
+        "number": 210,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/210"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-packages-web-prd-md-core-loops-l2",
+      "issue": {
+        "number": 211,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/211"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:hard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-packages-web-prd-md-core-loops-l3",
+      "issue": {
+        "number": 212,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/212"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-packages-web-prd-md-core-loops-l4",
+      "issue": {
+        "number": 213,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/213"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-packages-web-prd-md-milestones-m1",
+      "issue": {
+        "number": 214,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/214"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-prd-md-core-loops-l1",
+      "issue": {
+        "number": 215,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/215"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-prd-md-core-loops-l2",
+      "issue": {
+        "number": 216,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/216"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:hard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-prd-md-core-loops-l3",
+      "issue": {
+        "number": 217,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/217"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-prd-md-core-loops-l4",
+      "issue": {
+        "number": 218,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/218"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-prd-md-milestones-m1",
+      "issue": {
+        "number": 219,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/219"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-bot-prd-md-core-loops-l1",
+      "issue": {
+        "number": 220,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/220"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-bot-prd-md-core-loops-l2",
+      "issue": {
+        "number": 221,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/221"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:hard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-bot-prd-md-core-loops-l3",
+      "issue": {
+        "number": 222,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/222"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-bot-prd-md-core-loops-l4",
+      "issue": {
+        "number": 223,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/223"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-bot-prd-md-milestones-m1",
+      "issue": {
+        "number": 224,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/224"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-cli-prd-md-core-loops-l1",
+      "issue": {
+        "number": 225,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/225"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-cli-prd-md-core-loops-l2",
+      "issue": {
+        "number": 226,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/226"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:hard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-cli-prd-md-core-loops-l3",
+      "issue": {
+        "number": 227,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/227"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-cli-prd-md-core-loops-l4",
+      "issue": {
+        "number": 228,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/228"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-cli-prd-md-milestones-m1",
+      "issue": {
+        "number": 229,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/229"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-repo-prd-md-core-loops-l1",
+      "issue": {
+        "number": 230,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/230"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-repo-prd-md-core-loops-l2",
+      "issue": {
+        "number": 231,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/231"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:hard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-repo-prd-md-core-loops-l3",
+      "issue": {
+        "number": 232,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/232"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-repo-prd-md-core-loops-l4",
+      "issue": {
+        "number": 233,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/233"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-repo-prd-md-milestones-m1",
+      "issue": {
+        "number": 234,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/234"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-web-prd-md-core-loops-l1",
+      "issue": {
+        "number": 235,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/235"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-web-prd-md-core-loops-l2",
+      "issue": {
+        "number": 236,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/236"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:hard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-web-prd-md-core-loops-l3",
+      "issue": {
+        "number": 237,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/237"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-web-prd-md-core-loops-l4",
+      "issue": {
+        "number": 238,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/238"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "sequence-labels",
+      "marker": "df-prd:templates-templates-template-web-prd-md-milestones-m1",
+      "issue": {
+        "number": 239,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/239"
+      },
+      "labels": [
+        "P1",
+        "roadmap",
+        "df:class:standard"
+      ]
+    },
+    {
+      "action": "drift-report",
+      "issue": {
+        "number": 74,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/74"
+      },
+      "findings": [
+        "Open issue #179 is not tracked by any PRD item.",
+        "Open issue #177 is not tracked by any PRD item.",
+        "Open issue #166 is not tracked by any PRD item.",
+        "Open issue #147 is not tracked by any PRD item.",
+        "Open issue #55 is not tracked by any PRD item.",
+        "Open issue #54 is not tracked by any PRD item.",
+        "Open issue #53 is not tracked by any PRD item.",
+        "Open issue #52 is not tracked by any PRD item.",
+        "Open issue #51 is not tracked by any PRD item.",
+        "Open issue #50 is not tracked by any PRD item.",
+        "Open issue #49 is not tracked by any PRD item.",
+        "Open issue #48 is not tracked by any PRD item.",
+        "Open issue #47 is not tracked by any PRD item.",
+        "Open issue #46 is not tracked by any PRD item.",
+        "Open issue #45 is not tracked by any PRD item.",
+        "Open issue #43 is not tracked by any PRD item.",
+        "Open issue #42 is not tracked by any PRD item.",
+        "Open issue #41 is not tracked by any PRD item.",
+        "Open issue #39 is not tracked by any PRD item.",
+        "Open issue #38 is not tracked by any PRD item.",
+        "Open issue #37 is not tracked by any PRD item.",
+        "Open issue #36 is not tracked by any PRD item.",
+        "Open issue #35 is not tracked by any PRD item.",
+        "Open issue #33 is not tracked by any PRD item.",
+        "Open issue #32 is not tracked by any PRD item.",
+        "Open issue #26 is not tracked by any PRD item.",
+        "Open issue #24 is not tracked by any PRD item.",
+        "Open issue #22 is not tracked by any PRD item.",
+        "Open issue #13 is not tracked by any PRD item.",
+        "Open issue #12 is not tracked by any PRD item.",
+        "Open issue #11 is not tracked by any PRD item.",
+        "Open PR #77 is not linked to a PRD-tracked issue."
+      ]
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "L4 planning used deterministic PRD parsing only"
+  },
+  "prd_coverage": {
+    "root_present": true,
+    "package_prds": 7,
+    "total_packages": 7,
+    "missing": []
+  }
+}

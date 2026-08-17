@@ -1,0 +1,84 @@
+{
+  "kind": "df-orchestrate",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-10T20:07:47.351Z",
+  "trigger": "schedule",
+  "control_repo": "marius-patrik/agent-darkfactory",
+  "wave_order": [
+    "hygiene",
+    "enforcement",
+    "features"
+  ],
+  "concurrency": {
+    "global": 6,
+    "perRepository": 2,
+    "perStream": 3
+  },
+  "repositories": [
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "gate_wave": "features",
+      "repository_gate_wave": "features",
+      "open_work": 68,
+      "ready": 0,
+      "running": 0,
+      "blocked": 2,
+      "ask_owner": 0,
+      "dispatchable": 0
+    },
+    {
+      "repo": "marius-patrik/agents-manager",
+      "gate_wave": "features",
+      "repository_gate_wave": "features",
+      "open_work": 11,
+      "ready": 0,
+      "running": 0,
+      "blocked": 2,
+      "ask_owner": 2,
+      "dispatchable": 0
+    },
+    {
+      "repo": "marius-patrik/agents-plugin",
+      "gate_wave": "features",
+      "repository_gate_wave": "features",
+      "open_work": 3,
+      "ready": 0,
+      "running": 0,
+      "blocked": 1,
+      "ask_owner": 1,
+      "dispatchable": 0
+    },
+    {
+      "repo": "marius-patrik/dream",
+      "gate_wave": "features",
+      "repository_gate_wave": "features",
+      "open_work": 2,
+      "ready": 0,
+      "running": 0,
+      "blocked": 0,
+      "ask_owner": 0,
+      "dispatchable": 0
+    },
+    {
+      "repo": "marius-patrik/workspace-agents",
+      "gate_wave": "features",
+      "repository_gate_wave": "features",
+      "open_work": 2,
+      "ready": 0,
+      "running": 0,
+      "blocked": 0,
+      "ask_owner": 0,
+      "dispatchable": 0
+    }
+  ],
+  "dispatched": [],
+  "recovery": [],
+  "auto_readied": [],
+  "escalated": [],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Orchestrator dispatch is deterministic and uses no model calls"
+  }
+}

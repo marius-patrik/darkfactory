@@ -1,0 +1,73 @@
+{
+  "kind": "df-submodule-update",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-17T10:14:33.680Z",
+  "schemaVersion": 1,
+  "mode": "update",
+  "status": "blocked",
+  "plan": {
+    "schemaVersion": 1,
+    "planId": "submodule-c533a8c5053a0e544a9c",
+    "action": "block",
+    "branch": null,
+    "evidence": {
+      "child": "marius-patrik/Andromeda",
+      "child_sha": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+      "parent": null,
+      "parent_main": null,
+      "parent_dev": null,
+      "path": null,
+      "main_pointer": null,
+      "dev_pointer": null,
+      "pointer_state": "blocked",
+      "receipt": null
+    },
+    "blockers": [
+      "child-release-gate-invalid:DarkFactory Autoreview",
+      "child-release-gate-invalid:Validate",
+      "child-release-pull-evidence-invalid",
+      "no-active-parent-consumer:marius-patrik/Andromeda"
+    ]
+  },
+  "action": {
+    "status": "blocked",
+    "reason": "child-release-gate-invalid:DarkFactory Autoreview;child-release-gate-invalid:Validate;child-release-pull-evidence-invalid;no-active-parent-consumer:marius-patrik/Andromeda"
+  },
+  "observation": {
+    "child": "marius-patrik/Andromeda",
+    "child_release": {
+      "repository": "marius-patrik/Andromeda",
+      "branch": "main",
+      "sha": "7e493e4a9b52e192186ddcaab771d73be99ef32f",
+      "receipt": null,
+      "main_checks": {
+        "checks": [
+          {
+            "name": "Validate",
+            "expectedAppId": 15368,
+            "actualAppId": 15368,
+            "id": 87855732142,
+            "url": "https://github.com/marius-patrik/Andromeda/actions/runs/29529844709/job/87855732142",
+            "state": "green"
+          }
+        ],
+        "green": true,
+        "missing": [],
+        "pending": [],
+        "red": []
+      }
+    },
+    "parent": null,
+    "local": {
+      "observed": false,
+      "clean": null,
+      "blockers": []
+    },
+    "blockers": [
+      "child-release-gate-invalid:DarkFactory Autoreview",
+      "child-release-gate-invalid:Validate",
+      "child-release-pull-evidence-invalid",
+      "no-active-parent-consumer:marius-patrik/Andromeda"
+    ]
+  }
+}

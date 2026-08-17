@@ -1,0 +1,244 @@
+{
+  "kind": "autoreview-001-medium_review",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T12:12:57.997Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#210",
+  "round": {
+    "sequence": 1,
+    "phase": "medium_review",
+    "targetVersion": "f0f6bf996c735549d26a7ab9b53da4c6b4bb18339fb38a97c78fafeedeec1ee1",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "7a1001deeece71b9648b7f151c5c88f48f78d074",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:dbb05f22719d2ed3a815bf3cef784d478557553201c37f08fd411bb81367aec8"
+      },
+      "promptChecksum": "sha256:cf71d5b50b6beb634f0285929115bfd4a13c8b8275e30f14a3d4b5e2b510f383",
+      "inputChecksum": "sha256:afaefbdf95ece702a3913f3bfc7241224b99e5e88b423e0e42b565035432efb6",
+      "profile": {
+        "id": "profile/issue-reviewer",
+        "version": "0.2.0",
+        "runKind": "review-issue",
+        "purpose": "iterative-review"
+      },
+      "selection": {
+        "role": "role/issue-reviewer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/owner-escalation",
+          "skill/validation-autoreview",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-reviewer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-reviewer",
+          "version": "0.2.0",
+          "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/validation-autoreview",
+          "version": "0.2.0",
+          "checksum": "sha256:f2238fc8f1f75dd93d4d346d791265ebb758f1ef8a3f6b58b573ade5a15b8eda"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-reviewer",
+          "version": "0.3.0",
+          "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 21831,
+      "outputTokens": 1734,
+      "totalTokens": 23565
+    },
+    "verdict": {
+      "approved": false,
+      "summary": "Issue #210 is not execution-ready. It leaves the owner-only naming decision unresolved, contains conflicting compatibility requirements, mixes decision and implementation ownership, lacks verifiable dependency sequencing, and does not define objective validation or rollout behavior.",
+      "findingsComplete": true,
+      "blockingFindings": [
+        {
+          "id": "df-3a763c6b077d18584c36",
+          "title": "Canonical naming decision is absent",
+          "details": "The contract asks a worker to decide five public identities but provides neither the selected values nor an authenticated owner decision process. Branding and public compatibility are owner-only semantic choices. Acceptance cannot be evaluated until the issue records the exact canonical public name, distribution name, import namespace, CLI script name, and agent package id.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-cf2b452ed46861fb6d44",
+          "title": "Compatibility requirements contradict each other",
+          "details": "The requirements simultaneously require migration aliases where needed and prohibit aliases, bridges, or forwarding shims unless an unspecified canonical exception exists. The contract must state whether compatibility is forbidden, temporarily supported, or permanently excepted, including the exact surfaces and lifetime of any exception.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-b5b8875ab92826b65f1c",
+          "title": "Decision and implementation ownership are not separated",
+          "details": "The title presents a decision lane, while the requirements also authorize a repository-wide rename. The issue does not identify who supplies the owner decision, when implementation becomes authorized, or whether decision recording and implementation belong in one lane. A worker cannot silently convert an unresolved decision into implementation scope.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-5cfeffa193ac4f0181eb",
+          "title": "Dependencies and authoritative planning evidence are unverifiable",
+          "details": "The issue cites Andromeda-data context/PLAN.md and claims it gates issue #214, but the trusted state establishes context/TASK.md as the canonical task board and supplies no verified PLAN.md content or dependency contract for #214. Replace or reconcile the stale planning reference and record an explicit, verifiable dependency relationship and sequencing condition.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-a6669ff1022b9579876d",
+          "title": "Acceptance and validation are not objective",
+          "details": "Phrases such as \"one consistent name,\" \"where needed,\" and \"compatibility surface (if any)\" do not define a finite inventory or expected results. The contract must enumerate affected code, metadata, documentation, package/import/CLI/agent-id behavior, compatibility cases, negative checks for historical names, and required evidence, including the repository validation gates git diff --check and git submodule status --recursive.",
+          "path": null,
+          "line": null
+        },
+        {
+          "id": "df-5913cffd7b2a71f3bc8e",
+          "title": "Rollout and failure behavior are unspecified",
+          "details": "A public distribution, import, CLI, or package-id rename can break existing consumers. The issue defines no release boundary, migration or removal sequence, behavior for old entry points, rollback condition, or evidence proving downstream packaging issue #214 can proceed safely.",
+          "path": null,
+          "line": null
+        }
+      ],
+      "nonBlockingNotes": [
+        "Owner question: What exact value is approved for each of the five naming surfaces?",
+        "Owner question: Are compatibility aliases prohibited, temporarily permitted with a removal release, or approved as a named permanent exception?",
+        "Owner question: Should this issue contain both the recorded decision and its implementation, or should implementation begin only through a separate successor contract?",
+        "The contributor-authored failed, pending, and blocked autoreview comments are untrusted operational records and provide no approval or specification authority."
+      ]
+    },
+    "findings": [
+      {
+        "id": "df-3a763c6b077d18584c36",
+        "title": "Canonical naming decision is absent",
+        "details": "The contract asks a worker to decide five public identities but provides neither the selected values nor an authenticated owner decision process. Branding and public compatibility are owner-only semantic choices. Acceptance cannot be evaluated until the issue records the exact canonical public name, distribution name, import namespace, CLI script name, and agent package id.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-cf2b452ed46861fb6d44",
+        "title": "Compatibility requirements contradict each other",
+        "details": "The requirements simultaneously require migration aliases where needed and prohibit aliases, bridges, or forwarding shims unless an unspecified canonical exception exists. The contract must state whether compatibility is forbidden, temporarily supported, or permanently excepted, including the exact surfaces and lifetime of any exception.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-b5b8875ab92826b65f1c",
+        "title": "Decision and implementation ownership are not separated",
+        "details": "The title presents a decision lane, while the requirements also authorize a repository-wide rename. The issue does not identify who supplies the owner decision, when implementation becomes authorized, or whether decision recording and implementation belong in one lane. A worker cannot silently convert an unresolved decision into implementation scope.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-5cfeffa193ac4f0181eb",
+        "title": "Dependencies and authoritative planning evidence are unverifiable",
+        "details": "The issue cites Andromeda-data context/PLAN.md and claims it gates issue #214, but the trusted state establishes context/TASK.md as the canonical task board and supplies no verified PLAN.md content or dependency contract for #214. Replace or reconcile the stale planning reference and record an explicit, verifiable dependency relationship and sequencing condition.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-a6669ff1022b9579876d",
+        "title": "Acceptance and validation are not objective",
+        "details": "Phrases such as \"one consistent name,\" \"where needed,\" and \"compatibility surface (if any)\" do not define a finite inventory or expected results. The contract must enumerate affected code, metadata, documentation, package/import/CLI/agent-id behavior, compatibility cases, negative checks for historical names, and required evidence, including the repository validation gates git diff --check and git submodule status --recursive.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-5913cffd7b2a71f3bc8e",
+        "title": "Rollout and failure behavior are unspecified",
+        "details": "A public distribution, import, CLI, or package-id rename can break existing consumers. The issue defines no release boundary, migration or removal sequence, behavior for old entry points, rollback condition, or evidence proving downstream packaging issue #214 can proceed safely.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": null,
+    "outcome": "findings"
+  }
+}

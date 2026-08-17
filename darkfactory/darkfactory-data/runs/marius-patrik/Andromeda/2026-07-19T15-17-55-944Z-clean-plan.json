@@ -1,0 +1,1723 @@
+{
+  "kind": "clean-plan",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-19T15:17:55.944Z",
+  "control_revision": "26bc106440a4c056115ba050c4a017e82b9ada76",
+  "plan_id": "clean-ad9eac8b762bd665ce842e77",
+  "evidence_hash": "ad9eac8b762bd665ce842e77e81f039e0c68a874b7ed7582481653778e55a2b3",
+  "entries": [
+    {
+      "kind": "remote-branch",
+      "target": "agent/227-memory-plugin",
+      "head": "f7a7bacdbb3c87ea617443993205fc146056aaa9",
+      "classification": "unpublished",
+      "action": "preserve",
+      "reasons": [
+        "Local branch has unpublished commits or is ahead of its observed remote."
+      ]
+    },
+    {
+      "kind": "worktree",
+      "target": "wt-f582dc1ef9f2e555",
+      "head": "f018267e70f07d150582598f22ed97fda5a96c92",
+      "classification": "active-worktree",
+      "action": "preserve",
+      "reasons": [
+        "Worktree is active, dirty, untracked, submodule-dirty, or does not exactly match the observed branch head."
+      ]
+    },
+    {
+      "kind": "remote-branch",
+      "target": "dev",
+      "head": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56",
+      "classification": "protected-policy",
+      "action": "preserve",
+      "reasons": [
+        "Protected or policy branch is immutable."
+      ]
+    },
+    {
+      "kind": "worktree",
+      "target": "wt-b142c1a0640ea835",
+      "head": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56",
+      "classification": "active-worktree",
+      "action": "preserve",
+      "reasons": [
+        "Worktree is active, dirty, untracked, submodule-dirty, or does not exactly match the observed branch head."
+      ]
+    },
+    {
+      "kind": "remote-branch",
+      "target": "feat/provider-tool-policy",
+      "head": "39e91611386a282f2f2f067a41bb6ac515404ae1",
+      "classification": "open-pr",
+      "action": "preserve",
+      "reasons": [
+        "Exact head belongs to open PR #310."
+      ]
+    },
+    {
+      "kind": "worktree",
+      "target": "wt-3dc052e04a403c04",
+      "head": "39e91611386a282f2f2f067a41bb6ac515404ae1",
+      "classification": "active-worktree",
+      "action": "preserve",
+      "reasons": [
+        "Worktree is active, dirty, untracked, submodule-dirty, or does not exactly match the observed branch head."
+      ]
+    },
+    {
+      "kind": "remote-branch",
+      "target": "feat/security-no-tools-isolation",
+      "head": "24522138c9a978d5844bf79b7c113a4288cdf1c9",
+      "classification": "open-pr",
+      "action": "preserve",
+      "reasons": [
+        "Exact head belongs to open PR #308."
+      ]
+    },
+    {
+      "kind": "worktree",
+      "target": "wt-60db4ef8cb902ae3",
+      "head": "24522138c9a978d5844bf79b7c113a4288cdf1c9",
+      "classification": "active-worktree",
+      "action": "preserve",
+      "reasons": [
+        "Worktree is active, dirty, untracked, submodule-dirty, or does not exactly match the observed branch head."
+      ]
+    },
+    {
+      "kind": "remote-branch",
+      "target": "fix/294-hygiene-evidence-leaf",
+      "head": "c5a0da5afc65e4b85308e68b76e52e42dca43620",
+      "classification": "open-pr",
+      "action": "preserve",
+      "reasons": [
+        "Exact head belongs to open PR #295."
+      ]
+    },
+    {
+      "kind": "remote-branch",
+      "target": "main",
+      "head": "cd511544eae8798c6d2a86ebb4c49dc7aac1e57d",
+      "classification": "protected-policy",
+      "action": "preserve",
+      "reasons": [
+        "Protected or policy branch is immutable."
+      ]
+    },
+    {
+      "kind": "remote-branch",
+      "target": "reconcile/cd511544-2b78936e",
+      "head": "3a2d05c4d8f981ed880f8ef55ea5eb1d95e02b0b",
+      "classification": "open-pr",
+      "action": "preserve",
+      "reasons": [
+        "Exact head belongs to open PR #306."
+      ]
+    },
+    {
+      "kind": "remote-branch",
+      "target": "wip/cli-pin-wrappers",
+      "head": "ce8dbba85281e8cb91d193dcefa82480d1b35653",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "No exact ancestry, tree-equivalence, or merged-PR preservation proof."
+      ]
+    },
+    {
+      "kind": "remote-branch",
+      "target": "wip/compact-skill-archive",
+      "head": "a4ce9cbc3613754f2f543e5875f13954b7073536",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "No exact ancestry, tree-equivalence, or merged-PR preservation proof."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "agent/227-memory-plugin",
+      "head": "f018267e70f07d150582598f22ed97fda5a96c92",
+      "classification": "unpublished",
+      "action": "preserve",
+      "reasons": [
+        "Local branch has unpublished commits or is ahead of its observed remote."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "dev",
+      "head": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56",
+      "classification": "protected-policy",
+      "action": "preserve",
+      "reasons": [
+        "Protected or policy branch is immutable."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "feat/provider-tool-policy",
+      "head": "39e91611386a282f2f2f067a41bb6ac515404ae1",
+      "classification": "open-pr",
+      "action": "preserve",
+      "reasons": [
+        "Exact head belongs to open PR #310."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "feat/security-no-tools-isolation",
+      "head": "24522138c9a978d5844bf79b7c113a4288cdf1c9",
+      "classification": "open-pr",
+      "action": "preserve",
+      "reasons": [
+        "Exact head belongs to open PR #308."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "fix/294-hygiene-evidence-leaf",
+      "head": "c5a0da5afc65e4b85308e68b76e52e42dca43620",
+      "classification": "open-pr",
+      "action": "preserve",
+      "reasons": [
+        "Exact head belongs to open PR #295."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "main",
+      "head": "cd511544eae8798c6d2a86ebb4c49dc7aac1e57d",
+      "classification": "protected-policy",
+      "action": "preserve",
+      "reasons": [
+        "Protected or policy branch is immutable."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "wip/cli-pin-wrappers",
+      "head": "ce8dbba85281e8cb91d193dcefa82480d1b35653",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "No exact ancestry, tree-equivalence, or merged-PR preservation proof."
+      ]
+    },
+    {
+      "kind": "local-branch",
+      "target": "wip/compact-skill-archive",
+      "head": "a4ce9cbc3613754f2f543e5875f13954b7073536",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "No exact ancestry, tree-equivalence, or merged-PR preservation proof."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/agent/227-memory-plugin",
+      "head": "f7a7bacdbb3c87ea617443993205fc146056aaa9",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/dev",
+      "head": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/feat/provider-tool-policy",
+      "head": "39e91611386a282f2f2f067a41bb6ac515404ae1",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/feat/security-no-tools-isolation",
+      "head": "24522138c9a978d5844bf79b7c113a4288cdf1c9",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/fix/294-hygiene-evidence-leaf",
+      "head": "c5a0da5afc65e4b85308e68b76e52e42dca43620",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/HEAD",
+      "head": "cd511544eae8798c6d2a86ebb4c49dc7aac1e57d",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/main",
+      "head": "cd511544eae8798c6d2a86ebb4c49dc7aac1e57d",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/reconcile/cd511544-2b78936e",
+      "head": "3a2d05c4d8f981ed880f8ef55ea5eb1d95e02b0b",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/wip/cli-pin-wrappers",
+      "head": "ce8dbba85281e8cb91d193dcefa82480d1b35653",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/remotes/origin/wip/compact-skill-archive",
+      "head": "a4ce9cbc3613754f2f543e5875f13954b7073536",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/tags/v0.1.0",
+      "head": "2702f54b130e2c913d1548c950449cffcfa2dbf3",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/tags/v0.2.0",
+      "head": "aec13e54eccffbb9abc9247b0feff16ffad44248",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/tags/v0.2.1",
+      "head": "b71c24a217a7acaea249a72ff1935bdc2321ec3a",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/tags/v0.2.2",
+      "head": "d7bafd4f660c275bb327b9dd97b371f26a48adc2",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "orphan-ref",
+      "target": "refs/tags/v0.3.0",
+      "head": "feb9342b22be880fa718da53939abf30f6751467",
+      "classification": "ambiguous",
+      "action": "preserve",
+      "reasons": [
+        "Ref namespace is not an admitted cleanup namespace and remains preserved."
+      ]
+    },
+    {
+      "kind": "worktree",
+      "target": "wt-473c9ac7b9a8c871",
+      "head": "913c1aac966a47531f923606df94500098f87c15",
+      "classification": "dirty-worktree",
+      "action": "preserve",
+      "reasons": [
+        "Detached worktrees are always preserved; no branch/ref deletion authority can be inferred."
+      ]
+    },
+    {
+      "kind": "pull-request",
+      "target": "#295",
+      "head": "c5a0da5afc65e4b85308e68b76e52e42dca43620",
+      "classification": "red",
+      "action": "autoreview",
+      "version": "4739cf8f38191f0879952db04ef4c9a9e9d7ead9:c5a0da5afc65e4b85308e68b76e52e42dca43620",
+      "base": "dev",
+      "baseSha": "4739cf8f38191f0879952db04ef4c9a9e9d7ead9",
+      "headRef": "fix/294-hygiene-evidence-leaf",
+      "reasons": [
+        "Exact 4739cf8f38191f0879952db04ef4c9a9e9d7ead9:c5a0da5afc65e4b85308e68b76e52e42dca43620 is a live PR version requiring the shared Autoreview/fix protocol.",
+        "pr-295-red"
+      ]
+    },
+    {
+      "kind": "pull-request",
+      "target": "#306",
+      "head": "3a2d05c4d8f981ed880f8ef55ea5eb1d95e02b0b",
+      "classification": "red",
+      "action": "autoreview",
+      "version": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56:3a2d05c4d8f981ed880f8ef55ea5eb1d95e02b0b",
+      "base": "dev",
+      "baseSha": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56",
+      "headRef": "reconcile/cd511544-2b78936e",
+      "reasons": [
+        "Exact 2b78936e4b7099cc30998f08fcdf4d9a806a5e56:3a2d05c4d8f981ed880f8ef55ea5eb1d95e02b0b is a live PR version requiring the shared Autoreview/fix protocol.",
+        "pr-306-not-mergeable",
+        "pr-306-red"
+      ]
+    },
+    {
+      "kind": "pull-request",
+      "target": "#308",
+      "head": "24522138c9a978d5844bf79b7c113a4288cdf1c9",
+      "classification": "red",
+      "action": "autoreview",
+      "version": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56:24522138c9a978d5844bf79b7c113a4288cdf1c9",
+      "base": "dev",
+      "baseSha": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56",
+      "headRef": "feat/security-no-tools-isolation",
+      "reasons": [
+        "Exact 2b78936e4b7099cc30998f08fcdf4d9a806a5e56:24522138c9a978d5844bf79b7c113a4288cdf1c9 is a live PR version requiring the shared Autoreview/fix protocol.",
+        "pr-308-not-mergeable",
+        "pr-308-red"
+      ]
+    },
+    {
+      "kind": "pull-request",
+      "target": "#310",
+      "head": "39e91611386a282f2f2f067a41bb6ac515404ae1",
+      "classification": "red",
+      "action": "autoreview",
+      "version": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56:39e91611386a282f2f2f067a41bb6ac515404ae1",
+      "base": "dev",
+      "baseSha": "2b78936e4b7099cc30998f08fcdf4d9a806a5e56",
+      "headRef": "feat/provider-tool-policy",
+      "reasons": [
+        "Exact 2b78936e4b7099cc30998f08fcdf4d9a806a5e56:39e91611386a282f2f2f067a41bb6ac515404ae1 is a live PR version requiring the shared Autoreview/fix protocol.",
+        "pr-310-not-mergeable",
+        "pr-310-red"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#210",
+      "head": "dd544b06f81272edfe5af6bde65029aecdee7dcfa24c9f8750191107605007b7",
+      "classification": "finding",
+      "action": "preserve",
+      "version": "dd544b06f81272edfe5af6bde65029aecdee7dcfa24c9f8750191107605007b7",
+      "reasons": [
+        "The exact issue version already has an in-progress Autoreview; duplicate dispatch is suppressed.",
+        "issue-210-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#211",
+      "head": "db7547c8b51839093b00bcdf7eadda7cb905f76eb2d2d6b74383e34d44a9c8c7",
+      "classification": "finding",
+      "action": "preserve",
+      "version": "db7547c8b51839093b00bcdf7eadda7cb905f76eb2d2d6b74383e34d44a9c8c7",
+      "reasons": [
+        "The exact issue version already has an in-progress Autoreview; duplicate dispatch is suppressed.",
+        "issue-211-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#212",
+      "head": "dc8aae1d806df1390875f0bd5a6ebd6c72102fc06a6b7b0b6bb42c9b5cb4d4c4",
+      "classification": "finding",
+      "action": "preserve",
+      "version": "dc8aae1d806df1390875f0bd5a6ebd6c72102fc06a6b7b0b6bb42c9b5cb4d4c4",
+      "reasons": [
+        "The exact issue version already has an in-progress Autoreview; duplicate dispatch is suppressed.",
+        "issue-212-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#213",
+      "head": "483f3184ca7b184e70a865b43331c08c4651b690c3dce29be9cffe8fedc0fdbc",
+      "classification": "finding",
+      "action": "preserve",
+      "version": "483f3184ca7b184e70a865b43331c08c4651b690c3dce29be9cffe8fedc0fdbc",
+      "reasons": [
+        "The exact issue version already has an in-progress Autoreview; duplicate dispatch is suppressed.",
+        "issue-213-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#214",
+      "head": "12dd93f2a1e5b883d013807f8df5ab5f81c3d755654a785004e8367b2546c8b5",
+      "classification": "finding",
+      "action": "preserve",
+      "version": "12dd93f2a1e5b883d013807f8df5ab5f81c3d755654a785004e8367b2546c8b5",
+      "reasons": [
+        "The exact issue version already has an in-progress Autoreview; duplicate dispatch is suppressed.",
+        "issue-214-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#215",
+      "head": "bff3017cbe09c46eee07d0578ae7ef2135e26b2f6bf5d07f6e9ff73c2fdc4012",
+      "classification": "finding",
+      "action": "preserve",
+      "version": "bff3017cbe09c46eee07d0578ae7ef2135e26b2f6bf5d07f6e9ff73c2fdc4012",
+      "reasons": [
+        "The exact issue version already has an in-progress Autoreview; duplicate dispatch is suppressed.",
+        "issue-215-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#216",
+      "head": "52f37a039ee0263c17bfb0935a85f1cd9847eba1e16a5af8b4e654419ee94662",
+      "classification": "finding",
+      "action": "preserve",
+      "version": "52f37a039ee0263c17bfb0935a85f1cd9847eba1e16a5af8b4e654419ee94662",
+      "reasons": [
+        "The exact issue version already has an in-progress Autoreview; duplicate dispatch is suppressed.",
+        "issue-216-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#217",
+      "head": "483ca4f5fc0c8b98d8428755eb11969c34cc6df029d4a5a26ee70fdd5de27f1c",
+      "classification": "finding",
+      "action": "preserve",
+      "version": "483ca4f5fc0c8b98d8428755eb11969c34cc6df029d4a5a26ee70fdd5de27f1c",
+      "reasons": [
+        "The exact issue version already has an in-progress Autoreview; duplicate dispatch is suppressed.",
+        "issue-217-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#218",
+      "head": "5cabb9f24726a3e4a4e7d04412432530fa6ac48756e03ed613e38098a04dd3cd",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "5cabb9f24726a3e4a4e7d04412432530fa6ac48756e03ed613e38098a04dd3cd",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-218-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#219",
+      "head": "bb088b5e4869d173ca8303f32341f801382f31716d8f6c13ac8da629273ec6c1",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "bb088b5e4869d173ca8303f32341f801382f31716d8f6c13ac8da629273ec6c1",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-219-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#221",
+      "head": "dc81d12d51cf1e41e29e13ae15751207bb3650a3d4bc8b3f833a794da3c582ea",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "dc81d12d51cf1e41e29e13ae15751207bb3650a3d4bc8b3f833a794da3c582ea",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-221-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#222",
+      "head": "f42024652f8c83322c4b16fd4652cd3239e25e992d68f60b3a26a30a937dff87",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "f42024652f8c83322c4b16fd4652cd3239e25e992d68f60b3a26a30a937dff87",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-222-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#223",
+      "head": "dde0736e513e240da96934161e3c55d00eea40056095011b0c5e4ba30e2cdbd4",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "dde0736e513e240da96934161e3c55d00eea40056095011b0c5e4ba30e2cdbd4",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-223-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#224",
+      "head": "a26b9f240013dc9d4f740333717b847c0f24ca3b365a1275daefb8a7c405f49d",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "a26b9f240013dc9d4f740333717b847c0f24ca3b365a1275daefb8a7c405f49d",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-224-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#225",
+      "head": "e206b4cd6ed3fe639bcd5ef53132ad09304a7a1190f260ff54055e2844aa402c",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "e206b4cd6ed3fe639bcd5ef53132ad09304a7a1190f260ff54055e2844aa402c",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-225-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#227",
+      "head": "c93e4a0b009fe23e3de4fc123d767e0e05411fb0f884efde20e5d76b31a45499",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "c93e4a0b009fe23e3de4fc123d767e0e05411fb0f884efde20e5d76b31a45499",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-227-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#243",
+      "head": "9a8be10ff8d8fbd761d50d4e850afa851d396ea165b99864163fe98560d73140",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "9a8be10ff8d8fbd761d50d4e850afa851d396ea165b99864163fe98560d73140",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-243-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#246",
+      "head": "f694bac66eb4c803e32e6a3ac3ceb0c72bb96f93f0e11dc050354a0faddb4e0d",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "f694bac66eb4c803e32e6a3ac3ceb0c72bb96f93f0e11dc050354a0faddb4e0d",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-246-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#253",
+      "head": "7955a19655e2d57d037b67c2a04c7726415d2f03994f76429e7e8ffdde118290",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "7955a19655e2d57d037b67c2a04c7726415d2f03994f76429e7e8ffdde118290",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-253-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#255",
+      "head": "4964533eef850493ad9be36fd26e23a3e79f086c2ffeec7f2ea12dc9cf794da1",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "4964533eef850493ad9be36fd26e23a3e79f086c2ffeec7f2ea12dc9cf794da1",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-255-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#256",
+      "head": "eb35c05be2eac96b02ca27167d24fe2b8312407f889c6da08cf7a1658f038188",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "eb35c05be2eac96b02ca27167d24fe2b8312407f889c6da08cf7a1658f038188",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-256-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#257",
+      "head": "b3bad92d5c61dd6110d98e497e9cfc9f3423992385f1d8de9d615dbf79ed5aee",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "b3bad92d5c61dd6110d98e497e9cfc9f3423992385f1d8de9d615dbf79ed5aee",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-257-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#258",
+      "head": "36792556815b7907e4620e9f31c819e0795d974f3695524b6950129ff5f3a44e",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "36792556815b7907e4620e9f31c819e0795d974f3695524b6950129ff5f3a44e",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-258-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#275",
+      "head": "ed25afae66b85f8cb90b732c50a2af0f539eb80c558922ac99d20e0e236f4b01",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "ed25afae66b85f8cb90b732c50a2af0f539eb80c558922ac99d20e0e236f4b01",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-275-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#286",
+      "head": "c28a802f7c9f2bea58ca0e3309a5a16df39956bcdd53aadb77b82b9a8417f869",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "c28a802f7c9f2bea58ca0e3309a5a16df39956bcdd53aadb77b82b9a8417f869",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-286-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#291",
+      "head": "09484409aed21d4f377a5bf904239121c30a499ee916ad813cb23c270bfe6b4d",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "09484409aed21d4f377a5bf904239121c30a499ee916ad813cb23c270bfe6b4d",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-291-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#293",
+      "head": "36b1047717771dcfd01707e947e008f49743aaddccb5232a1fdfe6d6c7096830",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "36b1047717771dcfd01707e947e008f49743aaddccb5232a1fdfe6d6c7096830",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-293-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#294",
+      "head": "dd8ad9936073afeb80ebc9fc439963d0427ca761e9f953d029fed8490bfe2705",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "dd8ad9936073afeb80ebc9fc439963d0427ca761e9f953d029fed8490bfe2705",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-294-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#299",
+      "head": "d9d3ae37dd69ad38b76ae510ad3adce1cee21c3ac5d044b5089c001d1d5dd693",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "d9d3ae37dd69ad38b76ae510ad3adce1cee21c3ac5d044b5089c001d1d5dd693",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-299-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#301",
+      "head": "713ccb47a88ade4aabf22de25659bb6a48c2bd2be63f0b852acb03253956861c",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "713ccb47a88ade4aabf22de25659bb6a48c2bd2be63f0b852acb03253956861c",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-301-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#302",
+      "head": "3fa1ea9c4b034f7bf8c8926d36ffa50ab0c8a444b08d6b5672fb9d2790ddc8db",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "3fa1ea9c4b034f7bf8c8926d36ffa50ab0c8a444b08d6b5672fb9d2790ddc8db",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-302-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#304",
+      "head": "6454769402593854670aac05c4e473d4928e5ce669b8a5d70531fe7db5d80add",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "6454769402593854670aac05c4e473d4928e5ce669b8a5d70531fe7db5d80add",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-304-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#307",
+      "head": "1fd3d533900ad848a82e073d0bb446b4710cbbb604c5d273b8540a4ed9f565f6",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "1fd3d533900ad848a82e073d0bb446b4710cbbb604c5d273b8540a4ed9f565f6",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-307-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "issue",
+      "target": "#309",
+      "head": "ddf39e1981d74f740557a6c9c2037ebf6d93181df8f6189daba401fc079f2ca8",
+      "classification": "finding",
+      "action": "autoreview",
+      "version": "ddf39e1981d74f740557a6c9c2037ebf6d93181df8f6189daba401fc079f2ca8",
+      "reasons": [
+        "The exact issue version has reviewable lane defects; invoke the shared issue Autoreview/autofix protocol without closing or dropping scope.",
+        "issue-309-prd-backing-missing"
+      ]
+    },
+    {
+      "kind": "marker-issue",
+      "target": "#251",
+      "head": "3f8911672ee9dab487f47fabffcb18a69e9bf053aa6d4d7d7034d47694cccb58",
+      "classification": "review-finding",
+      "action": "close",
+      "version": "3f8911672ee9dab487f47fabffcb18a69e9bf053aa6d4d7d7034d47694cccb58",
+      "markerIssue": {
+        "number": 251,
+        "version": "3f8911672ee9dab487f47fabffcb18a69e9bf053aa6d4d7d7034d47694cccb58",
+        "marker": "df-audit:marius-patrik-andromeda",
+        "reason": "legacy-audit",
+        "findingSetFingerprint": "82ec84e3dc06628c801af2254882b432c623be75cf2647f3eda7a3dea6032742"
+      },
+      "reasons": [
+        "Exact trusted legacy-audit marker is stale; close only after actor, marker, version revalidation."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "extra-branch-agent-227-memory-plugin",
+      "head": "4ae609ef042a510870477881d6812cbf1775f2b6aeb37a5ed49dd17eecaf99c2",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/owner: Extra branch `agent/227-memory-plugin` is not the head of an open same-repository PR.",
+        "agent/227-memory-plugin: https://github.com/marius-patrik/Andromeda/tree/agent%2F227-memory-plugin"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "extra-branch-wip-cli-pin-wrappers",
+      "head": "ebf00cece21d440d4ed39b651f716ffcff9948955b7663daeecfcec68f223d1f",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/owner: Extra branch `wip/cli-pin-wrappers` is not the head of an open same-repository PR.",
+        "wip/cli-pin-wrappers: https://github.com/marius-patrik/Andromeda/tree/wip%2Fcli-pin-wrappers"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "extra-branch-wip-compact-skill-archive",
+      "head": "1ebbdeee306fd114968d37ec9d231fde0d306a302a9e725c4471c4f02926c6de",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/owner: Extra branch `wip/compact-skill-archive` is not the head of an open same-repository PR.",
+        "wip/compact-skill-archive: https://github.com/marius-patrik/Andromeda/tree/wip%2Fcompact-skill-archive"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-210-prd-backing-missing",
+      "head": "1396e619088baff558350d65b025626d96976ee95230b2141fb839713f5822a6",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #210 has no stable PRD backing marker.",
+        "Issue #210: https://github.com/marius-patrik/Andromeda/issues/210"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-211-prd-backing-missing",
+      "head": "ced82f8fbddb8504d3657520f4d8b06005b555a22fa060e604fc52f2ad822bf8",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #211 has no stable PRD backing marker.",
+        "Issue #211: https://github.com/marius-patrik/Andromeda/issues/211"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-212-prd-backing-missing",
+      "head": "4b078b9f7f926deb295e3c31f546b8024c053c1c7b4c07c5db82c2460bc1ff05",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #212 has no stable PRD backing marker.",
+        "Issue #212: https://github.com/marius-patrik/Andromeda/issues/212"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-213-prd-backing-missing",
+      "head": "7203cc56c20f9068c5133f0802f9f192f72fdc24b2bbd6dc9d66ff82b077aa1d",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #213 has no stable PRD backing marker.",
+        "Issue #213: https://github.com/marius-patrik/Andromeda/issues/213"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-214-prd-backing-missing",
+      "head": "84f8f4ce090a1bb9b1a96ddf02703f09acf7f9d1ecd0c4480df3cf482638a1dc",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #214 has no stable PRD backing marker.",
+        "Issue #214: https://github.com/marius-patrik/Andromeda/issues/214"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-215-prd-backing-missing",
+      "head": "7009e9d68c786259243bb96ffa6eb8afb5fc96dd0290d251da64149bd4139153",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #215 has no stable PRD backing marker.",
+        "Issue #215: https://github.com/marius-patrik/Andromeda/issues/215"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-216-prd-backing-missing",
+      "head": "fa73f659c0fb517b37bfb5b58314557476800287fe165276a8e6d65242b56459",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #216 has no stable PRD backing marker.",
+        "Issue #216: https://github.com/marius-patrik/Andromeda/issues/216"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-217-prd-backing-missing",
+      "head": "b4b5792475e5851d16560a04aafb801c58813afbafa1d6ec1f2d04955ad2e9fb",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #217 has no stable PRD backing marker.",
+        "Issue #217: https://github.com/marius-patrik/Andromeda/issues/217"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-218-prd-backing-missing",
+      "head": "7c50deabbd0bbd955bba14134fbb0f4fd58e342c3cf70b091145658dd2b65171",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #218 has no stable PRD backing marker.",
+        "Issue #218: https://github.com/marius-patrik/Andromeda/issues/218"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-219-prd-backing-missing",
+      "head": "a37215a35bd09db61370441ae8c04067dccb0a71c211900bd8bd4721463b736f",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #219 has no stable PRD backing marker.",
+        "Issue #219: https://github.com/marius-patrik/Andromeda/issues/219"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-221-prd-backing-missing",
+      "head": "ea2a0fe3bb101e91974ec3ca72c5b10fb9dd8556e231b3369921800f0f620d84",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #221 has no stable PRD backing marker.",
+        "Issue #221: https://github.com/marius-patrik/Andromeda/issues/221"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-222-prd-backing-missing",
+      "head": "ad71eeb24485574919271ef0f190638f718b059b995647f7de926ad014c3b84c",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #222 has no stable PRD backing marker.",
+        "Issue #222: https://github.com/marius-patrik/Andromeda/issues/222"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-223-prd-backing-missing",
+      "head": "680a5b38c21c323693907f972c31b25caf1573e237352374153bbf20d5a6572c",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #223 has no stable PRD backing marker.",
+        "Issue #223: https://github.com/marius-patrik/Andromeda/issues/223"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-224-prd-backing-missing",
+      "head": "c1ce8a83663e32c48c38cdc927700222b2d1b3be9127b9e30ac06ff63617f9ae",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #224 has no stable PRD backing marker.",
+        "Issue #224: https://github.com/marius-patrik/Andromeda/issues/224"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-225-prd-backing-missing",
+      "head": "69b98afdf04366290265fe5623668c9b0c54568d05acdcba67d0bf0d705be9f7",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #225 has no stable PRD backing marker.",
+        "Issue #225: https://github.com/marius-patrik/Andromeda/issues/225"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-227-prd-backing-missing",
+      "head": "3d41a4cab1529bdc79ad0d60421047ebe69e8ccb99ad38470bcdf64bbebe7b97",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #227 has no stable PRD backing marker.",
+        "Issue #227: https://github.com/marius-patrik/Andromeda/issues/227"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-243-prd-backing-missing",
+      "head": "5eb1c4faeb1ff5a6b9732d97d8b8bd09885bcac601e078cb5338278a10521b1c",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #243 has no stable PRD backing marker.",
+        "Issue #243: https://github.com/marius-patrik/Andromeda/issues/243"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-246-prd-backing-missing",
+      "head": "27cfe94033728da3b18f33cdff9c2d05ad535c2423b1cc3394bb808706303ea5",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #246 has no stable PRD backing marker.",
+        "Issue #246: https://github.com/marius-patrik/Andromeda/issues/246"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-251-prd-backing-missing",
+      "head": "a0cd49abd61d57b3047a28b0416bb33d3f9b42262c06ec19aa4085196477fd4f",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #251 has no stable PRD backing marker.",
+        "Issue #251: https://github.com/marius-patrik/Andromeda/issues/251"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-253-prd-backing-missing",
+      "head": "c40090968b9d7e51ab5cd6f733f872477a6001a21b8ce7c34cc1f94788b4df81",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #253 has no stable PRD backing marker.",
+        "Issue #253: https://github.com/marius-patrik/Andromeda/issues/253"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-255-prd-backing-missing",
+      "head": "ee4d67cc45750cc67f9b826f5ce68c9632d4dcf48fe744f45531157137df2bfb",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #255 has no stable PRD backing marker.",
+        "Issue #255: https://github.com/marius-patrik/Andromeda/issues/255"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-256-prd-backing-missing",
+      "head": "400d13f3bc79fc1c8222e81a4a0d686985e087496c899263abe1e6253ca04d01",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #256 has no stable PRD backing marker.",
+        "Issue #256: https://github.com/marius-patrik/Andromeda/issues/256"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-257-prd-backing-missing",
+      "head": "bc709eddab49fb4bf75fac59b7a52d0b34eca215e686f427ac1545036def2730",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #257 has no stable PRD backing marker.",
+        "Issue #257: https://github.com/marius-patrik/Andromeda/issues/257"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-258-prd-backing-missing",
+      "head": "ac7f68441e9c6b8b344df5fa9e45d396e12b619f69231ca482b1a2868072080a",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #258 has no stable PRD backing marker.",
+        "Issue #258: https://github.com/marius-patrik/Andromeda/issues/258"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-275-prd-backing-missing",
+      "head": "8ca46332abca4a1e432ff0cfe9de42c15298d41bb972146a074fcba54d55addf",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #275 has no stable PRD backing marker.",
+        "Issue #275: https://github.com/marius-patrik/Andromeda/issues/275"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-286-prd-backing-missing",
+      "head": "31c9a952b081dd408cf3a61032923677004ece83dee6ec01830f8b82115aecc2",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #286 has no stable PRD backing marker.",
+        "Issue #286: https://github.com/marius-patrik/Andromeda/issues/286"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-291-prd-backing-missing",
+      "head": "ce5bd7e9cc6138391e4bef5d1d3f2b226aeccd71fd2399d15af80250bfdcd9b5",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #291 has no stable PRD backing marker.",
+        "Issue #291: https://github.com/marius-patrik/Andromeda/issues/291"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-293-prd-backing-missing",
+      "head": "9e1ff9687892c365cf94b826f51c279abaa4246887c8e22ddfce9b73a4aadee9",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #293 has no stable PRD backing marker.",
+        "Issue #293: https://github.com/marius-patrik/Andromeda/issues/293"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-294-prd-backing-missing",
+      "head": "20e005aedf8ab881601648c8af61ff9026e05e69b7793e1469a6dde9ff97e839",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #294 has no stable PRD backing marker.",
+        "Issue #294: https://github.com/marius-patrik/Andromeda/issues/294"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-299-prd-backing-missing",
+      "head": "e62674a6a3cb33ca72761f05b15f4fb475970467919be88bd4d041e65a94cc01",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #299 has no stable PRD backing marker.",
+        "Issue #299: https://github.com/marius-patrik/Andromeda/issues/299"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-301-prd-backing-missing",
+      "head": "358a97b41ea62fe7e139d3254c48e0650239495964308b3693862c2665549984",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #301 has no stable PRD backing marker.",
+        "Issue #301: https://github.com/marius-patrik/Andromeda/issues/301"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-302-prd-backing-missing",
+      "head": "61ad1398e36701f84a0bbbf5d09d546c83693e158b00626af8dd8bf89c97f754",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #302 has no stable PRD backing marker.",
+        "Issue #302: https://github.com/marius-patrik/Andromeda/issues/302"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-304-prd-backing-missing",
+      "head": "71d887b2ad25145b5cf889c5af38b20df7b1ef95811d4299905d6bb1718e0952",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #304 has no stable PRD backing marker.",
+        "Issue #304: https://github.com/marius-patrik/Andromeda/issues/304"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-307-prd-backing-missing",
+      "head": "debdab59b542ceaa71814f561d083c3d08a5e590636352e5f9842f999b936917",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #307 has no stable PRD backing marker.",
+        "Issue #307: https://github.com/marius-patrik/Andromeda/issues/307"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "issue-309-prd-backing-missing",
+      "head": "16ba4f8b3ee13e32aa5efdf64bec14f641bb91a45ee33294e7c5b4e74ae35eea",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "warning/pr: Open issue #309 has no stable PRD backing marker.",
+        "Issue #309: https://github.com/marius-patrik/Andromeda/issues/309"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-branch-agent-227-memory-plugin-2010d4c4600a3113-unpublished",
+      "head": "ca31dd565164cafc41800be6367e5a23a071105cead98669c64134308f35cb44",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Local branch `agent/227-memory-plugin` contains 12 commit(s) not reachable from any live remote branch."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-branch-fix-261-canonical-event-uri-3edd98ebaefe44d7-unpublished",
+      "head": "beded0bf831754df563d638dd2be0a44a3d5232d91027d4cbe3c828510d31388",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Local branch `fix/261-canonical-event-uri` contains 7 commit(s) not reachable from any live remote branch."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-branch-fix-261-compaction-rollback-uri-a8f75a99f046e609-unpublished",
+      "head": "9a5988a09a2d7dc30684e82f51895d3a6fb296492a797c0f5655619fb0171fd1",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Local branch `fix/261-compaction-rollback-uri` contains 1 commit(s) not reachable from any live remote branch."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-branch-fix-261-compaction-snapshot-uri-4076af4d803ecbb0-unpublished",
+      "head": "1280d81ad60a6be7dd14320baa46dfd42c5f3aa578ac5ee053e62c036b032dab",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Local branch `fix/261-compaction-snapshot-uri` contains 1 commit(s) not reachable from any live remote branch."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-explicit-worktree-unobservable",
+      "head": "682d52f2e7e331e1183f3150e2d917493c9275ef0085c51be4c654158336ac48",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "critical/blocked: The explicitly supplied checkout is absent from its common Git worktree inventory."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-3dc052e04a403c04-submodule-data-andromeda-uninitialized",
+      "head": "27b1cf8e7bf26ce03670c958e12301eaaeecc10aa25ecb1d8e44add1ddd00e41",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `data/andromeda` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-3dc052e04a403c04-submodule-data-darkfactory-uninitialized",
+      "head": "d7283def0b91db1e5f045f8a7e66e1ef5c984648f5c07a8f400ccc7d16fcf8a2",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `data/darkfactory` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-3dc052e04a403c04-submodule-packages-darkfactory-uninitialized",
+      "head": "e36820556bdeb1e592581d99bda54332a30e614d133ec0baa0fa34ca24c75090",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/darkfactory` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-3dc052e04a403c04-submodule-packages-fabrica-uninitialized",
+      "head": "9cae0827a0e68d23e00eea19c324c9b8a80d91cc258961939f9700a70662dcd5",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/fabrica` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-3dc052e04a403c04-submodule-packages-lifequest-uninitialized",
+      "head": "434cb5c7c51a07bb83df72799444026f6527a9d039956c60cb2bf2bb9324789c",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/lifequest` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-3dc052e04a403c04-submodule-packages-memory-uninitialized",
+      "head": "8c7ccec777d2f50a87a2a08bd199929bceabec9a719db14e3070ca73c280021b",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/memory` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-3dc052e04a403c04-submodule-packages-singularity-uninitialized",
+      "head": "e9eeabc01366b3049c63c1a39dc7dd893742a39e2e7b8c2c4ba53b569a923223",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/singularity` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-3dc052e04a403c04-submodule-packages-skyagent-uninitialized",
+      "head": "e70f6b3b3b2a9de0bcc39d15fc740bb1edd073615ec9ea8ea41b14eea5e4aaee",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/skyagent` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-473c9ac7b9a8c871-dirty",
+      "head": "e83ba75f854ed48cad36fe23f18321db02cf3bb7716929a5af5f711923650376",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Linked worktree `wt-473c9ac7b9a8c871` has modified, untracked, or submodule state."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-473c9ac7b9a8c871-submodule-apps-fabrica-uninitialized",
+      "head": "3c451657a24438b692f9f12b8f6561498cf8fd89892e27366cacaa4ec2a1904a",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `apps/Fabrica` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-473c9ac7b9a8c871-submodule-apps-singularity-uninitialized",
+      "head": "2cdb4782f12d734717f9c871f1f2fe3d28baa71b26a278ad3e72c233eb0b9527",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `apps/Singularity` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-473c9ac7b9a8c871-submodule-data-andromeda-uninitialized",
+      "head": "7e2d7db88ac9b3e264f7489ecf1db1eb551a298dea2e5eed71c9d8161abbd629",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `data/andromeda` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-473c9ac7b9a8c871-submodule-data-darkfactory-uninitialized",
+      "head": "3975982a72a46f879a8bf2b3995c6c9445566c9a79c6f76ea79ebe58028055ef",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `data/darkfactory` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-473c9ac7b9a8c871-submodule-plugins-darkfactory-uninitialized",
+      "head": "ad5ade9413a7615e832a53339a32dd3cb6bb2f72702ad3cec1e75aa42756c8b1",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `plugins/DarkFactory` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-473c9ac7b9a8c871-submodule-plugins-lifequest-uninitialized",
+      "head": "ed17200b78ff1057f705831718a4a8d311da1902603bca6cc35aba2e669679f7",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `plugins/LifeQuest` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-473c9ac7b9a8c871-submodule-plugins-skyagent-uninitialized",
+      "head": "fec121acff7abbac650073f73abdf260217d3efb1939cd3532cbc7bde8aa1bb6",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `plugins/SkyAgent` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-60db4ef8cb902ae3-submodule-data-andromeda-uninitialized",
+      "head": "5a51fe3f235fe0d60b73741146d2580e235355784a12185a88ad5713ffaaf984",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `data/andromeda` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-60db4ef8cb902ae3-submodule-data-darkfactory-uninitialized",
+      "head": "12fbdc7d48a7e30e67be4ffc5921d00fa5dd80c0c94ca8f899a2e7db32925029",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `data/darkfactory` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-60db4ef8cb902ae3-submodule-packages-darkfactory-uninitialized",
+      "head": "931c3bfd526b1689f87d02760e94354d14ab4155bfa9ec5dbc286a90af4f35a8",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/darkfactory` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-60db4ef8cb902ae3-submodule-packages-fabrica-uninitialized",
+      "head": "bdce10629660791c7274837bd8f5b61a487efcd2886674ea1d7ddf21b6e92adc",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/fabrica` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-60db4ef8cb902ae3-submodule-packages-lifequest-uninitialized",
+      "head": "52cc345c52e1f2679c4f792eda6ec54b3bcd8b89d5e83a507173e1e0d1b8a4e7",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/lifequest` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-60db4ef8cb902ae3-submodule-packages-memory-uninitialized",
+      "head": "e980c1ebec22ca68b22bd309295f9216f1e372a0798cc6237d1c718379f15b8b",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/memory` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-60db4ef8cb902ae3-submodule-packages-singularity-uninitialized",
+      "head": "2c9566dc2654b442534da3592b38ce8114660b5c4ce9cccb0fe1b95cfde258ed",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/singularity` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-60db4ef8cb902ae3-submodule-packages-skyagent-uninitialized",
+      "head": "c752abfdd5b6c6eec733916595949b5af10821ddbe442a3296733e1f14f7354a",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `packages/skyagent` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-b142c1a0640ea835-submodule-inventory-unobservable",
+      "head": "fd0f19de9c16ea07d98c6ddbe1c57ef6293245635fd116ba74c70b1b5e1b71ad",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "critical/blocked: Recursive submodule state for linked worktree `wt-b142c1a0640ea835` is unobservable."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-f582dc1ef9f2e555-submodule-apps-fabrica-uninitialized",
+      "head": "51ceafdfe5ae965e2caa0c250904ab0e40b6a6c51b07a9b5f8fff64a5db09392",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `apps/Fabrica` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-f582dc1ef9f2e555-submodule-apps-singularity-uninitialized",
+      "head": "86b241e096fa0b63de29725a3b8bf7feff0b97bff0aa352d141eac8c89f61e65",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `apps/Singularity` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-f582dc1ef9f2e555-submodule-data-darkfactory-uninitialized",
+      "head": "d479249e811d1cd981c0e07d253544dd61fa46e2b295a1bf0e558b1ed9effc9d",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `data/darkfactory` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-f582dc1ef9f2e555-submodule-plugins-lifequest-uninitialized",
+      "head": "af31a5f93907efa163c7c427492f47efa4b35e92abdf66199d84c8f706758d73",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `plugins/LifeQuest` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "local-worktree-wt-f582dc1ef9f2e555-submodule-plugins-skyagent-uninitialized",
+      "head": "6f5b9a58d1807e888c245caf817673835d063b5ac05ddb366135ffb4ec302851",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: Submodule `plugins/SkyAgent` is uninitialized."
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "pr-295-red",
+      "head": "ee4798f47d4c26691b7361d5cd4e78dce2b2f19d0d260b67e92f93f747757ba4",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: PR #295 has failing checks: DarkFactory Autoreview:failure, Codex Review:failure.",
+        "Codex Review: https://github.com/marius-patrik/Andromeda/actions/runs/29636886776/job/88060687785",
+        "DarkFactory Autoreview: https://github.com/marius-patrik/Andromeda/actions/runs/29636886780/job/88060687969",
+        "PR #295: https://github.com/marius-patrik/Andromeda/pull/295"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "pr-306-not-mergeable",
+      "head": "f8188a8970716911a8c053f905137c0a36c7cd1ed0a1dbaacb0fbf8d0a4be6ca",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: PR #306 is not mergeable (blocked).",
+        "PR #306: https://github.com/marius-patrik/Andromeda/pull/306"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "pr-306-red",
+      "head": "46ec977940a75d827bc5fecb026f2b185c5285fe39c09493f040d92b8e8d1155",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: PR #306 has failing checks: DarkFactory Autoreview:failure, Codex Review:failure.",
+        "Codex Review: https://github.com/marius-patrik/Andromeda/actions/runs/29650103861/job/88094881098",
+        "DarkFactory Autoreview: https://github.com/marius-patrik/Andromeda/actions/runs/29650103889/job/88094891969",
+        "PR #306: https://github.com/marius-patrik/Andromeda/pull/306"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "pr-308-not-mergeable",
+      "head": "4465fff5bd618469e5ac258949c04147419d074ebb52b272fb15f0345d9335e0",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: PR #308 is not mergeable (blocked).",
+        "PR #308: https://github.com/marius-patrik/Andromeda/pull/308"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "pr-308-red",
+      "head": "6bab30c680a15e40a0911d092938f60de2723fe4b6d2af9fa4db394aed5ca950",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: PR #308 has failing checks: DarkFactory Autoreview:failure, Codex Review:failure.",
+        "Codex Review: https://github.com/marius-patrik/Andromeda/actions/runs/29691212543/job/88204167837",
+        "DarkFactory Autoreview: https://github.com/marius-patrik/Andromeda/actions/runs/29691212541/job/88204983071",
+        "PR #308: https://github.com/marius-patrik/Andromeda/pull/308"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "pr-310-not-mergeable",
+      "head": "c50457f8cf68877e199a1395728b5ef2f296a4e1af80edb06a8f5abea1b4d783",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: PR #310 is not mergeable (blocked).",
+        "PR #310: https://github.com/marius-patrik/Andromeda/pull/310"
+      ]
+    },
+    {
+      "kind": "lane-finding",
+      "target": "pr-310-red",
+      "head": "3dd44b084054073553d34f1fccd9ca9f9214401d564869375d388dd4bf950387",
+      "classification": "review-finding",
+      "action": "preserve",
+      "reasons": [
+        "error/owner: PR #310 has failing checks: DarkFactory Autoreview:failure, Codex Review:failure.",
+        "Codex Review: https://github.com/marius-patrik/Andromeda/actions/runs/29692146868/job/88206646818",
+        "DarkFactory Autoreview: https://github.com/marius-patrik/Andromeda/actions/runs/29692146945/job/88206647289",
+        "PR #310: https://github.com/marius-patrik/Andromeda/pull/310"
+      ]
+    }
+  ],
+  "local_plan_path_id": "local-4b25d61af1db1edf"
+}

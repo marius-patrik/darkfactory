@@ -1,0 +1,48 @@
+{
+  "kind": "df-orchestrate",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-07T15:50:25.198Z",
+  "trigger": "workflow_dispatch",
+  "control_repo": "marius-patrik/agent-darkfactory",
+  "wave_order": [
+    "hygiene",
+    "enforcement",
+    "features"
+  ],
+  "concurrency": {
+    "global": 6,
+    "perRepository": 2,
+    "perStream": 3
+  },
+  "repositories": [
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "gate_wave": "features",
+      "repository_gate_wave": "features",
+      "open_work": 1,
+      "ready": 1,
+      "running": 0,
+      "blocked": 0,
+      "ask_owner": 0,
+      "dispatchable": 1
+    }
+  ],
+  "dispatched": [
+    {
+      "repo": "marius-patrik/agent-darkfactory",
+      "issue": 44,
+      "wave": "features",
+      "streams": [
+        "default"
+      ]
+    }
+  ],
+  "auto_readied": [],
+  "escalated": [],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Orchestrator dispatch is deterministic and uses no model calls"
+  }
+}

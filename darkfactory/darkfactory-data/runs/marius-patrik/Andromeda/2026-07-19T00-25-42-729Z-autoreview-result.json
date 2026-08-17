@@ -1,0 +1,445 @@
+{
+  "kind": "autoreview-result",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-19T00:25:42.729Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#216",
+  "result": {
+    "ok": false,
+    "state": "blocked",
+    "code": "fix_no_change",
+    "targetVersion": null,
+    "rounds": [
+      {
+        "sequence": 1,
+        "phase": "medium_review",
+        "targetVersion": "52f37a039ee0263c17bfb0935a85f1cd9847eba1e16a5af8b4e654419ee94662",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "3835955691a9beec49474ca985f27b7cafe0911d",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:2f23f9f7048f3885c352560b1c21e3b931ce36a68e9bb810a43a4ca5a14fdd77",
+          "inputChecksum": "sha256:78d9ab8b1de15491edbb3e62b58f9d0d10933a6e0771e376ff328a3b822c6aee",
+          "profile": {
+            "id": "profile/issue-reviewer",
+            "version": "0.2.0",
+            "runKind": "review-issue",
+            "purpose": "iterative-review"
+          },
+          "selection": {
+            "role": "role/issue-reviewer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/owner-escalation",
+              "skill/validation-autoreview",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-reviewer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-reviewer",
+              "version": "0.2.0",
+              "checksum": "sha256:9ff00d13222457202ca9e25f1a8dc9b9762fcb98276f02f79f709c2c37a32e9f"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/validation-autoreview",
+              "version": "0.2.0",
+              "checksum": "sha256:45cbd51333a4c7d8a44bfa21fb26f5504dbbcc0f8f0ccead7487497301c80cbd"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-reviewer",
+              "version": "0.3.0",
+              "checksum": "sha256:be3c66735a74b2d96cc75a1dcd246513f1921e8a02508baa53d1b5b326fc2ffe"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": "codex",
+          "model": "gpt-5.6-sol",
+          "agentPreset": "Sol",
+          "providerVersion": "0.144.1"
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "outcome": "success",
+            "reason": null
+          }
+        ],
+        "usage": {
+          "inputTokens": 29102,
+          "outputTokens": 1381,
+          "totalTokens": 30483
+        },
+        "verdict": {
+          "approved": false,
+          "summary": "Issue #216 remains blocked at verified version 52f37a039ee0263c17bfb0935a85f1cd9847eba1e16a5af8b4e654419ee94662. Its goal is recognizable, but the contract lacks an implementable metadata model, bounded document scope, dependency proof, single-lane ownership, objective acceptance evidence, and failure, compatibility, migration, and rollout behavior. Contributor comments identify these gaps but do not supply authenticated owner decisions or amend the owner-authored contract.",
+          "findingsComplete": true,
+          "blockingFindings": [
+            {
+              "id": "df-9a3c766dae1b26c071ad",
+              "title": "Package-metadata authority and layering are undefined",
+              "details": "The contract does not name the authoritative package.json, enumerate root-owned versus package-owned fields, define permitted package-local metadata, or state how conflicting values are resolved. Implementing “one authoritative package.json surface” would therefore require semantic owner decisions.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-6216b5fdd6f30b4c237f",
+              "title": "Documentation scope, authority wording, and disposition are unspecified",
+              "details": "No complete inventory identifies the affected root or package documents, and no per-document keep, relocate, redirect, retire, or remove disposition is provided. The exact PRD.md and PLAN.md precedence wording is also absent, so determining which documents compete with authority—or deleting them—would be ambiguous and potentially destructive.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-f4ba2972cfeaeae24280",
+              "title": "Dependency and residual-scope claims are unverifiable and conflict with merge-in policy",
+              "details": "The issue identifies no verified revision or delivered-state evidence for #179. Although #178 is available, the contract says it is replaced without mapping every requirement to completed, retained, or residual work. Trusted policy requires all work to merge in rather than be silently superseded, so prerequisites, omissions, duplication, and compliance cannot be established.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-d0051d6bb6a72fdfdf9e",
+              "title": "Single-lane ownership and scope boundaries are unclear",
+              "details": "“PLAN lane 2” does not identify an accountable lane owner, exact owned files or repository surfaces, non-goals, or boundaries against repository-authority, package-layout, documentation, and validation work. The issue cannot safely assign one implementation lane or adjudicate overlap with other work.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-6ed8f1f8bd26a107350b",
+              "title": "Acceptance criteria and validation evidence are not objective",
+              "details": "Phrases such as “internally consistent,” “remaining root documentation,” and “no stale competing authority” are not translated into assertions over named files, metadata fields, links, references, or repository searches. The contract also does not define reviewable evidence for each condition, leaving the independent Validate gate without adequate specification coverage.",
+              "path": null,
+              "line": null
+            },
+            {
+              "id": "df-f52d12d380dd8205d2d6",
+              "title": "Trust, failure, compatibility, migration, and rollout behavior are missing",
+              "details": "The issue does not define which existing metadata and documents are authoritative inputs, how implementation must fail closed when authority is ambiguous, whether package consumers or published artifacts need compatibility handling, how moved or retired documents remain discoverable, or how the change is rolled out and reverted. These are unresolved owner-level choices.",
+              "path": null,
+              "line": null
+            }
+          ],
+          "nonBlockingNotes": [
+            "Owner decision required: Which exact package.json is authoritative, which fields belong to the root and each package, what package-local metadata remains permitted, and how are conflicts resolved?",
+            "Owner decision required: What is the complete affected-document inventory, what disposition applies to each document, and what exact PRD.md/PLAN.md precedence wording must be used?",
+            "Owner decision required: Which verified #179 revision and evidence establish the prerequisite, and how does every #178 requirement map to completed, retained, or residual scope without superseding it?",
+            "Owner decision required: Who owns lane 2, which files and surfaces does it own, and what are its explicit non-goals and boundaries with adjacent work?",
+            "Owner decision required: What objective assertions and reviewable evidence prove every acceptance condition?",
+            "Owner decision required: What fail-closed rule, compatibility obligations, migration and discoverability behavior, rollout sequence, and reversion procedure apply?",
+            "The existing df:blocked and df:ask-owner labels correctly reflect the unresolved contract; contributor-authored worker and autofix comments are evidence only and do not authorize the missing decisions."
+          ]
+        },
+        "findings": [
+          {
+            "id": "df-9a3c766dae1b26c071ad",
+            "title": "Package-metadata authority and layering are undefined",
+            "details": "The contract does not name the authoritative package.json, enumerate root-owned versus package-owned fields, define permitted package-local metadata, or state how conflicting values are resolved. Implementing “one authoritative package.json surface” would therefore require semantic owner decisions.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-6216b5fdd6f30b4c237f",
+            "title": "Documentation scope, authority wording, and disposition are unspecified",
+            "details": "No complete inventory identifies the affected root or package documents, and no per-document keep, relocate, redirect, retire, or remove disposition is provided. The exact PRD.md and PLAN.md precedence wording is also absent, so determining which documents compete with authority—or deleting them—would be ambiguous and potentially destructive.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-f4ba2972cfeaeae24280",
+            "title": "Dependency and residual-scope claims are unverifiable and conflict with merge-in policy",
+            "details": "The issue identifies no verified revision or delivered-state evidence for #179. Although #178 is available, the contract says it is replaced without mapping every requirement to completed, retained, or residual work. Trusted policy requires all work to merge in rather than be silently superseded, so prerequisites, omissions, duplication, and compliance cannot be established.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d0051d6bb6a72fdfdf9e",
+            "title": "Single-lane ownership and scope boundaries are unclear",
+            "details": "“PLAN lane 2” does not identify an accountable lane owner, exact owned files or repository surfaces, non-goals, or boundaries against repository-authority, package-layout, documentation, and validation work. The issue cannot safely assign one implementation lane or adjudicate overlap with other work.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-6ed8f1f8bd26a107350b",
+            "title": "Acceptance criteria and validation evidence are not objective",
+            "details": "Phrases such as “internally consistent,” “remaining root documentation,” and “no stale competing authority” are not translated into assertions over named files, metadata fields, links, references, or repository searches. The contract also does not define reviewable evidence for each condition, leaving the independent Validate gate without adequate specification coverage.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-f52d12d380dd8205d2d6",
+            "title": "Trust, failure, compatibility, migration, and rollout behavior are missing",
+            "details": "The issue does not define which existing metadata and documents are authoritative inputs, how implementation must fail closed when authority is ambiguous, whether package consumers or published artifacts need compatibility handling, how moved or retired documents remain discoverable, or how the change is rolled out and reverted. These are unresolved owner-level choices.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": null,
+        "outcome": "findings"
+      },
+      {
+        "sequence": 2,
+        "phase": "medium_fix",
+        "targetVersion": "52f37a039ee0263c17bfb0935a85f1cd9847eba1e16a5af8b4e654419ee94662",
+        "promptVersion": "darkfactory-autoreview-v1",
+        "prompt": {
+          "schemaVersion": 1,
+          "controlRevision": "3835955691a9beec49474ca985f27b7cafe0911d",
+          "manifest": {
+            "library": "darkfactory-prompts",
+            "schemaVersion": 2,
+            "contractVersion": "0.3.0",
+            "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+          },
+          "promptChecksum": "sha256:90628c299a690b13dc0c005a3b29405011a87f5d3e7e0261dd81eb3c14b6789c",
+          "inputChecksum": "sha256:f427140d09045148ac8a2f781ac05d88056b4943fde63801fee75bc73046a1b6",
+          "profile": {
+            "id": "profile/issue-fixer",
+            "version": "0.2.0",
+            "runKind": "fix-issue",
+            "purpose": "review-fix"
+          },
+          "selection": {
+            "role": "role/issue-fixer",
+            "skills": [
+              "skill/issue-as-contract",
+              "skill/untrusted-input-handling",
+              "skill/minimal-diff",
+              "skill/owner-escalation",
+              "skill/no-bypass",
+              "skill/canonical-agent-execution",
+              "skill/evidence-status-reporting"
+            ],
+            "modelTier": "medium",
+            "effort": "high",
+            "overlays": [
+              "overlay/agent-os-boundary",
+              "overlay/github-control-plane",
+              "overlay/issue-review-fix"
+            ],
+            "repositoryOverlay": "overlay/submodule-root",
+            "output": "output/issue-fixer"
+          },
+          "artifacts": [
+            {
+              "id": "role/issue-fixer",
+              "version": "0.2.0",
+              "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+            },
+            {
+              "id": "skill/issue-as-contract",
+              "version": "0.2.0",
+              "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+            },
+            {
+              "id": "skill/untrusted-input-handling",
+              "version": "0.2.0",
+              "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+            },
+            {
+              "id": "skill/minimal-diff",
+              "version": "0.2.0",
+              "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+            },
+            {
+              "id": "skill/owner-escalation",
+              "version": "0.2.0",
+              "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+            },
+            {
+              "id": "skill/no-bypass",
+              "version": "0.2.0",
+              "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+            },
+            {
+              "id": "skill/canonical-agent-execution",
+              "version": "0.2.0",
+              "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+            },
+            {
+              "id": "skill/evidence-status-reporting",
+              "version": "0.2.0",
+              "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+            },
+            {
+              "id": "tier/medium",
+              "version": "0.2.0",
+              "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+            },
+            {
+              "id": "overlay/agent-os-boundary",
+              "version": "0.2.0",
+              "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+            },
+            {
+              "id": "overlay/github-control-plane",
+              "version": "0.2.0",
+              "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+            },
+            {
+              "id": "overlay/issue-review-fix",
+              "version": "0.2.0",
+              "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+            },
+            {
+              "id": "overlay/submodule-root",
+              "version": "0.2.0",
+              "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+            },
+            {
+              "id": "output/issue-fixer",
+              "version": "0.3.0",
+              "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+            }
+          ]
+        },
+        "requested": {
+          "modelTier": "medium",
+          "effort": "high"
+        },
+        "resolved": {
+          "provider": null,
+          "model": null,
+          "agentPreset": null,
+          "providerVersion": null
+        },
+        "attempts": [],
+        "usage": {
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "totalTokens": 0
+        },
+        "verdict": null,
+        "findings": [
+          {
+            "id": "df-9a3c766dae1b26c071ad",
+            "title": "Package-metadata authority and layering are undefined",
+            "details": "The contract does not name the authoritative package.json, enumerate root-owned versus package-owned fields, define permitted package-local metadata, or state how conflicting values are resolved. Implementing “one authoritative package.json surface” would therefore require semantic owner decisions.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-6216b5fdd6f30b4c237f",
+            "title": "Documentation scope, authority wording, and disposition are unspecified",
+            "details": "No complete inventory identifies the affected root or package documents, and no per-document keep, relocate, redirect, retire, or remove disposition is provided. The exact PRD.md and PLAN.md precedence wording is also absent, so determining which documents compete with authority—or deleting them—would be ambiguous and potentially destructive.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-f4ba2972cfeaeae24280",
+            "title": "Dependency and residual-scope claims are unverifiable and conflict with merge-in policy",
+            "details": "The issue identifies no verified revision or delivered-state evidence for #179. Although #178 is available, the contract says it is replaced without mapping every requirement to completed, retained, or residual work. Trusted policy requires all work to merge in rather than be silently superseded, so prerequisites, omissions, duplication, and compliance cannot be established.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-d0051d6bb6a72fdfdf9e",
+            "title": "Single-lane ownership and scope boundaries are unclear",
+            "details": "“PLAN lane 2” does not identify an accountable lane owner, exact owned files or repository surfaces, non-goals, or boundaries against repository-authority, package-layout, documentation, and validation work. The issue cannot safely assign one implementation lane or adjudicate overlap with other work.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-6ed8f1f8bd26a107350b",
+            "title": "Acceptance criteria and validation evidence are not objective",
+            "details": "Phrases such as “internally consistent,” “remaining root documentation,” and “no stale competing authority” are not translated into assertions over named files, metadata fields, links, references, or repository searches. The contract also does not define reviewable evidence for each condition, leaving the independent Validate gate without adequate specification coverage.",
+            "path": null,
+            "line": null
+          },
+          {
+            "id": "df-f52d12d380dd8205d2d6",
+            "title": "Trust, failure, compatibility, migration, and rollout behavior are missing",
+            "details": "The issue does not define which existing metadata and documents are authoritative inputs, how implementation must fail closed when authority is ambiguous, whether package consumers or published artifacts need compatibility handling, how moved or retired documents remain discoverable, or how the change is rolled out and reverted. These are unresolved owner-level choices.",
+            "path": null,
+            "line": null
+          }
+        ],
+        "findingIds": [
+          "df-9a3c766dae1b26c071ad",
+          "df-6216b5fdd6f30b4c237f",
+          "df-f4ba2972cfeaeae24280",
+          "df-d0051d6bb6a72fdfdf9e",
+          "df-6ed8f1f8bd26a107350b",
+          "df-f52d12d380dd8205d2d6"
+        ],
+        "changeRef": null,
+        "afterVersion": null,
+        "blockCode": "fix_no_change",
+        "outcome": "blocked"
+      }
+    ]
+  }
+}

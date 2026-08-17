@@ -1,0 +1,188 @@
+{
+  "kind": "df-plan",
+  "target_repo": "marius-patrik/agent-darkfactory",
+  "created_at": "2026-07-07T17:01:39.432Z",
+  "trigger": "workflow_dispatch",
+  "default_branch": "main",
+  "source_ref": "main",
+  "prd_files": [
+    "PRD.md"
+  ],
+  "actions": [
+    {
+      "action": "package-prd-scaffold-pr",
+      "state": "exists",
+      "pull_request": {
+        "number": 202,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/pull/202"
+      },
+      "missing": [
+        "templates/PRD.md",
+        "templates/packages/cli/PRD.md",
+        "templates/packages/web/PRD.md",
+        "templates/templates/template-bot/PRD.md",
+        "templates/templates/template-cli/PRD.md",
+        "templates/templates/template-repo/PRD.md",
+        "templates/templates/template-web/PRD.md"
+      ]
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l0",
+      "issue": {
+        "number": 59,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/59"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l1",
+      "issue": {
+        "number": 60,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/60"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l2",
+      "issue": {
+        "number": 61,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/61"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l3",
+      "issue": {
+        "number": 62,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/62"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:core-loops-l4",
+      "issue": {
+        "number": 63,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/63"
+      }
+    },
+    {
+      "action": "close-completed-prd-issue",
+      "marker": "df-prd:core-loops-l5",
+      "issue": {
+        "number": 64,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/64"
+      }
+    },
+    {
+      "action": "close-completed-prd-issue",
+      "marker": "df-prd:core-loops-l6",
+      "issue": {
+        "number": 65,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/65"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:milestones-m1",
+      "issue": {
+        "number": 66,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/66"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:milestones-m2",
+      "issue": {
+        "number": 67,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/67"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:milestones-m3",
+      "issue": {
+        "number": 68,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/68"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:milestones-m4",
+      "issue": {
+        "number": 69,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/69"
+      }
+    },
+    {
+      "action": "keep-closed",
+      "marker": "df-prd:milestones-m5",
+      "issue": {
+        "number": 70,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/70"
+      }
+    },
+    {
+      "action": "drift-report",
+      "issue": {
+        "number": 74,
+        "url": "https://github.com/marius-patrik/agent-darkfactory/issues/74"
+      },
+      "findings": [
+        "Open issue #179 is not tracked by any PRD item.",
+        "Open issue #177 is not tracked by any PRD item.",
+        "Open issue #166 is not tracked by any PRD item.",
+        "Open issue #147 is not tracked by any PRD item.",
+        "Open issue #55 is not tracked by any PRD item.",
+        "Open issue #54 is not tracked by any PRD item.",
+        "Open issue #53 is not tracked by any PRD item.",
+        "Open issue #52 is not tracked by any PRD item.",
+        "Open issue #51 is not tracked by any PRD item.",
+        "Open issue #50 is not tracked by any PRD item.",
+        "Open issue #49 is not tracked by any PRD item.",
+        "Open issue #48 is not tracked by any PRD item.",
+        "Open issue #47 is not tracked by any PRD item.",
+        "Open issue #46 is not tracked by any PRD item.",
+        "Open issue #45 is not tracked by any PRD item.",
+        "Open issue #43 is not tracked by any PRD item.",
+        "Open issue #42 is not tracked by any PRD item.",
+        "Open issue #41 is not tracked by any PRD item.",
+        "Open issue #39 is not tracked by any PRD item.",
+        "Open issue #38 is not tracked by any PRD item.",
+        "Open issue #37 is not tracked by any PRD item.",
+        "Open issue #36 is not tracked by any PRD item.",
+        "Open issue #35 is not tracked by any PRD item.",
+        "Open issue #33 is not tracked by any PRD item.",
+        "Open issue #32 is not tracked by any PRD item.",
+        "Open issue #26 is not tracked by any PRD item.",
+        "Open issue #24 is not tracked by any PRD item.",
+        "Open issue #22 is not tracked by any PRD item.",
+        "Open issue #13 is not tracked by any PRD item.",
+        "Open issue #12 is not tracked by any PRD item.",
+        "Open issue #11 is not tracked by any PRD item.",
+        "Open PR #202 is not linked to a PRD-tracked issue.",
+        "Open PR #77 is not linked to a PRD-tracked issue."
+      ]
+    }
+  ],
+  "token_usage": {
+    "codex_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "L4 planning used deterministic PRD parsing only"
+  },
+  "prd_coverage": {
+    "root_present": true,
+    "package_prds": 0,
+    "total_packages": 7,
+    "missing": [
+      "templates/PRD.md",
+      "templates/packages/cli/PRD.md",
+      "templates/packages/web/PRD.md",
+      "templates/templates/template-bot/PRD.md",
+      "templates/templates/template-cli/PRD.md",
+      "templates/templates/template-repo/PRD.md",
+      "templates/templates/template-web/PRD.md"
+    ]
+  }
+}

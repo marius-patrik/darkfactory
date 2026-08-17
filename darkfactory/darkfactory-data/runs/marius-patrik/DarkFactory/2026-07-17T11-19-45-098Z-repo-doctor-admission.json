@@ -1,0 +1,1349 @@
+{
+  "kind": "repo-doctor-admission",
+  "target_repo": "marius-patrik/DarkFactory",
+  "created_at": "2026-07-17T11:19:45.098Z",
+  "phase": "admission",
+  "schema_version": 2,
+  "machine_evidence_schema": 1,
+  "mode": "report",
+  "trigger": "push",
+  "source_refs": {
+    "default_branch": "main",
+    "default_branch_revision": "f1a14fa5151e3dc896167935cb377b4bba666182",
+    "main": "f1a14fa5151e3dc896167935cb377b4bba666182",
+    "dev": "3528c21e632606305ba4296ebdf7c7a70afcb5e1",
+    "control": "marius-patrik/DarkFactory@f1a14fa5151e3dc896167935cb377b4bba666182",
+    "agent_os_data": "marius-patrik/Andromeda-data@3f5e1a3606eaf74d52bc5d4ee499118cd8ce20d1"
+  },
+  "findings": [
+    {
+      "id": "darkfactory-command-unrunnable",
+      "severity": "critical",
+      "category": "machine runtime",
+      "message": "The registered DarkFactory package cannot run its df command and materialized CLI help.",
+      "repair_class": "auto",
+      "evidence": [],
+      "repair": [
+        "Build/materialize DarkFactory, register it through Agent OS, and prove the package-owned help command runs."
+      ]
+    },
+    {
+      "id": "darkfactory-package-unregistered",
+      "severity": "critical",
+      "category": "machine runtime",
+      "message": "DarkFactory is not registered in the canonical Agent OS package registry.",
+      "repair_class": "auto",
+      "evidence": [],
+      "repair": [
+        "Build the trusted landed package and register it through the exact canonical Agent OS launcher."
+      ]
+    },
+    {
+      "id": "dev-behind-main",
+      "severity": "error",
+      "category": "branch convergence",
+      "message": "`dev` is behind `main` and must be synchronized before new work/release.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "main...dev",
+          "url": "https://github.com/marius-patrik/DarkFactory/compare/main...dev"
+        }
+      ],
+      "repair": [
+        "Open a reviewed main-to-dev reconciliation PR; do not force-update dev."
+      ]
+    },
+    {
+      "id": "extra-branch-wip-receipt-v3-tool-policy",
+      "severity": "warning",
+      "category": "branch hygiene",
+      "message": "Extra branch `wip/receipt-v3-tool-policy` is not the head of an open same-repository PR.",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "wip/receipt-v3-tool-policy",
+          "url": "https://github.com/marius-patrik/DarkFactory/tree/wip%2Freceipt-v3-tool-policy"
+        }
+      ],
+      "repair": [
+        "Delete only after re-fetching refs and proving it is not protected, active, or unmerged."
+      ]
+    },
+    {
+      "id": "issue-12-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #12 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #12",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/12"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-17-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #17 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #17",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/17"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-24-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #24 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #24",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/24"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-255-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #255 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #255",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/255"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-256-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #256 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #256",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/256"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-257-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #257 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #257",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/257"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-26-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #26 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #26",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/26"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-260-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #260 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #260",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/260"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-261-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #261 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #261",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/261"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-263-contentless-contract",
+      "severity": "error",
+      "category": "issue lane",
+      "message": "Issue #263 contains contentless implementation boilerplate instead of an executable contract.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #263",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/263"
+        }
+      ],
+      "repair": [
+        "Replace the boilerplate with observable scope and verification criteria before the issue can enter a dispatchable lane."
+      ]
+    },
+    {
+      "id": "issue-274-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #274 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #274",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/274"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-276-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #276 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #276",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/276"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-278-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #278 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #278",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/278"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-280-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #280 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #280",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/280"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-29-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #29 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #29",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/29"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-32-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #32 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #32",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/32"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-35-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #35 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #35",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/35"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-36-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #36 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #36",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/36"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-37-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #37 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #37",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/37"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-38-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #38 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #38",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/38"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-39-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #39 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #39",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/39"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-41-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #41 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #41",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/41"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-43-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #43 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #43",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/43"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-46-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #46 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #46",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/46"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-48-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #48 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #48",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/48"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-49-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #49 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #49",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/49"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-50-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #50 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #50",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/50"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-51-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #51 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #51",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/51"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-53-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #53 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #53",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/53"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-54-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #54 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #54",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/54"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-55-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #55 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #55",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/55"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-6-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #6 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #6",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/6"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "issue-8-prd-backing-missing",
+      "severity": "warning",
+      "category": "PRD drift",
+      "message": "Open issue #8 has no stable PRD backing marker.",
+      "repair_class": "pr",
+      "evidence": [
+        {
+          "label": "Issue #8",
+          "url": "https://github.com/marius-patrik/DarkFactory/issues/8"
+        }
+      ],
+      "repair": [
+        "Link the issue to an existing PRD item, add the missing PRD item, or mark a genuine non-dispatch record categorically."
+      ]
+    },
+    {
+      "id": "label-df-class-hard-drift",
+      "severity": "warning",
+      "category": "configuration prerequisites",
+      "message": "Label `df:class:hard` differs from the canonical color or description.",
+      "repair_class": "auto",
+      "evidence": [],
+      "repair": []
+    },
+    {
+      "id": "label-df-class-mechanical-drift",
+      "severity": "warning",
+      "category": "configuration prerequisites",
+      "message": "Label `df:class:mechanical` differs from the canonical color or description.",
+      "repair_class": "auto",
+      "evidence": [],
+      "repair": []
+    },
+    {
+      "id": "label-df-class-standard-drift",
+      "severity": "warning",
+      "category": "configuration prerequisites",
+      "message": "Label `df:class:standard` differs from the canonical color or description.",
+      "repair_class": "auto",
+      "evidence": [],
+      "repair": []
+    },
+    {
+      "id": "label-df-fix-round-1-orphan",
+      "severity": "warning",
+      "category": "repository hygiene",
+      "message": "Managed label `df:fix-round:1` is absent from the canonical taxonomy.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Re-fetch the exact canonical taxonomy and current label name/color/description, then remove only through the separately reviewed clean lane if both snapshots still agree."
+      ]
+    },
+    {
+      "id": "label-df-fix-round-2-orphan",
+      "severity": "warning",
+      "category": "repository hygiene",
+      "message": "Managed label `df:fix-round:2` is absent from the canonical taxonomy.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Re-fetch the exact canonical taxonomy and current label name/color/description, then remove only through the separately reviewed clean lane if both snapshots still agree."
+      ]
+    },
+    {
+      "id": "label-df-fix-round-3-orphan",
+      "severity": "warning",
+      "category": "repository hygiene",
+      "message": "Managed label `df:fix-round:3` is absent from the canonical taxonomy.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Re-fetch the exact canonical taxonomy and current label name/color/description, then remove only through the separately reviewed clean lane if both snapshots still agree."
+      ]
+    },
+    {
+      "id": "managed-file-drift-agents-md",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `AGENTS.md` differs from `marius-patrik/Andromeda-data:managed-repository/AGENTS.md`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-darkfactory-branching-policy-md",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.darkfactory/branching-policy.md` differs from `marius-patrik/Andromeda-data:managed-repository/.darkfactory/branching-policy.md`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-darkfactory-installer-policy-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.darkfactory/installer-policy.json` differs from `marius-patrik/Andromeda-data:managed-repository/.darkfactory/installer-policy.json`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-darkfactory-labels-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.darkfactory/labels.json` differs from `marius-patrik/Andromeda-data:managed-repository/.darkfactory/labels.json`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-darkfactory-managed-repos-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.darkfactory/managed-repos.json` differs from `marius-patrik/Andromeda-data:managed-repository/.darkfactory/managed-repos.json`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-darkfactory-managed-repository-json",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.darkfactory/managed-repository.json` differs from `marius-patrik/Andromeda-data:managed-repository/.darkfactory/managed-repository.json`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-github-scripts-dark-factory-managed-check-mjs",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.github/scripts/dark-factory-managed-check.mjs` differs from `marius-patrik/Andromeda-data:managed-repository/.github/scripts/dark-factory-managed-check.mjs`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "managed-file-drift-github-workflows-ci-yml",
+      "severity": "error",
+      "category": "managed file drift",
+      "message": "Managed file `.github/workflows/ci.yml` differs from `marius-patrik/Andromeda-data:managed-repository/.github/workflows/ci.yml`.",
+      "repair_class": "pr",
+      "evidence": [],
+      "repair": [
+        "Reconcile through the managed setup PR; preserve repository-owned files outside the manifest."
+      ]
+    },
+    {
+      "id": "workflow-dev-head-checks-red",
+      "severity": "error",
+      "category": "health",
+      "message": "Current `dev` head has failing checks: DarkFactory Autoreview:failure.",
+      "repair_class": "owner",
+      "evidence": [],
+      "repair": []
+    },
+    {
+      "id": "workflow-main-darkfactory-release-convergence-red",
+      "severity": "error",
+      "category": "health",
+      "message": "Workflow `DarkFactory Release Convergence` concluded `failure` on `main`.",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "DarkFactory Release Convergence",
+          "url": "https://github.com/marius-patrik/DarkFactory/actions/runs/29576421371"
+        }
+      ],
+      "repair": []
+    },
+    {
+      "id": "workflow-main-darkfactory-repository-doctor-pending",
+      "severity": "warning",
+      "category": "health",
+      "message": "Workflow `DarkFactory Repository Doctor` is `in_progress` on current `main`.",
+      "repair_class": "owner",
+      "evidence": [
+        {
+          "label": "DarkFactory Repository Doctor",
+          "url": "https://github.com/marius-patrik/DarkFactory/actions/runs/29576411327"
+        }
+      ],
+      "repair": []
+    },
+    {
+      "id": "workflow-main-head-checks-pending",
+      "severity": "warning",
+      "category": "health",
+      "message": "Current `main` head has pending checks: Diagnose managed repository truth:in_progress.",
+      "repair_class": "owner",
+      "evidence": [],
+      "repair": []
+    },
+    {
+      "id": "workflow-main-head-checks-red",
+      "severity": "error",
+      "category": "health",
+      "message": "Current `main` head has failing checks: Release convergence:failure.",
+      "repair_class": "owner",
+      "evidence": [],
+      "repair": []
+    }
+  ],
+  "accepted_residue": [],
+  "observations": [
+    "Branch dev protection: protection_required=true, gates_required=true, strict=true, enforce_admins=true, required=Validate@app:15368, DarkFactory Autoreview@app:15368.",
+    "Branch main protection: protection_required=true, gates_required=true, strict=true, enforce_admins=true, required=Validate@app:15368, DarkFactory Autoreview@app:15368.",
+    "Canonical Agent OS state doctor completed successfully.",
+    "Canonical launcher/source version receipt is observable.",
+    "Inspected 0 canonical df-work session(s) from the last 14 days for task-clone cwd isolation.",
+    "Local dirty and recursive submodule worktree state was not observable; only committed GitHub state was inspected.",
+    "Repository auto-merge posture is enabled (graphql).",
+    "main...dev is behind (ahead=0, behind=1)."
+  ],
+  "publication_status": "admitted",
+  "actions": [
+    {
+      "action": "upsert-repair-issue",
+      "finding": "darkfactory-command-unrunnable",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "darkfactory-package-unregistered",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "dev-behind-main",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "extra-branch-wip-receipt-v3-tool-policy",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-12-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-17-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-24-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-255-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-256-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-257-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-26-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-260-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-261-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-263-contentless-contract",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-274-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-276-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-278-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-280-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-29-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-32-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-35-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-36-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-37-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-38-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-39-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-41-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-43-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-46-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-48-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-49-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-50-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-51-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-53-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-54-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-55-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-6-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-8-prd-backing-missing",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-hard-drift",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-mechanical-drift",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-standard-drift",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-fix-round-1-orphan",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-fix-round-2-orphan",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-fix-round-3-orphan",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-agents-md",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-branching-policy-md",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-installer-policy-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-labels-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-managed-repos-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-managed-repository-json",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-github-scripts-dark-factory-managed-check-mjs",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-github-workflows-ci-yml",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-dev-head-checks-red",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-darkfactory-release-convergence-red",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-darkfactory-repository-doctor-pending",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-head-checks-pending",
+      "state": "admitted"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-head-checks-red",
+      "state": "admitted"
+    },
+    {
+      "action": "close-resolved-repair-issues",
+      "scope": "trusted df-doctor markers absent from the current finding set",
+      "state": "admitted"
+    },
+    {
+      "action": "retire-legacy-audit-issues",
+      "scope": "trusted aggregate df-audit marker",
+      "state": "admitted"
+    }
+  ],
+  "planned_actions": [
+    {
+      "action": "upsert-repair-issue",
+      "finding": "darkfactory-command-unrunnable"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "darkfactory-package-unregistered"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "dev-behind-main"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "extra-branch-wip-receipt-v3-tool-policy"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-12-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-17-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-24-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-255-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-256-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-257-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-26-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-260-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-261-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-263-contentless-contract"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-274-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-276-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-278-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-280-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-29-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-32-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-35-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-36-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-37-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-38-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-39-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-41-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-43-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-46-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-48-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-49-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-50-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-51-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-53-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-54-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-55-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-6-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "issue-8-prd-backing-missing"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-hard-drift"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-mechanical-drift"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-class-standard-drift"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-fix-round-1-orphan"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-fix-round-2-orphan"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "label-df-fix-round-3-orphan"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-agents-md"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-branching-policy-md"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-installer-policy-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-labels-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-managed-repos-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-darkfactory-managed-repository-json"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-github-scripts-dark-factory-managed-check-mjs"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "managed-file-drift-github-workflows-ci-yml"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-dev-head-checks-red"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-darkfactory-release-convergence-red"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-darkfactory-repository-doctor-pending"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-head-checks-pending"
+    },
+    {
+      "action": "upsert-repair-issue",
+      "finding": "workflow-main-head-checks-red"
+    },
+    {
+      "action": "close-resolved-repair-issues",
+      "scope": "trusted df-doctor markers absent from the current finding set"
+    },
+    {
+      "action": "retire-legacy-audit-issues",
+      "scope": "trusted aggregate df-audit marker"
+    }
+  ],
+  "token_usage": {
+    "model_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "note": "Repository doctor is deterministic and uses no model tokens."
+  }
+}

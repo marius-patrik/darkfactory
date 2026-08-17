@@ -1,0 +1,219 @@
+{
+  "kind": "autoreview-002-medium_fix",
+  "target_repo": "marius-patrik/Andromeda",
+  "created_at": "2026-07-18T23:35:58.075Z",
+  "check": "DarkFactory Autoreview",
+  "target": "marius-patrik/Andromeda#213",
+  "round": {
+    "sequence": 2,
+    "phase": "medium_fix",
+    "targetVersion": "483f3184ca7b184e70a865b43331c08c4651b690c3dce29be9cffe8fedc0fdbc",
+    "promptVersion": "darkfactory-autoreview-v1",
+    "prompt": {
+      "schemaVersion": 1,
+      "controlRevision": "280345b8182f6db58bbee77ae5c4d0f0c01fe0e2",
+      "manifest": {
+        "library": "darkfactory-prompts",
+        "schemaVersion": 2,
+        "contractVersion": "0.3.0",
+        "checksum": "sha256:f85634c5bf2576a37c6cb04a19b2ab5918b3a5aa6462719235e134fde4b1fdcd"
+      },
+      "promptChecksum": "sha256:81be479dd3cc0623eff59ceca64e0e8bbdf5d805a2666ed65817128a435395b5",
+      "inputChecksum": "sha256:e4334b670c681a6c4015d15ccb479b93d034ec6a256edd1a1ca2b72a54a91e64",
+      "profile": {
+        "id": "profile/issue-fixer",
+        "version": "0.2.0",
+        "runKind": "fix-issue",
+        "purpose": "review-fix"
+      },
+      "selection": {
+        "role": "role/issue-fixer",
+        "skills": [
+          "skill/issue-as-contract",
+          "skill/untrusted-input-handling",
+          "skill/minimal-diff",
+          "skill/owner-escalation",
+          "skill/no-bypass",
+          "skill/canonical-agent-execution",
+          "skill/evidence-status-reporting"
+        ],
+        "modelTier": "medium",
+        "effort": "high",
+        "overlays": [
+          "overlay/agent-os-boundary",
+          "overlay/github-control-plane",
+          "overlay/issue-review-fix"
+        ],
+        "repositoryOverlay": "overlay/submodule-root",
+        "output": "output/issue-fixer"
+      },
+      "artifacts": [
+        {
+          "id": "role/issue-fixer",
+          "version": "0.2.0",
+          "checksum": "sha256:d7982ad6f1fa355bfed2688958aa6b5375982a2a3d563c2488a0905033b874f8"
+        },
+        {
+          "id": "skill/issue-as-contract",
+          "version": "0.2.0",
+          "checksum": "sha256:0e3139c15a3fc74ea8523681ce3b9673e685fb41638b4cf50db3772fc6119f83"
+        },
+        {
+          "id": "skill/untrusted-input-handling",
+          "version": "0.2.0",
+          "checksum": "sha256:f29ad84e6bbcc73be9f0e58913469f7253338b72aff8b6da7f26c5fb29f6ed30"
+        },
+        {
+          "id": "skill/minimal-diff",
+          "version": "0.2.0",
+          "checksum": "sha256:45563d8839add7ddd3bf76fd90044f1bfbeed037bf53f27031a605632337514a"
+        },
+        {
+          "id": "skill/owner-escalation",
+          "version": "0.2.0",
+          "checksum": "sha256:a91c63e932e2684758164573aa477c7461e2ee71f3aaa8cd4a6c04bc09d66a19"
+        },
+        {
+          "id": "skill/no-bypass",
+          "version": "0.2.0",
+          "checksum": "sha256:842b84305d957e7e197d76d8a0f447879deb12c947c959eb5074ca7a4349839f"
+        },
+        {
+          "id": "skill/canonical-agent-execution",
+          "version": "0.2.0",
+          "checksum": "sha256:da02300b70ecd1ccf62100884e3439a5f138861a791b05b90483fd71fc48c7c2"
+        },
+        {
+          "id": "skill/evidence-status-reporting",
+          "version": "0.2.0",
+          "checksum": "sha256:e4a68d286069dd8afb2e894e207224fcbac6d57d0bc4a72042c5f10b623ad546"
+        },
+        {
+          "id": "tier/medium",
+          "version": "0.2.0",
+          "checksum": "sha256:3e5dac4718bb36fd895f4c36afdce600992dc85fff59da9e5ddcead00846e042"
+        },
+        {
+          "id": "overlay/agent-os-boundary",
+          "version": "0.2.0",
+          "checksum": "sha256:42d2d71313fa575eeb1a4e1907042c1a9214da44ef986335747e5b0deb0e2d4f"
+        },
+        {
+          "id": "overlay/github-control-plane",
+          "version": "0.2.0",
+          "checksum": "sha256:db068b8a3ff90740401b582e58e3276934918c7f81409e0545d6263bd0221bab"
+        },
+        {
+          "id": "overlay/issue-review-fix",
+          "version": "0.2.0",
+          "checksum": "sha256:281cb2015ab008673504693040e07c3225fe0ee33d44744fc7116b529b21ba61"
+        },
+        {
+          "id": "overlay/submodule-root",
+          "version": "0.2.0",
+          "checksum": "sha256:89af275767d64859977a3cb432308436dacf980c0479df18741b2e95a090411a"
+        },
+        {
+          "id": "output/issue-fixer",
+          "version": "0.3.0",
+          "checksum": "sha256:0e9bbf4b500da3ccfe86e829f758b219aac30195365cf53953764c9ebbfc449b"
+        }
+      ]
+    },
+    "requested": {
+      "modelTier": "medium",
+      "effort": "high"
+    },
+    "resolved": {
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "agentPreset": "Sol",
+      "providerVersion": "0.144.1"
+    },
+    "attempts": [
+      {
+        "number": 1,
+        "outcome": "success",
+        "reason": null
+      }
+    ],
+    "usage": {
+      "inputTokens": 718239,
+      "outputTokens": 18431,
+      "totalTokens": 736670
+    },
+    "verdict": null,
+    "findings": [
+      {
+        "id": "df-42f9c8a63d5716216ba0",
+        "title": "Disabled routes have no valid path into admission probing",
+        "details": "Routes begin disabled, and the contract requires a disabled route to be rejected before dispatch with an outcome matching its persistent reason. It simultaneously requires a successful first proof to move disabled Claude, Codex, or Agy into probing. No eligible-but-disabled state or runtime-owned admission transition permits that proof while preserving rejection for administratively disabled and decommissioned routes. Define the exact pre-dispatch transition that admits recoverable routes and identify which disabled reasons remain absolute rejections.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-7ef76657d8b2d1409336",
+        "title": "Concurrent admission failures lack deterministic precedence",
+        "details": "Administrative state, proof expiry, configuration changes, credential state, quota state, billing eligibility, route availability, receipt validation, and secret-leak detection can overlap. Issue #213 defines outcomes for each but no total evaluation order, so the same route can produce different evidence and terminal states. Specify a complete gate order, which stages may inspect credential-owner metadata, which may refresh credentials, and the sole point after which network dispatch is permitted.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-de8a5afa1db862da29c4",
+        "title": "No command deterministically produces all required disabled-route evidence",
+        "details": "Acceptance requires admission records for Codex, Agy, and Kimi in their disabled terminal states, including a non-dispatched Kimi record. The live command processes only currently eligible routes, observation processes only probing routes, and evidence mode only validates existing records. Define provider-agnostic enumeration that emits schema-valid pre-dispatch records for every required route without invoking ineligible routes, including deterministic handling when a decommissioned route has no current model or credential slot from which to construct the mandatory route tuple and credential attestation.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-b85fb1668063a8bbfddf",
+        "title": "The exhaustive transition model still has unreachable or unmapped values",
+        "details": "A kill-switch-disabled route has reason repeated_malformed_timeout, but normalizedOutcome has no corresponding value even though subsequent rejection must match the persistent reason. transitionAction keep_terminal_state has no mapped event. Counter handling is also inconsistent when checkpoint processing coincides with an elapsed rollback window: checkpoint_not_due forbids counter changes while the rollback rules require an elapsed-window reset, and checkpoint_missed does not define the corresponding counter action. Define exactly one outcome, state transition, observation action, and counter action for every reachable state and subsequent evaluation.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-10ee9ebd20afbb4e3507",
+        "title": "Secret-leak failures cannot satisfy the mandatory evidence schema",
+        "details": "The state machine requires secret_leak_detected records and disabling transitions, while every admission record unconditionally requires secretScan.status to equal passed. A scan covering arguments, logs, errors, receipts, and evidence cannot truthfully pass after detecting secret material. Separate quarantined incident evidence from publishable sanitized admission evidence, or define an explicit failed or detected scan state with deterministic quarantine and no-publication behavior.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-cc53c0aad968e7a0c354",
+        "title": "Immutable execution-receipt storage and reference provenance are undefined",
+        "details": "Dependency #275 creates its receipt as a new file in the caller worktree, while #213 publishes admission records in marius-patrik/Andromeda-data and requires receipt references to remain inside that evidence repository. The contract does not identify the authoritative receipt repository and commit or define an authorized byte-preserving transfer that makes the receipt immutable without reinterpreting its schema. Specify the repository, path, commit identity, publication procedure, and validation of original and published bytes.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-ebc20aa7d28cf1e588f7",
+        "title": "Admission evidence cannot prove the reviewed issue version",
+        "details": "Admission records and publication markers identify the implementation target revision but omit the canonical identity of issue version 483f3184ca7b184e70a865b43331c08c4651b690c3dce29be9cffe8fedc0fdbc. Publication-time comparison therefore depends on transient workflow context, and stored evidence cannot later prove which complete specification was reviewed. Add a canonically derived issue-version digest to records and markers and require validation against the complete current issue version before admission and publication.",
+        "path": null,
+        "line": null
+      },
+      {
+        "id": "df-8467400663af17aab763",
+        "title": "The schema has no authoritative field for Agy dependency evidence",
+        "details": "Acceptance requires Agy's credential_missing receipt to link issue #293, but the recursively closed admission schema defines no dependency or blocking-work-item field. Encoding the link in an unstructured observation would not provide the required authoritative relationship. Define an exact structured dependency reference, its allowed repository and issue identity, and validation that #293 remains the applicable blocker.",
+        "path": null,
+        "line": null
+      }
+    ],
+    "findingIds": [
+      "df-42f9c8a63d5716216ba0",
+      "df-7ef76657d8b2d1409336",
+      "df-de8a5afa1db862da29c4",
+      "df-b85fb1668063a8bbfddf",
+      "df-10ee9ebd20afbb4e3507",
+      "df-cc53c0aad968e7a0c354",
+      "df-ebc20aa7d28cf1e588f7",
+      "df-8467400663af17aab763"
+    ],
+    "changeRef": null,
+    "afterVersion": null,
+    "blockCode": "malformed_fix",
+    "outcome": "blocked"
+  }
+}
